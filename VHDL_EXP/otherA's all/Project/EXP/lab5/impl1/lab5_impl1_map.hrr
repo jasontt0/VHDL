@@ -1,0 +1,32 @@
+---------------------------------------------------
+Report for cell piano
+   Instance path: piano
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     155.00        100.0
+                                  LUT4	     187.00        100.0
+                                 IOBUF	         12        100.0
+                                PFUREG	        116        100.0
+                                RIPPLE	         61        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                  song	          1        11.8
+                           freqdivider	          1        30.8
+---------------------------------------------------
+Report for cell song
+   Instance path: piano/U2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      18.33        11.8
+                                  LUT4	      17.00         9.1
+                                PFUREG	         21        18.1
+                                RIPPLE	         10        16.4
+---------------------------------------------------
+Report for cell freqdivider
+   Instance path: piano/U1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      47.67        30.8
+                                  LUT4	      29.00        15.5
+                                PFUREG	         66        56.9
+                                RIPPLE	         34        55.7

@@ -1,0 +1,18 @@
+#Start recording tcl command: 11/26/2023 14:27:45
+#Project Location: D:/Lattice Diamond/Project/EXP/lab5; Project name: lab5
+prj_project new -name "lab5" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "lse"
+file copy -force -- "D:/Lattice Diamond/Project/EXP/lab5/freq_div.vhd" "D:/Lattice Diamond/Project/EXP/lab5/lab5.vhd" "D:/Lattice Diamond/Project/EXP/lab5/songs.vhd" "D:/Lattice Diamond/Project/EXP/lab5/impl1/source"
+prj_src add "D:/Lattice Diamond/Project/EXP/lab5/impl1/source/freq_div.vhd" "D:/Lattice Diamond/Project/EXP/lab5/impl1/source/lab5.vhd" "D:/Lattice Diamond/Project/EXP/lab5/impl1/source/songs.vhd"
+prj_project save
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1 -task Jedecgen
+pgr_project save "D:/Lattice Diamond/Project/EXP/lab5/impl1/impl1.xcf"
+prj_src add -exclude "D:/Lattice Diamond/Project/EXP/lab5/impl1/impl1.xcf"
+prj_src enable "D:/Lattice Diamond/Project/EXP/lab5/impl1/impl1.xcf"
+pgr_program run
+pgr_project save "D:/Lattice Diamond/Project/EXP/lab5/impl1/impl1.xcf"
+pgr_project close
+prj_project save
+prj_project close
+#Stop recording: 11/26/2023 15:52:37

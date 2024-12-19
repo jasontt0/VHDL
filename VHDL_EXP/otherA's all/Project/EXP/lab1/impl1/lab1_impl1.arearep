@@ -1,0 +1,39 @@
+----------------------------------------------------------------------
+Report for cell lab1_top.TECH
+Register bits:  44 of 4635 (0.949%)
+I/O cells:      29
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17          100.0
+                            FD1P3AX         1          100.0
+                            FD1P3JX         4          100.0
+                            FD1S3AX         7          100.0
+                            FD1S3IX        32          100.0
+                                GSR         1          100.0
+                                 IB         9          100.0
+                            L6MUX21         1          100.0
+                               LUT4        83          100.0
+                                 OB        20          100.0
+                              PFUMX        11          100.0
+                              SP8KC         2          100.0
+SUB MODULES
+                        freqdivider         1
+                                seg         1
+                              TOTAL       190
+----------------------------------------------------------------------
+Report for cell seg.v1
+Instance Path : U2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              SP8KC         2          100.0
+                              TOTAL         2
+----------------------------------------------------------------------
+Report for cell freqdivider.v1
+Instance Path : U1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17          100.0
+                            FD1S3AX         1           14.3
+                            FD1S3IX        32          100.0
+                               LUT4        14           16.9
+                              TOTAL        64

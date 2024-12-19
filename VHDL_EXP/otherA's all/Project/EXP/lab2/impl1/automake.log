@@ -1,0 +1,254 @@
+
+synthesis -f "lab2_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Sun Nov 26 15:53:12 2023
+
+
+Command Line:  synthesis -f lab2_impl1_lattice.synproj -gui -msgset D:/Lattice Diamond/Project/EXP/lab2/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Balanced
+Top-level module name = PWM_LED_top.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p D:/Lattice Diamond/diamond/3.13/ispfpga/xo2c00/data (searchpath added)
+-p D:/Lattice Diamond/Project/EXP/lab2/impl1 (searchpath added)
+-p D:/Lattice Diamond/Project/EXP/lab2 (searchpath added)
+VHDL library = work
+VHDL design file = D:/Lattice Diamond/Project/EXP/lab2/impl1/source/breathingLED.vhd
+VHDL design file = D:/Lattice Diamond/Project/EXP/lab2/impl1/source/keyboard.vhd
+VHDL design file = D:/Lattice Diamond/Project/EXP/lab2/impl1/source/top.vhd
+NGD file = lab2_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file D:/Lattice Diamond/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+    <postMsg mid="35921504" type="Info"    dynamic="2" navigation="0" arg0="" arg1="D:/Lattice Diamond/Project/EXP/lab2/impl1"  />
+Analyzing VHDL file d:/lattice diamond/project/exp/lab2/impl1/source/breathingled.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab2/impl1/source/breathingled.vhd(6): " arg1="pwm_led" arg2="d:/lattice diamond/project/exp/lab2/impl1/source/breathingled.vhd" arg3="6"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab2/impl1/source/breathingled.vhd(18): " arg1="behavior" arg2="d:/lattice diamond/project/exp/lab2/impl1/source/breathingled.vhd" arg3="18"  />
+unit PWM_LED_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file d:/lattice diamond/project/exp/lab2/impl1/source/keyboard.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab2/impl1/source/keyboard.vhd(6): " arg1="key_board_sub" arg2="d:/lattice diamond/project/exp/lab2/impl1/source/keyboard.vhd" arg3="6"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab2/impl1/source/keyboard.vhd(15): " arg1="behavioral" arg2="d:/lattice diamond/project/exp/lab2/impl1/source/keyboard.vhd" arg3="15"  />
+unit PWM_LED_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file d:/lattice diamond/project/exp/lab2/impl1/source/top.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab2/impl1/source/top.vhd(6): " arg1="pwm_led_top" arg2="d:/lattice diamond/project/exp/lab2/impl1/source/top.vhd" arg3="6"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab2/impl1/source/top.vhd(19): " arg1="pwm_led" arg2="d:/lattice diamond/project/exp/lab2/impl1/source/top.vhd" arg3="19"  />
+unit PWM_LED_top is not yet analyzed. VHDL-1485
+unit PWM_LED_top is not yet analyzed. VHDL-1485
+d:/lattice diamond/project/exp/lab2/impl1/source/top.vhd(6): executing PWM_LED_top(PWM_LED)
+
+    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="d:/lattice diamond/project/exp/lab2/impl1/source/top.vhd(17): " arg1="PWM_LED_top" arg2="PWM_LED" arg3="d:/lattice diamond/project/exp/lab2/impl1/source/top.vhd" arg4="17"  />
+Top module name (VHDL): PWM_LED_top
+Last elaborated design is PWM_LED_top(PWM_LED)
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: D:/Lattice Diamond/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = PWM_LED_top.
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="btn[3]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="btn[2]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="btn[1]"  />
+    <postMsg mid="35001771" type="Warning" dynamic="1" navigation="0" arg0="btn[0]"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="31" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="30" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="29" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="28" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="27" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="26" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="25" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="24" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="23" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="22" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="21" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="20" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="19" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="18" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="17" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="16" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="14" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="13" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="12" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="11" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="10" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="31" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="30" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="29" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="28" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="27" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="26" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="25" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="24" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="23" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="22" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="21" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="20" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="19" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="18" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="17" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="16" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="15" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="14" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="13" arg1="\instant1/frqnum"  />
+
+
+
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="8" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="7" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\instant1/lumdivision"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="2" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="1" arg1="\instant1/frqnum"  />
+    <postMsg mid="35001747" type="Warning" dynamic="2" navigation="0" arg0="0" arg1="\instant1/frqnum"  />
+GSR instance connected to net \key_code_4__I_0/n9.
+    <postMsg mid="35001779" type="Warning" dynamic="1" navigation="0" arg0="\instant1/triangle_cnt_i0_i0"  />
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in PWM_LED_top_drc.log.
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+   1304 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file lab2_impl1.ngd.
+
+################### Begin Area Report (PWM_LED_top)######################
+Number of register bits => 123 of 4635 (2 % )
+CCU2D => 356
+FD1P3AX => 20
+FD1P3AY => 2
+FD1S3AX => 22
+FD1S3AY => 5
+FD1S3IX => 70
+FD1S3JX => 4
+GSR => 1
+IB => 9
+L6MUX21 => 2
+LUT4 => 756
+OB => 12
+PFUMX => 42
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 2
+  Net : clk_c, loads : 112
+  Net : instant2/clk300hz, loads : 12
+Clock Enable Nets
+Number of Clock Enables: 3
+Top 3 highest fanout Clock Enables:
+  Net : instant1/clk_c_enable_17, loads : 16
+  Net : instant1/clk_c_enable_1, loads : 1
+  Net : clk300hz_enable_5, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : instant1/lumdivision_6, loads : 92
+  Net : instant1/lumdivision_4, loads : 61
+  Net : instant1/lumdivision_0, loads : 59
+  Net : instant1/lumdivision_9, loads : 56
+  Net : instant1/n24, loads : 56
+  Net : instant1/lumdivision_3, loads : 55
+  Net : instant1/n11709, loads : 53
+  Net : instant1/lumdivision_2, loads : 38
+  Net : instant1/n12202, loads : 35
+  Net : instant2/n4451, loads : 32
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets \instant2/clk300hz]      |  200.000 MHz|   90.147 MHz|     6 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |  200.000 MHz|    3.597 MHz|   277 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+
+Peak Memory Usage: 225.031  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 5.500  secs
+--------------------------------------------------------------

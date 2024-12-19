@@ -1,0 +1,11 @@
+#Start recording tcl command: 11/12/2023 20:43:47
+#Project Location: D:/Lattice Diamond/Project/vote5; Project name: vote5
+prj_project open "D:/Lattice Diamond/Project/vote5/vote5.ldf"
+prj_run Synthesis -impl impl1
+prj_src exclude "D:/Lattice Diamond/Project/vote5/impl1/source/tb.vhd"
+prj_src enable "D:/Lattice Diamond/Project/vote5/impl1/source/tb.vhd"
+prj_src exclude "D:/Lattice Diamond/Project/vote5/impl1/source/tb.vhd"
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+prj_src enable "D:/Lattice Diamond/Project/vote5/impl1/source/tb.vhd"
+#Stop recording: 11/12/2023 21:40:31

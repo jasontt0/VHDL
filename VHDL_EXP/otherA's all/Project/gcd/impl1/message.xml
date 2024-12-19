@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>E:/DESKTOP/hardware_project/Project/gcd/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/desktop/hardware_project/project/gcd/impl1/source/gcd.vhd(5): </Dynamic>
+            <Dynamic>gcd</Dynamic>
+            <Navigation>e:/desktop/hardware_project/project/gcd/impl1/source/gcd.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/desktop/hardware_project/project/gcd/impl1/source/gcd.vhd(15): </Dynamic>
+            <Dynamic>rtl</Dynamic>
+            <Navigation>e:/desktop/hardware_project/project/gcd/impl1/source/gcd.vhd</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>1009990</ID>
+            <Severity>Error</Severity>
+            <Dynamic>User specified top module tb not found in design. Pls. check project file
+</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

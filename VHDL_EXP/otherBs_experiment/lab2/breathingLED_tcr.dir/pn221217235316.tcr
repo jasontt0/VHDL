@@ -1,0 +1,9 @@
+#Start recording tcl command: 12/17/2022 23:51:16
+#Project Location: D:/lscc/diamond/3.12/bin/nt64/lab22; Project name: breathingLED
+prj_project open "D:/lscc/diamond/3.12/bin/nt64/lab22/breathingLED.ldf"
+prj_src remove "D:/lscc/diamond/3.12/bin/nt64/lab22/breathingLEDver3.vhd"
+prj_src remove "D:/lscc/diamond/3.12/bin/nt64/lab22/breathingLEDtop.vhd"
+prj_src remove "D:/lscc/diamond/3.12/bin/nt64/lab22/KEY_BOARD_SUB.vhd"
+prj_src add "D:/lscc/diamond/3.12/bin/nt64/lab22/breathingLED.vhd" "D:/lscc/diamond/3.12/bin/nt64/lab22/keyboard.vhd" "D:/lscc/diamond/3.12/bin/nt64/lab22/top.vhd"
+prj_run Export -impl impl1
+#Stop recording: 12/17/2022 23:53:16

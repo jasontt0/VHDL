@@ -1,0 +1,20 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Sun Nov 26 14:31:01 2023 *
+NOTE DESIGN NAME: piano *
+NOTE DEVICE NAME: LCMXO2-4000HC-4CSBGA132 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS beep : P13 : out *
+NOTE PINS switch : M13 : in *
+NOTE PINS row[0] : N8 : out *
+NOTE PINS row[1] : P8 : out *
+NOTE PINS row[2] : N7 : out *
+NOTE PINS row[3] : P7 : out *
+NOTE PINS mode : L14 : in *
+NOTE PINS clk : C1 : in *
+NOTE PINS col[3] : N6 : in *
+NOTE PINS col[2] : P6 : in *
+NOTE PINS col[1] : N5 : in *
+NOTE PINS col[0] : L3 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

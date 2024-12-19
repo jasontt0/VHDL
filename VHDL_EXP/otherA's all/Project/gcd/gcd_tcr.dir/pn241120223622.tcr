@@ -1,0 +1,12 @@
+#Start recording tcl command: 11/20/2024 21:39:29
+#Project Location: E:/DESKTOP/hardware_project/Project/gcd; Project name: gcd
+prj_project open "E:/DESKTOP/hardware_project/Project/gcd/gcd.ldf"
+prj_src syn_sim -src "E:/DESKTOP/hardware_project/Project/gcd/impl1/source/tb.vhd" SimulateOnly
+prj_run Export -impl impl1
+prj_run Synthesis -impl impl1
+prj_src syn_sim -src "E:/DESKTOP/hardware_project/Project/gcd/impl1/source/gcd.vhd" SynthesisOnly
+prj_src syn_sim -src "E:/DESKTOP/hardware_project/Project/gcd/impl1/source/gcd.vhd" SynthesisAndSimulate
+prj_run Synthesis -impl impl1
+prj_project save
+prj_project close
+#Stop recording: 11/20/2024 22:36:22

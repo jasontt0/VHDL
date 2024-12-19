@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001200</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lab1_top</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>D:/Lattice Diamond/Project/EXP/lab1/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab1/impl1/source/freq_div.vhd(4): </Dynamic>
+            <Dynamic>freqdivider</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab1/impl1/source/freq_div.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab1/impl1/source/freq_div.vhd(13): </Dynamic>
+            <Dynamic>freqdivider_arch</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab1/impl1/source/freq_div.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd(4): </Dynamic>
+            <Dynamic>lab1_top</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd(17): </Dynamic>
+            <Dynamic>lab1_arch</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>35921178</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd(17): </Dynamic>
+            <Dynamic>lab1_arch</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab1/impl1/source/seg.vhd(4): </Dynamic>
+            <Dynamic>seg</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab1/impl1/source/seg.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab1/impl1/source/seg.vhd(16): </Dynamic>
+            <Dynamic>seg_arch</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab1/impl1/source/seg.vhd</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab1/impl1/source/freq_div.vhd(4): </Dynamic>
+            <Dynamic>freqdivider</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab1/impl1/source/freq_div.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab1/impl1/source/freq_div.vhd(13): </Dynamic>
+            <Dynamic>freqdivider_arch</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab1/impl1/source/freq_div.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd(4): </Dynamic>
+            <Dynamic>lab1_top</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd(17): </Dynamic>
+            <Dynamic>lab1_arch</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab1/impl1/source/seg.vhd(4): </Dynamic>
+            <Dynamic>seg</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab1/impl1/source/seg.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab1/impl1/source/seg.vhd(16): </Dynamic>
+            <Dynamic>seg_arch</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab1/impl1/source/seg.vhd</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd(15): </Dynamic>
+            <Dynamic>lab1_top</Dynamic>
+            <Dynamic>lab1_arch</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>31</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>30</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>29</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>28</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>27</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>26</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>25</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>24</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>23</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>22</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>21</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>20</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>19</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>18</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>17</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>16</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>15</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>14</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>13</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>12</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>11</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>10</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>9</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>8</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>7</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>6</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>5</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>4</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>3</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>2</Dynamic>
+            <Dynamic>row_num</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Jedecgen">
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by xo2c00.acd ###</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

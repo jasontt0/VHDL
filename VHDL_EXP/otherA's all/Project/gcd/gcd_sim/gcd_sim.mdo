@@ -1,0 +1,17 @@
+if {![file exists "E:/DESKTOP/hardware_project/Project/gcd/gcd_sim/gcd_sim.mpf"]} { 
+	project new "E:/DESKTOP/hardware_project/Project/gcd/gcd_sim" gcd_sim
+	project addfile "E:/DESKTOP/hardware_project/Project/gcd/impl1/source/gcd.vhd"
+	project addfile "E:/DESKTOP/hardware_project/Project/gcd/impl1/source/tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "E:/DESKTOP/hardware_project/Project/gcd/impl1/source/gcd.vhd"
+	vcom -work work "E:/DESKTOP/hardware_project/Project/gcd/impl1/source/tb.vhd"
+} else {
+	project open "E:/DESKTOP/hardware_project/Project/gcd/gcd_sim/gcd_sim"
+	project compileoutofdate
+}
+vsim -L work -L pmi_work -L ovi_machxo2  tb
+view wave
+add wave /*
+run 1000ns

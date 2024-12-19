@@ -1,0 +1,429 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+        Lattice Mapping Report File for Design Module 'traffic_lights'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     lab3_impl1.ngd -o lab3_impl1_map.ncd -pr lab3_impl1.prf -mp lab3_impl1.mrp
+     -lpf D:/lscc/diamond/3.12/bin/nt64/lab3/impl1/lab3_impl1.lpf -lpf
+     D:/lscc/diamond/3.12/bin/nt64/lab3/lab3.lpf -c 0 -gui -msgset
+     D:/lscc/diamond/3.12/bin/nt64/lab3/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.12.0.240.2
+Mapped on:  12/01/22  20:49:36
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:     70 out of  4635 (2%)
+      PFU registers:           70 out of  4320 (2%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:        69 out of  2160 (3%)
+      SLICEs as Logic/ROM:     69 out of  2160 (3%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         34 out of  2160 (2%)
+   Number of LUT4s:        138 out of  4320 (3%)
+      Number used as logic LUTs:         70
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       68
+      Number used as shift registers:     0
+   Number of PIO sites used: 27 + 4(JTAG) out of 105 (30%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net clk_c: 34 loads, 34 rising, 0 falling (Driver: PIO clk )
+     Net all_time_7__N_25: 9 loads, 9 rising, 0 falling (Driver: i29_1_lut_2_lut
+     )
+
+   Number of Clock Enables:  3
+     Net clk_c_enable_10: 5 loads, 5 LSLICEs
+     Net clk_c_enable_13: 1 loads, 1 LSLICEs
+     Net clk_c_enable_12: 2 loads, 2 LSLICEs
+   Number of LSRs:  8
+     Net n1429: 5 loads, 5 LSLICEs
+     Net n108_adj_1: 1 loads, 1 LSLICEs
+     Net n1428: 12 loads, 12 LSLICEs
+     Net n1427: 12 loads, 12 LSLICEs
+     Net present_state_0: 1 loads, 1 LSLICEs
+     Net all_time_4_N_31_3: 2 loads, 2 LSLICEs
+     Net present_state_1: 1 loads, 1 LSLICEs
+     Net n1157: 2 loads, 2 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net n1428: 17 loads
+     Net diff_time_1: 16 loads
+     Net diff_time_2: 16 loads
+     Net diff_time_3: 15 loads
+     Net unit_0: 15 loads
+     Net diff_time_4: 13 loads
+     Net n1427: 13 loads
+     Net present_state_0: 13 loads
+     Net all_time_4_N_31_3: 11 loads
+     Net present_state_1: 9 loads
+
+
+
+
+   Number of warnings:  4
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+WARNING - map: D:/lscc/diamond/3.12/bin/nt64/lab3/lab3.lpf(40): Semantic error
+     in "IOBUF PORT "newp1" IO_TYPE=LVCMOS33 ;": Port "newp1" does not exist in
+     the design. This preference has been disabled.
+WARNING - map: D:/lscc/diamond/3.12/bin/nt64/lab3/lab3.lpf(41): Semantic error
+     in "IOBUF PORT "newp2" IO_TYPE=LVCMOS33 ;": Port "newp2" does not exist in
+     the design. This preference has been disabled.
+WARNING - map: D:/lscc/diamond/3.12/bin/nt64/lab3/lab3.lpf(52): Semantic error
+     in "LOCATE COMP "newp1" SITE "P12" ;": COMP "newp1" cannot be found in
+     design. This preference has been disabled.
+WARNING - map: D:/lscc/diamond/3.12/bin/nt64/lab3/lab3.lpf(53): Semantic error
+     in "LOCATE COMP "newp2" SITE "M12" ;": COMP "newp2" cannot be found in
+     design. This preference has been disabled.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+
+| yellow1             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| green1              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| red2                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| red1                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| green2              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| yellow2             | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| an0                 | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| an1                 | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| a_to_g0[6]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| a_to_g0[5]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| a_to_g0[4]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| a_to_g0[3]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| a_to_g0[2]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| a_to_g0[1]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| a_to_g0[0]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| a_to_g1[6]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| a_to_g1[5]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| a_to_g1[4]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| a_to_g1[3]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| a_to_g1[2]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| a_to_g1[1]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| a_to_g1[0]          | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| set1                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| set2                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| set3                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| set4                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Signal sub_302_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal sub_302_add_2_1/CI undriven or does not drive anything - clipped.
+Signal clk_1ss.cnt_534_add_4_23/CO undriven or does not drive anything -
+     clipped.
+Signal clk_halfs.cnt_half_535_add_4_23/S1 undriven or does not drive anything -
+     clipped.
+Signal clk_halfs.cnt_half_535_add_4_23/CO undriven or does not drive anything -
+     clipped.
+Signal sub_302_add_2_9/S1 undriven or does not drive anything - clipped.
+Signal sub_302_add_2_9/CO undriven or does not drive anything - clipped.
+Signal time_cnt_536_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal time_cnt_536_add_4_1/CI undriven or does not drive anything - clipped.
+Signal clk_1ss.cnt_534_add_4_1/S0 undriven or does not drive anything - clipped.
+     
+Signal clk_1ss.cnt_534_add_4_1/CI undriven or does not drive anything - clipped.
+     
+Signal time_cnt_536_add_4_9/S1 undriven or does not drive anything - clipped.
+Signal time_cnt_536_add_4_9/CO undriven or does not drive anything - clipped.
+Signal clk_halfs.cnt_half_535_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal clk_halfs.cnt_half_535_add_4_1/CI undriven or does not drive anything -
+     clipped.
+
+     
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'n2345'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'n2345' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 70 
+
+     Type and instance name of component: 
+   Register : clk_half_250
+   Register : time_cnt_536__i4
+   Register : time_cnt_536__i5
+   Register : mode__i0
+   Register : clk_1ss.cnt_534__i0
+   Register : clk_halfs.cnt_half_535__i0
+
+   Register : an0_I_0
+   Register : all_time_4__I_0_i1
+   Register : green1_I_0
+   Register : time_cnt_536__i7
+   Register : time_cnt_536__i0
+   Register : red1_I_0
+   Register : green2_I_0
+   Register : red2_I_0
+   Register : clk_1s_248
+   Register : time_cnt_536__i1
+   Register : time_cnt_536__i2
+   Register : all_time_4__I_0_i2
+   Register : time_cnt_536__i6
+   Register : all_time_4__I_0_i3
+   Register : all_time_4__I_0_i4
+   Register : all_time_4__I_0_i5
+   Register : present_state__i0
+   Register : time_cnt_536__i3
+   Register : clk_1ss.cnt_534__i22
+   Register : clk_1ss.cnt_534__i21
+   Register : clk_1ss.cnt_534__i20
+   Register : clk_1ss.cnt_534__i19
+   Register : clk_1ss.cnt_534__i18
+   Register : clk_1ss.cnt_534__i17
+   Register : clk_1ss.cnt_534__i16
+   Register : clk_1ss.cnt_534__i15
+   Register : clk_1ss.cnt_534__i14
+   Register : clk_1ss.cnt_534__i13
+   Register : clk_1ss.cnt_534__i12
+   Register : clk_1ss.cnt_534__i11
+   Register : clk_1ss.cnt_534__i10
+   Register : clk_1ss.cnt_534__i9
+   Register : clk_1ss.cnt_534__i8
+   Register : clk_1ss.cnt_534__i7
+   Register : clk_1ss.cnt_534__i6
+   Register : clk_1ss.cnt_534__i5
+   Register : clk_1ss.cnt_534__i4
+   Register : clk_1ss.cnt_534__i3
+   Register : clk_1ss.cnt_534__i2
+   Register : clk_1ss.cnt_534__i1
+   Register : clk_halfs.cnt_half_535__i21
+   Register : clk_halfs.cnt_half_535__i20
+   Register : clk_halfs.cnt_half_535__i19
+   Register : clk_halfs.cnt_half_535__i18
+   Register : clk_halfs.cnt_half_535__i17
+   Register : clk_halfs.cnt_half_535__i16
+   Register : clk_halfs.cnt_half_535__i15
+   Register : clk_halfs.cnt_half_535__i14
+   Register : clk_halfs.cnt_half_535__i13
+   Register : clk_halfs.cnt_half_535__i12
+   Register : clk_halfs.cnt_half_535__i11
+   Register : clk_halfs.cnt_half_535__i10
+   Register : clk_halfs.cnt_half_535__i9
+   Register : clk_halfs.cnt_half_535__i8
+   Register : clk_halfs.cnt_half_535__i7
+   Register : clk_halfs.cnt_half_535__i6
+
+   Register : clk_halfs.cnt_half_535__i5
+   Register : clk_halfs.cnt_half_535__i4
+   Register : clk_halfs.cnt_half_535__i3
+   Register : clk_halfs.cnt_half_535__i2
+   Register : clk_halfs.cnt_half_535__i1
+   Register : present_state__i2
+   Register : present_state__i1
+   Register : mode__i1
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 50 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

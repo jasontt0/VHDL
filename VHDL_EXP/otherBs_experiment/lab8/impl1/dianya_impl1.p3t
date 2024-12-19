@@ -1,0 +1,5 @@
+-rem
+-distrce
+-log "dianya_impl1.log"
+-o "dianya_impl1.csv"
+-pr "dianya_impl1.prf"

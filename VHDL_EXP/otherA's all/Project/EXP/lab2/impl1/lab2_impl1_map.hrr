@@ -1,0 +1,32 @@
+---------------------------------------------------
+Report for cell PWM_LED_top
+   Instance path: PWM_LED_top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     703.00        100.0
+                                  LUT4	     738.00        100.0
+                                 IOBUF	         21        100.0
+                                PFUREG	        107        100.0
+                                RIPPLE	        331        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                               PWM_LED	          1        92.7
+                         KEY_BOARD_SUB	          1         4.8
+---------------------------------------------------
+Report for cell PWM_LED
+   Instance path: PWM_LED_top/instant1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     652.00        92.7
+                                  LUT4	     680.00        92.1
+                                PFUREG	         80        74.8
+                                RIPPLE	        310        93.7
+---------------------------------------------------
+Report for cell KEY_BOARD_SUB
+   Instance path: PWM_LED_top/instant2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      34.00         4.8
+                                  LUT4	      48.00         6.5
+                                PFUREG	         27        25.2
+                                RIPPLE	          9         2.7

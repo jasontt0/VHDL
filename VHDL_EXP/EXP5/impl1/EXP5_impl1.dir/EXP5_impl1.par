@@ -1,0 +1,27 @@
+PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Dec 11 18:19:59 2024
+
+E:/softwaredownloads2/diamond/3.13/ispfpga\bin\nt64\par -f EXP5_impl1.p2t
+EXP5_impl1_map.ncd EXP5_impl1.dir EXP5_impl1.prf -gui -msgset
+E:/DESKTOP/VHDL_EXP/EXP5/promote.xml
+
+
+Preference file: EXP5_impl1.prf.
+
+Level/       Number       Worst        Timing       Worst        Timing       Run          NCD
+Cost [ncd]   Unrouted     Slack        Score        Slack(hold)  Score(hold)  Time         Status
+----------   --------     -----        ------       -----------  -----------  ----         ------
+5_1   *      0            -147.665     9678414      -1.543       15670        07           Completed
+
+* : Design saved.
+
+Total (real) run time for 1-seed: 7 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.

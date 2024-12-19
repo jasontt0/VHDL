@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>DEFAULT</Dynamic>
+            <Dynamic>-1</Dynamic>
+            <Dynamic>Keyword</Dynamic>
+        </Message>
+        <Message>
+            <ID>35400209</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>ASSERT</Dynamic>
+            <Dynamic>-1</Dynamic>
+            <Dynamic>Keyword</Dynamic>
+        </Message>
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>E:/DESKTOP/VHDL_EXP/EXP5/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/desktop/vhdl_exp/exp5/exp5.vhd(6): </Dynamic>
+            <Dynamic>piano</Dynamic>
+            <Navigation>e:/desktop/vhdl_exp/exp5/exp5.vhd</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/desktop/vhdl_exp/exp5/exp5.vhd(17): </Dynamic>
+            <Dynamic>piano_arch</Dynamic>
+            <Navigation>e:/desktop/vhdl_exp/exp5/exp5.vhd</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/desktop/vhdl_exp/exp5/frequencydivider.vhd(5): </Dynamic>
+            <Dynamic>freqdivider</Dynamic>
+            <Navigation>e:/desktop/vhdl_exp/exp5/frequencydivider.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/desktop/vhdl_exp/exp5/frequencydivider.vhd(14): </Dynamic>
+            <Dynamic>freqdivider_arch</Dynamic>
+            <Navigation>e:/desktop/vhdl_exp/exp5/frequencydivider.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/desktop/vhdl_exp/exp5/songs.vhd(6): </Dynamic>
+            <Dynamic>song</Dynamic>
+            <Navigation>e:/desktop/vhdl_exp/exp5/songs.vhd</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/desktop/vhdl_exp/exp5/songs.vhd(14): </Dynamic>
+            <Dynamic>song_arch</Dynamic>
+            <Navigation>e:/desktop/vhdl_exp/exp5/songs.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921172</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/desktop/vhdl_exp/exp5/exp5.vhd(92): </Dynamic>
+            <Navigation>e:/desktop/vhdl_exp/exp5/exp5.vhd</Navigation>
+            <Navigation>92</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/desktop/vhdl_exp/exp5/exp5.vhd(15): </Dynamic>
+            <Dynamic>piano</Dynamic>
+            <Dynamic>piano_arch</Dynamic>
+            <Navigation>e:/desktop/vhdl_exp/exp5/exp5.vhd</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>music_num</Dynamic>
+            <Dynamic>gray</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61001101</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=switch_c loads=2 clock_loads=2
+   Signal=clk40hz loads=5 clock_loads=1
+   Signal=mode_c loads=1 clock_loads=1
+   Signal=U2/tone2_3__N_199 loads=5 clock_loads=4
+   Signal=music_num[1]_derived_2 loads=1 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=switch_c loads=2 clock_loads=2
+   Signal=clk40hz loads=5 clock_loads=1
+   Signal=mode_c loads=1 clock_loads=1
+   Signal=U2/tone2_3__N_199 loads=5 clock_loads=4
+   Signal=music_num[1]_derived_2 loads=1 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Jedecgen">
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by xo2c00.acd ###</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

@@ -1,0 +1,273 @@
+
+Loading design for application trce from file lab1_impl1_map.ncd.
+Design name: lab1_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: D:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Mon Dec 19 16:10:36 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o lab1_impl1.tw1 -gui lab1_impl1_map.ncd lab1_impl1.prf 
+Design file:     lab1_impl1_map.ncd
+Preference file: lab1_impl1.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_c" 125.047000 MHz ;
+            3609 items scored, 2447 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 6.213ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              btn_num_i0  (from clk_c +)
+   Destination:    SP8KC      Port           U2/btn_num_4__I_0(ASIC)  (to clk_c +)
+
+   Delay:              14.236ns  (32.6% logic, 67.4% route), 9 logic levels.
+
+ Constraint Details:
+
+     14.236ns physical path delay SLICE_10 to U2/btn_num_4__I_0 exceeds
+      7.997ns delay constraint less
+     -0.026ns ADDR_SET requirement (totaling 8.023ns) by 6.213ns
+
+ Physical Path Details:
+
+      Data path SLICE_10 to U2/btn_num_4__I_0:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452   SLICE_10.CLK to    SLICE_10.Q0 SLICE_10 (from clk_c)
+ROUTE         5   e 1.234    SLICE_10.Q0 to    SLICE_31.A0 btn_num_0
+CTOF_DEL    ---     0.495    SLICE_31.A0 to    SLICE_31.F0 SLICE_31
+ROUTE         2   e 0.480    SLICE_31.F0 to    SLICE_31.A1 n2144
+CTOF_DEL    ---     0.495    SLICE_31.A1 to    SLICE_31.F1 SLICE_31
+ROUTE         1   e 1.234    SLICE_31.F1 to    SLICE_27.A0 n2044
+CTOF_DEL    ---     0.495    SLICE_27.A0 to    SLICE_27.F0 SLICE_27
+ROUTE         1   e 1.234    SLICE_27.F0 to    SLICE_42.C1 n2129
+CTOF_DEL    ---     0.495    SLICE_42.C1 to    SLICE_42.F1 SLICE_42
+ROUTE         1   e 1.234    SLICE_42.F1 to    SLICE_36.A1 n2047
+CTOF_DEL    ---     0.495    SLICE_36.A1 to    SLICE_36.F1 SLICE_36
+ROUTE         5   e 0.480    SLICE_36.F1 to    SLICE_36.B0 n1616
+CTOF_DEL    ---     0.495    SLICE_36.B0 to    SLICE_36.F0 SLICE_36
+ROUTE         1   e 1.234    SLICE_36.F0 to *4/SLICE_21.D0 n332
+CTOOFX_DEL  ---     0.721 *4/SLICE_21.D0 to *SLICE_21.OFX0 mux_216_i4/SLICE_21
+ROUTE         1   e 1.234 *SLICE_21.OFX0 to    SLICE_13.D0 n481
+CTOF_DEL    ---     0.495    SLICE_13.D0 to    SLICE_13.F0 SLICE_13
+ROUTE         3   e 1.234    SLICE_13.F0 to *um_4__I_0.AD6 n249 (to clk_c)
+                  --------
+                   14.236   (32.6% logic, 67.4% route), 9 logic levels.
+
+Warning:  70.373MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_c" 125.047000 MHz ;  |  125.047 MHz|   70.373 MHz|   9 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+1 preference(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+U1/n2009                                |       3|    1024|     41.85%
+                                        |        |        |
+n2137                                   |      14|     932|     38.09%
+                                        |        |        |
+n1616                                   |       5|     929|     37.96%
+                                        |        |        |
+clk_c_enable_6                          |      15|     746|     30.49%
+                                        |        |        |
+n251                                    |       3|     528|     21.58%
+                                        |        |        |
+n252                                    |       3|     528|     21.58%
+                                        |        |        |
+n250                                    |       3|     478|     19.53%
+                                        |        |        |
+n248                                    |       3|     459|     18.76%
+                                        |        |        |
+n249                                    |       3|     454|     18.55%
+                                        |        |        |
+n1785                                   |       1|     452|     18.47%
+                                        |        |        |
+n2133                                   |       2|     447|     18.27%
+                                        |        |        |
+n481                                    |       1|     438|     17.90%
+                                        |        |        |
+n29                                     |       1|     434|     17.74%
+                                        |        |        |
+U1/n16                                  |       1|     428|     17.49%
+                                        |        |        |
+U1/n17                                  |       1|     428|     17.49%
+                                        |        |        |
+n2076                                   |       1|     341|     13.94%
+                                        |        |        |
+n2131                                   |       2|     336|     13.73%
+                                        |        |        |
+U1/n14                                  |       3|     336|     13.73%
+                                        |        |        |
+n2094                                   |       1|     313|     12.79%
+                                        |        |        |
+n2110                                   |       1|     313|     12.79%
+                                        |        |        |
+U1/n13                                  |       3|     308|     12.59%
+                                        |        |        |
+n875                                    |       5|     298|     12.18%
+                                        |        |        |
+n891                                    |       5|     270|     11.03%
+                                        |        |        |
+n447                                    |       1|     266|     10.87%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 20
+   Covered under: FREQUENCY NET "clk_c" 125.047000 MHz ;
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 2447  Score: 6962076
+Cumulative negative slack: 6962076
+
+Constraints cover 3609 paths, 1 nets, and 305 connections (77.41% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Mon Dec 19 16:10:36 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o lab1_impl1.tw1 -gui lab1_impl1_map.ncd lab1_impl1.prf 
+Design file:     lab1_impl1_map.ncd
+Preference file: lab1_impl1.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_c" 125.047000 MHz ;
+            3609 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.447ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              row_num__i1  (from clk_c +)
+   Destination:    FF         Data in        row_num__i2  (to clk_c +)
+
+   Delay:               0.434ns  (53.9% logic, 46.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.434ns physical path delay SLICE_17 to SLICE_17 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.447ns
+
+ Physical Path Details:
+
+      Data path SLICE_17 to SLICE_17:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133   SLICE_17.CLK to    SLICE_17.Q0 SLICE_17 (from clk_c)
+ROUTE         6   e 0.199    SLICE_17.Q0 to    SLICE_17.B1 row_num_0
+CTOF_DEL    ---     0.101    SLICE_17.B1 to    SLICE_17.F1 SLICE_17
+ROUTE         1   e 0.001    SLICE_17.F1 to   SLICE_17.DI1 row_num_31_N_10_1 (to clk_c)
+                  --------
+                    0.434   (53.9% logic, 46.1% route), 2 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_c" 125.047000 MHz ;  |     0.000 ns|     0.447 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 1 clocks:
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 20
+   Covered under: FREQUENCY NET "clk_c" 125.047000 MHz ;
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 3609 paths, 1 nets, and 305 connections (77.41% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 2447 (setup), 0 (hold)
+Score: 6962076 (setup), 0 (hold)
+Cumulative negative slack: 6962076 (6962076+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

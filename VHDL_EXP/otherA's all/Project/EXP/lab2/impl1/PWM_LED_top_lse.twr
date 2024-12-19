@@ -1,0 +1,2477 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Sun Nov 26 15:53:17 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     PWM_LED_top
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets \instant2/clk300hz]
+            465 items scored, 447 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 6.093ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3JX    CK             \instant2/row_i3  (from \instant2/clk300hz +)
+   Destination:    FD1P3AX    SP             \instant2/key_code_i0_i0  (to \instant2/clk300hz +)
+
+   Delay:                  10.808ns  (26.9% logic, 73.1% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.808ns data_path \instant2/row_i3 to \instant2/key_code_i0_i0 violates
+      5.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 4.715ns) by 6.093ns
+
+ Path Details: \instant2/row_i3 to \instant2/key_code_i0_i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \instant2/row_i3 (from \instant2/clk300hz)
+Route         9   e 1.632                                  row_c_2
+LUT4        ---     0.493              A to Z              \instant2/i1_3_lut
+Route         3   e 1.258                                  n10645
+LUT4        ---     0.493              D to Z              i2_3_lut_rep_406_4_lut
+Route         5   e 1.405                                  n11843
+LUT4        ---     0.493              C to Z              \instant2/i1_4_lut
+Route         3   e 1.258                                  n32
+LUT4        ---     0.493              B to Z              \instant2/n11422_bdd_3_lut_4_lut
+Route         1   e 0.941                                  n11423
+LUT4        ---     0.493              B to Z              i9171_2_lut
+Route         5   e 1.405                                  clk300hz_enable_5
+                  --------
+                   10.808  (26.9% logic, 73.1% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 6.093ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3JX    CK             \instant2/row_i3  (from \instant2/clk300hz +)
+   Destination:    FD1P3AX    SP             \instant2/key_code_i0_i0  (to \instant2/clk300hz +)
+
+   Delay:                  10.808ns  (26.9% logic, 73.1% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.808ns data_path \instant2/row_i3 to \instant2/key_code_i0_i0 violates
+      5.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 4.715ns) by 6.093ns
+
+ Path Details: \instant2/row_i3 to \instant2/key_code_i0_i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \instant2/row_i3 (from \instant2/clk300hz)
+Route         9   e 1.632                                  row_c_2
+LUT4        ---     0.493              A to Z              \instant2/i1_3_lut
+Route         3   e 1.258                                  n10645
+LUT4        ---     0.493              D to Z              i2_3_lut_rep_406_4_lut
+Route         5   e 1.405                                  n11843
+LUT4        ---     0.493              C to Z              \instant2/i1_4_lut
+Route         3   e 1.258                                  n32
+LUT4        ---     0.493              A to Z              i9169_4_lut
+Route         1   e 0.941                                  n11060
+LUT4        ---     0.493              A to Z              i9171_2_lut
+Route         5   e 1.405                                  clk300hz_enable_5
+                  --------
+                   10.808  (26.9% logic, 73.1% route), 6 logic levels.
+
+
+Error:  The following path violates requirements by 6.093ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3JX    CK             \instant2/row_i3  (from \instant2/clk300hz +)
+   Destination:    FD1P3AX    SP             \instant2/key_code_i0_i4  (to \instant2/clk300hz +)
+
+   Delay:                  10.808ns  (26.9% logic, 73.1% route), 6 logic levels.
+
+ Constraint Details:
+
+     10.808ns data_path \instant2/row_i3 to \instant2/key_code_i0_i4 violates
+      5.000ns delay constraint less
+      0.285ns LCE_S requirement (totaling 4.715ns) by 6.093ns
+
+ Path Details: \instant2/row_i3 to \instant2/key_code_i0_i4
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \instant2/row_i3 (from \instant2/clk300hz)
+Route         9   e 1.632                                  row_c_2
+LUT4        ---     0.493              A to Z              \instant2/i1_3_lut
+Route         3   e 1.258                                  n10645
+LUT4        ---     0.493              D to Z              i2_3_lut_rep_406_4_lut
+Route         5   e 1.405                                  n11843
+LUT4        ---     0.493              C to Z              \instant2/i1_4_lut
+Route         3   e 1.258                                  n32
+LUT4        ---     0.493              A to Z              i9169_4_lut
+Route         1   e 0.941                                  n11060
+LUT4        ---     0.493              A to Z              i9171_2_lut
+Route         5   e 1.405                                  clk300hz_enable_5
+                  --------
+                   10.808  (26.9% logic, 73.1% route), 6 logic levels.
+
+Warning: 11.093 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_c]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 273.035ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \instant1/lumdivision_i5  (from clk_c +)
+   Destination:    FD1P3AX    D              \instant1/triangle_cnt_i0_i15  (to clk_c +)
+
+   Delay:                 277.875ns  (36.3% logic, 63.7% route), 277 logic levels.
+
+ Constraint Details:
+
+    277.875ns data_path \instant1/lumdivision_i5 to \instant1/triangle_cnt_i0_i15 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 273.035ns
+
+ Path Details: \instant1/lumdivision_i5 to \instant1/triangle_cnt_i0_i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \instant1/lumdivision_i5 (from clk_c)
+Route        93   e 2.525                                  lumdivision[6]
+LUT4        ---     0.493              A to Z              \instant1/i1_2_lut_rep_434
+Route         5   e 1.405                                  \instant1/n12197
+LUT4        ---     0.493              B to Z              \instant1/i1_3_lut_rep_396_4_lut
+Route         8   e 1.540                                  \instant1/n11833
+LUT4        ---     0.493              C to Z              \instant1/lumdivision[0]_bdd_4_lut
+Route         4   e 1.340                                  \instant1/n62_adj_319
+LUT4        ---     0.493              C to Z              \instant1/i1_4_lut_4_lut_rep_431_4_lut
+Route         9   e 1.574                                  \instant1/n12194
+LUT4        ---     0.493              D to Z              \instant1/div_63_i732_3_lut_rep_381_4_lut
+Route         3   e 1.258                                  \instant1/n11818
+LUT4        ---     0.493              A to Z              \instant1/i9213_3_lut_4_lut
+Route         1   e 0.020                                  \instant1/n11005
+MOFX0       ---     0.378             C0 to Z              \instant1/div_63_LessThan_762_i62
+Route         2   e 1.141                                  \instant1/n62_adj_327
+LUT4        ---     0.493              D to Z              \instant1/i1_4_lut_4_lut_adj_88
+Route        12   e 1.657                                  \instant1/n1258_adj_328
+LUT4        ---     0.493              C to Z              \instant1/div_63_i853_3_lut_4_lut
+Route         4   e 1.340                                  \instant1/n1406
+LUT4        ---     0.493              D to Z              \instant1/i9212_3_lut_4_lut
+Route         1   e 0.020                                  \instant1/n11009
+MOFX0       ---     0.378             C0 to Z              \instant1/div_63_LessThan_881_i60
+Route         2   e 1.141                                  \instant1/n60_adj_324
+LUT4        ---     0.493              D to Z              \instant1/i2135_3_lut_4_lut
+Route         9   e 1.574                                  \instant1/n64_adj_444
+LUT4        ---     0.493              A to Z              \instant1/i646_2_lut_rep_376
+Route         8   e 1.540                                  \instant1/n11813
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_998_i57_2_lut_rep_372_4_lut
+Route         1   e 0.941                                  \instant1/n11809
+LUT4        ---     0.493              B to Z              \instant1/i9215_4_lut
+Route         1   e 0.020                                  \instant1/n11001
+MOFX0       ---     0.378             C0 to Z              \instant1/i2137
+Route         2   e 1.141                                  \instant1/n62_adj_321
+LUT4        ---     0.493              D to Z              \instant1/i4307_2_lut_4_lut
+Route        11   e 1.632                                  \instant1/n64_adj_443
+LUT4        ---     0.493              A to Z              \instant1/i647_2_lut_rep_371
+Route         7   e 1.502                                  \instant1/n11808
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1113_i55_2_lut_rep_369_4_lut
+Route         1   e 0.941                                  \instant1/n11806
+LUT4        ---     0.493              B to Z              \instant1/i9182_4_lut
+Route         1   e 0.020                                  \instant1/n10864
+MOFX0       ---     0.378             C0 to Z              \instant1/i2139
+Route         2   e 1.141                                  \instant1/n60_adj_449
+LUT4        ---     0.493              A to Z              \instant1/i1_3_lut
+Route        13   e 1.803                                  \instant1/n64_adj_442
+LUT4        ---     0.493              A to Z              \instant1/i648_2_lut_rep_367
+Route        10   e 1.604                                  \instant1/n11804
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1226_i53_2_lut_rep_361_4_lut
+Route         1   e 0.941                                  \instant1/n11798
+LUT4        ---     0.493              B to Z              \instant1/i9185_4_lut
+Route         1   e 0.020                                  \instant1/n10857
+MOFX0       ---     0.378             C0 to Z              \instant1/i2143
+Route         2   e 1.141                                  \instant1/n58_adj_450
+LUT4        ---     0.493              C to Z              \instant1/i4191_2_lut_3_lut
+Route         5   e 1.405                                  \instant1/n62_adj_438
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1226_i64_3_lut_rep_360
+Route        18   e 1.822                                  \instant1/n11797
+LUT4        ---     0.493              C to Z              \instant1/div_63_i1310_3_lut
+Route         5   e 1.405                                  \instant1/n2085_adj_423
+LUT4        ---     0.493              B to Z              \instant1/i2146_3_lut_rep_353
+Route         1   e 0.941                                  \instant1/n11790
+LUT4        ---     0.493              A to Z              \instant1/i9190_4_lut
+Route         1   e 0.020                                  \instant1/n10850
+MOFX0       ---     0.378             C0 to Z              \instant1/i2147
+Route         1   e 0.941                                  \instant1/n56_adj_456
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_22
+Route         1   e 0.941                                  \instant1/n4_adj_457
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1337_i62_4_lut
+Route        18   e 1.822                                  \instant1/n62_adj_434
+LUT4        ---     0.493              D to Z              \instant1/i4315_2_lut_rep_351_4_lut
+Route         9   e 1.574                                  \instant1/n11788
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1446_i49_2_lut_rep_346_4_lut
+Route         1   e 0.941                                  \instant1/n11783
+LUT4        ---     0.493              B to Z              \instant1/i9192_4_lut
+Route         1   e 0.020                                  \instant1/n10843
+MOFX0       ---     0.378             C0 to Z              \instant1/i2151
+Route         1   e 0.941                                  \instant1/n54_adj_424
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_16
+Route         1   e 0.941                                  \instant1/n4_adj_425
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1446_i60_4_lut
+Route        20   e 1.828                                  \instant1/n60_adj_377
+LUT4        ---     0.493              C to Z              \instant1/i4178_2_lut_rep_344_3_lut
+Route         9   e 1.574                                  \instant1/n11781
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1553_i47_2_lut_rep_339_4_lut
+Route         1   e 0.941                                  \instant1/n11776
+LUT4        ---     0.493              B to Z              \instant1/i9194_4_lut
+Route         1   e 0.020                                  \instant1/n10836
+MOFX0       ---     0.378             C0 to Z              \instant1/i2157
+Route         1   e 0.941                                  \instant1/n52_adj_374
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_13
+Route         1   e 0.941                                  \instant1/n4_adj_375
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1553_i58_4_lut
+Route        22   e 1.833                                  \instant1/n58_adj_356
+LUT4        ---     0.493              D to Z              \instant1/i4174_2_lut_rep_337_4_lut
+Route        10   e 1.604                                  \instant1/n11774
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1658_i45_2_lut_rep_331_4_lut
+Route         1   e 0.941                                  \instant1/n11768
+LUT4        ---     0.493              B to Z              \instant1/i9196_4_lut
+Route         1   e 0.020                                  \instant1/n10829
+MOFX0       ---     0.378             C0 to Z              \instant1/i2165
+Route         1   e 0.941                                  \instant1/n50_adj_352
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_7
+Route         1   e 0.941                                  \instant1/n4_adj_353
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1658_i56_4_lut
+Route        24   e 1.838                                  \instant1/n56_adj_330
+LUT4        ---     0.493              A to Z              \instant1/i4170_2_lut_rep_330
+Route         9   e 1.574                                  \instant1/n11767
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1761_i43_2_lut_rep_325_4_lut
+Route         1   e 0.941                                  \instant1/n11762
+LUT4        ---     0.493              B to Z              \instant1/i9198_4_lut
+Route         1   e 0.020                                  \instant1/n10822
+MOFX0       ---     0.378             C0 to Z              \instant1/i2175
+Route         1   e 0.941                                  \instant1/n48_adj_329
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut
+Route         1   e 0.941                                  \instant1/n4
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1761_i54_4_lut
+Route        26   e 2.027                                  \instant1/n54
+LUT4        ---     0.493              D to Z              \instant1/i4166_2_lut_rep_323_4_lut
+Route         9   e 1.574                                  \instant1/n11760
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1862_i41_2_lut_rep_318_4_lut
+Route         1   e 0.941                                  \instant1/n11755
+LUT4        ---     0.493              B to Z              \instant1/i9200_4_lut
+Route         1   e 0.020                                  \instant1/n10815
+MOFX0       ---     0.378             C0 to Z              \instant1/i2187
+Route         1   e 0.941                                  \instant1/n46_adj_561
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_117
+Route         1   e 0.941                                  \instant1/n4_adj_499
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1862_i52_4_lut
+Route        28   e 2.032                                  \instant1/n52_adj_413
+LUT4        ---     0.493              D to Z              \instant1/i4160_2_lut_rep_316_4_lut
+Route         8   e 1.540                                  \instant1/n11753
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1961_i39_2_lut_rep_312_4_lut
+Route         1   e 0.941                                  \instant1/n11749
+LUT4        ---     0.493              B to Z              \instant1/i9207_4_lut
+Route         1   e 0.020                                  \instant1/n10808
+MOFX0       ---     0.378             C0 to Z              \instant1/i2201
+Route         1   e 0.941                                  \instant1/n44_adj_537
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_91
+Route         1   e 0.941                                  \instant1/n4_adj_497
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1961_i50_4_lut
+Route        30   e 2.036                                  \instant1/n50_adj_429
+LUT4        ---     0.493              C to Z              \instant1/i4156_2_lut_rep_309_3_lut
+Route         8   e 1.540                                  \instant1/n11746
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_2058_i37_2_lut_rep_305_4_lut
+Route         1   e 0.941                                  \instant1/n11742
+LUT4        ---     0.493              B to Z              \instant1/i9138_4_lut
+Route         1   e 0.020                                  \instant1/n10801
+MOFX0       ---     0.378             C0 to Z              \instant1/i2217
+Route         1   e 0.941                                  \instant1/n42_adj_498
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_73
+Route         1   e 0.941                                  \instant1/n4_adj_496
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_2058_i48_4_lut
+Route        32   e 2.039                                  \instant1/n48
+LUT4        ---     0.493              C to Z              \instant1/i4152_2_lut_rep_303_3_lut
+Route         8   e 1.540                                  \instant1/n11740
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_2153_i35_2_lut_rep_299_4_lut
+Route         1   e 0.941                                  \instant1/n11736
+LUT4        ---     0.493              B to Z              \instant1/i9167_4_lut
+Route         1   e 0.020                                  \instant1/n10794
+MOFX0       ---     0.378             C0 to Z              \instant1/i2235
+Route         1   e 0.941                                  \instant1/n40_adj_371
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_12
+Route         1   e 0.941                                  \instant1/n4_adj_372
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_2153_i46_4_lut
+Route        22   e 1.833                                  \instant1/n46_adj_451
+LUT4        ---     0.493              A to Z              \instant1/div_63_i2229_3_lut_4_lut
+Route         3   e 1.258                                  \instant1/n3445
+LUT4        ---     0.493              A to Z              \instant1/i2257_3_lut_rep_295
+Route         1   e 0.941                                  \instant1/n11732
+LUT4        ---     0.493              A to Z              \instant1/i9180_4_lut
+Route         1   e 0.020                                  \instant1/n10787
+MOFX0       ---     0.378             C0 to Z              \instant1/i2258
+Route         1   e 0.941                                  \instant1/n38_adj_547
+LUT4        ---     0.493              B to Z              \instant1/i2_3_lut_adj_94
+Route         2   e 1.141                                  \instant1/n42_adj_428
+LUT4        ---     0.493              A to Z              \instant1/div_63_LessThan_2246_i44_3_lut
+Route        21   e 1.831                                  \instant1/n44_adj_421
+A1_TO_FCO   ---     0.827           B[2] to COUT           \instant1/add_569_3
+Route         1   e 0.020                                  \instant1/n8909
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_569_5
+Route         1   e 0.020                                  \instant1/n8910
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_569_7
+Route         3   e 1.603                                  \instant1/n3580
+LUT4        ---     0.493              B to Z              \instant1/i2282_3_lut_rep_291
+Route         1   e 0.941                                  \instant1/n11728
+LUT4        ---     0.493              A to Z              \instant1/i9202_4_lut
+Route         1   e 0.020                                  \instant1/n10780
+MOFX0       ---     0.378             C0 to Z              \instant1/i2283
+Route         1   e 0.941                                  \instant1/n36_adj_489
+LUT4        ---     0.493              B to Z              \instant1/i2_3_lut_adj_61
+Route         2   e 1.141                                  \instant1/n40_adj_419
+LUT4        ---     0.493              A to Z              \instant1/div_63_LessThan_2337_i42_3_lut
+Route        22   e 1.833                                  \instant1/n42_adj_418
+A1_TO_FCO   ---     0.827           B[2] to COUT           \instant1/add_570_3
+Route         1   e 0.020                                  \instant1/n8923
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_570_5
+Route         1   e 0.020                                  \instant1/n8924
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_570_7
+Route         3   e 1.603                                  \instant1/n3713
+LUT4        ---     0.493              B to Z              \instant1/i2309_3_lut_rep_289
+Route         1   e 0.941                                  \instant1/n11726
+LUT4        ---     0.493              A to Z              \instant1/i9205_4_lut
+Route         1   e 0.020                                  \instant1/n10773
+MOFX0       ---     0.378             C0 to Z              \instant1/i2310
+Route         1   e 0.941                                  \instant1/n34_adj_486
+LUT4        ---     0.493              B to Z              \instant1/i2_3_lut_adj_55
+Route         2   e 1.141                                  \instant1/n38_adj_412
+LUT4        ---     0.493              A to Z              \instant1/div_63_LessThan_2426_i40_3_lut
+Route        23   e 1.836                                  \instant1/n40_adj_411
+A1_TO_FCO   ---     0.827           B[2] to COUT           \instant1/add_571_3
+Route         1   e 0.020                                  \instant1/n8937
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_5
+Route         1   e 0.020                                  \instant1/n8938
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_7
+Route         1   e 0.020                                  \instant1/n8939
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_9
+Route         1   e 0.020                                  \instant1/n8940
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_11
+Route         1   e 0.020                                  \instant1/n8941
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_13
+Route         1   e 0.020                                  \instant1/n8942
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_15
+Route         1   e 0.020                                  \instant1/n8943
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_17
+Route         1   e 0.020                                  \instant1/n8944
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_19
+Route         1   e 0.020                                  \instant1/n8945
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_21
+Route         1   e 0.020                                  \instant1/n8946
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_571_23
+Route         2   e 1.486                                  \instant1/n3828
+LUT4        ---     0.493              A to Z              \instant1/i5_4_lut_adj_46
+Route         1   e 0.941                                  \instant1/n13_adj_478
+LUT4        ---     0.493              A to Z              \instant1/i7_4_lut_adj_45
+Route        17   e 1.819                                  \instant1/n24_adj_398
+LUT4        ---     0.493              A to Z              \instant1/i1_2_lut_adj_51
+Route         9   e 1.574                                  \instant1/n4320
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_572_1
+Route         1   e 0.020                                  \instant1/n8951
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_3
+Route         1   e 0.020                                  \instant1/n8952
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_5
+Route         1   e 0.020                                  \instant1/n8953
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_7
+Route         1   e 0.020                                  \instant1/n8954
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_9
+Route         1   e 0.020                                  \instant1/n8955
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_11
+Route         1   e 0.020                                  \instant1/n8956
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_13
+Route         1   e 0.020                                  \instant1/n8957
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_15
+Route         1   e 0.020                                  \instant1/n8958
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_17
+Route         1   e 0.020                                  \instant1/n8959
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_19
+Route         1   e 0.020                                  \instant1/n8960
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_21
+Route         1   e 0.020                                  \instant1/n8961
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_23
+Route         1   e 0.020                                  \instant1/n8962
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_572_25
+Route         2   e 1.486                                  \instant1/n3953
+LUT4        ---     0.493              A to Z              \instant1/i3_2_lut_adj_41
+Route         1   e 0.941                                  \instant1/n9_adj_475
+LUT4        ---     0.493              A to Z              \instant1/i5_4_lut_adj_40
+Route        18   e 1.822                                  \instant1/n25_adj_395
+LUT4        ---     0.493              B to Z              \instant1/i1_2_lut_adj_44
+Route         9   e 1.574                                  \instant1/n4318
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_573_1
+Route         1   e 0.020                                  \instant1/n8966
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_3
+Route         1   e 0.020                                  \instant1/n8967
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_5
+Route         1   e 0.020                                  \instant1/n8968
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_7
+Route         1   e 0.020                                  \instant1/n8969
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_9
+Route         1   e 0.020                                  \instant1/n8970
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_11
+Route         1   e 0.020                                  \instant1/n8971
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_13
+Route         1   e 0.020                                  \instant1/n8972
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_15
+Route         1   e 0.020                                  \instant1/n8973
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_17
+Route         1   e 0.020                                  \instant1/n8974
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_19
+Route         1   e 0.020                                  \instant1/n8975
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_21
+Route         1   e 0.020                                  \instant1/n8976
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_23
+Route         1   e 0.020                                  \instant1/n8977
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_573_25
+Route         2   e 1.486                                  \instant1/n4076
+LUT4        ---     0.493              B to Z              \instant1/i3_2_lut_adj_34
+Route         1   e 0.941                                  \instant1/n10_adj_471
+LUT4        ---     0.493              C to Z              \instant1/i6_4_lut_adj_33
+Route        19   e 1.825                                  \instant1/n27_adj_391
+LUT4        ---     0.493              A to Z              \instant1/i1_2_lut_adj_36
+Route         9   e 1.574                                  \instant1/n4317
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_574_1
+Route         1   e 0.020                                  \instant1/n8982
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_3
+Route         1   e 0.020                                  \instant1/n8983
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_5
+Route         1   e 0.020                                  \instant1/n8984
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_7
+Route         1   e 0.020                                  \instant1/n8985
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_9
+Route         1   e 0.020                                  \instant1/n8986
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_11
+Route         1   e 0.020                                  \instant1/n8987
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_13
+Route         1   e 0.020                                  \instant1/n8988
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_15
+Route         1   e 0.020                                  \instant1/n8989
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_17
+Route         1   e 0.020                                  \instant1/n8990
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_19
+Route         1   e 0.020                                  \instant1/n8991
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_21
+Route         1   e 0.020                                  \instant1/n8992
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_23
+Route         1   e 0.020                                  \instant1/n8993
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_574_25
+Route         2   e 1.486                                  \instant1/n4197
+LUT4        ---     0.493              B to Z              \instant1/i2_2_lut_adj_28
+Route         1   e 0.941                                  \instant1/n10_adj_465
+LUT4        ---     0.493              C to Z              \instant1/i7_4_lut_adj_27
+Route        20   e 1.828                                  \instant1/n29
+LUT4        ---     0.493              B to Z              \instant1/i1_2_lut_adj_30
+Route         9   e 1.574                                  \instant1/n4316
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_575_1
+Route         1   e 0.020                                  \instant1/n8998
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_3
+Route         1   e 0.020                                  \instant1/n8999
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_5
+Route         1   e 0.020                                  \instant1/n9000
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_7
+Route         1   e 0.020                                  \instant1/n9001
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_9
+Route         1   e 0.020                                  \instant1/n9002
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_11
+Route         1   e 0.020                                  \instant1/n9003
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_13
+Route         1   e 0.020                                  \instant1/n9004
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_15
+Route         1   e 0.020                                  \instant1/n9005
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_17
+Route         1   e 0.020                                  \instant1/n9006
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_19
+Route         1   e 0.020                                  \instant1/n9007
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_21
+Route         1   e 0.020                                  \instant1/n9008
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_23
+Route         1   e 0.020                                  \instant1/n9009
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_25
+Route         1   e 0.020                                  \instant1/n9010
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_575_27
+Route         2   e 1.486                                  \instant1/n4314_adj_316
+LUT4        ---     0.493              C to Z              \instant1/i5_4_lut_adj_123
+Route         1   e 0.941                                  \instant1/n13_adj_569
+LUT4        ---     0.493              A to Z              \instant1/i7_4_lut_adj_118
+Route        21   e 1.831                                  \instant1/n31
+LUT4        ---     0.493              B to Z              \instant1/i1_2_lut_adj_23
+Route         9   e 1.574                                  \instant1/n4315
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_576_1
+Route         1   e 0.020                                  \instant1/n9015
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_3
+Route         1   e 0.020                                  \instant1/n9016
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_5
+Route         1   e 0.020                                  \instant1/n9017
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_7
+Route         1   e 0.020                                  \instant1/n9018
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_9
+Route         1   e 0.020                                  \instant1/n9019
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_11
+Route         1   e 0.020                                  \instant1/n9020
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_13
+Route         1   e 0.020                                  \instant1/n9021
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_15
+Route         1   e 0.020                                  \instant1/n9022
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_17
+Route         1   e 0.020                                  \instant1/n9023
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_19
+Route         1   e 0.020                                  \instant1/n9024
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_21
+Route         1   e 0.020                                  \instant1/n9025
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_23
+Route         1   e 0.020                                  \instant1/n9026
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_25
+Route         1   e 0.020                                  \instant1/n9027
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_27
+Route         1   e 0.020                                  \instant1/n9028
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_576_29
+Route         2   e 1.486                                  \instant1/n4427
+LUT4        ---     0.493              A to Z              \instant1/i5_2_lut
+Route         1   e 0.941                                  \instant1/n15_adj_552
+LUT4        ---     0.493              A to Z              \instant1/i8_4_lut_adj_98
+Route         1   e 0.941                                  \instant1/n18_adj_550
+LUT4        ---     0.493              B to Z              \instant1/i9_4_lut_adj_97
+Route        22   e 1.833                                  \instant1/n34_adj_531
+LUT4        ---     0.493              A to Z              \instant1/i1_2_lut_adj_96
+Route         9   e 1.574                                  \instant1/n4314
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_577_1
+Route         1   e 0.020                                  \instant1/n9032
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_3
+Route         1   e 0.020                                  \instant1/n9033
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_5
+Route         1   e 0.020                                  \instant1/n9034
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_7
+Route         1   e 0.020                                  \instant1/n9035
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_9
+Route         1   e 0.020                                  \instant1/n9036
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_11
+Route         1   e 0.020                                  \instant1/n9037
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_13
+Route         1   e 0.020                                  \instant1/n9038
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_15
+Route         1   e 0.020                                  \instant1/n9039
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_17
+Route         1   e 0.020                                  \instant1/n9040
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_19
+Route         1   e 0.020                                  \instant1/n9041
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_21
+Route         1   e 0.020                                  \instant1/n9042
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_23
+Route         1   e 0.020                                  \instant1/n9043
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_577_25
+Route         2   e 1.486                                  \instant1/n4542
+LUT4        ---     0.493              A to Z              \instant1/i6_3_lut
+Route         1   e 0.941                                  \instant1/n17_adj_562
+LUT4        ---     0.493              A to Z              \instant1/i9_4_lut_adj_106
+Route         1   e 0.941                                  \instant1/n20_adj_559
+LUT4        ---     0.493              B to Z              \instant1/i10_4_lut_adj_105
+Route        23   e 1.836                                  \instant1/n36_adj_523
+LUT4        ---     0.493              A to Z              \instant1/i1_2_lut_adj_95
+Route         9   e 1.574                                  \instant1/n4313
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_578_1
+Route         1   e 0.020                                  \instant1/n9050
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_3
+Route         1   e 0.020                                  \instant1/n9051
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_5
+Route         1   e 0.020                                  \instant1/n9052
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_7
+Route         1   e 0.020                                  \instant1/n9053
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_9
+Route         1   e 0.020                                  \instant1/n9054
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_11
+Route         1   e 0.020                                  \instant1/n9055
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_13
+Route         1   e 0.020                                  \instant1/n9056
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_15
+Route         1   e 0.020                                  \instant1/n9057
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_17
+Route         1   e 0.020                                  \instant1/n9058
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_19
+Route         1   e 0.020                                  \instant1/n9059
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_21
+Route         1   e 0.020                                  \instant1/n9060
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_23
+Route         1   e 0.020                                  \instant1/n9061
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_25
+Route         1   e 0.020                                  \instant1/n9062
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_27
+Route         1   e 0.020                                  \instant1/n9063
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_29
+Route         1   e 0.020                                  \instant1/n9064
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_578_31
+Route         4   e 1.686                                  \instant1/n4646
+LUT4        ---     0.493              B to Z              \instant1/i8_4_lut
+Route         1   e 0.941                                  \instant1/n20_adj_431
+LUT4        ---     0.493              C to Z              \instant1/i11_4_lut_adj_18
+Route         4   e 1.340                                  \instant1/n38_adj_357
+LUT4        ---     0.493              A to Z              \instant1/i1_2_lut_rep_272
+Route        53   e 2.259                                  \instant1/n11709
+LUT4        ---     0.493              B to Z              \instant1/div_63_i3131_3_lut_4_lut
+Route         3   e 1.258                                  \instant1/n4776
+LUT4        ---     0.493              A to Z              \instant1/i2636_3_lut_rep_265
+Route         1   e 0.941                                  \instant1/n11702
+LUT4        ---     0.493              A to Z              \instant1/i9160_4_lut
+Route         1   e 0.020                                  \instant1/n10881
+MOFX0       ---     0.378             C0 to Z              \instant1/i2637
+Route         1   e 0.941                                  \instant1/n16_adj_364
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_10
+Route         1   e 0.941                                  \instant1/n4_adj_365
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_3137_i22_4_lut
+Route        15   e 1.811                                  \instant1/n22
+LUT4        ---     0.493              A to Z              \instant1/i4221_2_lut_rep_263
+Route        11   e 1.632                                  \instant1/n11700
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_3206_i9_4_lut
+Route         2   e 1.141                                  \instant1/n9
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_3206_i8_3_lut
+Route         1   e 0.941                                  \instant1/n8_adj_322
+LUT4        ---     0.493              A to Z              \instant1/div_63_LessThan_3206_i10_3_lut
+Route         1   e 0.020                                  \instant1/n10_adj_346
+MUXL5       ---     0.233           ALUT to Z              \instant1/i2681
+Route         1   e 0.941                                  \instant1/n14_adj_349
+LUT4        ---     0.493              A to Z              \instant1/i1_4_lut
+Route         1   e 0.941                                  \instant1/n4_adj_347
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_3206_i20_4_lut
+Route         1   e 0.941                                  \instant1/n20_adj_348
+A1_TO_FCO   ---     0.827           A[2] to COUT           \instant1/sub_290_add_2_1
+Route         1   e 0.020                                  \instant1/n8783
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_3
+Route         1   e 0.020                                  \instant1/n8784
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_5
+Route         1   e 0.020                                  \instant1/n8785
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_7
+Route         1   e 0.020                                  \instant1/n8786
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_9
+Route         1   e 0.020                                  \instant1/n8787
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_11
+Route         1   e 0.020                                  \instant1/n8788
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_13
+Route         1   e 0.020                                  \instant1/n8789
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_15
+Route         1   e 0.020                                  \instant1/n8790
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_17
+Route         1   e 0.020                                  \instant1/n8791
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_19
+Route         1   e 0.020                                  \instant1/n8792
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_21
+Route         1   e 0.020                                  \instant1/n8793
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_23
+Route         1   e 0.020                                  \instant1/n8794
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_25
+Route         1   e 0.020                                  \instant1/n8795
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_27
+Route         1   e 0.020                                  \instant1/n8796
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_29
+Route         1   e 0.020                                  \instant1/n8797
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_31
+Route         1   e 0.020                                  \instant1/n8798
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/sub_290_add_2_33
+Route        17   e 2.164                                  \instant1/count_flag_N_159
+A1_TO_FCO   ---     0.827           A[2] to COUT           \instant1/add_197_3
+Route         1   e 0.020                                  \instant1/n8776
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_197_5
+Route         1   e 0.020                                  \instant1/n8777
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_197_7
+Route         1   e 0.020                                  \instant1/n8778
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_197_9
+Route         1   e 0.020                                  \instant1/n8779
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_197_11
+Route         1   e 0.020                                  \instant1/n8780
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_197_13
+Route         1   e 0.020                                  \instant1/n8781
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_197_15
+Route         1   e 0.020                                  \instant1/n8782
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_197_17
+Route         1   e 0.941                                  \instant1/n281
+                  --------
+                  277.875  (36.3% logic, 63.7% route), 277 logic levels.
+
+
+Error:  The following path violates requirements by 273.035ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \instant1/lumdivision_i5  (from clk_c +)
+   Destination:    FD1P3AX    D              \instant1/triangle_cnt_i0_i15  (to clk_c +)
+
+   Delay:                 277.875ns  (36.3% logic, 63.7% route), 277 logic levels.
+
+ Constraint Details:
+
+    277.875ns data_path \instant1/lumdivision_i5 to \instant1/triangle_cnt_i0_i15 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 273.035ns
+
+ Path Details: \instant1/lumdivision_i5 to \instant1/triangle_cnt_i0_i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \instant1/lumdivision_i5 (from clk_c)
+Route        93   e 2.525                                  lumdivision[6]
+LUT4        ---     0.493              A to Z              \instant1/i1_2_lut_rep_434
+Route         5   e 1.405                                  \instant1/n12197
+LUT4        ---     0.493              B to Z              \instant1/i1_3_lut_rep_396_4_lut
+Route         8   e 1.540                                  \instant1/n11833
+LUT4        ---     0.493              C to Z              \instant1/lumdivision[0]_bdd_4_lut
+Route         4   e 1.340                                  \instant1/n62_adj_319
+LUT4        ---     0.493              C to Z              \instant1/i1_4_lut_4_lut_rep_431_4_lut
+Route         9   e 1.574                                  \instant1/n12194
+LUT4        ---     0.493              D to Z              \instant1/div_63_i732_3_lut_rep_381_4_lut
+Route         3   e 1.258                                  \instant1/n11818
+LUT4        ---     0.493              A to Z              \instant1/i9213_3_lut_4_lut
+Route         1   e 0.020                                  \instant1/n11005
+MOFX0       ---     0.378             C0 to Z              \instant1/div_63_LessThan_762_i62
+Route         2   e 1.141                                  \instant1/n62_adj_327
+LUT4        ---     0.493              D to Z              \instant1/i1_4_lut_4_lut_adj_88
+Route        12   e 1.657                                  \instant1/n1258_adj_328
+LUT4        ---     0.493              C to Z              \instant1/div_63_i852_3_lut_rep_378_4_lut
+Route         4   e 1.340                                  \instant1/n11815
+LUT4        ---     0.493              A to Z              \instant1/i9212_3_lut_4_lut
+Route         1   e 0.020                                  \instant1/n11009
+MOFX0       ---     0.378             C0 to Z              \instant1/div_63_LessThan_881_i60
+Route         2   e 1.141                                  \instant1/n60_adj_324
+LUT4        ---     0.493              D to Z              \instant1/i2135_3_lut_4_lut
+Route         9   e 1.574                                  \instant1/n64_adj_444
+LUT4        ---     0.493              A to Z              \instant1/i646_2_lut_rep_376
+Route         8   e 1.540                                  \instant1/n11813
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_998_i57_2_lut_rep_372_4_lut
+Route         1   e 0.941                                  \instant1/n11809
+LUT4        ---     0.493              B to Z              \instant1/i9215_4_lut
+Route         1   e 0.020                                  \instant1/n11001
+MOFX0       ---     0.378             C0 to Z              \instant1/i2137
+Route         2   e 1.141                                  \instant1/n62_adj_321
+LUT4        ---     0.493              D to Z              \instant1/i4307_2_lut_4_lut
+Route        11   e 1.632                                  \instant1/n64_adj_443
+LUT4        ---     0.493              A to Z              \instant1/i647_2_lut_rep_371
+Route         7   e 1.502                                  \instant1/n11808
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1113_i55_2_lut_rep_369_4_lut
+Route         1   e 0.941                                  \instant1/n11806
+LUT4        ---     0.493              B to Z              \instant1/i9182_4_lut
+Route         1   e 0.020                                  \instant1/n10864
+MOFX0       ---     0.378             C0 to Z              \instant1/i2139
+Route         2   e 1.141                                  \instant1/n60_adj_449
+LUT4        ---     0.493              A to Z              \instant1/i1_3_lut
+Route        13   e 1.803                                  \instant1/n64_adj_442
+LUT4        ---     0.493              A to Z              \instant1/i648_2_lut_rep_367
+Route        10   e 1.604                                  \instant1/n11804
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1226_i53_2_lut_rep_361_4_lut
+Route         1   e 0.941                                  \instant1/n11798
+LUT4        ---     0.493              B to Z              \instant1/i9185_4_lut
+Route         1   e 0.020                                  \instant1/n10857
+MOFX0       ---     0.378             C0 to Z              \instant1/i2143
+Route         2   e 1.141                                  \instant1/n58_adj_450
+LUT4        ---     0.493              C to Z              \instant1/i4191_2_lut_3_lut
+Route         5   e 1.405                                  \instant1/n62_adj_438
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1226_i64_3_lut_rep_360
+Route        18   e 1.822                                  \instant1/n11797
+LUT4        ---     0.493              C to Z              \instant1/div_63_i1310_3_lut
+Route         5   e 1.405                                  \instant1/n2085_adj_423
+LUT4        ---     0.493              B to Z              \instant1/i2146_3_lut_rep_353
+Route         1   e 0.941                                  \instant1/n11790
+LUT4        ---     0.493              A to Z              \instant1/i9190_4_lut
+Route         1   e 0.020                                  \instant1/n10850
+MOFX0       ---     0.378             C0 to Z              \instant1/i2147
+Route         1   e 0.941                                  \instant1/n56_adj_456
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_22
+Route         1   e 0.941                                  \instant1/n4_adj_457
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1337_i62_4_lut
+Route        18   e 1.822                                  \instant1/n62_adj_434
+LUT4        ---     0.493              D to Z              \instant1/i4315_2_lut_rep_351_4_lut
+Route         9   e 1.574                                  \instant1/n11788
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1446_i49_2_lut_rep_346_4_lut
+Route         1   e 0.941                                  \instant1/n11783
+LUT4        ---     0.493              B to Z              \instant1/i9192_4_lut
+Route         1   e 0.020                                  \instant1/n10843
+MOFX0       ---     0.378             C0 to Z              \instant1/i2151
+Route         1   e 0.941                                  \instant1/n54_adj_424
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_16
+Route         1   e 0.941                                  \instant1/n4_adj_425
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1446_i60_4_lut
+Route        20   e 1.828                                  \instant1/n60_adj_377
+LUT4        ---     0.493              C to Z              \instant1/i4178_2_lut_rep_344_3_lut
+Route         9   e 1.574                                  \instant1/n11781
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1553_i47_2_lut_rep_339_4_lut
+Route         1   e 0.941                                  \instant1/n11776
+LUT4        ---     0.493              B to Z              \instant1/i9194_4_lut
+Route         1   e 0.020                                  \instant1/n10836
+MOFX0       ---     0.378             C0 to Z              \instant1/i2157
+Route         1   e 0.941                                  \instant1/n52_adj_374
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_13
+Route         1   e 0.941                                  \instant1/n4_adj_375
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1553_i58_4_lut
+Route        22   e 1.833                                  \instant1/n58_adj_356
+LUT4        ---     0.493              D to Z              \instant1/i4174_2_lut_rep_337_4_lut
+Route        10   e 1.604                                  \instant1/n11774
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1658_i45_2_lut_rep_331_4_lut
+Route         1   e 0.941                                  \instant1/n11768
+LUT4        ---     0.493              B to Z              \instant1/i9196_4_lut
+Route         1   e 0.020                                  \instant1/n10829
+MOFX0       ---     0.378             C0 to Z              \instant1/i2165
+Route         1   e 0.941                                  \instant1/n50_adj_352
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_7
+Route         1   e 0.941                                  \instant1/n4_adj_353
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1658_i56_4_lut
+Route        24   e 1.838                                  \instant1/n56_adj_330
+LUT4        ---     0.493              A to Z              \instant1/i4170_2_lut_rep_330
+Route         9   e 1.574                                  \instant1/n11767
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1761_i43_2_lut_rep_325_4_lut
+Route         1   e 0.941                                  \instant1/n11762
+LUT4        ---     0.493              B to Z              \instant1/i9198_4_lut
+Route         1   e 0.020                                  \instant1/n10822
+MOFX0       ---     0.378             C0 to Z              \instant1/i2175
+Route         1   e 0.941                                  \instant1/n48_adj_329
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut
+Route         1   e 0.941                                  \instant1/n4
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1761_i54_4_lut
+Route        26   e 2.027                                  \instant1/n54
+LUT4        ---     0.493              D to Z              \instant1/i4166_2_lut_rep_323_4_lut
+Route         9   e 1.574                                  \instant1/n11760
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1862_i41_2_lut_rep_318_4_lut
+Route         1   e 0.941                                  \instant1/n11755
+LUT4        ---     0.493              B to Z              \instant1/i9200_4_lut
+Route         1   e 0.020                                  \instant1/n10815
+MOFX0       ---     0.378             C0 to Z              \instant1/i2187
+Route         1   e 0.941                                  \instant1/n46_adj_561
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_117
+Route         1   e 0.941                                  \instant1/n4_adj_499
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1862_i52_4_lut
+Route        28   e 2.032                                  \instant1/n52_adj_413
+LUT4        ---     0.493              D to Z              \instant1/i4160_2_lut_rep_316_4_lut
+Route         8   e 1.540                                  \instant1/n11753
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1961_i39_2_lut_rep_312_4_lut
+Route         1   e 0.941                                  \instant1/n11749
+LUT4        ---     0.493              B to Z              \instant1/i9207_4_lut
+Route         1   e 0.020                                  \instant1/n10808
+MOFX0       ---     0.378             C0 to Z              \instant1/i2201
+Route         1   e 0.941                                  \instant1/n44_adj_537
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_91
+Route         1   e 0.941                                  \instant1/n4_adj_497
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1961_i50_4_lut
+Route        30   e 2.036                                  \instant1/n50_adj_429
+LUT4        ---     0.493              C to Z              \instant1/i4156_2_lut_rep_309_3_lut
+Route         8   e 1.540                                  \instant1/n11746
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_2058_i37_2_lut_rep_305_4_lut
+Route         1   e 0.941                                  \instant1/n11742
+LUT4        ---     0.493              B to Z              \instant1/i9138_4_lut
+Route         1   e 0.020                                  \instant1/n10801
+MOFX0       ---     0.378             C0 to Z              \instant1/i2217
+Route         1   e 0.941                                  \instant1/n42_adj_498
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_73
+Route         1   e 0.941                                  \instant1/n4_adj_496
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_2058_i48_4_lut
+Route        32   e 2.039                                  \instant1/n48
+LUT4        ---     0.493              C to Z              \instant1/i4152_2_lut_rep_303_3_lut
+Route         8   e 1.540                                  \instant1/n11740
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_2153_i35_2_lut_rep_299_4_lut
+Route         1   e 0.941                                  \instant1/n11736
+LUT4        ---     0.493              B to Z              \instant1/i9167_4_lut
+Route         1   e 0.020                                  \instant1/n10794
+MOFX0       ---     0.378             C0 to Z              \instant1/i2235
+Route         1   e 0.941                                  \instant1/n40_adj_371
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_12
+Route         1   e 0.941                                  \instant1/n4_adj_372
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_2153_i46_4_lut
+Route        22   e 1.833                                  \instant1/n46_adj_451
+LUT4        ---     0.493              A to Z              \instant1/div_63_i2228_3_lut_4_lut
+Route         3   e 1.258                                  \instant1/n3444
+LUT4        ---     0.493              B to Z              \instant1/i2257_3_lut_rep_295
+Route         1   e 0.941                                  \instant1/n11732
+LUT4        ---     0.493              A to Z              \instant1/i9180_4_lut
+Route         1   e 0.020                                  \instant1/n10787
+MOFX0       ---     0.378             C0 to Z              \instant1/i2258
+Route         1   e 0.941                                  \instant1/n38_adj_547
+LUT4        ---     0.493              B to Z              \instant1/i2_3_lut_adj_94
+Route         2   e 1.141                                  \instant1/n42_adj_428
+LUT4        ---     0.493              A to Z              \instant1/div_63_LessThan_2246_i44_3_lut
+Route        21   e 1.831                                  \instant1/n44_adj_421
+A1_TO_FCO   ---     0.827           B[2] to COUT           \instant1/add_569_3
+Route         1   e 0.020                                  \instant1/n8909
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_569_5
+Route         1   e 0.020                                  \instant1/n8910
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_569_7
+Route         3   e 1.603                                  \instant1/n3580
+LUT4        ---     0.493              B to Z              \instant1/i2282_3_lut_rep_291
+Route         1   e 0.941                                  \instant1/n11728
+LUT4        ---     0.493              A to Z              \instant1/i9202_4_lut
+Route         1   e 0.020                                  \instant1/n10780
+MOFX0       ---     0.378             C0 to Z              \instant1/i2283
+Route         1   e 0.941                                  \instant1/n36_adj_489
+LUT4        ---     0.493              B to Z              \instant1/i2_3_lut_adj_61
+Route         2   e 1.141                                  \instant1/n40_adj_419
+LUT4        ---     0.493              A to Z              \instant1/div_63_LessThan_2337_i42_3_lut
+Route        22   e 1.833                                  \instant1/n42_adj_418
+A1_TO_FCO   ---     0.827           B[2] to COUT           \instant1/add_570_3
+Route         1   e 0.020                                  \instant1/n8923
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_570_5
+Route         1   e 0.020                                  \instant1/n8924
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_570_7
+Route         3   e 1.603                                  \instant1/n3713
+LUT4        ---     0.493              B to Z              \instant1/i2309_3_lut_rep_289
+Route         1   e 0.941                                  \instant1/n11726
+LUT4        ---     0.493              A to Z              \instant1/i9205_4_lut
+Route         1   e 0.020                                  \instant1/n10773
+MOFX0       ---     0.378             C0 to Z              \instant1/i2310
+Route         1   e 0.941                                  \instant1/n34_adj_486
+LUT4        ---     0.493              B to Z              \instant1/i2_3_lut_adj_55
+Route         2   e 1.141                                  \instant1/n38_adj_412
+LUT4        ---     0.493              A to Z              \instant1/div_63_LessThan_2426_i40_3_lut
+Route        23   e 1.836                                  \instant1/n40_adj_411
+A1_TO_FCO   ---     0.827           B[2] to COUT           \instant1/add_571_3
+Route         1   e 0.020                                  \instant1/n8937
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_5
+Route         1   e 0.020                                  \instant1/n8938
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_7
+Route         1   e 0.020                                  \instant1/n8939
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_9
+Route         1   e 0.020                                  \instant1/n8940
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_11
+Route         1   e 0.020                                  \instant1/n8941
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_13
+Route         1   e 0.020                                  \instant1/n8942
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_15
+Route         1   e 0.020                                  \instant1/n8943
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_17
+Route         1   e 0.020                                  \instant1/n8944
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_19
+Route         1   e 0.020                                  \instant1/n8945
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_21
+Route         1   e 0.020                                  \instant1/n8946
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_571_23
+Route         2   e 1.486                                  \instant1/n3828
+LUT4        ---     0.493              A to Z              \instant1/i5_4_lut_adj_46
+Route         1   e 0.941                                  \instant1/n13_adj_478
+LUT4        ---     0.493              A to Z              \instant1/i7_4_lut_adj_45
+Route        17   e 1.819                                  \instant1/n24_adj_398
+LUT4        ---     0.493              A to Z              \instant1/i1_2_lut_adj_51
+Route         9   e 1.574                                  \instant1/n4320
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_572_1
+Route         1   e 0.020                                  \instant1/n8951
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_3
+Route         1   e 0.020                                  \instant1/n8952
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_5
+Route         1   e 0.020                                  \instant1/n8953
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_7
+Route         1   e 0.020                                  \instant1/n8954
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_9
+Route         1   e 0.020                                  \instant1/n8955
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_11
+Route         1   e 0.020                                  \instant1/n8956
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_13
+Route         1   e 0.020                                  \instant1/n8957
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_15
+Route         1   e 0.020                                  \instant1/n8958
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_17
+Route         1   e 0.020                                  \instant1/n8959
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_19
+Route         1   e 0.020                                  \instant1/n8960
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_21
+Route         1   e 0.020                                  \instant1/n8961
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_23
+Route         1   e 0.020                                  \instant1/n8962
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_572_25
+Route         2   e 1.486                                  \instant1/n3953
+LUT4        ---     0.493              A to Z              \instant1/i3_2_lut_adj_41
+Route         1   e 0.941                                  \instant1/n9_adj_475
+LUT4        ---     0.493              A to Z              \instant1/i5_4_lut_adj_40
+Route        18   e 1.822                                  \instant1/n25_adj_395
+LUT4        ---     0.493              B to Z              \instant1/i1_2_lut_adj_44
+Route         9   e 1.574                                  \instant1/n4318
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_573_1
+Route         1   e 0.020                                  \instant1/n8966
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_3
+Route         1   e 0.020                                  \instant1/n8967
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_5
+Route         1   e 0.020                                  \instant1/n8968
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_7
+Route         1   e 0.020                                  \instant1/n8969
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_9
+Route         1   e 0.020                                  \instant1/n8970
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_11
+Route         1   e 0.020                                  \instant1/n8971
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_13
+Route         1   e 0.020                                  \instant1/n8972
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_15
+Route         1   e 0.020                                  \instant1/n8973
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_17
+Route         1   e 0.020                                  \instant1/n8974
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_19
+Route         1   e 0.020                                  \instant1/n8975
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_21
+Route         1   e 0.020                                  \instant1/n8976
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_23
+Route         1   e 0.020                                  \instant1/n8977
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_573_25
+Route         2   e 1.486                                  \instant1/n4076
+LUT4        ---     0.493              B to Z              \instant1/i3_2_lut_adj_34
+Route         1   e 0.941                                  \instant1/n10_adj_471
+LUT4        ---     0.493              C to Z              \instant1/i6_4_lut_adj_33
+Route        19   e 1.825                                  \instant1/n27_adj_391
+LUT4        ---     0.493              A to Z              \instant1/i1_2_lut_adj_36
+Route         9   e 1.574                                  \instant1/n4317
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_574_1
+Route         1   e 0.020                                  \instant1/n8982
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_3
+Route         1   e 0.020                                  \instant1/n8983
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_5
+Route         1   e 0.020                                  \instant1/n8984
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_7
+Route         1   e 0.020                                  \instant1/n8985
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_9
+Route         1   e 0.020                                  \instant1/n8986
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_11
+Route         1   e 0.020                                  \instant1/n8987
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_13
+Route         1   e 0.020                                  \instant1/n8988
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_15
+Route         1   e 0.020                                  \instant1/n8989
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_17
+Route         1   e 0.020                                  \instant1/n8990
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_19
+Route         1   e 0.020                                  \instant1/n8991
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_21
+Route         1   e 0.020                                  \instant1/n8992
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_23
+Route         1   e 0.020                                  \instant1/n8993
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_574_25
+Route         2   e 1.486                                  \instant1/n4197
+LUT4        ---     0.493              B to Z              \instant1/i2_2_lut_adj_28
+Route         1   e 0.941                                  \instant1/n10_adj_465
+LUT4        ---     0.493              C to Z              \instant1/i7_4_lut_adj_27
+Route        20   e 1.828                                  \instant1/n29
+LUT4        ---     0.493              B to Z              \instant1/i1_2_lut_adj_30
+Route         9   e 1.574                                  \instant1/n4316
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_575_1
+Route         1   e 0.020                                  \instant1/n8998
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_3
+Route         1   e 0.020                                  \instant1/n8999
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_5
+Route         1   e 0.020                                  \instant1/n9000
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_7
+Route         1   e 0.020                                  \instant1/n9001
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_9
+Route         1   e 0.020                                  \instant1/n9002
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_11
+Route         1   e 0.020                                  \instant1/n9003
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_13
+Route         1   e 0.020                                  \instant1/n9004
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_15
+Route         1   e 0.020                                  \instant1/n9005
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_17
+Route         1   e 0.020                                  \instant1/n9006
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_19
+Route         1   e 0.020                                  \instant1/n9007
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_21
+Route         1   e 0.020                                  \instant1/n9008
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_23
+Route         1   e 0.020                                  \instant1/n9009
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_25
+Route         1   e 0.020                                  \instant1/n9010
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_575_27
+Route         2   e 1.486                                  \instant1/n4314_adj_316
+LUT4        ---     0.493              C to Z              \instant1/i5_4_lut_adj_123
+Route         1   e 0.941                                  \instant1/n13_adj_569
+LUT4        ---     0.493              A to Z              \instant1/i7_4_lut_adj_118
+Route        21   e 1.831                                  \instant1/n31
+LUT4        ---     0.493              B to Z              \instant1/i1_2_lut_adj_23
+Route         9   e 1.574                                  \instant1/n4315
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_576_1
+Route         1   e 0.020                                  \instant1/n9015
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_3
+Route         1   e 0.020                                  \instant1/n9016
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_5
+Route         1   e 0.020                                  \instant1/n9017
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_7
+Route         1   e 0.020                                  \instant1/n9018
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_9
+Route         1   e 0.020                                  \instant1/n9019
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_11
+Route         1   e 0.020                                  \instant1/n9020
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_13
+Route         1   e 0.020                                  \instant1/n9021
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_15
+Route         1   e 0.020                                  \instant1/n9022
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_17
+Route         1   e 0.020                                  \instant1/n9023
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_19
+Route         1   e 0.020                                  \instant1/n9024
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_21
+Route         1   e 0.020                                  \instant1/n9025
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_23
+Route         1   e 0.020                                  \instant1/n9026
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_25
+Route         1   e 0.020                                  \instant1/n9027
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_27
+Route         1   e 0.020                                  \instant1/n9028
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_576_29
+Route         2   e 1.486                                  \instant1/n4427
+LUT4        ---     0.493              A to Z              \instant1/i5_2_lut
+Route         1   e 0.941                                  \instant1/n15_adj_552
+LUT4        ---     0.493              A to Z              \instant1/i8_4_lut_adj_98
+Route         1   e 0.941                                  \instant1/n18_adj_550
+LUT4        ---     0.493              B to Z              \instant1/i9_4_lut_adj_97
+Route        22   e 1.833                                  \instant1/n34_adj_531
+LUT4        ---     0.493              A to Z              \instant1/i1_2_lut_adj_96
+Route         9   e 1.574                                  \instant1/n4314
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_577_1
+Route         1   e 0.020                                  \instant1/n9032
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_3
+Route         1   e 0.020                                  \instant1/n9033
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_5
+Route         1   e 0.020                                  \instant1/n9034
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_7
+Route         1   e 0.020                                  \instant1/n9035
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_9
+Route         1   e 0.020                                  \instant1/n9036
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_11
+Route         1   e 0.020                                  \instant1/n9037
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_13
+Route         1   e 0.020                                  \instant1/n9038
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_15
+Route         1   e 0.020                                  \instant1/n9039
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_17
+Route         1   e 0.020                                  \instant1/n9040
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_19
+Route         1   e 0.020                                  \instant1/n9041
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_21
+Route         1   e 0.020                                  \instant1/n9042
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_23
+Route         1   e 0.020                                  \instant1/n9043
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_577_25
+Route         2   e 1.486                                  \instant1/n4542
+LUT4        ---     0.493              A to Z              \instant1/i6_3_lut
+Route         1   e 0.941                                  \instant1/n17_adj_562
+LUT4        ---     0.493              A to Z              \instant1/i9_4_lut_adj_106
+Route         1   e 0.941                                  \instant1/n20_adj_559
+LUT4        ---     0.493              B to Z              \instant1/i10_4_lut_adj_105
+Route        23   e 1.836                                  \instant1/n36_adj_523
+LUT4        ---     0.493              A to Z              \instant1/i1_2_lut_adj_95
+Route         9   e 1.574                                  \instant1/n4313
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_578_1
+Route         1   e 0.020                                  \instant1/n9050
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_3
+Route         1   e 0.020                                  \instant1/n9051
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_5
+Route         1   e 0.020                                  \instant1/n9052
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_7
+Route         1   e 0.020                                  \instant1/n9053
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_9
+Route         1   e 0.020                                  \instant1/n9054
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_11
+Route         1   e 0.020                                  \instant1/n9055
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_13
+Route         1   e 0.020                                  \instant1/n9056
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_15
+Route         1   e 0.020                                  \instant1/n9057
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_17
+Route         1   e 0.020                                  \instant1/n9058
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_19
+Route         1   e 0.020                                  \instant1/n9059
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_21
+Route         1   e 0.020                                  \instant1/n9060
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_23
+Route         1   e 0.020                                  \instant1/n9061
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_25
+Route         1   e 0.020                                  \instant1/n9062
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_27
+Route         1   e 0.020                                  \instant1/n9063
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_29
+Route         1   e 0.020                                  \instant1/n9064
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_578_31
+Route         4   e 1.686                                  \instant1/n4646
+LUT4        ---     0.493              B to Z              \instant1/i8_4_lut
+Route         1   e 0.941                                  \instant1/n20_adj_431
+LUT4        ---     0.493              C to Z              \instant1/i11_4_lut_adj_18
+Route         4   e 1.340                                  \instant1/n38_adj_357
+LUT4        ---     0.493              A to Z              \instant1/i1_2_lut_rep_272
+Route        53   e 2.259                                  \instant1/n11709
+LUT4        ---     0.493              B to Z              \instant1/div_63_i3131_3_lut_4_lut
+Route         3   e 1.258                                  \instant1/n4776
+LUT4        ---     0.493              A to Z              \instant1/i2636_3_lut_rep_265
+Route         1   e 0.941                                  \instant1/n11702
+LUT4        ---     0.493              A to Z              \instant1/i9160_4_lut
+Route         1   e 0.020                                  \instant1/n10881
+MOFX0       ---     0.378             C0 to Z              \instant1/i2637
+Route         1   e 0.941                                  \instant1/n16_adj_364
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_10
+Route         1   e 0.941                                  \instant1/n4_adj_365
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_3137_i22_4_lut
+Route        15   e 1.811                                  \instant1/n22
+LUT4        ---     0.493              A to Z              \instant1/i4221_2_lut_rep_263
+Route        11   e 1.632                                  \instant1/n11700
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_3206_i9_4_lut
+Route         2   e 1.141                                  \instant1/n9
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_3206_i8_3_lut
+Route         1   e 0.941                                  \instant1/n8_adj_322
+LUT4        ---     0.493              A to Z              \instant1/div_63_LessThan_3206_i10_3_lut
+Route         1   e 0.020                                  \instant1/n10_adj_346
+MUXL5       ---     0.233           ALUT to Z              \instant1/i2681
+Route         1   e 0.941                                  \instant1/n14_adj_349
+LUT4        ---     0.493              A to Z              \instant1/i1_4_lut
+Route         1   e 0.941                                  \instant1/n4_adj_347
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_3206_i20_4_lut
+Route         1   e 0.941                                  \instant1/n20_adj_348
+A1_TO_FCO   ---     0.827           A[2] to COUT           \instant1/sub_290_add_2_1
+Route         1   e 0.020                                  \instant1/n8783
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_3
+Route         1   e 0.020                                  \instant1/n8784
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_5
+Route         1   e 0.020                                  \instant1/n8785
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_7
+Route         1   e 0.020                                  \instant1/n8786
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_9
+Route         1   e 0.020                                  \instant1/n8787
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_11
+Route         1   e 0.020                                  \instant1/n8788
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_13
+Route         1   e 0.020                                  \instant1/n8789
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_15
+Route         1   e 0.020                                  \instant1/n8790
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_17
+Route         1   e 0.020                                  \instant1/n8791
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_19
+Route         1   e 0.020                                  \instant1/n8792
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_21
+Route         1   e 0.020                                  \instant1/n8793
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_23
+Route         1   e 0.020                                  \instant1/n8794
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_25
+Route         1   e 0.020                                  \instant1/n8795
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_27
+Route         1   e 0.020                                  \instant1/n8796
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_29
+Route         1   e 0.020                                  \instant1/n8797
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_31
+Route         1   e 0.020                                  \instant1/n8798
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/sub_290_add_2_33
+Route        17   e 2.164                                  \instant1/count_flag_N_159
+A1_TO_FCO   ---     0.827           A[2] to COUT           \instant1/add_197_3
+Route         1   e 0.020                                  \instant1/n8776
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_197_5
+Route         1   e 0.020                                  \instant1/n8777
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_197_7
+Route         1   e 0.020                                  \instant1/n8778
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_197_9
+Route         1   e 0.020                                  \instant1/n8779
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_197_11
+Route         1   e 0.020                                  \instant1/n8780
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_197_13
+Route         1   e 0.020                                  \instant1/n8781
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_197_15
+Route         1   e 0.020                                  \instant1/n8782
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_197_17
+Route         1   e 0.941                                  \instant1/n281
+                  --------
+                  277.875  (36.3% logic, 63.7% route), 277 logic levels.
+
+
+Error:  The following path violates requirements by 273.035ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \instant1/lumdivision_i5  (from clk_c +)
+   Destination:    FD1P3AX    D              \instant1/triangle_cnt_i0_i15  (to clk_c +)
+
+   Delay:                 277.875ns  (36.3% logic, 63.7% route), 277 logic levels.
+
+ Constraint Details:
+
+    277.875ns data_path \instant1/lumdivision_i5 to \instant1/triangle_cnt_i0_i15 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 273.035ns
+
+ Path Details: \instant1/lumdivision_i5 to \instant1/triangle_cnt_i0_i15
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \instant1/lumdivision_i5 (from clk_c)
+Route        93   e 2.525                                  lumdivision[6]
+LUT4        ---     0.493              A to Z              \instant1/i1_2_lut_rep_434
+Route         5   e 1.405                                  \instant1/n12197
+LUT4        ---     0.493              B to Z              \instant1/i1_3_lut_rep_396_4_lut
+Route         8   e 1.540                                  \instant1/n11833
+LUT4        ---     0.493              C to Z              \instant1/lumdivision[0]_bdd_4_lut
+Route         4   e 1.340                                  \instant1/n62_adj_319
+LUT4        ---     0.493              C to Z              \instant1/i1_4_lut_4_lut_rep_431_4_lut
+Route         9   e 1.574                                  \instant1/n12194
+LUT4        ---     0.493              D to Z              \instant1/div_63_i732_3_lut_rep_381_4_lut
+Route         3   e 1.258                                  \instant1/n11818
+LUT4        ---     0.493              A to Z              \instant1/i9213_3_lut_4_lut
+Route         1   e 0.020                                  \instant1/n11005
+MOFX0       ---     0.378             C0 to Z              \instant1/div_63_LessThan_762_i62
+Route         2   e 1.141                                  \instant1/n62_adj_327
+LUT4        ---     0.493              D to Z              \instant1/i1_4_lut_4_lut_adj_88
+Route        12   e 1.657                                  \instant1/n1258_adj_328
+LUT4        ---     0.493              C to Z              \instant1/div_63_i852_3_lut_rep_378_4_lut
+Route         4   e 1.340                                  \instant1/n11815
+LUT4        ---     0.493              A to Z              \instant1/i9212_3_lut_4_lut
+Route         1   e 0.020                                  \instant1/n11009
+MOFX0       ---     0.378             C0 to Z              \instant1/div_63_LessThan_881_i60
+Route         2   e 1.141                                  \instant1/n60_adj_324
+LUT4        ---     0.493              D to Z              \instant1/i2135_3_lut_4_lut
+Route         9   e 1.574                                  \instant1/n64_adj_444
+LUT4        ---     0.493              A to Z              \instant1/i646_2_lut_rep_376
+Route         8   e 1.540                                  \instant1/n11813
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_998_i57_2_lut_rep_372_4_lut
+Route         1   e 0.941                                  \instant1/n11809
+LUT4        ---     0.493              B to Z              \instant1/i9215_4_lut
+Route         1   e 0.020                                  \instant1/n11001
+MOFX0       ---     0.378             C0 to Z              \instant1/i2137
+Route         2   e 1.141                                  \instant1/n62_adj_321
+LUT4        ---     0.493              D to Z              \instant1/i4307_2_lut_4_lut
+Route        11   e 1.632                                  \instant1/n64_adj_443
+LUT4        ---     0.493              A to Z              \instant1/i647_2_lut_rep_371
+Route         7   e 1.502                                  \instant1/n11808
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1113_i55_2_lut_rep_369_4_lut
+Route         1   e 0.941                                  \instant1/n11806
+LUT4        ---     0.493              B to Z              \instant1/i9182_4_lut
+Route         1   e 0.020                                  \instant1/n10864
+MOFX0       ---     0.378             C0 to Z              \instant1/i2139
+Route         2   e 1.141                                  \instant1/n60_adj_449
+LUT4        ---     0.493              A to Z              \instant1/i1_3_lut
+Route        13   e 1.803                                  \instant1/n64_adj_442
+LUT4        ---     0.493              A to Z              \instant1/i648_2_lut_rep_367
+Route        10   e 1.604                                  \instant1/n11804
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1226_i53_2_lut_rep_361_4_lut
+Route         1   e 0.941                                  \instant1/n11798
+LUT4        ---     0.493              B to Z              \instant1/i9185_4_lut
+Route         1   e 0.020                                  \instant1/n10857
+MOFX0       ---     0.378             C0 to Z              \instant1/i2143
+Route         2   e 1.141                                  \instant1/n58_adj_450
+LUT4        ---     0.493              C to Z              \instant1/i4191_2_lut_3_lut
+Route         5   e 1.405                                  \instant1/n62_adj_438
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1226_i64_3_lut_rep_360
+Route        18   e 1.822                                  \instant1/n11797
+LUT4        ---     0.493              C to Z              \instant1/div_63_i1310_3_lut
+Route         5   e 1.405                                  \instant1/n2085_adj_423
+LUT4        ---     0.493              B to Z              \instant1/i2146_3_lut_rep_353
+Route         1   e 0.941                                  \instant1/n11790
+LUT4        ---     0.493              A to Z              \instant1/i9190_4_lut
+Route         1   e 0.020                                  \instant1/n10850
+MOFX0       ---     0.378             C0 to Z              \instant1/i2147
+Route         1   e 0.941                                  \instant1/n56_adj_456
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_22
+Route         1   e 0.941                                  \instant1/n4_adj_457
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1337_i62_4_lut
+Route        18   e 1.822                                  \instant1/n62_adj_434
+LUT4        ---     0.493              D to Z              \instant1/i4315_2_lut_rep_351_4_lut
+Route         9   e 1.574                                  \instant1/n11788
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1446_i49_2_lut_rep_346_4_lut
+Route         1   e 0.941                                  \instant1/n11783
+LUT4        ---     0.493              B to Z              \instant1/i9192_4_lut
+Route         1   e 0.020                                  \instant1/n10843
+MOFX0       ---     0.378             C0 to Z              \instant1/i2151
+Route         1   e 0.941                                  \instant1/n54_adj_424
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_16
+Route         1   e 0.941                                  \instant1/n4_adj_425
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1446_i60_4_lut
+Route        20   e 1.828                                  \instant1/n60_adj_377
+LUT4        ---     0.493              C to Z              \instant1/i4178_2_lut_rep_344_3_lut
+Route         9   e 1.574                                  \instant1/n11781
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1553_i47_2_lut_rep_339_4_lut
+Route         1   e 0.941                                  \instant1/n11776
+LUT4        ---     0.493              B to Z              \instant1/i9194_4_lut
+Route         1   e 0.020                                  \instant1/n10836
+MOFX0       ---     0.378             C0 to Z              \instant1/i2157
+Route         1   e 0.941                                  \instant1/n52_adj_374
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_13
+Route         1   e 0.941                                  \instant1/n4_adj_375
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1553_i58_4_lut
+Route        22   e 1.833                                  \instant1/n58_adj_356
+LUT4        ---     0.493              D to Z              \instant1/i4174_2_lut_rep_337_4_lut
+Route        10   e 1.604                                  \instant1/n11774
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1658_i45_2_lut_rep_331_4_lut
+Route         1   e 0.941                                  \instant1/n11768
+LUT4        ---     0.493              B to Z              \instant1/i9196_4_lut
+Route         1   e 0.020                                  \instant1/n10829
+MOFX0       ---     0.378             C0 to Z              \instant1/i2165
+Route         1   e 0.941                                  \instant1/n50_adj_352
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_7
+Route         1   e 0.941                                  \instant1/n4_adj_353
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1658_i56_4_lut
+Route        24   e 1.838                                  \instant1/n56_adj_330
+LUT4        ---     0.493              A to Z              \instant1/i4170_2_lut_rep_330
+Route         9   e 1.574                                  \instant1/n11767
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1761_i43_2_lut_rep_325_4_lut
+Route         1   e 0.941                                  \instant1/n11762
+LUT4        ---     0.493              B to Z              \instant1/i9198_4_lut
+Route         1   e 0.020                                  \instant1/n10822
+MOFX0       ---     0.378             C0 to Z              \instant1/i2175
+Route         1   e 0.941                                  \instant1/n48_adj_329
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut
+Route         1   e 0.941                                  \instant1/n4
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1761_i54_4_lut
+Route        26   e 2.027                                  \instant1/n54
+LUT4        ---     0.493              D to Z              \instant1/i4166_2_lut_rep_323_4_lut
+Route         9   e 1.574                                  \instant1/n11760
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1862_i41_2_lut_rep_318_4_lut
+Route         1   e 0.941                                  \instant1/n11755
+LUT4        ---     0.493              B to Z              \instant1/i9200_4_lut
+Route         1   e 0.020                                  \instant1/n10815
+MOFX0       ---     0.378             C0 to Z              \instant1/i2187
+Route         1   e 0.941                                  \instant1/n46_adj_561
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_117
+Route         1   e 0.941                                  \instant1/n4_adj_499
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1862_i52_4_lut
+Route        28   e 2.032                                  \instant1/n52_adj_413
+LUT4        ---     0.493              D to Z              \instant1/i4160_2_lut_rep_316_4_lut
+Route         8   e 1.540                                  \instant1/n11753
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_1961_i39_2_lut_rep_312_4_lut
+Route         1   e 0.941                                  \instant1/n11749
+LUT4        ---     0.493              B to Z              \instant1/i9207_4_lut
+Route         1   e 0.020                                  \instant1/n10808
+MOFX0       ---     0.378             C0 to Z              \instant1/i2201
+Route         1   e 0.941                                  \instant1/n44_adj_537
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_91
+Route         1   e 0.941                                  \instant1/n4_adj_497
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_1961_i50_4_lut
+Route        30   e 2.036                                  \instant1/n50_adj_429
+LUT4        ---     0.493              C to Z              \instant1/i4156_2_lut_rep_309_3_lut
+Route         8   e 1.540                                  \instant1/n11746
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_2058_i37_2_lut_rep_305_4_lut
+Route         1   e 0.941                                  \instant1/n11742
+LUT4        ---     0.493              B to Z              \instant1/i9138_4_lut
+Route         1   e 0.020                                  \instant1/n10801
+MOFX0       ---     0.378             C0 to Z              \instant1/i2217
+Route         1   e 0.941                                  \instant1/n42_adj_498
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_73
+Route         1   e 0.941                                  \instant1/n4_adj_496
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_2058_i48_4_lut
+Route        32   e 2.039                                  \instant1/n48
+LUT4        ---     0.493              C to Z              \instant1/i4152_2_lut_rep_303_3_lut
+Route         8   e 1.540                                  \instant1/n11740
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_2153_i35_2_lut_rep_299_4_lut
+Route         1   e 0.941                                  \instant1/n11736
+LUT4        ---     0.493              B to Z              \instant1/i9167_4_lut
+Route         1   e 0.020                                  \instant1/n10794
+MOFX0       ---     0.378             C0 to Z              \instant1/i2235
+Route         1   e 0.941                                  \instant1/n40_adj_371
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_12
+Route         1   e 0.941                                  \instant1/n4_adj_372
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_2153_i46_4_lut
+Route        22   e 1.833                                  \instant1/n46_adj_451
+LUT4        ---     0.493              A to Z              \instant1/div_63_i2229_3_lut_4_lut
+Route         3   e 1.258                                  \instant1/n3445
+LUT4        ---     0.493              A to Z              \instant1/i2257_3_lut_rep_295
+Route         1   e 0.941                                  \instant1/n11732
+LUT4        ---     0.493              A to Z              \instant1/i9180_4_lut
+Route         1   e 0.020                                  \instant1/n10787
+MOFX0       ---     0.378             C0 to Z              \instant1/i2258
+Route         1   e 0.941                                  \instant1/n38_adj_547
+LUT4        ---     0.493              B to Z              \instant1/i2_3_lut_adj_94
+Route         2   e 1.141                                  \instant1/n42_adj_428
+LUT4        ---     0.493              A to Z              \instant1/div_63_LessThan_2246_i44_3_lut
+Route        21   e 1.831                                  \instant1/n44_adj_421
+A1_TO_FCO   ---     0.827           D[2] to COUT           \instant1/add_569_3
+Route         1   e 0.020                                  \instant1/n8909
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_569_5
+Route         1   e 0.020                                  \instant1/n8910
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_569_7
+Route         3   e 1.603                                  \instant1/n3580
+LUT4        ---     0.493              B to Z              \instant1/i2282_3_lut_rep_291
+Route         1   e 0.941                                  \instant1/n11728
+LUT4        ---     0.493              A to Z              \instant1/i9202_4_lut
+Route         1   e 0.020                                  \instant1/n10780
+MOFX0       ---     0.378             C0 to Z              \instant1/i2283
+Route         1   e 0.941                                  \instant1/n36_adj_489
+LUT4        ---     0.493              B to Z              \instant1/i2_3_lut_adj_61
+Route         2   e 1.141                                  \instant1/n40_adj_419
+LUT4        ---     0.493              A to Z              \instant1/div_63_LessThan_2337_i42_3_lut
+Route        22   e 1.833                                  \instant1/n42_adj_418
+A1_TO_FCO   ---     0.827           B[2] to COUT           \instant1/add_570_3
+Route         1   e 0.020                                  \instant1/n8923
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_570_5
+Route         1   e 0.020                                  \instant1/n8924
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_570_7
+Route         3   e 1.603                                  \instant1/n3713
+LUT4        ---     0.493              B to Z              \instant1/i2309_3_lut_rep_289
+Route         1   e 0.941                                  \instant1/n11726
+LUT4        ---     0.493              A to Z              \instant1/i9205_4_lut
+Route         1   e 0.020                                  \instant1/n10773
+MOFX0       ---     0.378             C0 to Z              \instant1/i2310
+Route         1   e 0.941                                  \instant1/n34_adj_486
+LUT4        ---     0.493              B to Z              \instant1/i2_3_lut_adj_55
+Route         2   e 1.141                                  \instant1/n38_adj_412
+LUT4        ---     0.493              A to Z              \instant1/div_63_LessThan_2426_i40_3_lut
+Route        23   e 1.836                                  \instant1/n40_adj_411
+A1_TO_FCO   ---     0.827           B[2] to COUT           \instant1/add_571_3
+Route         1   e 0.020                                  \instant1/n8937
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_5
+Route         1   e 0.020                                  \instant1/n8938
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_7
+Route         1   e 0.020                                  \instant1/n8939
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_9
+Route         1   e 0.020                                  \instant1/n8940
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_11
+Route         1   e 0.020                                  \instant1/n8941
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_13
+Route         1   e 0.020                                  \instant1/n8942
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_15
+Route         1   e 0.020                                  \instant1/n8943
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_17
+Route         1   e 0.020                                  \instant1/n8944
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_19
+Route         1   e 0.020                                  \instant1/n8945
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_571_21
+Route         1   e 0.020                                  \instant1/n8946
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_571_23
+Route         2   e 1.486                                  \instant1/n3828
+LUT4        ---     0.493              A to Z              \instant1/i5_4_lut_adj_46
+Route         1   e 0.941                                  \instant1/n13_adj_478
+LUT4        ---     0.493              A to Z              \instant1/i7_4_lut_adj_45
+Route        17   e 1.819                                  \instant1/n24_adj_398
+LUT4        ---     0.493              A to Z              \instant1/i1_2_lut_adj_51
+Route         9   e 1.574                                  \instant1/n4320
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_572_1
+Route         1   e 0.020                                  \instant1/n8951
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_3
+Route         1   e 0.020                                  \instant1/n8952
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_5
+Route         1   e 0.020                                  \instant1/n8953
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_7
+Route         1   e 0.020                                  \instant1/n8954
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_9
+Route         1   e 0.020                                  \instant1/n8955
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_11
+Route         1   e 0.020                                  \instant1/n8956
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_13
+Route         1   e 0.020                                  \instant1/n8957
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_15
+Route         1   e 0.020                                  \instant1/n8958
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_17
+Route         1   e 0.020                                  \instant1/n8959
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_19
+Route         1   e 0.020                                  \instant1/n8960
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_21
+Route         1   e 0.020                                  \instant1/n8961
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_572_23
+Route         1   e 0.020                                  \instant1/n8962
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_572_25
+Route         2   e 1.486                                  \instant1/n3953
+LUT4        ---     0.493              A to Z              \instant1/i3_2_lut_adj_41
+Route         1   e 0.941                                  \instant1/n9_adj_475
+LUT4        ---     0.493              A to Z              \instant1/i5_4_lut_adj_40
+Route        18   e 1.822                                  \instant1/n25_adj_395
+LUT4        ---     0.493              B to Z              \instant1/i1_2_lut_adj_44
+Route         9   e 1.574                                  \instant1/n4318
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_573_1
+Route         1   e 0.020                                  \instant1/n8966
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_3
+Route         1   e 0.020                                  \instant1/n8967
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_5
+Route         1   e 0.020                                  \instant1/n8968
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_7
+Route         1   e 0.020                                  \instant1/n8969
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_9
+Route         1   e 0.020                                  \instant1/n8970
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_11
+Route         1   e 0.020                                  \instant1/n8971
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_13
+Route         1   e 0.020                                  \instant1/n8972
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_15
+Route         1   e 0.020                                  \instant1/n8973
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_17
+Route         1   e 0.020                                  \instant1/n8974
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_19
+Route         1   e 0.020                                  \instant1/n8975
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_21
+Route         1   e 0.020                                  \instant1/n8976
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_573_23
+Route         1   e 0.020                                  \instant1/n8977
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_573_25
+Route         2   e 1.486                                  \instant1/n4076
+LUT4        ---     0.493              B to Z              \instant1/i3_2_lut_adj_34
+Route         1   e 0.941                                  \instant1/n10_adj_471
+LUT4        ---     0.493              C to Z              \instant1/i6_4_lut_adj_33
+Route        19   e 1.825                                  \instant1/n27_adj_391
+LUT4        ---     0.493              A to Z              \instant1/i1_2_lut_adj_36
+Route         9   e 1.574                                  \instant1/n4317
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_574_1
+Route         1   e 0.020                                  \instant1/n8982
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_3
+Route         1   e 0.020                                  \instant1/n8983
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_5
+Route         1   e 0.020                                  \instant1/n8984
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_7
+Route         1   e 0.020                                  \instant1/n8985
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_9
+Route         1   e 0.020                                  \instant1/n8986
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_11
+Route         1   e 0.020                                  \instant1/n8987
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_13
+Route         1   e 0.020                                  \instant1/n8988
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_15
+Route         1   e 0.020                                  \instant1/n8989
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_17
+Route         1   e 0.020                                  \instant1/n8990
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_19
+Route         1   e 0.020                                  \instant1/n8991
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_21
+Route         1   e 0.020                                  \instant1/n8992
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_574_23
+Route         1   e 0.020                                  \instant1/n8993
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_574_25
+Route         2   e 1.486                                  \instant1/n4197
+LUT4        ---     0.493              B to Z              \instant1/i2_2_lut_adj_28
+Route         1   e 0.941                                  \instant1/n10_adj_465
+LUT4        ---     0.493              C to Z              \instant1/i7_4_lut_adj_27
+Route        20   e 1.828                                  \instant1/n29
+LUT4        ---     0.493              B to Z              \instant1/i1_2_lut_adj_30
+Route         9   e 1.574                                  \instant1/n4316
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_575_1
+Route         1   e 0.020                                  \instant1/n8998
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_3
+Route         1   e 0.020                                  \instant1/n8999
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_5
+Route         1   e 0.020                                  \instant1/n9000
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_7
+Route         1   e 0.020                                  \instant1/n9001
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_9
+Route         1   e 0.020                                  \instant1/n9002
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_11
+Route         1   e 0.020                                  \instant1/n9003
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_13
+Route         1   e 0.020                                  \instant1/n9004
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_15
+Route         1   e 0.020                                  \instant1/n9005
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_17
+Route         1   e 0.020                                  \instant1/n9006
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_19
+Route         1   e 0.020                                  \instant1/n9007
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_21
+Route         1   e 0.020                                  \instant1/n9008
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_23
+Route         1   e 0.020                                  \instant1/n9009
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_575_25
+Route         1   e 0.020                                  \instant1/n9010
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_575_27
+Route         2   e 1.486                                  \instant1/n4314_adj_316
+LUT4        ---     0.493              C to Z              \instant1/i5_4_lut_adj_123
+Route         1   e 0.941                                  \instant1/n13_adj_569
+LUT4        ---     0.493              A to Z              \instant1/i7_4_lut_adj_118
+Route        21   e 1.831                                  \instant1/n31
+LUT4        ---     0.493              B to Z              \instant1/i1_2_lut_adj_23
+Route         9   e 1.574                                  \instant1/n4315
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_576_1
+Route         1   e 0.020                                  \instant1/n9015
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_3
+Route         1   e 0.020                                  \instant1/n9016
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_5
+Route         1   e 0.020                                  \instant1/n9017
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_7
+Route         1   e 0.020                                  \instant1/n9018
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_9
+Route         1   e 0.020                                  \instant1/n9019
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_11
+Route         1   e 0.020                                  \instant1/n9020
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_13
+Route         1   e 0.020                                  \instant1/n9021
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_15
+Route         1   e 0.020                                  \instant1/n9022
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_17
+Route         1   e 0.020                                  \instant1/n9023
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_19
+Route         1   e 0.020                                  \instant1/n9024
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_21
+Route         1   e 0.020                                  \instant1/n9025
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_23
+Route         1   e 0.020                                  \instant1/n9026
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_25
+Route         1   e 0.020                                  \instant1/n9027
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_576_27
+Route         1   e 0.020                                  \instant1/n9028
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_576_29
+Route         2   e 1.486                                  \instant1/n4427
+LUT4        ---     0.493              A to Z              \instant1/i5_2_lut
+Route         1   e 0.941                                  \instant1/n15_adj_552
+LUT4        ---     0.493              A to Z              \instant1/i8_4_lut_adj_98
+Route         1   e 0.941                                  \instant1/n18_adj_550
+LUT4        ---     0.493              B to Z              \instant1/i9_4_lut_adj_97
+Route        22   e 1.833                                  \instant1/n34_adj_531
+LUT4        ---     0.493              A to Z              \instant1/i1_2_lut_adj_96
+Route         9   e 1.574                                  \instant1/n4314
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_577_1
+Route         1   e 0.020                                  \instant1/n9032
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_3
+Route         1   e 0.020                                  \instant1/n9033
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_5
+Route         1   e 0.020                                  \instant1/n9034
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_7
+Route         1   e 0.020                                  \instant1/n9035
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_9
+Route         1   e 0.020                                  \instant1/n9036
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_11
+Route         1   e 0.020                                  \instant1/n9037
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_13
+Route         1   e 0.020                                  \instant1/n9038
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_15
+Route         1   e 0.020                                  \instant1/n9039
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_17
+Route         1   e 0.020                                  \instant1/n9040
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_19
+Route         1   e 0.020                                  \instant1/n9041
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_21
+Route         1   e 0.020                                  \instant1/n9042
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_577_23
+Route         1   e 0.020                                  \instant1/n9043
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_577_25
+Route         2   e 1.486                                  \instant1/n4542
+LUT4        ---     0.493              A to Z              \instant1/i6_3_lut
+Route         1   e 0.941                                  \instant1/n17_adj_562
+LUT4        ---     0.493              A to Z              \instant1/i9_4_lut_adj_106
+Route         1   e 0.941                                  \instant1/n20_adj_559
+LUT4        ---     0.493              B to Z              \instant1/i10_4_lut_adj_105
+Route        23   e 1.836                                  \instant1/n36_adj_523
+LUT4        ---     0.493              A to Z              \instant1/i1_2_lut_adj_95
+Route         9   e 1.574                                  \instant1/n4313
+A1_TO_FCO   ---     0.827           C[2] to COUT           \instant1/add_578_1
+Route         1   e 0.020                                  \instant1/n9050
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_3
+Route         1   e 0.020                                  \instant1/n9051
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_5
+Route         1   e 0.020                                  \instant1/n9052
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_7
+Route         1   e 0.020                                  \instant1/n9053
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_9
+Route         1   e 0.020                                  \instant1/n9054
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_11
+Route         1   e 0.020                                  \instant1/n9055
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_13
+Route         1   e 0.020                                  \instant1/n9056
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_15
+Route         1   e 0.020                                  \instant1/n9057
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_17
+Route         1   e 0.020                                  \instant1/n9058
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_19
+Route         1   e 0.020                                  \instant1/n9059
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_21
+Route         1   e 0.020                                  \instant1/n9060
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_23
+Route         1   e 0.020                                  \instant1/n9061
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_25
+Route         1   e 0.020                                  \instant1/n9062
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_27
+Route         1   e 0.020                                  \instant1/n9063
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_578_29
+Route         1   e 0.020                                  \instant1/n9064
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_578_31
+Route         4   e 1.686                                  \instant1/n4646
+LUT4        ---     0.493              B to Z              \instant1/i8_4_lut
+Route         1   e 0.941                                  \instant1/n20_adj_431
+LUT4        ---     0.493              C to Z              \instant1/i11_4_lut_adj_18
+Route         4   e 1.340                                  \instant1/n38_adj_357
+LUT4        ---     0.493              A to Z              \instant1/i1_2_lut_rep_272
+Route        53   e 2.259                                  \instant1/n11709
+LUT4        ---     0.493              B to Z              \instant1/div_63_i3131_3_lut_4_lut
+Route         3   e 1.258                                  \instant1/n4776
+LUT4        ---     0.493              A to Z              \instant1/i2636_3_lut_rep_265
+Route         1   e 0.941                                  \instant1/n11702
+LUT4        ---     0.493              A to Z              \instant1/i9160_4_lut
+Route         1   e 0.020                                  \instant1/n10881
+MOFX0       ---     0.378             C0 to Z              \instant1/i2637
+Route         1   e 0.941                                  \instant1/n16_adj_364
+LUT4        ---     0.493              D to Z              \instant1/i1_2_lut_4_lut_adj_10
+Route         1   e 0.941                                  \instant1/n4_adj_365
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_3137_i22_4_lut
+Route        15   e 1.811                                  \instant1/n22
+LUT4        ---     0.493              A to Z              \instant1/i4221_2_lut_rep_263
+Route        11   e 1.632                                  \instant1/n11700
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_3206_i9_4_lut
+Route         2   e 1.141                                  \instant1/n9
+LUT4        ---     0.493              C to Z              \instant1/div_63_LessThan_3206_i8_3_lut
+Route         1   e 0.941                                  \instant1/n8_adj_322
+LUT4        ---     0.493              A to Z              \instant1/div_63_LessThan_3206_i10_3_lut
+Route         1   e 0.020                                  \instant1/n10_adj_346
+MUXL5       ---     0.233           ALUT to Z              \instant1/i2681
+Route         1   e 0.941                                  \instant1/n14_adj_349
+LUT4        ---     0.493              A to Z              \instant1/i1_4_lut
+Route         1   e 0.941                                  \instant1/n4_adj_347
+LUT4        ---     0.493              D to Z              \instant1/div_63_LessThan_3206_i20_4_lut
+Route         1   e 0.941                                  \instant1/n20_adj_348
+A1_TO_FCO   ---     0.827           A[2] to COUT           \instant1/sub_290_add_2_1
+Route         1   e 0.020                                  \instant1/n8783
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_3
+Route         1   e 0.020                                  \instant1/n8784
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_5
+Route         1   e 0.020                                  \instant1/n8785
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_7
+Route         1   e 0.020                                  \instant1/n8786
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_9
+Route         1   e 0.020                                  \instant1/n8787
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_11
+Route         1   e 0.020                                  \instant1/n8788
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_13
+Route         1   e 0.020                                  \instant1/n8789
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_15
+Route         1   e 0.020                                  \instant1/n8790
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_17
+Route         1   e 0.020                                  \instant1/n8791
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_19
+Route         1   e 0.020                                  \instant1/n8792
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_21
+Route         1   e 0.020                                  \instant1/n8793
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_23
+Route         1   e 0.020                                  \instant1/n8794
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_25
+Route         1   e 0.020                                  \instant1/n8795
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_27
+Route         1   e 0.020                                  \instant1/n8796
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_29
+Route         1   e 0.020                                  \instant1/n8797
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/sub_290_add_2_31
+Route         1   e 0.020                                  \instant1/n8798
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/sub_290_add_2_33
+Route        17   e 2.164                                  \instant1/count_flag_N_159
+A1_TO_FCO   ---     0.827           A[2] to COUT           \instant1/add_197_3
+Route         1   e 0.020                                  \instant1/n8776
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_197_5
+Route         1   e 0.020                                  \instant1/n8777
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_197_7
+Route         1   e 0.020                                  \instant1/n8778
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_197_9
+Route         1   e 0.020                                  \instant1/n8779
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_197_11
+Route         1   e 0.020                                  \instant1/n8780
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_197_13
+Route         1   e 0.020                                  \instant1/n8781
+FCI_TO_FCO  ---     0.157            CIN to COUT           \instant1/add_197_15
+Route         1   e 0.020                                  \instant1/n8782
+FCI_TO_F    ---     0.598            CIN to S[2]           \instant1/add_197_17
+Route         1   e 0.941                                  \instant1/n281
+                  --------
+                  277.875  (36.3% logic, 63.7% route), 277 logic levels.
+
+Warning: 278.035 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets \instant2/clk300hz]      |     5.000 ns|    11.093 ns|     6 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |     5.000 ns|   278.035 ns|   277 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\instant1/count_flag_N_159              |      17|    4096|     90.16%
+                                        |        |        |
+\instant1/n4                            |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n4_adj_347                    |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n4_adj_353                    |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n4_adj_365                    |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n4_adj_372                    |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n4_adj_375                    |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n4_adj_425                    |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n4_adj_457                    |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n4_adj_496                    |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n4_adj_497                    |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n4_adj_499                    |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8_adj_322                    |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9                            |       2|    4096|     90.16%
+                                        |        |        |
+\instant1/n9_adj_475                    |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n10_adj_346                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n13_adj_478                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n14_adj_349                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n15_adj_552                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n16_adj_364                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n17_adj_562                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n18_adj_550                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n20_adj_348                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n20_adj_431                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n20_adj_559                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n22                           |      15|    4096|     90.16%
+                                        |        |        |
+\instant1/n24_adj_398                   |      17|    4096|     90.16%
+                                        |        |        |
+\instant1/n25_adj_395                   |      18|    4096|     90.16%
+                                        |        |        |
+\instant1/n27_adj_391                   |      19|    4096|     90.16%
+                                        |        |        |
+\instant1/n29                           |      20|    4096|     90.16%
+                                        |        |        |
+\instant1/n34_adj_486                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n34_adj_531                   |      22|    4096|     90.16%
+                                        |        |        |
+\instant1/n36_adj_489                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n36_adj_523                   |      23|    4096|     90.16%
+                                        |        |        |
+\instant1/n38_adj_357                   |       4|    4096|     90.16%
+                                        |        |        |
+\instant1/n38_adj_412                   |       2|    4096|     90.16%
+                                        |        |        |
+\instant1/n38_adj_547                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n40_adj_371                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n40_adj_411                   |      23|    4096|     90.16%
+                                        |        |        |
+\instant1/n40_adj_419                   |       2|    4096|     90.16%
+                                        |        |        |
+\instant1/n42_adj_418                   |      22|    4096|     90.16%
+                                        |        |        |
+\instant1/n42_adj_428                   |       2|    4096|     90.16%
+                                        |        |        |
+\instant1/n42_adj_498                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n44_adj_421                   |      21|    4096|     90.16%
+                                        |        |        |
+\instant1/n44_adj_537                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n46_adj_451                   |      22|    4096|     90.16%
+                                        |        |        |
+\instant1/n46_adj_561                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n48                           |      32|    4096|     90.16%
+                                        |        |        |
+\instant1/n48_adj_329                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n50_adj_352                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n50_adj_429                   |      30|    4096|     90.16%
+                                        |        |        |
+\instant1/n52_adj_374                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n52_adj_413                   |      28|    4096|     90.16%
+                                        |        |        |
+\instant1/n54                           |      26|    4096|     90.16%
+                                        |        |        |
+\instant1/n54_adj_424                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n56_adj_330                   |      24|    4096|     90.16%
+                                        |        |        |
+\instant1/n56_adj_456                   |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n58_adj_356                   |      22|    4096|     90.16%
+                                        |        |        |
+\instant1/n58_adj_450                   |       2|    4096|     90.16%
+                                        |        |        |
+\instant1/n60_adj_324                   |       2|    4096|     90.16%
+                                        |        |        |
+\instant1/n60_adj_377                   |      20|    4096|     90.16%
+                                        |        |        |
+\instant1/n60_adj_449                   |       2|    4096|     90.16%
+                                        |        |        |
+\instant1/n62_adj_319                   |       4|    4096|     90.16%
+                                        |        |        |
+\instant1/n62_adj_321                   |       2|    4096|     90.16%
+                                        |        |        |
+\instant1/n62_adj_327                   |       2|    4096|     90.16%
+                                        |        |        |
+\instant1/n62_adj_434                   |      18|    4096|     90.16%
+                                        |        |        |
+\instant1/n62_adj_438                   |       5|    4096|     90.16%
+                                        |        |        |
+\instant1/n64_adj_442                   |      13|    4096|     90.16%
+                                        |        |        |
+\instant1/n64_adj_443                   |      11|    4096|     90.16%
+                                        |        |        |
+\instant1/n64_adj_444                   |       9|    4096|     90.16%
+                                        |        |        |
+\instant1/n281                          |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n1258_adj_328                 |      12|    4096|     90.16%
+                                        |        |        |
+\instant1/n2085_adj_423                 |       5|    4096|     90.16%
+                                        |        |        |
+\instant1/n3828                         |       2|    4096|     90.16%
+                                        |        |        |
+\instant1/n3953                         |       2|    4096|     90.16%
+                                        |        |        |
+\instant1/n4313                         |       9|    4096|     90.16%
+                                        |        |        |
+\instant1/n4314                         |       9|    4096|     90.16%
+                                        |        |        |
+\instant1/n4315                         |       9|    4096|     90.16%
+                                        |        |        |
+\instant1/n4316                         |       9|    4096|     90.16%
+                                        |        |        |
+\instant1/n4317                         |       9|    4096|     90.16%
+                                        |        |        |
+\instant1/n4318                         |       9|    4096|     90.16%
+                                        |        |        |
+\instant1/n4320                         |       9|    4096|     90.16%
+                                        |        |        |
+\instant1/n4427                         |       2|    4096|     90.16%
+                                        |        |        |
+\instant1/n4542                         |       2|    4096|     90.16%
+                                        |        |        |
+\instant1/n4646                         |       4|    4096|     90.16%
+                                        |        |        |
+\instant1/n8776                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8777                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8778                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8779                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8780                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8781                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8782                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8783                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8784                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8785                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8786                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8787                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8788                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8789                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8790                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8791                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8792                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8793                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8794                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8795                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8796                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8797                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8798                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8909                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8910                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8923                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8924                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8937                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8938                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8939                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8940                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8941                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8942                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8943                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8944                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8945                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8946                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8951                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8952                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8953                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8954                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8955                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8956                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8957                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8958                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8959                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8960                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8961                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8962                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8966                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8967                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8968                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8969                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8970                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8971                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8972                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8973                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8974                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8975                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8976                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8977                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8982                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8983                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8984                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8985                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8986                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8987                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8988                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8989                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8990                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8991                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8992                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8993                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8998                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n8999                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9000                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9001                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9002                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9003                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9004                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9005                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9006                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9007                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9008                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9009                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9010                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9015                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9016                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9017                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9018                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9019                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9020                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9021                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9022                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9023                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9024                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9025                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9026                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9027                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9028                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9032                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9033                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9034                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9035                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9036                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9037                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9038                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9039                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9040                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9041                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9042                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9043                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9050                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9051                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9052                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9053                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9054                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9055                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9056                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9057                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9058                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9059                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9060                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9061                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9062                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9063                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n9064                         |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n10773                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n10780                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n10787                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n10794                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n10801                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n10808                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n10815                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n10822                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n10829                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n10836                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n10843                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n10850                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n10857                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n10864                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n10881                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11001                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11005                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11009                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11700                        |      11|    4096|     90.16%
+                                        |        |        |
+\instant1/n11702                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11709                        |      53|    4096|     90.16%
+                                        |        |        |
+\instant1/n11726                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11728                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11732                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11736                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11740                        |       8|    4096|     90.16%
+                                        |        |        |
+\instant1/n11742                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11746                        |       8|    4096|     90.16%
+                                        |        |        |
+\instant1/n11749                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11753                        |       8|    4096|     90.16%
+                                        |        |        |
+\instant1/n11755                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11760                        |       9|    4096|     90.16%
+                                        |        |        |
+\instant1/n11762                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11767                        |       9|    4096|     90.16%
+                                        |        |        |
+\instant1/n11768                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11774                        |      10|    4096|     90.16%
+                                        |        |        |
+\instant1/n11776                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11781                        |       9|    4096|     90.16%
+                                        |        |        |
+\instant1/n11783                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11788                        |       9|    4096|     90.16%
+                                        |        |        |
+\instant1/n11790                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11797                        |      18|    4096|     90.16%
+                                        |        |        |
+\instant1/n11798                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11804                        |      10|    4096|     90.16%
+                                        |        |        |
+\instant1/n11806                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11808                        |       7|    4096|     90.16%
+                                        |        |        |
+\instant1/n11809                        |       1|    4096|     90.16%
+                                        |        |        |
+\instant1/n11813                        |       8|    4096|     90.16%
+                                        |        |        |
+\instant1/n11818                        |       3|    4096|     90.16%
+                                        |        |        |
+\instant1/n11833                        |       8|    4096|     90.16%
+                                        |        |        |
+\instant1/n12194                        |       9|    4096|     90.16%
+                                        |        |        |
+\instant1/n12197                        |       5|    4096|     90.16%
+                                        |        |        |
+lumdivision[6]                          |      93|    4096|     90.16%
+                                        |        |        |
+\instant1/n10_adj_465                   |       1|    2048|     45.08%
+                                        |        |        |
+\instant1/n10_adj_471                   |       1|    2048|     45.08%
+                                        |        |        |
+\instant1/n11_adj_470                   |       1|    2048|     45.08%
+                                        |        |        |
+\instant1/n13_adj_569                   |       1|    2048|     45.08%
+                                        |        |        |
+\instant1/n14_adj_464                   |       1|    2048|     45.08%
+                                        |        |        |
+\instant1/n14_adj_568                   |       1|    2048|     45.08%
+                                        |        |        |
+\instant1/n31                           |      21|    2048|     45.08%
+                                        |        |        |
+\instant1/n32                           |      21|    2048|     45.08%
+                                        |        |        |
+\instant1/n1406                         |       4|    2048|     45.08%
+                                        |        |        |
+\instant1/n3444                         |       3|    2048|     45.08%
+                                        |        |        |
+\instant1/n3445                         |       3|    2048|     45.08%
+                                        |        |        |
+\instant1/n3580                         |       3|    2048|     45.08%
+                                        |        |        |
+\instant1/n3581                         |       3|    2048|     45.08%
+                                        |        |        |
+\instant1/n3713                         |       3|    2048|     45.08%
+                                        |        |        |
+\instant1/n3714                         |       3|    2048|     45.08%
+                                        |        |        |
+\instant1/n4076                         |       2|    2048|     45.08%
+                                        |        |        |
+\instant1/n4077                         |       2|    2048|     45.08%
+                                        |        |        |
+\instant1/n4197                         |       2|    2048|     45.08%
+                                        |        |        |
+\instant1/n4198                         |       2|    2048|     45.08%
+                                        |        |        |
+\instant1/n4313_adj_387                 |       2|    2048|     45.08%
+                                        |        |        |
+\instant1/n4314_adj_316                 |       2|    2048|     45.08%
+                                        |        |        |
+\instant1/n4775                         |       3|    2048|     45.08%
+                                        |        |        |
+\instant1/n4776                         |       3|    2048|     45.08%
+                                        |        |        |
+\instant1/n11815                        |       4|    2048|     45.08%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 4543  Score: 1120161245
+
+Constraints cover >4294967295 paths, 1754 nets, and 5314 connections (96.1% coverage)
+
+
+Peak memory: 234090496 bytes, TRCE: 123596800 bytes, DLYMAN: 0 bytes
+CPU_TIME_REPORT: 1 secs 

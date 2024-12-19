@@ -1,0 +1,154 @@
+# Reading pref.tcl
+# do {D:/lscc/diamond/3.12/bin/nt64/lab22/lab222/lab222.mdo}
+# Loading project lab222
+# Model Technology ModelSim - Lattice FPGA Edition vcom 2020.3 Compiler 2020.10 Oct 14 2020
+# Start time: 21:10:01 on Nov 29,2022
+# vcom -reportprogress 300 -work work D:/lscc/diamond/3.12/bin/nt64/lab22/lab222/breathingLEDver3.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity PWM_LED
+# -- Compiling architecture Behavior of PWM_LED
+# End time: 21:10:01 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vcom 2020.3 Compiler 2020.10 Oct 14 2020
+# Start time: 21:10:01 on Nov 29,2022
+# vcom -reportprogress 300 -work work D:/lscc/diamond/3.12/bin/nt64/lab22/lab222/KEY_BOARD_SUB.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity KEY_BOARD_SUB
+# -- Compiling architecture Behavioral of KEY_BOARD_SUB
+# End time: 21:10:01 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vcom 2020.3 Compiler 2020.10 Oct 14 2020
+# Start time: 21:10:01 on Nov 29,2022
+# vcom -reportprogress 300 -work work D:/lscc/diamond/3.12/bin/nt64/lab22/lab222/breathingLEDtop.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package std_logic_arith
+# -- Loading package STD_LOGIC_UNSIGNED
+# -- Compiling entity PWM_LED_top
+# -- Compiling architecture rtl of PWM_LED_top
+# End time: 21:10:01 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Lattice FPGA Edition vcom 2020.3 Compiler 2020.10 Oct 14 2020
+# Start time: 21:10:01 on Nov 29,2022
+# vcom -reportprogress 300 -work work D:/lscc/diamond/3.12/bin/nt64/lab22/lab222/breathingLEDver3_test.vhd 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity PWM_LED_top_tb
+# -- Compiling architecture Behavioral1 of PWM_LED_top_tb
+# End time: 21:10:01 on Nov 29,2022, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -L work -L pmi_work -L ovi_machxo2 PWM_LED_top_tb 
+# Start time: 21:10:02 on Nov 29,2022
+# //  ModelSim - Lattice FPGA Edition 2020.3 Oct 14 2020
+# //
+# //  Copyright 1991-2020 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  ModelSim - Lattice FPGA Edition and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.pwm_led_top_tb(behavioral1)
+# Loading ieee.std_logic_arith(body)
+# Loading ieee.std_logic_unsigned(body)
+# Loading work.pwm_led_top(rtl)
+# Loading work.key_board_sub(behavioral)
+# Loading work.pwm_led(behavior)
+# .main_pane.wave.interior.cs.body.pw.wf
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 40 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 40 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 40 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 120 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 120 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 120 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 200 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 200 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 200 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 280 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 280 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 280 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 360 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 360 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 360 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 440 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 440 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 440 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 520 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 520 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 520 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 600 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 600 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 600 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 680 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 680 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 680 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 760 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 760 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 760 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 840 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 840 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 840 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 920 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 920 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 920 ns  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1 us  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1 us  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# ** Warning: There is an 'U'|'X'|'W'|'Z'|'-' in an arithmetic operand, the result will be 'X'(es).
+#    Time: 1 us  Iteration: 1  Instance: /pwm_led_top_tb/instant/instant2
+# End time: 21:10:28 on Nov 29,2022, Elapsed time: 0:00:26
+# Errors: 0, Warnings: 47

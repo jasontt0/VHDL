@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="IBIS">
+        <Message>
+            <ID>1191031</ID>
+            <Severity>Info</Severity>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/lscc/diamond/3.12/bin/nt64/lab3/lab3.lpf(40): Semantic error in &quot;IOBUF PORT &quot;newp1&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>newp1</Dynamic>
+            <Navigation>D:/lscc/diamond/3.12/bin/nt64/lab3/lab3.lpf</Navigation>
+            <Navigation>40</Navigation>
+        </Message>
+        <Message>
+            <ID>1100644</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/lscc/diamond/3.12/bin/nt64/lab3/lab3.lpf(41): Semantic error in &quot;IOBUF PORT &quot;newp2&quot; IO_TYPE=LVCMOS33 ;&quot;: </Dynamic>
+            <Dynamic>newp2</Dynamic>
+            <Navigation>D:/lscc/diamond/3.12/bin/nt64/lab3/lab3.lpf</Navigation>
+            <Navigation>41</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/lscc/diamond/3.12/bin/nt64/lab3/lab3.lpf(52): Semantic error in &quot;LOCATE COMP &quot;newp1&quot; SITE &quot;P12&quot; ;&quot;: </Dynamic>
+            <Dynamic>newp1</Dynamic>
+            <Navigation>D:/lscc/diamond/3.12/bin/nt64/lab3/lab3.lpf</Navigation>
+            <Navigation>52</Navigation>
+        </Message>
+        <Message>
+            <ID>1100679</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>D:/lscc/diamond/3.12/bin/nt64/lab3/lab3.lpf(53): Semantic error in &quot;LOCATE COMP &quot;newp2&quot; SITE &quot;M12&quot; ;&quot;: </Dynamic>
+            <Dynamic>newp2</Dynamic>
+            <Navigation>D:/lscc/diamond/3.12/bin/nt64/lab3/lab3.lpf</Navigation>
+            <Navigation>53</Navigation>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921261</ID>
+            <Severity>Error</Severity>
+            <Dynamic>e:/desktop/vhdl_exp/otherbs_experiment/lab3/traffic_light.vhd(19): </Dynamic>
+            <Dynamic>END</Dynamic>
+            <Navigation>e:/desktop/vhdl_exp/otherbs_experiment/lab3/traffic_light.vhd</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61001101</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVHD">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVlg">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>D:/Lattice Diamond/Project/EXP/lab5/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab5/impl1/source/freq_div.vhd(4): </Dynamic>
+            <Dynamic>freqdivider</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab5/impl1/source/freq_div.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab5/impl1/source/freq_div.vhd(13): </Dynamic>
+            <Dynamic>freqdivider_arch</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab5/impl1/source/freq_div.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab5/impl1/source/lab5.vhd(4): </Dynamic>
+            <Dynamic>piano</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab5/impl1/source/lab5.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab5/impl1/source/lab5.vhd(15): </Dynamic>
+            <Dynamic>piano_arch</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab5/impl1/source/lab5.vhd</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab5/impl1/source/songs.vhd(4): </Dynamic>
+            <Dynamic>song</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab5/impl1/source/songs.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab5/impl1/source/songs.vhd(13): </Dynamic>
+            <Dynamic>song_arch</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab5/impl1/source/songs.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab5/impl1/source/lab5.vhd(13): </Dynamic>
+            <Dynamic>piano</Dynamic>
+            <Dynamic>piano_arch</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab5/impl1/source/lab5.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=clk40hz loads=5 clock_loads=1
+   Signal=switch_c loads=1 clock_loads=1
+   Signal=U2/tone2_3__N_199 loads=4 clock_loads=3
+   Signal=U2/mn_former_derived_1 loads=1 clock_loads=1
+   Signal=mode_c loads=1 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=clk40hz loads=5 clock_loads=1
+   Signal=switch_c loads=1 clock_loads=1
+   Signal=U2/tone2_3__N_199 loads=4 clock_loads=3
+   Signal=U2/mn_former_derived_1 loads=1 clock_loads=1
+   Signal=mode_c loads=1 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Jedecgen">
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by xo2c00.acd ###</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

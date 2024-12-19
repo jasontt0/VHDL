@@ -1,0 +1,6 @@
+#Start recording tcl command: 11/20/2024 22:31:12
+#Project Location: E:/DESKTOP/hardware_project/Project/gcd; Project name: gcd
+prj_project open "E:/DESKTOP/hardware_project/Project/gcd/gcd.ldf"
+prj_project save
+prj_project save
+#Stop recording: 11/20/2024 22:32:18

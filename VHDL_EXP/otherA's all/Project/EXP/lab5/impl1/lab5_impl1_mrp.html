@@ -1,0 +1,427 @@
+<HTML>
+<HEAD><TITLE>Project Summary</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="Mrp"></A>
+            Lattice Mapping Report File for Design Module 'piano'
+
+
+
+<A name="mrp_di"></A><B><U><big>Design Information</big></U></B>
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     lab5_impl1.ngd -o lab5_impl1_map.ncd -pr lab5_impl1.prf -mp lab5_impl1.mrp
+     -lpf D:/Lattice Diamond/Project/EXP/lab5/impl1/lab5_impl1.lpf -lpf
+     D:/Lattice Diamond/Project/EXP/lab5/lab5.lpf -c 0 -gui 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.13.0.56.2
+Mapped on:  11/26/23  14:30:50
+
+
+<A name="mrp_ds"></A><B><U><big>Design Summary</big></U></B>
+   Number of registers:    116 out of  4635 (3%)
+      PFU registers:          116 out of  4320 (3%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:       155 out of  2160 (7%)
+      SLICEs as Logic/ROM:    155 out of  2160 (7%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         61 out of  2160 (3%)
+   Number of LUT4s:        309 out of  4320 (7%)
+      Number used as logic LUTs:        187
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      122
+      Number used as shift registers:     0
+   Number of PIO sites used: 12 + 4(JTAG) out of 105 (15%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  6
+     Net clk40hz: 1 loads, 1 rising, 0 falling (Driver: U1/clk40hz_28 )
+     Net clk_c: 62 loads, 62 rising, 0 falling (Driver: PIO clk )
+     Net switch_c: 1 loads, 0 rising, 1 falling (Driver: PIO switch )
+     Net U2/tone2_3__N_199: 3 loads, 3 rising, 0 falling (Driver:
+
+     U2/tone2_3__I_2_1_lut_2_lut )
+     Net U2/mn_former_derived_1: 1 loads, 1 rising, 0 falling (Driver:
+     U2/mn_former_I_3_2_lut_rep_19 )
+     Net mode_c: 1 loads, 0 rising, 1 falling (Driver: PIO mode )
+   Number of Clock Enables:  2
+     Net clk_c_enable_14: 3 loads, 3 LSLICEs
+     Net clk_c_enable_20: 10 loads, 10 LSLICEs
+   Number of LSRs:  8
+     Net cnt_19__N_55: 11 loads, 11 LSLICEs
+     Net n565: 17 loads, 17 LSLICEs
+     Net n564: 5 loads, 5 LSLICEs
+     Net n566: 1 loads, 1 LSLICEs
+     Net n560: 17 loads, 17 LSLICEs
+     Net n683: 1 loads, 1 LSLICEs
+     Net U2/n502: 1 loads, 1 LSLICEs
+     Net U2/n562: 5 loads, 5 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net ptr1_3: 48 loads
+     Net ptr1_6: 48 loads
+     Net ptr1_2: 47 loads
+     Net ptr2_2: 47 loads
+     Net ptr2_6: 47 loads
+     Net ptr2_3: 46 loads
+     Net ptr2_1: 45 loads
+     Net ptr1_1: 42 loads
+     Net ptr2_7: 27 loads
+     Net ptr1_7: 26 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+
+
+
+<A name="mrp_dwe"></A><B><U><big>Design Errors/Warnings</big></U></B>
+
+   No errors or warnings present.
+
+
+
+<A name="mrp_ioa"></A><B><U><big>IO (PIO) Attributes</big></U></B>
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| beep                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| switch              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| row[0]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| row[1]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+| row[2]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| row[3]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| mode                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| col[3]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| col[2]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| col[1]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| col[0]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+
+
+<A name="mrp_rm"></A><B><U><big>Removed logic</big></U></B>
+
+Signal mode_N_30 was merged into signal mode_c
+Signal switch_N_60 was merged into signal switch_c
+Signal GND_net undriven or does not drive anything - clipped.
+Signal U1/cnt8_229_add_4_33/S1 undriven or does not drive anything - clipped.
+Signal U1/cnt8_229_add_4_33/CO undriven or does not drive anything - clipped.
+Signal U1/cnt40_230_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal U1/cnt40_230_add_4_1/CI undriven or does not drive anything - clipped.
+Signal U1/cnt40_230_add_4_33/S1 undriven or does not drive anything - clipped.
+Signal U1/cnt40_230_add_4_33/CO undriven or does not drive anything - clipped.
+Signal U1/cnt8_229_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal U1/cnt8_229_add_4_1/CI undriven or does not drive anything - clipped.
+Signal equal_74_0/S1 undriven or does not drive anything - clipped.
+Signal equal_74_0/S0 undriven or does not drive anything - clipped.
+Signal equal_74_0/CI undriven or does not drive anything - clipped.
+Signal equal_74_14/S1 undriven or does not drive anything - clipped.
+Signal equal_74_14/S0 undriven or does not drive anything - clipped.
+Signal equal_74_16/S1 undriven or does not drive anything - clipped.
+Signal equal_74_16/S0 undriven or does not drive anything - clipped.
+Signal equal_74_18/S1 undriven or does not drive anything - clipped.
+Signal equal_74_18/S0 undriven or does not drive anything - clipped.
+Signal equal_74_20_607/S1 undriven or does not drive anything - clipped.
+Signal equal_74_20_607/S0 undriven or does not drive anything - clipped.
+Signal U2/ptr1_231_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal U2/ptr1_231_add_4_1/CI undriven or does not drive anything - clipped.
+Signal U2/ptr1_231_add_4_9/S1 undriven or does not drive anything - clipped.
+Signal U2/ptr1_231_add_4_9/CO undriven or does not drive anything - clipped.
+Signal U2/ptr2_232_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal U2/ptr2_232_add_4_1/CI undriven or does not drive anything - clipped.
+Signal U2/ptr2_232_add_4_9/S1 undriven or does not drive anything - clipped.
+Signal U2/ptr2_232_add_4_9/CO undriven or does not drive anything - clipped.
+Signal equal_74_20/S1 undriven or does not drive anything - clipped.
+Signal equal_74_20/CO undriven or does not drive anything - clipped.
+Signal cnt_228_add_4_21/S1 undriven or does not drive anything - clipped.
+Signal cnt_228_add_4_21/CO undriven or does not drive anything - clipped.
+Signal cnt_228_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal cnt_228_add_4_1/CI undriven or does not drive anything - clipped.
+
+Block i907 was optimized away.
+Block i908 was optimized away.
+Block i1 was optimized away.
+
+     
+
+
+
+<A name="mrp_gsr"></A><B><U><big>GSR Usage</big></U></B>
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is
+        'U2/tone2_3__N_199'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'U2/tone2_3__N_199' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 100 
+
+     Type and instance name of component: 
+   Register : tmp_I_0_72
+   Register : clk_music_67
+   Register : beep_68
+   Register : mode_num_62
+   Register : cnt_228__i0
+   Register : tone1_i0_i3
+   Register : music_num_63
+   Register : tone1_i0_i0
+   Register : tone1_i0_i2
+   Register : tone1_i0_i1
+   Register : cnt_228__i19
+   Register : U2/tone2_3__I_0_i1
+   Register : U2/music_num_I_0
+   Register : U2/tone2_3__I_0_i2
+   Register : U2/tone2_3__I_0_i3
+   Register : U2/tone2_3__I_0_i4
+   Register : cnt_228__i18
+   Register : cnt_228__i17
+   Register : cnt_228__i16
+   Register : cnt_228__i15
+   Register : cnt_228__i14
+   Register : cnt_228__i13
+   Register : cnt_228__i12
+   Register : cnt_228__i11
+   Register : cnt_228__i10
+
+   Register : cnt_228__i9
+   Register : cnt_228__i8
+   Register : cnt_228__i7
+   Register : cnt_228__i6
+   Register : cnt_228__i5
+   Register : cnt_228__i4
+   Register : cnt_228__i3
+   Register : cnt_228__i2
+   Register : cnt_228__i1
+   Register : U1/clk40hz_28
+   Register : U1/clk8hz_26
+   Register : U1/cnt8_229__i0
+   Register : U1/cnt40_230__i0
+   Register : U1/cnt8_229__i31
+   Register : U1/cnt8_229__i30
+   Register : U1/cnt8_229__i29
+   Register : U1/cnt8_229__i28
+   Register : U1/cnt8_229__i27
+   Register : U1/cnt8_229__i26
+   Register : U1/cnt8_229__i25
+   Register : U1/cnt8_229__i24
+   Register : U1/cnt8_229__i23
+   Register : U1/cnt8_229__i22
+   Register : U1/cnt8_229__i21
+   Register : U1/cnt8_229__i20
+   Register : U1/cnt8_229__i19
+   Register : U1/cnt8_229__i18
+   Register : U1/cnt8_229__i17
+   Register : U1/cnt8_229__i16
+   Register : U1/cnt8_229__i15
+   Register : U1/cnt8_229__i14
+   Register : U1/cnt8_229__i13
+   Register : U1/cnt8_229__i12
+   Register : U1/cnt8_229__i11
+   Register : U1/cnt8_229__i10
+   Register : U1/cnt8_229__i9
+   Register : U1/cnt8_229__i8
+   Register : U1/cnt8_229__i7
+   Register : U1/cnt8_229__i6
+   Register : U1/cnt8_229__i5
+   Register : U1/cnt8_229__i4
+   Register : U1/cnt8_229__i3
+   Register : U1/cnt8_229__i2
+   Register : U1/cnt8_229__i1
+   Register : U1/cnt40_230__i31
+   Register : U1/cnt40_230__i30
+   Register : U1/cnt40_230__i29
+   Register : U1/cnt40_230__i28
+   Register : U1/cnt40_230__i27
+   Register : U1/cnt40_230__i26
+   Register : U1/cnt40_230__i25
+   Register : U1/cnt40_230__i24
+   Register : U1/cnt40_230__i23
+   Register : U1/cnt40_230__i22
+   Register : U1/cnt40_230__i21
+   Register : U1/cnt40_230__i20
+
+   Register : U1/cnt40_230__i19
+   Register : U1/cnt40_230__i18
+   Register : U1/cnt40_230__i17
+   Register : U1/cnt40_230__i16
+   Register : U1/cnt40_230__i15
+   Register : U1/cnt40_230__i14
+   Register : U1/cnt40_230__i13
+   Register : U1/cnt40_230__i12
+   Register : U1/cnt40_230__i11
+   Register : U1/cnt40_230__i10
+   Register : U1/cnt40_230__i9
+   Register : U1/cnt40_230__i8
+   Register : U1/cnt40_230__i7
+   Register : U1/cnt40_230__i6
+   Register : U1/cnt40_230__i5
+   Register : U1/cnt40_230__i4
+   Register : U1/cnt40_230__i3
+   Register : U1/cnt40_230__i2
+   Register : U1/cnt40_230__i1
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'U2/tone2_3__N_199' via the
+     GSR component.
+
+     Type and number of components of the type: 
+   Register = 16 
+
+     Type and instance name of component: 
+   Register : U2/ptr1_231__i7
+   Register : U2/ptr2_232__i0
+   Register : U2/ptr2_232__i1
+   Register : U2/ptr2_232__i2
+   Register : U2/ptr1_231__i0
+   Register : U2/ptr2_232__i3
+   Register : U2/ptr2_232__i4
+   Register : U2/ptr2_232__i5
+   Register : U2/ptr2_232__i6
+   Register : U2/ptr2_232__i7
+   Register : U2/ptr1_231__i1
+   Register : U2/ptr1_231__i2
+   Register : U2/ptr1_231__i3
+   Register : U2/ptr1_231__i4
+   Register : U2/ptr1_231__i5
+   Register : U2/ptr1_231__i6
+
+
+
+<A name="mrp_runtime"></A><B><U><big>Run Time and Memory Usage</big></U></B>
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 52 MB
+        
+
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights
+     reserved.
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

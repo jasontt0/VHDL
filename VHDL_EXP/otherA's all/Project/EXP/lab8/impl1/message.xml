@@ -1,0 +1,232 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="Map">
+        <Message>
+            <ID>52101259</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BCD_transform/mode_N_613_I_0_i2</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>D:/Lattice Diamond/Project/EXP/lab8/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab8/impl1/source/adc.vhd(7): </Dynamic>
+            <Dynamic>adc</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab8/impl1/source/adc.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab8/impl1/source/adc.vhd(17): </Dynamic>
+            <Dynamic>behavior</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab8/impl1/source/adc.vhd</Navigation>
+            <Navigation>17</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab8/impl1/source/btn_debouncing.vhd(6): </Dynamic>
+            <Dynamic>btn_debouncing</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab8/impl1/source/btn_debouncing.vhd</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab8/impl1/source/btn_debouncing.vhd(14): </Dynamic>
+            <Dynamic>cyclesample</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab8/impl1/source/btn_debouncing.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab8/impl1/source/ctrlword_595.vhd(6): </Dynamic>
+            <Dynamic>ctrlword_595</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab8/impl1/source/ctrlword_595.vhd</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab8/impl1/source/ctrlword_595.vhd(24): </Dynamic>
+            <Dynamic>parallelout</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab8/impl1/source/ctrlword_595.vhd</Navigation>
+            <Navigation>24</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab8/impl1/source/lcd_display.vhd(3): </Dynamic>
+            <Dynamic>lcd_display</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab8/impl1/source/lcd_display.vhd</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab8/impl1/source/lcd_display.vhd(20): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab8/impl1/source/lcd_display.vhd</Navigation>
+            <Navigation>20</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab8/impl1/source/mode_shift.vhd(5): </Dynamic>
+            <Dynamic>mode_shift</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab8/impl1/source/mode_shift.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab8/impl1/source/mode_shift.vhd(14): </Dynamic>
+            <Dynamic>modeshift</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab8/impl1/source/mode_shift.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab8/impl1/source/top.vhd(6): </Dynamic>
+            <Dynamic>top</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab8/impl1/source/top.vhd</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab8/impl1/source/top.vhd(23): </Dynamic>
+            <Dynamic>behavior</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab8/impl1/source/top.vhd</Navigation>
+            <Navigation>23</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab8/impl1/source/trans_bcd.vhd(7): </Dynamic>
+            <Dynamic>trans_bcd</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab8/impl1/source/trans_bcd.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab8/impl1/source/trans_bcd.vhd(32): </Dynamic>
+            <Dynamic>bcdencoder</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab8/impl1/source/trans_bcd.vhd</Navigation>
+            <Navigation>32</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab8/impl1/source/top.vhd(21): </Dynamic>
+            <Dynamic>top</Dynamic>
+            <Dynamic>behavior</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab8/impl1/source/top.vhd</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\datato595/shift_cnt</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\ADC_work/state</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab8/impl1/source/trans_bcd.vhd(178): Latch \BCD_transform/ctrlword_595_3_15__N_614_7__I_0_i1 input is stuck at One
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab8/impl1/source/trans_bcd.vhd(178): Latch \BCD_transform/ctrlword_595_3_15__N_614_7__I_0_i7 input is stuck at One
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>d:/lattice diamond/project/exp/lab8/impl1/source/adc.vhd(190): </Dynamic>
+            <Dynamic>\ADC_work/data_write__i6</Dynamic>
+            <Navigation>d:/lattice diamond/project/exp/lab8/impl1/source/adc.vhd</Navigation>
+            <Navigation>190</Navigation>
+        </Message>
+        <Message>
+            <ID>35001752</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\BCD_transform/mode_N_613_I_0_i1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_in_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clk_in</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>rst_n_in_c</Dynamic>
+            <Dynamic>Secondary</Dynamic>
+            <Dynamic>rst_n_in</Dynamic>
+            <Dynamic>L14</Dynamic>
+            <Dynamic>Secondary</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=ctrlword_595_3_13 loads=33 clock_loads=4</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=ctrlword_595_3_13 loads=33 clock_loads=4</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Jedecgen">
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by xo2c00.acd ###</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009992</ID>
+            <Severity>Info</Severity>
+            <Dynamic> SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

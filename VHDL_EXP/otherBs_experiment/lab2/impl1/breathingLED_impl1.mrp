@@ -1,0 +1,666 @@
+
+         Lattice Mapping Report File for Design Module 'PWM_LED_top'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     breathingLED_impl1.ngd -o breathingLED_impl1_map.ncd -pr
+     breathingLED_impl1.prf -mp breathingLED_impl1.mrp -lpf
+     D:/lscc/diamond/3.12/bin/nt64/lab22/impl1/breathingLED_impl1.lpf -lpf
+     D:/lscc/diamond/3.12/bin/nt64/lab22/breathingLED.lpf -c 0 -gui -msgset
+     D:/lscc/diamond/3.12/bin/nt64/lab22/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.12.0.240.2
+Mapped on:  12/17/22  23:52:03
+
+Design Summary
+--------------
+
+   Number of registers:    107 out of  4635 (2%)
+      PFU registers:          107 out of  4320 (2%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:       703 out of  2160 (33%)
+      SLICEs as Logic/ROM:    703 out of  2160 (33%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:        331 out of  2160 (15%)
+   Number of LUT4s:        1400 out of  4320 (32%)
+      Number used as logic LUTs:        738
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      662
+      Number used as shift registers:     0
+   Number of PIO sites used: 21 + 4(JTAG) out of 105 (24%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  2
+     Net clk_c: 60 loads, 60 rising, 0 falling (Driver: PIO clk )
+     Net instant2/clk1: 7 loads, 7 rising, 0 falling (Driver:
+
+                                    Page 1
+
+
+
+
+Design:  PWM_LED_top                                   Date:  12/17/22  23:52:03
+
+Design Summary (cont)
+---------------------
+     instant2/FS_391__i15 )
+   Number of Clock Enables:  3
+     Net instant1/clk_c_enable_1: 1 loads, 1 LSLICEs
+     Net instant1/clk_c_enable_17: 9 loads, 9 LSLICEs
+     Net instant2/clk1_enable_5: 4 loads, 4 LSLICEs
+   Number of LSRs:  12
+     Net frqDN_c: 1 loads, 1 LSLICEs
+     Net frqUP_c: 1 loads, 1 LSLICEs
+     Net lumDN_c: 1 loads, 1 LSLICEs
+     Net lumUP_c: 1 loads, 1 LSLICEs
+     Net sawtooth_cnt_15__N_102: 9 loads, 9 LSLICEs
+     Net instant1/lumlevel_0: 4 loads, 4 LSLICEs
+     Net instant1/frqlevel_0: 2 loads, 2 LSLICEs
+     Net instant1/lumlevel_2: 4 loads, 4 LSLICEs
+     Net instant1/frqlevel_1: 1 loads, 1 LSLICEs
+     Net instant1/frqlevel_2: 1 loads, 1 LSLICEs
+     Net instant2/key_state_1: 2 loads, 2 LSLICEs
+     Net instant2/n4482: 9 loads, 9 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net lumdivision_6: 94 loads
+     Net lumdivision_4: 64 loads
+     Net instant1/n24: 56 loads
+     Net lumdivision_3: 56 loads
+     Net lumdivision_9: 56 loads
+     Net instant1/n11270: 53 loads
+     Net lumdivision_0: 48 loads
+     Net lumdivision_2: 40 loads
+     Net n11743: 38 loads
+     Net instant1/n48_adj_316: 32 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| led[1]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[2]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| column[0]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+                                    Page 2
+
+
+
+
+Design:  PWM_LED_top                                   Date:  12/17/22  23:52:03
+
+IO (PIO) Attributes (cont)
+--------------------------
+| column[1]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| column[2]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| column[3]           | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| frqDN               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| frqUP               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lumDN               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| lumUP               | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| row[0]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| row[1]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| row[2]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| row[3]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[0]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[3]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[4]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[5]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[6]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+| led[7]              | OUTPUT    | LVCMOS25  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Signal instant2/n4484 was merged into signal instant2/key_state_1
+Signal instant1/n812 was merged into signal frqUP_c
+Signal instant1/n2 was merged into signal instant1/frqlevel_0
+Signal instant1/n806 was merged into signal lumUP_c
+Signal instant1/n815 was merged into signal frqDN_c
+Signal instant1/n809 was merged into signal lumDN_c
+Signal instant1/n1 was merged into signal instant1/lumlevel_0
+Signal GND_net undriven or does not drive anything - clipped.
+Signal instant2/FS_391_add_4_1/S0 undriven or does not drive anything - clipped.
+     
+Signal instant2/FS_391_add_4_1/CI undriven or does not drive anything - clipped.
+     
+Signal instant2/FS_391_add_4_17/S1 undriven or does not drive anything -
+     clipped.
+Signal instant2/FS_391_add_4_17/CO undriven or does not drive anything -
+     clipped.
+
+                                    Page 3
+
+
+
+
+Design:  PWM_LED_top                                   Date:  12/17/22  23:52:03
+
+Removed logic (cont)
+--------------------
+Signal instant1/add_567_29/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_567_29/CO undriven or does not drive anything - clipped.
+Signal instant1/equal_6_0/S1 undriven or does not drive anything - clipped.
+Signal instant1/equal_6_0/S0 undriven or does not drive anything - clipped.
+Signal instant1/equal_6_0/CI undriven or does not drive anything - clipped.
+Signal instant1/add_568_1/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_568_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_568_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_568_29/CO undriven or does not drive anything - clipped.
+Signal instant1/add_569_1/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_569_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_569_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_569_31/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_569_31/CO undriven or does not drive anything - clipped.
+Signal instant1/add_570_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_570_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_570_31/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_570_31/CO undriven or does not drive anything - clipped.
+Signal instant1/add_571_2/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_571_2/CI undriven or does not drive anything - clipped.
+Signal instant1/add_571_32/CO undriven or does not drive anything - clipped.
+Signal instant1/sub_291_add_2_3/S1 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_3/S0 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_5/S1 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_5/S0 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_7/S1 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_7/S0 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_9/S1 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_9/S0 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_11/S1 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_11/S0 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_13/S1 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_13/S0 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_15/S1 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_15/S0 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_17/S1 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_17/S0 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_19/S1 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_19/S0 undriven or does not drive anything -
+
+                                    Page 4
+
+
+
+
+Design:  PWM_LED_top                                   Date:  12/17/22  23:52:03
+
+Removed logic (cont)
+--------------------
+     clipped.
+Signal instant1/sub_291_add_2_21/S1 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_21/S0 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_23/S1 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_23/S0 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_25/S1 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_25/S0 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_27/S1 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_27/S0 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_29/S1 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_29/S0 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_31/S1 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_31/S0 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_33/S0 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_33/CO undriven or does not drive anything -
+     clipped.
+Signal instant1/add_206_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_206_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_206_11/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_206_11/CO undriven or does not drive anything - clipped.
+Signal instant1/sawtooth_cnt_390_add_4_1/S0 undriven or does not drive anything
+     - clipped.
+Signal instant1/sawtooth_cnt_390_add_4_1/CI undriven or does not drive anything
+     - clipped.
+Signal instant1/add_198_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_198_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_546_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_546_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_546_7/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_546_7/CO undriven or does not drive anything - clipped.
+Signal instant1/add_547_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_547_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_547_7/CO undriven or does not drive anything - clipped.
+Signal instant1/add_548_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_548_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_548_9/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_548_9/CO undriven or does not drive anything - clipped.
+Signal instant1/add_549_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_549_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_549_9/CO undriven or does not drive anything - clipped.
+Signal instant1/add_550_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_550_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_550_11/S1 undriven or does not drive anything - clipped.
+
+                                    Page 5
+
+
+
+
+Design:  PWM_LED_top                                   Date:  12/17/22  23:52:03
+
+Removed logic (cont)
+--------------------
+Signal instant1/add_550_11/CO undriven or does not drive anything - clipped.
+Signal instant1/add_551_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_551_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_551_11/CO undriven or does not drive anything - clipped.
+Signal instant1/add_552_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_552_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_552_13/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_552_13/CO undriven or does not drive anything - clipped.
+Signal instant1/add_553_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_553_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_553_13/CO undriven or does not drive anything - clipped.
+Signal instant1/add_554_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_554_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_554_15/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_554_15/CO undriven or does not drive anything - clipped.
+Signal instant1/add_555_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_555_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_555_15/CO undriven or does not drive anything - clipped.
+Signal instant1/add_556_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_556_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_556_17/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_556_17/CO undriven or does not drive anything - clipped.
+Signal instant1/add_557_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_557_1/CI undriven or does not drive anything - clipped.
+Signal instant1/sawtooth_cnt_390_add_4_17/S1 undriven or does not drive anything
+     - clipped.
+Signal instant1/sawtooth_cnt_390_add_4_17/CO undriven or does not drive anything
+     - clipped.
+Signal instant1/add_557_17/CO undriven or does not drive anything - clipped.
+Signal instant1/add_558_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_558_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_558_19/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_558_19/CO undriven or does not drive anything - clipped.
+Signal instant1/add_559_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_559_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_559_19/CO undriven or does not drive anything - clipped.
+Signal instant1/add_560_1/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_560_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_560_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_560_21/CO undriven or does not drive anything - clipped.
+Signal instant1/add_561_1/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_561_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_561_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_561_23/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_561_23/CO undriven or does not drive anything - clipped.
+Signal instant1/add_562_1/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_562_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_562_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_562_23/CO undriven or does not drive anything - clipped.
+Signal instant1/add_563_1/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_563_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_563_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_563_25/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_563_25/CO undriven or does not drive anything - clipped.
+Signal instant1/add_564_1/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_564_1/S0 undriven or does not drive anything - clipped.
+
+                                    Page 6
+
+
+
+
+Design:  PWM_LED_top                                   Date:  12/17/22  23:52:03
+
+Removed logic (cont)
+--------------------
+Signal instant1/add_564_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_564_25/CO undriven or does not drive anything - clipped.
+Signal instant1/add_565_1/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_565_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_565_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_565_27/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_565_27/CO undriven or does not drive anything - clipped.
+Signal instant1/add_566_1/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_566_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_566_1/CI undriven or does not drive anything - clipped.
+Signal instant1/add_198_17/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_198_17/CO undriven or does not drive anything - clipped.
+Signal instant1/add_566_27/CO undriven or does not drive anything - clipped.
+Signal instant1/add_567_1/S1 undriven or does not drive anything - clipped.
+Signal instant1/add_567_1/S0 undriven or does not drive anything - clipped.
+Signal instant1/add_567_1/CI undriven or does not drive anything - clipped.
+Signal instant1/sub_291_add_2_1/S1 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_1/S0 undriven or does not drive anything -
+     clipped.
+Signal instant1/sub_291_add_2_1/CI undriven or does not drive anything -
+     clipped.
+Signal instant1/equal_6_13/S1 undriven or does not drive anything - clipped.
+Signal instant1/equal_6_13/S0 undriven or does not drive anything - clipped.
+Signal instant1/equal_6_15/S1 undriven or does not drive anything - clipped.
+Signal instant1/equal_6_15/S0 undriven or does not drive anything - clipped.
+Signal instant1/equal_6_16/S0 undriven or does not drive anything - clipped.
+Signal instant1/equal_6_16/CO undriven or does not drive anything - clipped.
+Signal sub_293_add_2_1/S1 undriven or does not drive anything - clipped.
+Signal sub_293_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal sub_293_add_2_1/CI undriven or does not drive anything - clipped.
+Signal sub_293_add_2_3/S1 undriven or does not drive anything - clipped.
+Signal sub_293_add_2_3/S0 undriven or does not drive anything - clipped.
+Signal sub_293_add_2_5/S1 undriven or does not drive anything - clipped.
+Signal sub_293_add_2_5/S0 undriven or does not drive anything - clipped.
+Signal sub_293_add_2_7/S1 undriven or does not drive anything - clipped.
+Signal sub_293_add_2_7/S0 undriven or does not drive anything - clipped.
+Signal sub_293_add_2_9/S1 undriven or does not drive anything - clipped.
+Signal sub_293_add_2_9/S0 undriven or does not drive anything - clipped.
+Signal sub_293_add_2_11/S0 undriven or does not drive anything - clipped.
+Signal sub_293_add_2_11/CO undriven or does not drive anything - clipped.
+Signal sub_292_add_2_1/S1 undriven or does not drive anything - clipped.
+Signal sub_292_add_2_1/S0 undriven or does not drive anything - clipped.
+Signal sub_292_add_2_1/CI undriven or does not drive anything - clipped.
+Signal sub_292_add_2_3/S1 undriven or does not drive anything - clipped.
+Signal sub_292_add_2_3/S0 undriven or does not drive anything - clipped.
+Signal sub_292_add_2_5/S1 undriven or does not drive anything - clipped.
+Signal sub_292_add_2_5/S0 undriven or does not drive anything - clipped.
+Signal sub_292_add_2_7/S1 undriven or does not drive anything - clipped.
+Signal sub_292_add_2_7/S0 undriven or does not drive anything - clipped.
+Signal sub_292_add_2_9/S1 undriven or does not drive anything - clipped.
+Signal sub_292_add_2_9/S0 undriven or does not drive anything - clipped.
+Signal sub_292_add_2_11/S0 undriven or does not drive anything - clipped.
+Signal sub_292_add_2_11/CO undriven or does not drive anything - clipped.
+Block instant2/i2964_1_lut was optimized away.
+Block instant1/i408_1_lut was optimized away.
+
+                                    Page 7
+
+
+
+
+Design:  PWM_LED_top                                   Date:  12/17/22  23:52:03
+
+Removed logic (cont)
+--------------------
+Block instant1/i420_1_lut was optimized away.
+Block instant1/i399_1_lut was optimized away.
+Block instant1/i413_1_lut was optimized away.
+Block instant1/i403_1_lut was optimized away.
+Block instant1/i1_1_lut was optimized away.
+Block i1 was optimized away.
+
+     
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is 'n11394'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'n11394' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 46 
+
+     Type and instance name of component: 
+   Register : instant1/lumdivision_i1
+   Register : instant1/frqnum_i1
+   Register : instant1/lumdivision_i6_rep_423
+   Register : instant1/lumdivision_i4_rep_422
+   Register : instant1/lumdivision_i3_rep_420
+   Register : instant1/frqnum_i8
+   Register : instant1/frqnum_i7
+   Register : instant1/frqnum_i6
+   Register : instant1/frqnum_i5
+   Register : instant1/frqnum_i4
+   Register : instant1/frqnum_i3
+   Register : instant1/frqnum_i2
+   Register : instant1/lumdivision_i6
+   Register : instant1/lumdivision_i5
+   Register : instant1/lumdivision_i4
+   Register : instant1/lumdivision_i3
+   Register : instant1/lumdivision_i2
+   Register : instant1/lumdivision_i1_rep_425
+   Register : instant1/lumdivision_i2_rep_418
+   Register : instant2/key_code_i0_i0
+   Register : instant2/row_i1
+   Register : instant2/key_state_i0
+   Register : instant2/FS_391__i14
+
+                                    Page 8
+
+
+
+
+Design:  PWM_LED_top                                   Date:  12/17/22  23:52:03
+
+GSR Usage (cont)
+----------------
+   Register : instant2/FS_391__i13
+   Register : instant2/FS_391__i12
+   Register : instant2/FS_391__i11
+   Register : instant2/FS_391__i10
+   Register : instant2/FS_391__i9
+   Register : instant2/FS_391__i8
+   Register : instant2/FS_391__i7
+   Register : instant2/FS_391__i6
+   Register : instant2/FS_391__i5
+   Register : instant2/FS_391__i4
+   Register : instant2/FS_391__i3
+   Register : instant2/FS_391__i2
+   Register : instant2/FS_391__i1
+   Register : instant2/key_state_i1
+   Register : instant2/row_i4
+   Register : instant2/key_code_i0_i4
+   Register : instant2/FS_391__i15
+   Register : instant2/row_i3
+   Register : instant2/row_i2
+   Register : instant2/FS_391__i0
+   Register : instant2/key_code_i0_i3
+   Register : instant2/key_code_i0_i2
+   Register : instant2/key_code_i0_i1
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'n11394' via the GSR
+     component.
+
+     Type and number of components of the type: 
+   Register = 24 
+
+     Type and instance name of component: 
+   Register : instant1/lumUP_3_91
+   Register : instant1/frqUP_3_97
+   Register : instant1/lumDN_3_94
+   Register : instant1/frqDN_3_100
+   Register : instant1/frqDN_2_99
+   Register : instant1/lumDN_2_93
+   Register : instant1/lumUP_2_90
+   Register : instant1/frqUP_2_96
+   Register : instant1/sawtooth_cnt_390__i0
+   Register : instant1/sawtooth_cnt_390__i15
+   Register : instant1/sawtooth_cnt_390__i14
+   Register : instant1/sawtooth_cnt_390__i13
+   Register : instant1/sawtooth_cnt_390__i12
+   Register : instant1/sawtooth_cnt_390__i11
+   Register : instant1/sawtooth_cnt_390__i10
+   Register : instant1/sawtooth_cnt_390__i9
+   Register : instant1/sawtooth_cnt_390__i8
+   Register : instant1/sawtooth_cnt_390__i7
+   Register : instant1/sawtooth_cnt_390__i6
+   Register : instant1/sawtooth_cnt_390__i5
+
+                                    Page 9
+
+
+
+
+Design:  PWM_LED_top                                   Date:  12/17/22  23:52:03
+
+GSR Usage (cont)
+----------------
+   Register : instant1/sawtooth_cnt_390__i4
+   Register : instant1/sawtooth_cnt_390__i3
+   Register : instant1/sawtooth_cnt_390__i2
+   Register : instant1/sawtooth_cnt_390__i1
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 57 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                   Page 10
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights
+     reserved.

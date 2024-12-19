@@ -1,0 +1,46 @@
+----------------------------------------------------------------------
+Report for cell piano.TECH
+Register bits:  127 of 4635 (2.740%)
+I/O cells:      12
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        66          100.0
+                            FD1P3AX         1          100.0
+                            FD1P3IX        28          100.0
+                             FD1S1A         6          100.0
+                             FD1S1I         1          100.0
+                            FD1S3AX         6          100.0
+                            FD1S3IX        85          100.0
+                                GSR         1          100.0
+                                 IB         7          100.0
+                                INV         2          100.0
+                               LUT4       100          100.0
+                                 OB         5          100.0
+                              PFUMX         8          100.0
+                          ROM256X1A         9          100.0
+SUB MODULES
+                        freqdivider         1
+                               song         1
+                              TOTAL       327
+----------------------------------------------------------------------
+Report for cell song.v1
+Instance Path : U2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        15           22.7
+                            FD1P3IX        25           89.3
+                             FD1S1A         5           83.3
+                             FD1S1I         1          100.0
+                               LUT4        18           18.0
+                              PFUMX         2           25.0
+                              TOTAL        66
+----------------------------------------------------------------------
+Report for cell freqdivider.v1
+Instance Path : U1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        34           51.5
+                            FD1S3AX         2           33.3
+                            FD1S3IX        64           75.3
+                               LUT4        29           29.0
+                              TOTAL       129

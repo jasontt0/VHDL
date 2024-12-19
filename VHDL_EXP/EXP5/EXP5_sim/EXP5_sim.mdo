@@ -1,0 +1,19 @@
+if {![file exists "E:/DESKTOP/VHDL_EXP/EXP5/EXP5_sim/EXP5_sim.mpf"]} { 
+	project new "E:/DESKTOP/VHDL_EXP/EXP5/EXP5_sim" EXP5_sim
+	project addfile "E:/DESKTOP/VHDL_EXP/EXP5/songs.vhd"
+	project addfile "E:/DESKTOP/VHDL_EXP/EXP5/frequencydivider.vhd"
+	project addfile "E:/DESKTOP/VHDL_EXP/EXP5/exp5.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "E:/DESKTOP/VHDL_EXP/EXP5/songs.vhd"
+	vcom -work work "E:/DESKTOP/VHDL_EXP/EXP5/frequencydivider.vhd"
+	vcom -work work "E:/DESKTOP/VHDL_EXP/EXP5/exp5.vhd"
+} else {
+	project open "E:/DESKTOP/VHDL_EXP/EXP5/EXP5_sim/EXP5_sim"
+	project compileoutofdate
+}
+vsim -L work -L pmi_work -L ovi_machxo2  piano
+view wave
+add wave /*
+run 1000ns

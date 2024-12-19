@@ -1,0 +1,14 @@
+#Start recording tcl command: 10/27/2023 16:47:11
+#Project Location: D:/Lattice Diamond/Project/gcd; Project name: gcd
+prj_project open "D:/Lattice Diamond/Project/gcd/gcd.ldf"
+prj_src add "D:/Lattice Diamond/Project/gcd/gcd_sim/gcd_sim.spf"
+prj_src add "D:/Lattice Diamond/Project/gcd/gcd_sim/gcd_sim.spf"
+prj_src add "D:/Lattice Diamond/Project/gcd/gcd_sim/gcd_sim.spf"
+prj_src add "D:/Lattice Diamond/Project/gcd/gcd_sim/gcd_sim.spf"
+prj_src add "D:/Lattice Diamond/Project/gcd/gcd_sim/gcd_sim.spf"
+prj_src add "D:/Lattice Diamond/Project/gcd/gcd_sim/gcd_sim.spf"
+prj_src add "D:/Lattice Diamond/Project/gcd/gcd_sim/gcd_sim.spf"
+prj_src add "D:/Lattice Diamond/Project/gcd/gcd_sim/gcd_sim.spf"
+prj_src add "D:/Lattice Diamond/Project/gcd/gcd_sim/gcd_sim.spf"
+prj_src add "D:/Lattice Diamond/Project/gcd/gcd_sim/gcd_sim.spf"
+#Stop recording: 10/27/2023 20:37:15

@@ -1,0 +1,7 @@
+#Start recording tcl command: 11/26/2023 15:52:37
+#Project Location: D:/Lattice Diamond/Project/EXP/lab2; Project name: lab2
+prj_project open "D:/Lattice Diamond/Project/EXP/lab2/lab2.ldf"
+prj_run Synthesis -impl impl1
+prj_project save
+prj_project close
+#Stop recording: 11/26/2023 16:19:06

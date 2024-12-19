@@ -1,0 +1,30 @@
+#Start recording tcl command: 11/20/2023 15:51:43
+#Project Location: D:/Lattice Diamond/Project/EXP/lab1; Project name: lab1
+prj_project new -name "lab1" -impl "impl1" -dev LCMXO2-4000HC-4MG132C -synthesis "lse"
+file copy -force -- "D:/Lattice Diamond/Project/EXP/lab1/freq_div.vhd" "D:/Lattice Diamond/Project/EXP/lab1/lab1.vhd" "D:/Lattice Diamond/Project/EXP/lab1/seg.vhd" "D:/Lattice Diamond/Project/EXP/lab1/impl1/source"
+prj_src add "D:/Lattice Diamond/Project/EXP/lab1/impl1/source/freq_div.vhd" "D:/Lattice Diamond/Project/EXP/lab1/impl1/source/lab1.vhd" "D:/Lattice Diamond/Project/EXP/lab1/impl1/source/seg.vhd"
+prj_project save
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1 -task Jedecgen
+pgr_project save "D:/Lattice Diamond/Project/EXP/lab1/impl1/impl1.xcf"
+prj_src add -exclude "D:/Lattice Diamond/Project/EXP/lab1/impl1/impl1.xcf"
+prj_src enable "D:/Lattice Diamond/Project/EXP/lab1/impl1/impl1.xcf"
+pgr_program set -cable 
+pgr_program run
+pgr_program run
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1 -task Jedecgen
+pgr_project save "D:/Lattice Diamond/Project/EXP/lab1/impl1/impl1.xcf"
+pgr_project close
+pgr_project open "D:/Lattice Diamond/Project/EXP/lab1/impl1/impl1.xcf"
+pgr_program run
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1 -task Jedecgen
+pgr_project save "D:/Lattice Diamond/Project/EXP/lab1/impl1/impl1.xcf"
+pgr_project close
+pgr_project open "D:/Lattice Diamond/Project/EXP/lab1/impl1/impl1.xcf"
+pgr_program run
+prj_project save
+prj_project close
+#Stop recording: 11/20/2023 16:42:01

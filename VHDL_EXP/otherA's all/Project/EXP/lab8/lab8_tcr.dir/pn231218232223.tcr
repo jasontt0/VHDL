@@ -1,0 +1,11 @@
+#Start recording tcl command: 12/18/2023 16:54:53
+#Project Location: D:/Lattice Diamond/Project/EXP/lab8; Project name: lab8
+prj_project open "D:/Lattice Diamond/Project/EXP/lab8/lab8.ldf"
+prj_src add -exclude "D:/Lattice Diamond/Project/EXP/lab8/lab8.lpf"
+prj_src enable "D:/Lattice Diamond/Project/EXP/lab8/lab8.lpf"
+prj_src remove "D:/Lattice Diamond/Project/EXP/lab8/dianya.lpf"
+prj_src remove "D:/Lattice Diamond/Project/EXP/lab8/keyboard.vhd"
+prj_src remove "D:/Lattice Diamond/Project/EXP/lab8/impl1/source/trans_BCD.vhd"
+prj_src add "D:/Lattice Diamond/Project/EXP/lab8/binary_to_BCD.vhd"
+prj_src remove "D:/Lattice Diamond/Project/EXP/lab8/impl1/source/btn_debouncing.vhd"
+#Stop recording: 12/18/2023 23:22:23

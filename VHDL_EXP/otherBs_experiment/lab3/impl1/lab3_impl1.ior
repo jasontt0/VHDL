@@ -1,0 +1,88 @@
+Loading design for application iotiming from file lab3_impl1.ncd.
+Design name: traffic_lights
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file lab3_impl1.ncd.
+Design name: traffic_lights
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file lab3_impl1.ncd.
+Design name: traffic_lights
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+// Design: traffic_lights
+// Package: CSBGA132
+// ncd File: lab3_impl1.ncd
+// Version: Diamond (64-bit) 3.12.0.240.2
+// Written on Thu Dec 01 20:49:43 2022
+// M: Minimum Performance Grade
+// iotiming lab3_impl1.ncd lab3_impl1.prf -gui -msgset D:/lscc/diamond/3.12/bin/nt64/lab3/promote.xml
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5, 4):
+
+// Input Setup and Hold Times
+
+Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+set1  clk   R     4.246      4      -0.012     M
+set2  clk   R     4.884      4       0.182     6
+set3  clk   R     4.290      4       0.477     6
+set4  clk   R     6.132      4       0.056     M
+
+
+// Clock to Output Delay
+
+Port       Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+a_to_g0[0] clk   R    17.355         4        4.092          M
+a_to_g0[1] clk   R    18.533         4        4.200          M
+a_to_g0[2] clk   R    17.996         4        4.307          M
+a_to_g0[3] clk   R    17.967         4        4.218          M
+a_to_g0[4] clk   R    16.231         4        4.191          M
+a_to_g0[5] clk   R    18.458         4        4.593          M
+a_to_g0[6] clk   R    16.294         4        4.127          M
+a_to_g1[1] clk   R    14.697         4        3.775          M
+a_to_g1[2] clk   R    16.167         4        4.178          M
+a_to_g1[3] clk   R    16.167         4        4.178          M
+a_to_g1[6] clk   R    14.697         4        3.775          M
+
+
+// Internal_Clock to Output
+
+Port       Internal_Clock  
+--------------------------------------------------------
+a_to_g0[0] all_time_7__N_25
+a_to_g0[1] all_time_7__N_25
+a_to_g0[2] all_time_7__N_25
+a_to_g0[3] all_time_7__N_25
+a_to_g0[4] all_time_7__N_25
+a_to_g0[5] all_time_7__N_25
+a_to_g0[6] all_time_7__N_25
+a_to_g1[1] all_time_7__N_25
+a_to_g1[2] all_time_7__N_25
+a_to_g1[3] all_time_7__N_25
+a_to_g1[6] all_time_7__N_25
+an0        all_time_7__N_25
+an1        all_time_7__N_25
+green1     all_time_7__N_25
+green2     all_time_7__N_25
+red1       all_time_7__N_25
+red2       all_time_7__N_25
+WARNING: you must also run trce with hold speed: 6

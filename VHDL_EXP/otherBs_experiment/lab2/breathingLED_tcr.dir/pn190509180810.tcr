@@ -1,0 +1,14 @@
+#Start recording tcl command: 5/9/2019 18:05:37
+#Project Location: C:/Users/liuyian/Desktop/VHDL/lab2; Project name: breathingLED
+prj_project open "C:/Users/liuyian/Desktop/VHDL/lab2/breathingLED.ldf"
+pgr_project open "C:/Users/liuyian/Desktop/VHDL/lab2/impl1/impl1.xcf"
+prj_src remove "C:/Users/liuyian/Desktop/VHDL/lab2/impl1/impl1.xcf"
+pgr_project close
+pgr_project save "C:/Users/liuyian/Desktop/VHDL/lab2/impl1/impl1.xcf"
+prj_src add -exclude "C:/Users/liuyian/Desktop/VHDL/lab2/impl1/impl1.xcf"
+prj_src enable "C:/Users/liuyian/Desktop/VHDL/lab2/impl1/impl1.xcf"
+pgr_program run
+pgr_project save "C:/Users/liuyian/Desktop/VHDL/lab2/impl1/impl1.xcf"
+prj_project save
+prj_project close
+#Stop recording: 5/9/2019 18:08:10

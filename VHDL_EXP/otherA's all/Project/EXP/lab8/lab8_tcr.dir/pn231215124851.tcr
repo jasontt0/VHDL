@@ -1,0 +1,8 @@
+#Start recording tcl command: 12/14/2023 17:42:16
+#Project Location: D:/Lattice Diamond/Project/EXP/lab8; Project name: lab8
+prj_project open "D:/Lattice Diamond/Project/EXP/lab8/lab8.ldf"
+prj_run Synthesis -impl impl1
+prj_src add "D:/Lattice Diamond/Project/EXP/lab8/keyboard.vhd"
+prj_src remove "D:/Lattice Diamond/Project/EXP/lab8/keyboard.vhd"
+prj_src add "D:/Lattice Diamond/Project/EXP/lab8/keyboard.vhd"
+#Stop recording: 12/15/2023 12:48:51

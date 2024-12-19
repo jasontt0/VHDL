@@ -1,0 +1,5 @@
+#Start recording tcl command: 11/6/2023 14:00:28
+#Project Location: D:/Lattice Diamond/Project/gcd; Project name: gcd
+prj_project open "D:/Lattice Diamond/Project/gcd/gcd.ldf"
+prj_src add "D:/Lattice Diamond/Project/gcd/gcd_sim/gcd_sim.spf"
+#Stop recording: 11/6/2023 15:40:28

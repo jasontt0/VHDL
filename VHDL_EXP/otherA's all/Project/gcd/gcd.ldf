@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliProject version="3.2" title="gcd" device="LCMXO2-4000HC-5MG132C" default_implementation="impl1">
+    <Options/>
+    <Implementation title="impl1" dir="impl1" description="impl1" synthesis="lse" default_strategy="Strategy1">
+        <Options def_top="gcd" top="tb"/>
+        <Source name="impl1/source/tb.vhd" type="VHDL" type_short="VHDL" syn_sim="SimOnly">
+            <Options top_module="tb"/>
+        </Source>
+        <Source name="impl1/source/gcd.vhd" type="VHDL" type_short="VHDL">
+            <Options/>
+        </Source>
+        <Source name="gcd.lpf" type="Logic Preference" type_short="LPF">
+            <Options/>
+        </Source>
+        <Source name="gcd_sim/gcd_sim.spf" type="Simulation Project File" type_short="SPF">
+            <Options/>
+        </Source>
+    </Implementation>
+    <Strategy name="Strategy1" file="gcd1.sty"/>
+</BaliProject>

@@ -1,0 +1,434 @@
+--------------------------------------------------------------------------------
+Lattice Synthesis Timing Report, Version  
+Wed Dec 13 18:26:48 2023
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Design:     dianya
+Constraint file:  
+Report level:    verbose report, limited to 3 items per constraint
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk2 [get_nets ctrlword_595_3[13]]
+            0 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk1 [get_nets \ADC_work/clk_divided]
+            1731 items scored, 1583 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 9.154ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \ADC_work/cnt__i0  (from \ADC_work/clk_divided +)
+   Destination:    FD1S3JX    D              \ADC_work/sda_out_r_155  (to \ADC_work/clk_divided +)
+
+   Delay:                  13.994ns  (30.3% logic, 69.7% route), 10 logic levels.
+
+ Constraint Details:
+
+     13.994ns data_path \ADC_work/cnt__i0 to \ADC_work/sda_out_r_155 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 9.154ns
+
+ Path Details: \ADC_work/cnt__i0 to \ADC_work/sda_out_r_155
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \ADC_work/cnt__i0 (from \ADC_work/clk_divided)
+Route        12   e 1.714                                  \ADC_work/cnt[0]
+LUT4        ---     0.493              A to Z              \ADC_work/i2_2_lut_rep_610_3_lut
+Route         3   e 1.258                                  \ADC_work/n34087
+LUT4        ---     0.493              A to Z              \ADC_work/i869_3_lut_rep_562_4_lut
+Route        21   e 1.831                                  \ADC_work/n34039
+LUT4        ---     0.493              C to Z              \ADC_work/mux_35_i3_3_lut_3_lut_4_lut
+Route         2   e 1.141                                  \ADC_work/n176
+MOFX0       ---     0.378             C0 to Z              \ADC_work/i30074
+Route         1   e 0.941                                  \ADC_work/sda_out_N_177
+LUT4        ---     0.493              A to Z              \ADC_work/sda_out_N_177_bdd_4_lut_30362
+Route         1   e 0.020                                  \ADC_work/n33040
+MUXL5       ---     0.233           ALUT to Z              \ADC_work/i29979
+Route         1   e 0.941                                  \ADC_work/n33041
+LUT4        ---     0.493              A to Z              \ADC_work/n33041_bdd_2_lut
+Route         1   e 0.020                                  \ADC_work/n33042
+MUXL5       ---     0.233           BLUT to Z              \ADC_work/i29981
+Route         1   e 0.941                                  \ADC_work/sda_out_N_173
+LUT4        ---     0.493              B to Z              \ADC_work/i6426_3_lut
+Route         1   e 0.941                                  \ADC_work/n9174
+                  --------
+                   13.994  (30.3% logic, 69.7% route), 10 logic levels.
+
+
+Error:  The following path violates requirements by 9.102ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \ADC_work/cnt__i1  (from \ADC_work/clk_divided +)
+   Destination:    FD1S3JX    D              \ADC_work/sda_out_r_155  (to \ADC_work/clk_divided +)
+
+   Delay:                  13.942ns  (30.5% logic, 69.5% route), 10 logic levels.
+
+ Constraint Details:
+
+     13.942ns data_path \ADC_work/cnt__i1 to \ADC_work/sda_out_r_155 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 9.102ns
+
+ Path Details: \ADC_work/cnt__i1 to \ADC_work/sda_out_r_155
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \ADC_work/cnt__i1 (from \ADC_work/clk_divided)
+Route        10   e 1.662                                  \ADC_work/cnt[1]
+LUT4        ---     0.493              B to Z              \ADC_work/i2_2_lut_rep_610_3_lut
+Route         3   e 1.258                                  \ADC_work/n34087
+LUT4        ---     0.493              A to Z              \ADC_work/i869_3_lut_rep_562_4_lut
+Route        21   e 1.831                                  \ADC_work/n34039
+LUT4        ---     0.493              C to Z              \ADC_work/mux_35_i3_3_lut_3_lut_4_lut
+Route         2   e 1.141                                  \ADC_work/n176
+MOFX0       ---     0.378             C0 to Z              \ADC_work/i30074
+Route         1   e 0.941                                  \ADC_work/sda_out_N_177
+LUT4        ---     0.493              A to Z              \ADC_work/sda_out_N_177_bdd_4_lut_30362
+Route         1   e 0.020                                  \ADC_work/n33040
+MUXL5       ---     0.233           ALUT to Z              \ADC_work/i29979
+Route         1   e 0.941                                  \ADC_work/n33041
+LUT4        ---     0.493              A to Z              \ADC_work/n33041_bdd_2_lut
+Route         1   e 0.020                                  \ADC_work/n33042
+MUXL5       ---     0.233           BLUT to Z              \ADC_work/i29981
+Route         1   e 0.941                                  \ADC_work/sda_out_N_173
+LUT4        ---     0.493              B to Z              \ADC_work/i6426_3_lut
+Route         1   e 0.941                                  \ADC_work/n9174
+                  --------
+                   13.942  (30.5% logic, 69.5% route), 10 logic levels.
+
+
+Error:  The following path violates requirements by 8.902ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1S3IX    CK             \ADC_work/cnt__i2  (from \ADC_work/clk_divided +)
+   Destination:    FD1S3JX    D              \ADC_work/sda_out_r_155  (to \ADC_work/clk_divided +)
+
+   Delay:                  13.742ns  (30.9% logic, 69.1% route), 10 logic levels.
+
+ Constraint Details:
+
+     13.742ns data_path \ADC_work/cnt__i2 to \ADC_work/sda_out_r_155 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 8.902ns
+
+ Path Details: \ADC_work/cnt__i2 to \ADC_work/sda_out_r_155
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \ADC_work/cnt__i2 (from \ADC_work/clk_divided)
+Route         5   e 1.462                                  \ADC_work/cnt[2]
+LUT4        ---     0.493              C to Z              \ADC_work/i2_2_lut_rep_610_3_lut
+Route         3   e 1.258                                  \ADC_work/n34087
+LUT4        ---     0.493              A to Z              \ADC_work/i869_3_lut_rep_562_4_lut
+Route        21   e 1.831                                  \ADC_work/n34039
+LUT4        ---     0.493              C to Z              \ADC_work/mux_35_i3_3_lut_3_lut_4_lut
+Route         2   e 1.141                                  \ADC_work/n176
+MOFX0       ---     0.378             C0 to Z              \ADC_work/i30074
+Route         1   e 0.941                                  \ADC_work/sda_out_N_177
+LUT4        ---     0.493              A to Z              \ADC_work/sda_out_N_177_bdd_4_lut_30362
+Route         1   e 0.020                                  \ADC_work/n33040
+MUXL5       ---     0.233           ALUT to Z              \ADC_work/i29979
+Route         1   e 0.941                                  \ADC_work/n33041
+LUT4        ---     0.493              A to Z              \ADC_work/n33041_bdd_2_lut
+Route         1   e 0.020                                  \ADC_work/n33042
+MUXL5       ---     0.233           BLUT to Z              \ADC_work/i29981
+Route         1   e 0.941                                  \ADC_work/sda_out_N_173
+LUT4        ---     0.493              B to Z              \ADC_work/i6426_3_lut
+Route         1   e 0.941                                  \ADC_work/n9174
+                  --------
+                   13.742  (30.9% logic, 69.1% route), 10 logic levels.
+
+Warning: 14.154 ns is the maximum delay for this constraint.
+
+
+
+================================================================================
+Constraint: create_clock -period 5.000000 -name clk0 [get_nets clk_in_c]
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error:  The following path violates requirements by 21.837ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \LCDdisplay/y_cnt__i1  (from clk_in_c +)
+   Destination:    FD1P3IX    D              \LCDdisplay/data_reg_i0_i0  (to clk_in_c +)
+
+   Delay:                  26.677ns  (29.3% logic, 70.7% route), 17 logic levels.
+
+ Constraint Details:
+
+     26.677ns data_path \LCDdisplay/y_cnt__i1 to \LCDdisplay/data_reg_i0_i0 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 21.837ns
+
+ Path Details: \LCDdisplay/y_cnt__i1 to \LCDdisplay/data_reg_i0_i0
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \LCDdisplay/y_cnt__i1 (from clk_in_c)
+Route        65   e 2.326                                  y_cnt[1]
+LUT4        ---     0.493              B to Z              \LCDdisplay/i1_2_lut_rep_697
+Route         8   e 1.540                                  n34174
+LUT4        ---     0.493              C to Z              \LCDdisplay/i1_2_lut_3_lut_4_lut_adj_175
+Route         3   e 1.258                                  \LCDdisplay/n22136
+LUT4        ---     0.493              A to Z              \LCDdisplay/i3_4_lut_rep_519
+Route        29   e 2.034                                  \LCDdisplay/n33996
+LUT4        ---     0.493              B to Z              \LCDdisplay/i1_2_lut_rep_490
+Route         8   e 1.540                                  \LCDdisplay/n33967
+LUT4        ---     0.493              A to Z              \LCDdisplay/n13_bdd_4_lut_30050
+Route         1   e 0.941                                  \LCDdisplay/n32980
+LUT4        ---     0.493              A to Z              \LCDdisplay/n32980_bdd_3_lut
+Route         1   e 0.941                                  \LCDdisplay/n32981
+LUT4        ---     0.493              A to Z              \LCDdisplay/n32981_bdd_3_lut
+Route         1   e 0.941                                  \LCDdisplay/n32982
+LUT4        ---     0.493              B to Z              \LCDdisplay/n32985_bdd_3_lut
+Route         1   e 0.941                                  \LCDdisplay/n32986
+LUT4        ---     0.493              A to Z              \LCDdisplay/i18482_4_lut
+Route         1   e 0.941                                  \LCDdisplay/n63
+LUT4        ---     0.493              B to Z              \LCDdisplay/i29433_3_lut
+Route         1   e 0.941                                  \LCDdisplay/n125
+LUT4        ---     0.493              B to Z              \LCDdisplay/i29435_4_lut
+Route         1   e 0.020                                  \LCDdisplay/n126
+MUXL5       ---     0.233           ALUT to Z              \LCDdisplay/Mux_349_i127
+Route         2   e 1.141                                  \LCDdisplay/n127
+LUT4        ---     0.493              A to Z              \LCDdisplay/i28465_2_lut
+Route         2   e 1.141                                  \LCDdisplay/n31429
+LUT4        ---     0.493              A to Z              \LCDdisplay/i18149_4_lut
+Route         3   e 1.258                                  \LCDdisplay/n3728
+LUT4        ---     0.493              C to Z              \LCDdisplay/i36_4_lut_4_lut
+Route         1   e 0.020                                  \LCDdisplay/n29123
+MUXL5       ---     0.233           ALUT to Z              \LCDdisplay/i12479
+Route         1   e 0.941                                  \LCDdisplay/n15517
+                  --------
+                   26.677  (29.3% logic, 70.7% route), 17 logic levels.
+
+
+Error:  The following path violates requirements by 21.837ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \LCDdisplay/y_cnt__i1  (from clk_in_c +)
+   Destination:    FD1P3IX    D              \LCDdisplay/data_reg_i0_i1  (to clk_in_c +)
+
+   Delay:                  26.677ns  (29.3% logic, 70.7% route), 17 logic levels.
+
+ Constraint Details:
+
+     26.677ns data_path \LCDdisplay/y_cnt__i1 to \LCDdisplay/data_reg_i0_i1 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 21.837ns
+
+ Path Details: \LCDdisplay/y_cnt__i1 to \LCDdisplay/data_reg_i0_i1
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \LCDdisplay/y_cnt__i1 (from clk_in_c)
+Route        65   e 2.326                                  y_cnt[1]
+LUT4        ---     0.493              B to Z              \LCDdisplay/i1_2_lut_rep_697
+Route         8   e 1.540                                  n34174
+LUT4        ---     0.493              C to Z              \LCDdisplay/i1_2_lut_3_lut_4_lut_adj_175
+Route         3   e 1.258                                  \LCDdisplay/n22136
+LUT4        ---     0.493              A to Z              \LCDdisplay/i3_4_lut_rep_519
+Route        29   e 2.034                                  \LCDdisplay/n33996
+LUT4        ---     0.493              B to Z              \LCDdisplay/i1_2_lut_rep_490
+Route         8   e 1.540                                  \LCDdisplay/n33967
+LUT4        ---     0.493              A to Z              \LCDdisplay/n13_bdd_4_lut_30050
+Route         1   e 0.941                                  \LCDdisplay/n32980
+LUT4        ---     0.493              A to Z              \LCDdisplay/n32980_bdd_3_lut
+Route         1   e 0.941                                  \LCDdisplay/n32981
+LUT4        ---     0.493              A to Z              \LCDdisplay/n32981_bdd_3_lut
+Route         1   e 0.941                                  \LCDdisplay/n32982
+LUT4        ---     0.493              B to Z              \LCDdisplay/n32985_bdd_3_lut
+Route         1   e 0.941                                  \LCDdisplay/n32986
+LUT4        ---     0.493              A to Z              \LCDdisplay/i18482_4_lut
+Route         1   e 0.941                                  \LCDdisplay/n63
+LUT4        ---     0.493              B to Z              \LCDdisplay/i29433_3_lut
+Route         1   e 0.941                                  \LCDdisplay/n125
+LUT4        ---     0.493              B to Z              \LCDdisplay/i29435_4_lut
+Route         1   e 0.020                                  \LCDdisplay/n126
+MUXL5       ---     0.233           ALUT to Z              \LCDdisplay/Mux_349_i127
+Route         2   e 1.141                                  \LCDdisplay/n127
+LUT4        ---     0.493              A to Z              \LCDdisplay/i28465_2_lut
+Route         2   e 1.141                                  \LCDdisplay/n31429
+LUT4        ---     0.493              A to Z              \LCDdisplay/i18149_4_lut
+Route         3   e 1.258                                  \LCDdisplay/n3728
+LUT4        ---     0.493              B to Z              \LCDdisplay/mux_454_Mux_1_i1_4_lut
+Route         1   e 0.020                                  \LCDdisplay/n1_adj_1336
+MUXL5       ---     0.233           ALUT to Z              \LCDdisplay/mux_492_Mux_1_i2
+Route         1   e 0.941                                  \LCDdisplay/n2_adj_1337
+                  --------
+                   26.677  (29.3% logic, 70.7% route), 17 logic levels.
+
+
+Error:  The following path violates requirements by 21.837ns
+
+ Logical Details:  Cell type  Pin type       Cell name  (clock net +/-)
+
+   Source:         FD1P3IX    CK             \LCDdisplay/y_cnt__i1  (from clk_in_c +)
+   Destination:    FD1P3IX    D              \LCDdisplay/data_reg_i0_i2  (to clk_in_c +)
+
+   Delay:                  26.677ns  (29.3% logic, 70.7% route), 17 logic levels.
+
+ Constraint Details:
+
+     26.677ns data_path \LCDdisplay/y_cnt__i1 to \LCDdisplay/data_reg_i0_i2 violates
+      5.000ns delay constraint less
+      0.160ns L_S requirement (totaling 4.840ns) by 21.837ns
+
+ Path Details: \LCDdisplay/y_cnt__i1 to \LCDdisplay/data_reg_i0_i2
+
+   Name    Fanout   Delay (ns)          Pins               Resource(Cell.Net)
+L_CO        ---     0.444             CK to Q              \LCDdisplay/y_cnt__i1 (from clk_in_c)
+Route        65   e 2.326                                  y_cnt[1]
+LUT4        ---     0.493              B to Z              \LCDdisplay/i1_2_lut_rep_697
+Route         8   e 1.540                                  n34174
+LUT4        ---     0.493              C to Z              \LCDdisplay/i1_2_lut_3_lut_4_lut_adj_175
+Route         3   e 1.258                                  \LCDdisplay/n22136
+LUT4        ---     0.493              A to Z              \LCDdisplay/i3_4_lut_rep_519
+Route        29   e 2.034                                  \LCDdisplay/n33996
+LUT4        ---     0.493              B to Z              \LCDdisplay/i1_2_lut_rep_490
+Route         8   e 1.540                                  \LCDdisplay/n33967
+LUT4        ---     0.493              A to Z              \LCDdisplay/n13_bdd_4_lut_30050
+Route         1   e 0.941                                  \LCDdisplay/n32980
+LUT4        ---     0.493              A to Z              \LCDdisplay/n32980_bdd_3_lut
+Route         1   e 0.941                                  \LCDdisplay/n32981
+LUT4        ---     0.493              A to Z              \LCDdisplay/n32981_bdd_3_lut
+Route         1   e 0.941                                  \LCDdisplay/n32982
+LUT4        ---     0.493              B to Z              \LCDdisplay/n32985_bdd_3_lut
+Route         1   e 0.941                                  \LCDdisplay/n32986
+LUT4        ---     0.493              A to Z              \LCDdisplay/i18482_4_lut
+Route         1   e 0.941                                  \LCDdisplay/n63
+LUT4        ---     0.493              B to Z              \LCDdisplay/i29433_3_lut
+Route         1   e 0.941                                  \LCDdisplay/n125
+LUT4        ---     0.493              B to Z              \LCDdisplay/i29435_4_lut
+Route         1   e 0.020                                  \LCDdisplay/n126
+MUXL5       ---     0.233           ALUT to Z              \LCDdisplay/Mux_349_i127
+Route         2   e 1.141                                  \LCDdisplay/n127
+LUT4        ---     0.493              A to Z              \LCDdisplay/i28465_2_lut
+Route         2   e 1.141                                  \LCDdisplay/n31429
+LUT4        ---     0.493              A to Z              \LCDdisplay/i18149_4_lut
+Route         3   e 1.258                                  \LCDdisplay/n3728
+LUT4        ---     0.493              B to Z              \LCDdisplay/mux_454_Mux_2_i1_4_lut
+Route         1   e 0.020                                  \LCDdisplay/n1_adj_1339
+MUXL5       ---     0.233           ALUT to Z              \LCDdisplay/mux_492_Mux_2_i2
+Route         1   e 0.941                                  \LCDdisplay/n2_adj_1340
+                  --------
+                   26.677  (29.3% logic, 70.7% route), 17 logic levels.
+
+Warning: 26.837 ns is the maximum delay for this constraint.
+
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets ctrlword_595_3[13]]      |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets \ADC_work/clk_divided]   |     5.000 ns|    14.154 ns|    10 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_in_c]                |     5.000 ns|    26.837 ns|    17 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+--------------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+--------------------------------------------------------------------------------
+\LCDdisplay/n127                        |       2|    3606|     63.50%
+                                        |        |        |
+\LCDdisplay/n125                        |       1|    3563|     62.74%
+                                        |        |        |
+\LCDdisplay/n126                        |       1|    3563|     62.74%
+                                        |        |        |
+\LCDdisplay/n63                         |       1|    2394|     42.16%
+                                        |        |        |
+\LCDdisplay/n31429                      |       2|    2171|     38.23%
+                                        |        |        |
+\LCDdisplay/n3728                       |       3|    2103|     37.03%
+                                        |        |        |
+\LCDdisplay/n13206                      |       1|    1629|     28.68%
+                                        |        |        |
+\LCDdisplay/n35133                      |       1|    1629|     28.68%
+                                        |        |        |
+\LCDdisplay/n33770                      |       3|    1435|     25.27%
+                                        |        |        |
+\LCDdisplay/n13216                      |       1|    1169|     20.58%
+                                        |        |        |
+\LCDdisplay/n3724                       |       2|    1129|     19.88%
+                                        |        |        |
+\LCDdisplay/n35127                      |       1|     893|     15.72%
+                                        |        |        |
+\LCDdisplay/n33996                      |      29|     786|     13.84%
+                                        |        |        |
+\LCDdisplay/n32982                      |       1|     765|     13.47%
+                                        |        |        |
+\LCDdisplay/n32986                      |       1|     765|     13.47%
+                                        |        |        |
+\LCDdisplay/n35132                      |       1|     736|     12.96%
+                                        |        |        |
+\LCDdisplay/n35447                      |      21|     719|     12.66%
+                                        |        |        |
+\LCDdisplay/n33967                      |       8|     711|     12.52%
+                                        |        |        |
+\LCDdisplay/n1_adj_1336                 |       1|     701|     12.34%
+                                        |        |        |
+\LCDdisplay/n1_adj_1339                 |       1|     701|     12.34%
+                                        |        |        |
+\LCDdisplay/n2_adj_1337                 |       1|     701|     12.34%
+                                        |        |        |
+\LCDdisplay/n2_adj_1340                 |       1|     701|     12.34%
+                                        |        |        |
+\LCDdisplay/n15517                      |       1|     701|     12.34%
+                                        |        |        |
+\LCDdisplay/n29123                      |       1|     701|     12.34%
+                                        |        |        |
+y_cnt[2]                                |      79|     697|     12.27%
+                                        |        |        |
+\LCDdisplay/n35445                      |      22|     670|     11.80%
+                                        |        |        |
+\LCDdisplay/n35126                      |       1|     660|     11.62%
+                                        |        |        |
+\ADC_work/n35436                        |      26|     630|     11.09%
+                                        |        |        |
+\LCDdisplay/n34098                      |       5|     629|     11.08%
+                                        |        |        |
+\LCDdisplay/n32017                      |       1|     627|     11.04%
+                                        |        |        |
+n2897                                   |      21|     601|     10.58%
+                                        |        |        |
+--------------------------------------------------------------------------------
+
+
+Timing summary:
+---------------
+
+Timing errors: 5679  Score: 81809442
+
+Constraints cover  57299 paths, 2047 nets, and 5820 connections (73.1% coverage)
+
+
+Peak memory: 159342592 bytes, TRCE: 12656640 bytes, DLYMAN: 655360 bytes
+CPU_TIME_REPORT: 0 secs 

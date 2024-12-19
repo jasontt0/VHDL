@@ -1,0 +1,29 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Mon Nov 20 17:07:30 2023 *
+NOTE DESIGN NAME: PWM_LED_top *
+NOTE DEVICE NAME: LCMXO2-4000HC-4CSBGA132 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS led[1] : M12 : out *
+NOTE PINS led[2] : P12 : out *
+NOTE PINS column[0] : L3 : in *
+NOTE PINS column[1] : N5 : in *
+NOTE PINS column[2] : P6 : in *
+NOTE PINS column[3] : N6 : in *
+NOTE PINS frqDN : M13 : in *
+NOTE PINS frqUP : L14 : in *
+NOTE PINS lumDN : N14 : in *
+NOTE PINS lumUP : M14 : in *
+NOTE PINS clk : C1 : in *
+NOTE PINS row[0] : N8 : out *
+NOTE PINS row[1] : P8 : out *
+NOTE PINS row[2] : N7 : out *
+NOTE PINS row[3] : P7 : out *
+NOTE PINS led[0] : N13 : out *
+NOTE PINS led[3] : M11 : out *
+NOTE PINS led[4] : P11 : out *
+NOTE PINS led[5] : N10 : out *
+NOTE PINS led[6] : N9 : out *
+NOTE PINS led[7] : P9 : out *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

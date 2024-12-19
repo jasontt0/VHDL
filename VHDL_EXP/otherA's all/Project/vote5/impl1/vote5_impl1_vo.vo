@@ -1,0 +1,155 @@
+
+// Verilog netlist produced by program ldbanno, Version Diamond (64-bit) 3.13.0.56.2
+
+// ldbanno -n Verilog -o vote5_impl1_vo.vo -w -neg -gui -msgset D:/Lattice Diamond/Project/vote5/promote.xml vote5_impl1.ncd 
+// Netlist created on Sun Nov 12 20:54:13 2023
+// Netlist written on Sun Nov 12 20:54:22 2023
+// Design is for device LCMXO2-4000HC
+// Design is for package CSBGA132
+// Design is for performance grade 4
+
+`timescale 1 ns / 1 ps
+
+module vote5 ( a, f );
+  input  [4:0] a;
+  output f;
+  wire   a_c_0, a_c_2, a_c_3, a_c_1, a_c_4, f_c, VCCI;
+
+  i24_SLICE_0 \i24/SLICE_0 ( .D1(a_c_0), .C1(a_c_2), .B1(a_c_3), .A1(a_c_1), 
+    .D0(a_c_0), .C0(a_c_2), .B0(a_c_3), .A0(a_c_1), .M0(a_c_4), .OFX0(f_c));
+  a_1_ \a[1]_I ( .PADDI(a_c_1), .a1(a[1]));
+  a_2_ \a[2]_I ( .PADDI(a_c_2), .a2(a[2]));
+  a_3_ \a[3]_I ( .PADDI(a_c_3), .a3(a[3]));
+  a_4_ \a[4]_I ( .PADDI(a_c_4), .a4(a[4]));
+  f f_I( .PADDO(f_c), .f(f));
+  a_0_ \a[0]_I ( .PADDI(a_c_0), .a0(a[0]));
+  VHI VHI_INST( .Z(VCCI));
+  PUR PUR_INST( .PUR(VCCI));
+  GSR GSR_INST( .GSR(VCCI));
+endmodule
+
+module i24_SLICE_0 ( input D1, C1, B1, A1, D0, C0, B0, A0, M0, output OFX0 );
+  wire   \i24/SLICE_0/i24/SLICE_0_K1_H1 , \i24/SLICE_0/i24/GATE_H0 ;
+
+  lut4 \i24/SLICE_0_K1 ( .A(A1), .B(B1), .C(C1), .D(D1), 
+    .Z(\i24/SLICE_0/i24/SLICE_0_K1_H1 ));
+  lut40001 \i24/GATE ( .A(A0), .B(B0), .C(C0), .D(D0), 
+    .Z(\i24/SLICE_0/i24/GATE_H0 ));
+  selmux2 \i24/SLICE_0_K0K1MUX ( .D0(\i24/SLICE_0/i24/GATE_H0 ), 
+    .D1(\i24/SLICE_0/i24/SLICE_0_K1_H1 ), .SD(M0), .Z(OFX0));
+
+  specify
+    (D1 => OFX0) = (0:0:0,0:0:0);
+    (C1 => OFX0) = (0:0:0,0:0:0);
+    (B1 => OFX0) = (0:0:0,0:0:0);
+    (A1 => OFX0) = (0:0:0,0:0:0);
+    (D0 => OFX0) = (0:0:0,0:0:0);
+    (C0 => OFX0) = (0:0:0,0:0:0);
+    (B0 => OFX0) = (0:0:0,0:0:0);
+    (A0 => OFX0) = (0:0:0,0:0:0);
+    (M0 => OFX0) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module lut4 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hFEE8) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module lut40001 ( input A, B, C, D, output Z );
+
+  ROM16X1A #(16'hE880) INST10( .AD0(A), .AD1(B), .AD2(C), .AD3(D), .DO0(Z));
+endmodule
+
+module selmux2 ( input D0, D1, SD, output Z );
+
+  MUX21 INST1( .D0(D0), .D1(D1), .SD(SD), .Z(Z));
+endmodule
+
+module a_1_ ( output PADDI, input a1 );
+
+  xo2iobuf a_pad_1( .Z(PADDI), .PAD(a1));
+
+  specify
+    (a1 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge a1, 0:0:0);
+    $width (negedge a1, 0:0:0);
+  endspecify
+
+endmodule
+
+module xo2iobuf ( output Z, input PAD );
+
+  IBPD INST1( .I(PAD), .O(Z));
+endmodule
+
+module a_2_ ( output PADDI, input a2 );
+
+  xo2iobuf a_pad_2( .Z(PADDI), .PAD(a2));
+
+  specify
+    (a2 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge a2, 0:0:0);
+    $width (negedge a2, 0:0:0);
+  endspecify
+
+endmodule
+
+module a_3_ ( output PADDI, input a3 );
+
+  xo2iobuf a_pad_3( .Z(PADDI), .PAD(a3));
+
+  specify
+    (a3 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge a3, 0:0:0);
+    $width (negedge a3, 0:0:0);
+  endspecify
+
+endmodule
+
+module a_4_ ( output PADDI, input a4 );
+
+  xo2iobuf a_pad_4( .Z(PADDI), .PAD(a4));
+
+  specify
+    (a4 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge a4, 0:0:0);
+    $width (negedge a4, 0:0:0);
+  endspecify
+
+endmodule
+
+module f ( input PADDO, output f );
+  wire   GNDI;
+
+  xo2iobuf0002 f_pad( .I(PADDO), .T(GNDI), .PAD(f));
+  gnd DRIVEGND( .PWR0(GNDI));
+
+  specify
+    (PADDO => f) = (0:0:0,0:0:0);
+  endspecify
+
+endmodule
+
+module xo2iobuf0002 ( input I, T, output PAD );
+
+  OBZPD INST5( .I(I), .T(T), .O(PAD));
+endmodule
+
+module gnd ( output PWR0 );
+
+  VLO INST1( .Z(PWR0));
+endmodule
+
+module a_0_ ( output PADDI, input a0 );
+
+  xo2iobuf a_pad_0( .Z(PADDI), .PAD(a0));
+
+  specify
+    (a0 => PADDI) = (0:0:0,0:0:0);
+    $width (posedge a0, 0:0:0);
+    $width (negedge a0, 0:0:0);
+  endspecify
+
+endmodule

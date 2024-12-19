@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "E:/sjtu/learning/VHDL/final/lab5"  

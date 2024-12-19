@@ -1,0 +1,5 @@
+
+
+-g RamCfg:Reset
+
+-path "D:/lscc/diamond/3.12/bin/nt64/lab22"  

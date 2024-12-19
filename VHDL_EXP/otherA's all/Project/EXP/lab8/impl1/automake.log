@@ -1,0 +1,300 @@
+
+synthesis -f "lab8_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Thu Dec 14 18:17:14 2023
+
+
+Command Line:  synthesis -f lab8_impl1_lattice.synproj -gui -msgset D:/Lattice Diamond/Project/EXP/lab8/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Balanced
+Top-level module name = top.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p D:/Lattice Diamond/diamond/3.13/ispfpga/xo2c00/data (searchpath added)
+-p D:/Lattice Diamond/Project/EXP/lab8/impl1 (searchpath added)
+-p D:/Lattice Diamond/Project/EXP/lab8 (searchpath added)
+VHDL library = work
+VHDL design file = D:/Lattice Diamond/Project/EXP/lab8/impl1/source/ADC.vhd
+VHDL design file = D:/Lattice Diamond/Project/EXP/lab8/impl1/source/btn_debouncing.vhd
+VHDL design file = D:/Lattice Diamond/Project/EXP/lab8/impl1/source/ctrlword_595.vhd
+VHDL design file = D:/Lattice Diamond/Project/EXP/lab8/impl1/source/LCD_display.vhd
+VHDL design file = D:/Lattice Diamond/Project/EXP/lab8/impl1/source/mode_shift.vhd
+VHDL design file = D:/Lattice Diamond/Project/EXP/lab8/impl1/source/top.vhd
+VHDL design file = D:/Lattice Diamond/Project/EXP/lab8/impl1/source/trans_BCD.vhd
+NGD file = lab8_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file D:/Lattice Diamond/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+    <postMsg mid="35921504" type="Info"    dynamic="2" navigation="0" arg0="" arg1="D:/Lattice Diamond/Project/EXP/lab8/impl1"  />
+Analyzing VHDL file d:/lattice diamond/project/exp/lab8/impl1/source/adc.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab8/impl1/source/adc.vhd(7): " arg1="adc" arg2="d:/lattice diamond/project/exp/lab8/impl1/source/adc.vhd" arg3="7"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab8/impl1/source/adc.vhd(17): " arg1="behavior" arg2="d:/lattice diamond/project/exp/lab8/impl1/source/adc.vhd" arg3="17"  />
+unit top is not yet analyzed. VHDL-1485
+Analyzing VHDL file d:/lattice diamond/project/exp/lab8/impl1/source/btn_debouncing.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab8/impl1/source/btn_debouncing.vhd(6): " arg1="btn_debouncing" arg2="d:/lattice diamond/project/exp/lab8/impl1/source/btn_debouncing.vhd" arg3="6"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab8/impl1/source/btn_debouncing.vhd(14): " arg1="cyclesample" arg2="d:/lattice diamond/project/exp/lab8/impl1/source/btn_debouncing.vhd" arg3="14"  />
+unit top is not yet analyzed. VHDL-1485
+Analyzing VHDL file d:/lattice diamond/project/exp/lab8/impl1/source/ctrlword_595.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab8/impl1/source/ctrlword_595.vhd(6): " arg1="ctrlword_595" arg2="d:/lattice diamond/project/exp/lab8/impl1/source/ctrlword_595.vhd" arg3="6"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab8/impl1/source/ctrlword_595.vhd(24): " arg1="parallelout" arg2="d:/lattice diamond/project/exp/lab8/impl1/source/ctrlword_595.vhd" arg3="24"  />
+unit top is not yet analyzed. VHDL-1485
+Analyzing VHDL file d:/lattice diamond/project/exp/lab8/impl1/source/lcd_display.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab8/impl1/source/lcd_display.vhd(3): " arg1="lcd_display" arg2="d:/lattice diamond/project/exp/lab8/impl1/source/lcd_display.vhd" arg3="3"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab8/impl1/source/lcd_display.vhd(20): " arg1="behavioral" arg2="d:/lattice diamond/project/exp/lab8/impl1/source/lcd_display.vhd" arg3="20"  />
+unit top is not yet analyzed. VHDL-1485
+Analyzing VHDL file d:/lattice diamond/project/exp/lab8/impl1/source/mode_shift.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab8/impl1/source/mode_shift.vhd(5): " arg1="mode_shift" arg2="d:/lattice diamond/project/exp/lab8/impl1/source/mode_shift.vhd" arg3="5"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab8/impl1/source/mode_shift.vhd(14): " arg1="modeshift" arg2="d:/lattice diamond/project/exp/lab8/impl1/source/mode_shift.vhd" arg3="14"  />
+unit top is not yet analyzed. VHDL-1485
+Analyzing VHDL file d:/lattice diamond/project/exp/lab8/impl1/source/top.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab8/impl1/source/top.vhd(6): " arg1="top" arg2="d:/lattice diamond/project/exp/lab8/impl1/source/top.vhd" arg3="6"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab8/impl1/source/top.vhd(23): " arg1="behavior" arg2="d:/lattice diamond/project/exp/lab8/impl1/source/top.vhd" arg3="23"  />
+unit top is not yet analyzed. VHDL-1485
+Analyzing VHDL file d:/lattice diamond/project/exp/lab8/impl1/source/trans_bcd.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab8/impl1/source/trans_bcd.vhd(7): " arg1="trans_bcd" arg2="d:/lattice diamond/project/exp/lab8/impl1/source/trans_bcd.vhd" arg3="7"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab8/impl1/source/trans_bcd.vhd(32): " arg1="bcdencoder" arg2="d:/lattice diamond/project/exp/lab8/impl1/source/trans_bcd.vhd" arg3="32"  />
+unit top is not yet analyzed. VHDL-1485
+unit top is not yet analyzed. VHDL-1485
+d:/lattice diamond/project/exp/lab8/impl1/source/top.vhd(6): executing top(behavior)
+
+    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="d:/lattice diamond/project/exp/lab8/impl1/source/top.vhd(21): " arg1="top" arg2="behavior" arg3="d:/lattice diamond/project/exp/lab8/impl1/source/top.vhd" arg4="21"  />
+Top module name (VHDL): top
+Last elaborated design is top(behavior)
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: D:/Lattice Diamond/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = top.
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\datato595/shift_cnt" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 0000 -> 0000000000000001
+
+ 0001 -> 0000000000000010
+
+ 0010 -> 0000000000000100
+
+ 0011 -> 0000000000001000
+
+ 0100 -> 0000000000010000
+
+ 0101 -> 0000000000100000
+
+ 0110 -> 0000000001000000
+
+ 0111 -> 0000000010000000
+
+ 1000 -> 0000000100000000
+
+ 1001 -> 0000001000000000
+
+ 1010 -> 0000010000000000
+
+ 1011 -> 0000100000000000
+
+ 1100 -> 0001000000000000
+
+ 1101 -> 0010000000000000
+
+ 1110 -> 0100000000000000
+
+ 1111 -> 1000000000000000
+
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="\ADC_work/state" arg1="one-hot"  />
+original encoding -> new encoding (one-hot encoding)
+
+ 000 -> 000001
+
+ 001 -> 000010
+
+ 010 -> 000100
+
+ 011 -> 001000
+
+ 100 -> 010000
+
+ 101 -> 100000
+
+
+
+
+    <postMsg mid="1009991" type="Warning" dynamic="1" navigation="0" arg0="d:/lattice diamond/project/exp/lab8/impl1/source/trans_bcd.vhd(178): Latch \BCD_transform/ctrlword_595_3_15__N_614_7__I_0_i1 input is stuck at One&#xA;"  />
+    <postMsg mid="1009991" type="Warning" dynamic="1" navigation="0" arg0="d:/lattice diamond/project/exp/lab8/impl1/source/trans_bcd.vhd(178): Latch \BCD_transform/ctrlword_595_3_15__N_614_7__I_0_i7 input is stuck at One&#xA;"  />
+    <postMsg mid="35935013" type="Warning" dynamic="2" navigation="2" arg0="d:/lattice diamond/project/exp/lab8/impl1/source/adc.vhd(190): " arg1="\ADC_work/data_write__i6" arg2="d:/lattice diamond/project/exp/lab8/impl1/source/adc.vhd" arg3="190"  />
+GSR instance connected to net rst_n_in_c.
+    <postMsg mid="35001752" type="Warning" dynamic="1" navigation="0" arg0="\BCD_transform/mode_N_613_I_0_i1"  />
+Duplicate register/latch removal. \ADC_work/data_write__i7 is a one-to-one match with \ADC_work/data_write__i4.
+Duplicate register/latch removal. \BCD_transform/ctrlword_595_3_15__N_614_7__I_0_i5 is a one-to-one match with \BCD_transform/ctrlword_595_3_15__N_614_7__I_0_i8.
+Duplicate register/latch removal. \LCDdisplay/data_r_i0_i91 is a one-to-one match with \LCDdisplay/data_r_i0_i102.
+Duplicate register/latch removal. \LCDdisplay/data_r_i0_i110 is a one-to-one match with \LCDdisplay/data_r_i0_i121.
+Duplicate register/latch removal. \LCDdisplay/data_r_i0_i111 is a one-to-one match with \LCDdisplay/data_r_i0_i120.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in top_drc.log.
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+   2288 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file lab8_impl1.ngd.
+
+################### Begin Area Report (top)######################
+Number of register bits => 311 of 4635 (6 % )
+BB => 1
+CCU2D => 93
+FD1P3AX => 98
+FD1P3AY => 1
+FD1P3IX => 96
+FD1P3JX => 3
+FD1S1A => 3
+FD1S1B => 1
+FD1S1I => 1
+FD1S1J => 1
+FD1S3AX => 15
+FD1S3AY => 1
+FD1S3IX => 89
+FD1S3JX => 2
+GSR => 1
+IB => 3
+INV => 1
+L6MUX21 => 62
+LUT4 => 1564
+OB => 17
+PFUMX => 232
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 3
+  Net : clk_in_c, loads : 253
+  Net : ADC_work/clk_divided, loads : 53
+  Net : mode_control/ctrlword_595_3_13, loads : 30
+Clock Enable Nets
+Number of Clock Enables: 48
+Top 10 highest fanout Clock Enables:
+  Net : LCDdisplay/clk_in_c_enable_70, loads : 24
+  Net : LCDdisplay/clk_in_c_enable_127, loads : 16
+  Net : LCDdisplay/clk_in_c_enable_152, loads : 16
+  Net : datato595/clk_in_c_enable_97, loads : 16
+  Net : LCDdisplay/clk_in_c_enable_39, loads : 16
+  Net : LCDdisplay/clk_in_c_enable_153, loads : 12
+  Net : LCDdisplay/clk_in_c_enable_1, loads : 11
+  Net : LCDdisplay/clk_in_c_enable_148, loads : 11
+  Net : LCDdisplay/clk_in_c_enable_134, loads : 9
+  Net : LCDdisplay/clk_in_c_enable_141, loads : 9
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : LCDdisplay/y_cnt_3, loads : 109
+  Net : LCDdisplay/x_cnt_0, loads : 95
+  Net : rst_n_in_c, loads : 70
+  Net : ADC_work/realv_5_0, loads : 64
+  Net : LCDdisplay/y_cnt_2, loads : 62
+  Net : ADC_work/voltage_code_1, loads : 55
+  Net : BCD_transform/n32800, loads : 53
+  Net : LCDdisplay/state_0, loads : 53
+  Net : LCDdisplay/y_cnt_0, loads : 51
+  Net : BCD_transform/n32905, loads : 51
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets ctrlword_595_3[13]]      |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets \ADC_work/clk_divided]   |  200.000 MHz|   70.427 MHz|    10 *
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_in_c]                |  200.000 MHz|   39.136 MHz|    20 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+2 constraints not met.
+
+
+Peak Memory Usage: 146.699  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 2.766  secs
+--------------------------------------------------------------

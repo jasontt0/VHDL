@@ -1,0 +1,45 @@
+----------------------------------------------------------------------
+Report for cell piano.TECH
+Register bits:  90 of 4635 (1.942%)
+I/O cells:      12
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        48          100.0
+                            FD1P3AX         1          100.0
+                            FD1P3IX        19          100.0
+                             FD1S1A         5          100.0
+                             FD1S1I         1          100.0
+                            FD1S3AX         6          100.0
+                            FD1S3IX        58          100.0
+                                GSR         1          100.0
+                                 IB         7          100.0
+                                INV         2          100.0
+                               LUT4        78          100.0
+                                 OB         5          100.0
+                              PFUMX         2          100.0
+                          ROM256X1A         6          100.0
+SUB MODULES
+                        freqdivider         1
+                               song         1
+                              TOTAL       241
+----------------------------------------------------------------------
+Report for cell freqdivider.v1
+Instance Path : U1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        21           43.8
+                            FD1S3AX         2           33.3
+                            FD1S3IX        38           65.5
+                               LUT4        17           21.8
+                              TOTAL        78
+----------------------------------------------------------------------
+Report for cell song.v1
+Instance Path : U2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        10           20.8
+                            FD1P3IX        16           84.2
+                             FD1S1A         4           80.0
+                             FD1S1I         1          100.0
+                               LUT4        17           21.8
+                              TOTAL        48

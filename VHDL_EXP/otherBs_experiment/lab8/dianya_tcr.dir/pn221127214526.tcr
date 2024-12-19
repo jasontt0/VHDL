@@ -1,0 +1,22 @@
+#Start recording tcl command: 11/27/2022 21:22:20
+#Project Location: D:/lscc/latticeproject/lab8; Project name: dianya
+prj_project open "D:/lscc/latticeproject/lab8/dianya.ldf"
+prj_src remove "D:/lscc/latticeproject/lab8/adc_i2c.vhd"
+prj_src add "D:/lscc/latticeproject/lab8/ADC.vhd"
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_src remove "D:/lscc/latticeproject/lab8/timeencoder.vhd"
+prj_src add "D:/lscc/latticeproject/lab8/binary2BCD.vhd"
+prj_run Export -impl impl1 -task Jedecgen
+prj_src remove "D:/lscc/latticeproject/lab8/modekey.vhd"
+prj_src add "D:/lscc/latticeproject/lab8/remove_jitter.vhd"
+prj_run Export -impl impl1 -task Jedecgen
+prj_src remove "D:/lscc/latticeproject/lab8/LCD_dis.vhd"
+prj_src add "D:/lscc/latticeproject/lab8/LCD_display.vhd"
+prj_run Export -impl impl1 -task Jedecgen
+prj_src remove "D:/lscc/latticeproject/lab8/datato595.vhd"
+prj_src add "D:/lscc/latticeproject/lab8/data_to_595.vhd"
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+#Stop recording: 11/27/2022 21:45:26

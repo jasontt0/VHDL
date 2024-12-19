@@ -1,0 +1,1 @@
+D:/Lattice Diamond/diamond/3.13/bin/nt64/moduleparser.exe -PROJ counter_sim -pf D:/Lattice Diamond/diamond/3.13/cae_library/synthesis/vhdl/machxo2.vhd -lib machxo2 -pf D:/Lattice Diamond/diamond/3.13/cae_library/synthesis/verilog/machxo2.v -pkg D:/Lattice Diamond/diamond/3.13/cae_library/vhdl_packages/vdbs -lst D:/Lattice Diamond/Project/counter/counter_sim/source_files.lst

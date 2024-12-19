@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="IBIS">
+        <Message>
+            <ID>1191031</ID>
+            <Severity>Info</Severity>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001200</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>piano</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>E:/sjtu/learning/VHDL/final/lab5/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/sjtu/learning/vhdl/final/lab5/freq_div.vhd(4): </Dynamic>
+            <Dynamic>freqdivider</Dynamic>
+            <Navigation>e:/sjtu/learning/vhdl/final/lab5/freq_div.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/sjtu/learning/vhdl/final/lab5/freq_div.vhd(13): </Dynamic>
+            <Dynamic>freqdivider_arch</Dynamic>
+            <Navigation>e:/sjtu/learning/vhdl/final/lab5/freq_div.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/sjtu/learning/vhdl/final/lab5/lab5.vhd(4): </Dynamic>
+            <Dynamic>piano</Dynamic>
+            <Navigation>e:/sjtu/learning/vhdl/final/lab5/lab5.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/sjtu/learning/vhdl/final/lab5/lab5.vhd(15): </Dynamic>
+            <Dynamic>piano_arch</Dynamic>
+            <Navigation>e:/sjtu/learning/vhdl/final/lab5/lab5.vhd</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35921178</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/sjtu/learning/vhdl/final/lab5/lab5.vhd(15): </Dynamic>
+            <Dynamic>piano_arch</Dynamic>
+            <Navigation>e:/sjtu/learning/vhdl/final/lab5/lab5.vhd</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/sjtu/learning/vhdl/final/lab5/songs.vhd(4): </Dynamic>
+            <Dynamic>song</Dynamic>
+            <Navigation>e:/sjtu/learning/vhdl/final/lab5/songs.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/sjtu/learning/vhdl/final/lab5/songs.vhd(13): </Dynamic>
+            <Dynamic>song_arch</Dynamic>
+            <Navigation>e:/sjtu/learning/vhdl/final/lab5/songs.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/sjtu/learning/vhdl/final/lab5/freq_div.vhd(4): </Dynamic>
+            <Dynamic>freqdivider</Dynamic>
+            <Navigation>e:/sjtu/learning/vhdl/final/lab5/freq_div.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/sjtu/learning/vhdl/final/lab5/freq_div.vhd(13): </Dynamic>
+            <Dynamic>freqdivider_arch</Dynamic>
+            <Navigation>e:/sjtu/learning/vhdl/final/lab5/freq_div.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/sjtu/learning/vhdl/final/lab5/lab5.vhd(4): </Dynamic>
+            <Dynamic>piano</Dynamic>
+            <Navigation>e:/sjtu/learning/vhdl/final/lab5/lab5.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/sjtu/learning/vhdl/final/lab5/lab5.vhd(15): </Dynamic>
+            <Dynamic>piano_arch</Dynamic>
+            <Navigation>e:/sjtu/learning/vhdl/final/lab5/lab5.vhd</Navigation>
+            <Navigation>15</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/sjtu/learning/vhdl/final/lab5/songs.vhd(4): </Dynamic>
+            <Dynamic>song</Dynamic>
+            <Navigation>e:/sjtu/learning/vhdl/final/lab5/songs.vhd</Navigation>
+            <Navigation>4</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>e:/sjtu/learning/vhdl/final/lab5/songs.vhd(13): </Dynamic>
+            <Dynamic>song_arch</Dynamic>
+            <Navigation>e:/sjtu/learning/vhdl/final/lab5/songs.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>e:/sjtu/learning/vhdl/final/lab5/lab5.vhd(13): </Dynamic>
+            <Dynamic>piano</Dynamic>
+            <Dynamic>piano_arch</Dynamic>
+            <Navigation>e:/sjtu/learning/vhdl/final/lab5/lab5.vhd</Navigation>
+            <Navigation>13</Navigation>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61001101</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clk</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=clk40hz loads=6 clock_loads=1
+   Signal=mode_c loads=1 clock_loads=1
+   Signal=switch_c loads=1 clock_loads=1
+   Signal=U2/tone2_3__N_199 loads=4 clock_loads=3
+   Signal=U2/mn_former_derived_1 loads=1 clock_loads=1</Dynamic>
+        </Message>
+        <Message>
+            <ID>66011008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>
+   Signal=clk40hz loads=6 clock_loads=1
+   Signal=mode_c loads=1 clock_loads=1
+   Signal=switch_c loads=1 clock_loads=1
+   Signal=U2/tone2_3__N_199 loads=4 clock_loads=3
+   Signal=U2/mn_former_derived_1 loads=1 clock_loads=1</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVHD">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVlg">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

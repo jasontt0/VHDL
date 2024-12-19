@@ -1,0 +1,6 @@
+#Start recording tcl command: 12/2/2022 18:03:21
+#Project Location: C:/Users/hankeyi35/Desktop/lab8; Project name: dianya
+prj_project open "C:/Users/hankeyi35/Desktop/lab8/dianya.ldf"
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+#Stop recording: 12/2/2022 19:52:41

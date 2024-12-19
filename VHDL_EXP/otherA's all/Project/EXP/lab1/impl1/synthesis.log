@@ -1,0 +1,226 @@
+synthesis:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Mon Nov 20 16:19:43 2023
+
+
+Command Line:  synthesis -f lab1_impl1_lattice.synproj -gui 
+
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 4.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 4.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 4
+
+##########################################################
+
+                                                          
+
+INFO - synthesis: User-Selected Strategy Settings
+Optimization goal = Balanced
+The -top option is not used.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p D:/Lattice Diamond/diamond/3.13/ispfpga/xo2c00/data (searchpath added)
+-p D:/Lattice Diamond/Project/EXP/lab1/impl1 (searchpath added)
+-p D:/Lattice Diamond/Project/EXP/lab1 (searchpath added)
+VHDL library = work
+VHDL design file = D:/Lattice Diamond/Project/EXP/lab1/impl1/source/freq_div.vhd
+VHDL design file = D:/Lattice Diamond/Project/EXP/lab1/impl1/source/lab1.vhd
+VHDL design file = D:/Lattice Diamond/Project/EXP/lab1/impl1/source/seg.vhd
+NGD file = lab1_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file D:/Lattice Diamond/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+WARNING - synthesis: Setting lab1_top as the top-level module. To specify the top-level module explicitly, use the -top option.
+INFO - synthesis: The default VHDL library search path is now "D:/Lattice Diamond/Project/EXP/lab1/impl1". VHDL-1504
+Analyzing VHDL file d:/lattice diamond/project/exp/lab1/impl1/source/freq_div.vhd. VHDL-1481
+INFO - synthesis: d:/lattice diamond/project/exp/lab1/impl1/source/freq_div.vhd(4): analyzing entity freqdivider. VHDL-1012
+INFO - synthesis: d:/lattice diamond/project/exp/lab1/impl1/source/freq_div.vhd(13): analyzing architecture freqdivider_arch. VHDL-1010
+unit lab1_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd. VHDL-1481
+INFO - synthesis: d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd(4): analyzing entity lab1_top. VHDL-1012
+INFO - synthesis: d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd(17): analyzing architecture lab1_arch. VHDL-1010
+WARNING - synthesis: d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd(17): overwriting existing secondary unit lab1_arch. VHDL-1178
+unit lab1_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file d:/lattice diamond/project/exp/lab1/impl1/source/seg.vhd. VHDL-1481
+INFO - synthesis: d:/lattice diamond/project/exp/lab1/impl1/source/seg.vhd(4): analyzing entity seg. VHDL-1012
+INFO - synthesis: d:/lattice diamond/project/exp/lab1/impl1/source/seg.vhd(16): analyzing architecture seg_arch. VHDL-1010
+unit lab1_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file d:/lattice diamond/project/exp/lab1/impl1/source/freq_div.vhd. VHDL-1481
+INFO - synthesis: d:/lattice diamond/project/exp/lab1/impl1/source/freq_div.vhd(4): analyzing entity freqdivider. VHDL-1012
+INFO - synthesis: d:/lattice diamond/project/exp/lab1/impl1/source/freq_div.vhd(13): analyzing architecture freqdivider_arch. VHDL-1010
+unit lab1_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd. VHDL-1481
+INFO - synthesis: d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd(4): analyzing entity lab1_top. VHDL-1012
+INFO - synthesis: d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd(17): analyzing architecture lab1_arch. VHDL-1010
+unit lab1_top is not yet analyzed. VHDL-1485
+Analyzing VHDL file d:/lattice diamond/project/exp/lab1/impl1/source/seg.vhd. VHDL-1481
+INFO - synthesis: d:/lattice diamond/project/exp/lab1/impl1/source/seg.vhd(4): analyzing entity seg. VHDL-1012
+INFO - synthesis: d:/lattice diamond/project/exp/lab1/impl1/source/seg.vhd(16): analyzing architecture seg_arch. VHDL-1010
+unit lab1_top is not yet analyzed. VHDL-1485
+unit lab1_top is not yet analyzed. VHDL-1485
+d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd(4): executing lab1_top(lab1_arch)
+
+WARNING - synthesis: d:/lattice diamond/project/exp/lab1/impl1/source/lab1.vhd(15): replacing existing netlist lab1_top(lab1_arch). VHDL-1205
+Top module name (VHDL): lab1_top
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: D:/Lattice Diamond/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = lab1_top.
+
+
+
+WARNING - synthesis: Bit 31 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 30 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 29 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 28 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 27 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 26 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 25 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 24 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 23 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 22 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 21 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 20 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 19 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 18 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 17 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 16 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 15 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 14 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 13 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 12 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 11 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 10 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 9 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 8 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 7 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 6 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 5 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 4 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 3 of Register row_num is stuck at Zero
+WARNING - synthesis: Bit 2 of Register row_num is stuck at Zero
+GSR will not be inferred because no asynchronous signal was found in the netlist.
+Applying 200.000000 MHz constraint to all clocks
+
+WARNING - synthesis: No user .sdc file.
+Results of NGD DRC are available in lab1_top_drc.log.
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'D:/Lattice Diamond/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file lab1_impl1.ngd.
+
+################### Begin Area Report (lab1_top)######################
+Number of register bits => 44 of 4635 (0 % )
+CCU2D => 17
+FD1P3AX => 1
+FD1P3JX => 4
+FD1S3AX => 7
+FD1S3IX => 32
+GSR => 1
+IB => 9
+L6MUX21 => 1
+LUT4 => 83
+OB => 20
+PFUMX => 11
+SP8KC => 2
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 1
+  Net : clk_c, loads : 46
+Clock Enable Nets
+Number of Clock Enables: 1
+Top 1 highest fanout Clock Enables:
+  Net : clk_c_enable_5, loads : 16
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : U1/n1365, loads : 40
+  Net : col_c_2, loads : 17
+  Net : clk_c_enable_5, loads : 16
+  Net : row_c_1, loads : 12
+  Net : col_c_0, loads : 11
+  Net : row_c_0, loads : 10
+  Net : row_c_2, loads : 10
+  Net : row_c_3, loads : 9
+  Net : U1/clk40hz, loads : 8
+  Net : btn_num_3, loads : 7
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |  200.000 MHz|   52.359 MHz|    12 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 83.656  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.344  secs
+--------------------------------------------------------------

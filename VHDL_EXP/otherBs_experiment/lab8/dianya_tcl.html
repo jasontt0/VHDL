@@ -1,0 +1,175 @@
+<HTML>
+<HEAD><TITLE>Lattice TCL Log</TITLE>
+<STYLE TYPE="text/css">
+<!--
+ body,pre{    font-family:'Courier New', monospace;    color: #000000;    font-size:88%;    background-color: #ffffff;}h1 {    font-weight: bold;    margin-top: 24px;    margin-bottom: 10px;    border-bottom: 3px solid #000;    font-size: 1em;}h2 {    font-weight: bold;    margin-top: 18px;    margin-bottom: 5px;    font-size: 0.90em;}h3 {    font-weight: bold;    margin-top: 12px;    margin-bottom: 5px;    font-size: 0.80em;}p {    font-size:78%;}P.Table {    margin-top: 4px;    margin-bottom: 4px;    margin-right: 4px;    margin-left: 4px;}table{    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    border-collapse: collapse;}th {    font-weight:bold;    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    text-align:left;    font-size:78%;}td {    padding: 4px;    border-width: 1px 1px 1px 1px;    border-style: solid solid solid solid;    border-color: black black black black;    vertical-align:top;    font-size:78%;}a {    color:#013C9A;    text-decoration:none;}a:visited {    color:#013C9A;}a:hover, a:active {    text-decoration:underline;    color:#5BAFD4;}.pass{background-color: #00ff00;}.fail{background-color: #ff0000;}.comment{    font-size: 90%;    font-style: italic;}
+-->
+</STYLE>
+</HEAD>
+<PRE><A name="pn201201144042"></A><B><U><big>pn201201144042</big></U></B>
+#Start recording tcl command: 12/1/2020 14:25:47
+#Project Location: F:/VHDL/lab/LAB7; Project name: dianya
+prj_project open "F:/VHDL/lab/LAB7/dianya.ldf"
+#Stop recording: 12/1/2020 14:40:42
+
+
+
+<A name="pn201201224226"></A><B><U><big>pn201201224226</big></U></B>
+#Start recording tcl command: 12/1/2020 22:32:36
+#Project Location: F:/VHDL/lab/LAB7; Project name: dianya
+prj_project open "F:/VHDL/lab/LAB7/dianya.ldf"
+#Stop recording: 12/1/2020 22:42:26
+
+
+
+<A name="pn201203180610"></A><B><U><big>pn201203180610</big></U></B>
+#Start recording tcl command: 12/3/2020 17:03:45
+#Project Location: F:/VHDL/lab/LAB7; Project name: dianya
+prj_project open "F:/VHDL/lab/LAB7/dianya.ldf"
+#Stop recording: 12/3/2020 18:06:10
+
+
+
+<A name="pn201203232814"></A><B><U><big>pn201203232814</big></U></B>
+#Start recording tcl command: 12/3/2020 23:02:17
+#Project Location: F:/VHDL/lab/LAB7; Project name: dianya
+prj_project open "F:/VHDL/lab/LAB7/dianya.ldf"
+prj_project close
+#Stop recording: 12/3/2020 23:28:14
+
+
+
+<A name="pn221127140532"></A><B><U><big>pn221127140532</big></U></B>
+#Start recording tcl command: 11/27/2022 14:05:17
+#Project Location: D:/lscc/latticeproject/lab8; Project name: dianya
+prj_project open "D:/lscc/latticeproject/lab8/dianya.ldf"
+#Stop recording: 11/27/2022 14:05:32
+
+
+
+<A name="pn221127214526"></A><B><U><big>pn221127214526</big></U></B>
+#Start recording tcl command: 11/27/2022 21:22:20
+#Project Location: D:/lscc/latticeproject/lab8; Project name: dianya
+prj_project open "D:/lscc/latticeproject/lab8/dianya.ldf"
+prj_src remove "D:/lscc/latticeproject/lab8/adc_i2c.vhd"
+prj_src add "D:/lscc/latticeproject/lab8/ADC.vhd"
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+prj_src remove "D:/lscc/latticeproject/lab8/timeencoder.vhd"
+prj_src add "D:/lscc/latticeproject/lab8/binary2BCD.vhd"
+prj_run Export -impl impl1 -task Jedecgen
+prj_src remove "D:/lscc/latticeproject/lab8/modekey.vhd"
+prj_src add "D:/lscc/latticeproject/lab8/remove_jitter.vhd"
+prj_run Export -impl impl1 -task Jedecgen
+prj_src remove "D:/lscc/latticeproject/lab8/LCD_dis.vhd"
+prj_src add "D:/lscc/latticeproject/lab8/LCD_display.vhd"
+prj_run Export -impl impl1 -task Jedecgen
+prj_src remove "D:/lscc/latticeproject/lab8/datato595.vhd"
+prj_src add "D:/lscc/latticeproject/lab8/data_to_595.vhd"
+prj_run Export -impl impl1 -task Jedecgen
+prj_run Export -impl impl1 -task Jedecgen
+#Stop recording: 11/27/2022 21:45:26
+
+
+
+<A name="pn221202195241"></A><B><U><big>pn221202195241</big></U></B>
+#Start recording tcl command: 12/2/2022 18:03:21
+#Project Location: C:/Users/hankeyi35/Desktop/lab8; Project name: dianya
+prj_project open "C:/Users/hankeyi35/Desktop/lab8/dianya.ldf"
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+#Stop recording: 12/2/2022 19:52:41
+
+
+
+<A name="pn221203113245"></A><B><U><big>pn221203113245</big></U></B>
+#Start recording tcl command: 12/3/2022 11:31:22
+#Project Location: C:/Users/hankeyi35/Desktop/lab8; Project name: dianya
+prj_project open "C:/Users/hankeyi35/Desktop/lab8/dianya.ldf"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+#Stop recording: 12/3/2022 11:32:45
+
+
+
+<A name="pn221203125343"></A><B><U><big>pn221203125343</big></U></B>
+#Start recording tcl command: 12/3/2022 11:47:47
+#Project Location: C:/Users/hankeyi35/Desktop/LAB8; Project name: dianya
+prj_project open "C:/Users/hankeyi35/Desktop/LAB8/dianya.ldf"
+prj_src remove "C:/Users/hankeyi35/Desktop/LAB8/remove_jitter.vhd"
+prj_src add "C:/Users/hankeyi35/Desktop/lab8/btn_debouncing.vhd"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+#Stop recording: 12/3/2022 12:53:43
+
+
+
+<A name="pn221203210441"></A><B><U><big>pn221203210441</big></U></B>
+#Start recording tcl command: 12/3/2022 20:01:44
+#Project Location: C:/Users/hankeyi35/Desktop/lab_8/lab8; Project name: dianya
+prj_project open "C:/Users/hankeyi35/Desktop/lab_8/lab8/dianya.ldf"
+prj_run Synthesis -impl impl1
+prj_run Export -impl impl1
+prj_run Synthesis -impl impl1 -forceAll
+#Stop recording: 12/3/2022 21:04:41
+
+
+
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+<BR>
+</PRE></FONT>
+</BODY>
+</HTML>

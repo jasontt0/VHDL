@@ -1,0 +1,14 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Sun Nov 12 20:54:26 2023 *
+NOTE DESIGN NAME: vote5 *
+NOTE DEVICE NAME: LCMXO2-4000HC-4CSBGA132 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS a[1] : M1 : in *
+NOTE PINS a[2] : L3 : in *
+NOTE PINS a[3] : M3 : in *
+NOTE PINS a[4] : P2 : in *
+NOTE PINS f : N2 : out *
+NOTE PINS a[0] : M2 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

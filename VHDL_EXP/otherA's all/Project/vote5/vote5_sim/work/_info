@@ -1,0 +1,95 @@
+m255
+K4
+z2
+!s11e vcom 2023.3 2023.07, Jul 18 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dD:/Lattice Diamond/Project/vote5/vote5_sim
+Etb
+Z1 w1697005515
+Z2 DPx4 ieee 11 numeric_std 0 22 F8@]:i<mFK7<TjIzKcTGi0
+Z3 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z4 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 1
+R0
+Z5 8D:/Lattice Diamond/Project/vote5/vote5_sim/tb.vhd
+Z6 FD:/Lattice Diamond/Project/vote5/vote5_sim/tb.vhd
+l0
+L8 1
+VHz`lNR`o[W0Dj8mNl2@I>0
+!s100 ;kRn4iiblNBbJY4HbBi=S2
+Z7 OT;C;2023.3;77
+32
+Z8 !s110 1697351952
+!i10b 1
+Z9 !s108 1697351952.000000
+Z10 !s90 -reportprogress|300|-work|work|D:/Lattice Diamond/Project/vote5/vote5_sim/tb.vhd|
+!s107 D:/Lattice Diamond/Project/vote5/vote5_sim/tb.vhd|
+!i113 1
+Z11 o-work work -O0
+Z12 tExplicit 1 CvgOpt 0
+Abehav
+R2
+R3
+R4
+DEx4 work 2 tb 0 22 Hz`lNR`o[W0Dj8mNl2@I>0
+!i122 1
+l24
+L12 46
+VCV>gS2fM09n;7T_2]`gg_3
+!s100 8f3z_f]6MokY5XB>jg?_G0
+R7
+32
+R8
+!i10b 1
+R9
+R10
+Z13 !s107 D:/Lattice Diamond/Project/vote5/vote5_sim/tb.vhd|
+!i113 1
+R11
+R12
+Evote5
+Z14 w1697339470
+R3
+R4
+!i122 0
+R0
+Z15 8D:/Lattice Diamond/Project/vote5/vote5_sim/vote5.vhd
+Z16 FD:/Lattice Diamond/Project/vote5/vote5_sim/vote5.vhd
+l0
+L4 1
+VJ?N:FZ1R54an4BZ8HE:@f0
+!s100 n:FCKH@n8:1DYClQN1]9N2
+R7
+32
+R8
+!i10b 1
+R9
+Z17 !s90 -reportprogress|300|-work|work|D:/Lattice Diamond/Project/vote5/vote5_sim/vote5.vhd|
+Z18 !s107 D:/Lattice Diamond/Project/vote5/vote5_sim/vote5.vhd|
+!i113 1
+R11
+R12
+Aarch
+R3
+R4
+DEx4 work 5 vote5 0 22 J?N:FZ1R54an4BZ8HE:@f0
+!i122 0
+l11
+L10 38
+V47C9AoDm;`RV@7;?19;>T1
+!s100 70DJNBEADhOfEd^@TVGn41
+R7
+32
+R8
+!i10b 1
+R9
+R17
+R18
+!i113 1
+R11
+R12

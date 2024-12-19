@@ -1,0 +1,30 @@
+---------------------------------------------------
+Report for cell lab1_top
+   Instance path: lab1_top
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      59.00        100.0
+                                  LUT4	      84.00        100.0
+                                 IOBUF	         29        100.0
+                                PFUREG	         44        100.0
+                                RIPPLE	         17        100.0
+                                   EBR	          2        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                                   seg	          1         0.0
+                           freqdivider	          1        39.3
+---------------------------------------------------
+Report for cell seg
+   Instance path: lab1_top/U2
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                   EBR	          2        100.0
+---------------------------------------------------
+Report for cell freqdivider
+   Instance path: lab1_top/U1
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      23.17        39.3
+                                  LUT4	      14.00        16.7
+                                PFUREG	         33        75.0
+                                RIPPLE	         17        100.0

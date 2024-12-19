@@ -1,0 +1,1 @@
+E:/softwaredownloads2/diamond/3.13/bin/nt64/moduleparser.exe -PROJ EXP5_sim -pf E:/softwaredownloads2/diamond/3.13/cae_library/synthesis/vhdl/machxo2.vhd -lib machxo2 -pf E:/softwaredownloads2/diamond/3.13/cae_library/synthesis/verilog/machxo2.v -pkg E:/softwaredownloads2/diamond/3.13/cae_library/vhdl_packages/vdbs -lst E:/DESKTOP/VHDL_EXP/EXP5/EXP5_sim/source_files.lst

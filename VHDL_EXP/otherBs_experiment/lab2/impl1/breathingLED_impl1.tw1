@@ -1,0 +1,1241 @@
+
+Loading design for application trce from file breathingled_impl1_map.ncd.
+Design name: PWM_LED_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: D:/lscc/diamond/3.12/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.12.0.240.2
+Sat Dec 17 23:52:04 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o breathingLED_impl1.tw1 -gui -msgset D:/lscc/diamond/3.12/bin/nt64/lab22/promote.xml breathingLED_impl1_map.ncd breathingLED_impl1.prf 
+Design file:     breathingled_impl1_map.ncd
+Preference file: breathingled_impl1.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_c" 5.871000 MHz ;
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 117.092ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              instant1/lumdivision_i2_rep_418  (from clk_c +)
+   Destination:    FF         Data in        instant1/triangle_cnt_i0_i15  (to clk_c +)
+
+   Delay:             287.255ns  (34.4% logic, 65.6% route), 226 logic levels.
+
+ Constraint Details:
+
+    287.255ns physical path delay instant1/SLICE_352 to instant1/SLICE_35 exceeds
+    170.329ns delay constraint less
+      0.166ns DIN_SET requirement (totaling 170.163ns) by 117.092ns
+
+ Physical Path Details:
+
+      Data path instant1/SLICE_352 to instant1/SLICE_35:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452 *SLICE_352.CLK to */SLICE_352.Q0 instant1/SLICE_352 (from clk_c)
+ROUTE        14   e 1.234 */SLICE_352.Q0 to */SLICE_678.B1 instant1/n11738
+CTOF_DEL    ---     0.495 */SLICE_678.B1 to */SLICE_678.F1 instant1/SLICE_678
+ROUTE         3   e 1.234 */SLICE_678.F1 to */SLICE_413.C1 instant1/n11396
+CTOF_DEL    ---     0.495 */SLICE_413.C1 to */SLICE_413.F1 instant1/SLICE_413
+ROUTE         6   e 0.480 */SLICE_413.F1 to */SLICE_413.C0 instant1/n11388
+CTOF_DEL    ---     0.495 */SLICE_413.C0 to */SLICE_413.F0 instant1/SLICE_413
+ROUTE         4   e 1.234 */SLICE_413.F0 to */SLICE_541.C0 instant1/n62_adj_342
+CTOF_DEL    ---     0.495 */SLICE_541.C0 to */SLICE_541.F0 instant1/SLICE_541
+ROUTE         9   e 1.234 */SLICE_541.F0 to */SLICE_593.D0 instant1/n11734
+CTOF_DEL    ---     0.495 */SLICE_593.D0 to */SLICE_593.F0 instant1/SLICE_593
+ROUTE         3   e 1.234 */SLICE_593.F0 to */SLICE_524.A1 instant1/n11378
+CTOF_DEL    ---     0.495 */SLICE_524.A1 to */SLICE_524.F1 instant1/SLICE_524
+ROUTE         1   e 1.234 */SLICE_524.F1 to */SLICE_371.M0 instant1/n10561
+MTOOFX_DEL  ---     0.376 */SLICE_371.M0 to *LICE_371.OFX0 instant1/div_63_LessThan_762_i62/SLICE_371
+ROUTE         3   e 1.234 *LICE_371.OFX0 to */SLICE_438.D0 instant1/n62
+CTOF_DEL    ---     0.495 */SLICE_438.D0 to */SLICE_438.F0 instant1/SLICE_438
+ROUTE        11   e 1.234 */SLICE_438.F0 to */SLICE_573.C1 instant1/n1258
+CTOF_DEL    ---     0.495 */SLICE_573.C1 to */SLICE_573.F1 instant1/SLICE_573
+ROUTE         4   e 1.234 */SLICE_573.F1 to */SLICE_580.D0 instant1/n1406
+CTOF_DEL    ---     0.495 */SLICE_580.D0 to */SLICE_580.F0 instant1/SLICE_580
+ROUTE         1   e 1.234 */SLICE_580.F0 to */SLICE_369.M0 instant1/n10565
+MTOOFX_DEL  ---     0.376 */SLICE_369.M0 to *LICE_369.OFX0 instant1/div_63_LessThan_881_i60/SLICE_369
+ROUTE         2   e 1.234 *LICE_369.OFX0 to */SLICE_430.D1 instant1/n60
+CTOF_DEL    ---     0.495 */SLICE_430.D1 to */SLICE_430.F1 instant1/SLICE_430
+ROUTE         9   e 1.234 */SLICE_430.F1 to   SLICE_672.A1 instant1/n64_adj_411
+CTOF_DEL    ---     0.495   SLICE_672.A1 to   SLICE_672.F1 SLICE_672
+ROUTE         8   e 1.234   SLICE_672.F1 to */SLICE_573.C0 instant1/n11374
+CTOF_DEL    ---     0.495 */SLICE_573.C0 to */SLICE_573.F0 instant1/SLICE_573
+ROUTE         1   e 1.234 */SLICE_573.F0 to */SLICE_488.B0 instant1/n11370
+CTOF_DEL    ---     0.495 */SLICE_488.B0 to */SLICE_488.F0 instant1/SLICE_488
+ROUTE         1   e 1.234 */SLICE_488.F0 to */SLICE_401.M0 instant1/n10550
+MTOOFX_DEL  ---     0.376 */SLICE_401.M0 to *LICE_401.OFX0 instant1/i2142/SLICE_401
+ROUTE         2   e 1.234 *LICE_401.OFX0 to */SLICE_560.D1 instant1/n62_adj_410
+CTOF_DEL    ---     0.495 */SLICE_560.D1 to */SLICE_560.F1 instant1/SLICE_560
+ROUTE        11   e 1.234 */SLICE_560.F1 to */SLICE_423.A1 instant1/n64_adj_409
+CTOF_DEL    ---     0.495 */SLICE_423.A1 to */SLICE_423.F1 instant1/SLICE_423
+ROUTE         4   e 1.234 */SLICE_423.F1 to */SLICE_689.B0 instant1/n1750
+CTOF_DEL    ---     0.495 */SLICE_689.B0 to */SLICE_689.F0 instant1/SLICE_689
+ROUTE         1   e 1.234 */SLICE_689.F0 to */SLICE_486.A0 instant1/n11367
+CTOF_DEL    ---     0.495 */SLICE_486.A0 to */SLICE_486.F0 instant1/SLICE_486
+ROUTE         1   e 1.234 */SLICE_486.F0 to */SLICE_400.M0 instant1/n10586
+MTOOFX_DEL  ---     0.376 */SLICE_400.M0 to *LICE_400.OFX0 instant1/i2144/SLICE_400
+ROUTE         3   e 1.234 *LICE_400.OFX0 to */SLICE_425.A1 instant1/n60_adj_412
+CTOF_DEL    ---     0.495 */SLICE_425.A1 to */SLICE_425.F1 instant1/SLICE_425
+ROUTE        12   e 1.234 */SLICE_425.F1 to */SLICE_552.A1 instant1/n64
+CTOF_DEL    ---     0.495 */SLICE_552.A1 to */SLICE_552.F1 instant1/SLICE_552
+ROUTE         4   e 1.234 */SLICE_552.F1 to */SLICE_554.B0 instant1/n1919
+CTOF_DEL    ---     0.495 */SLICE_554.B0 to */SLICE_554.F0 instant1/SLICE_554
+ROUTE         1   e 1.234 */SLICE_554.F0 to */SLICE_484.A0 instant1/n11360
+CTOF_DEL    ---     0.495 */SLICE_484.A0 to */SLICE_484.F0 instant1/SLICE_484
+ROUTE         1   e 1.234 */SLICE_484.F0 to */SLICE_399.M0 instant1/n10579
+MTOOFX_DEL  ---     0.376 */SLICE_399.M0 to *LICE_399.OFX0 instant1/i2148/SLICE_399
+ROUTE         2   e 1.234 *LICE_399.OFX0 to */SLICE_687.C0 instant1/n58_adj_390
+CTOF_DEL    ---     0.495 */SLICE_687.C0 to */SLICE_687.F0 instant1/SLICE_687
+ROUTE         5   e 1.234 */SLICE_687.F0 to */SLICE_419.C1 instant1/n62_adj_391
+CTOF_DEL    ---     0.495 */SLICE_419.C1 to */SLICE_419.F1 instant1/SLICE_419
+ROUTE        18   e 1.234 */SLICE_419.F1 to */SLICE_535.C1 instant1/n11358
+CTOF_DEL    ---     0.495 */SLICE_535.C1 to */SLICE_535.F1 instant1/SLICE_535
+ROUTE         5   e 1.234 */SLICE_535.F1 to */SLICE_550.B0 instant1/n2085
+CTOF_DEL    ---     0.495 */SLICE_550.B0 to */SLICE_550.F0 instant1/SLICE_550
+ROUTE         1   e 1.234 */SLICE_550.F0 to */SLICE_478.A0 instant1/n11351
+CTOF_DEL    ---     0.495 */SLICE_478.A0 to */SLICE_478.F0 instant1/SLICE_478
+ROUTE         1   e 1.234 */SLICE_478.F0 to */SLICE_398.M0 instant1/n10572
+MTOOFX_DEL  ---     0.376 */SLICE_398.M0 to *LICE_398.OFX0 instant1/i2152/SLICE_398
+ROUTE         1   e 1.234 *LICE_398.OFX0 to */SLICE_685.D0 instant1/n56_adj_388
+CTOF_DEL    ---     0.495 */SLICE_685.D0 to */SLICE_685.F0 instant1/SLICE_685
+ROUTE         1   e 1.234 */SLICE_685.F0 to */SLICE_418.D1 instant1/n4_adj_389
+CTOF_DEL    ---     0.495 */SLICE_418.D1 to */SLICE_418.F1 instant1/SLICE_418
+ROUTE        18   e 1.234 */SLICE_418.F1 to */SLICE_419.D0 instant1/n62_adj_358
+CTOF_DEL    ---     0.495 */SLICE_419.D0 to */SLICE_419.F0 instant1/SLICE_419
+ROUTE         9   e 1.234 */SLICE_419.F0 to */SLICE_681.C0 instant1/n11349
+CTOF_DEL    ---     0.495 */SLICE_681.C0 to */SLICE_681.F0 instant1/SLICE_681
+ROUTE         1   e 1.234 */SLICE_681.F0 to */SLICE_475.B0 instant1/n11344
+CTOF_DEL    ---     0.495 */SLICE_475.B0 to */SLICE_475.F0 instant1/SLICE_475
+ROUTE         1   e 1.234 */SLICE_475.F0 to */SLICE_397.M0 instant1/n10557
+MTOOFX_DEL  ---     0.376 */SLICE_397.M0 to *LICE_397.OFX0 instant1/i2156/SLICE_397
+ROUTE         1   e 1.234 *LICE_397.OFX0 to */SLICE_535.D0 instant1/n54_adj_351
+CTOF_DEL    ---     0.495 */SLICE_535.D0 to */SLICE_535.F0 instant1/SLICE_535
+ROUTE         1   e 1.234 */SLICE_535.F0 to */SLICE_412.D1 instant1/n4_adj_352
+CTOF_DEL    ---     0.495 */SLICE_412.D1 to */SLICE_412.F1 instant1/SLICE_412
+ROUTE        20   e 1.234 */SLICE_412.F1 to */SLICE_411.C1 instant1/n60_adj_334
+CTOF_DEL    ---     0.495 */SLICE_411.C1 to */SLICE_411.F1 instant1/SLICE_411
+ROUTE         9   e 1.234 */SLICE_411.F1 to */SLICE_680.C0 instant1/n11342
+CTOF_DEL    ---     0.495 */SLICE_680.C0 to */SLICE_680.F0 instant1/SLICE_680
+ROUTE         1   e 1.234 */SLICE_680.F0 to */SLICE_472.B0 instant1/n11337
+CTOF_DEL    ---     0.495 */SLICE_472.B0 to */SLICE_472.F0 instant1/SLICE_472
+ROUTE         1   e 1.234 */SLICE_472.F0 to */SLICE_396.M0 instant1/n10465
+MTOOFX_DEL  ---     0.376 */SLICE_396.M0 to *LICE_396.OFX0 instant1/i2162/SLICE_396
+ROUTE         1   e 1.234 *LICE_396.OFX0 to */SLICE_509.D0 instant1/n52_adj_327
+CTOF_DEL    ---     0.495 */SLICE_509.D0 to */SLICE_509.F0 instant1/SLICE_509
+ROUTE         1   e 1.234 */SLICE_509.F0 to */SLICE_409.D1 instant1/n4_adj_328
+CTOF_DEL    ---     0.495 */SLICE_409.D1 to */SLICE_409.F1 instant1/SLICE_409
+ROUTE        22   e 1.234 */SLICE_409.F1 to */SLICE_408.D1 instant1/n58_adj_311
+CTOF_DEL    ---     0.495 */SLICE_408.D1 to */SLICE_408.F1 instant1/SLICE_408
+ROUTE        10   e 1.234 */SLICE_408.F1 to */SLICE_679.C0 instant1/n11335
+CTOF_DEL    ---     0.495 */SLICE_679.C0 to */SLICE_679.F0 instant1/SLICE_679
+ROUTE         1   e 1.234 */SLICE_679.F0 to */SLICE_471.B0 instant1/n11329
+CTOF_DEL    ---     0.495 */SLICE_471.B0 to */SLICE_471.F0 instant1/SLICE_471
+ROUTE         1   e 1.234 */SLICE_471.F0 to */SLICE_395.M0 instant1/n10416
+MTOOFX_DEL  ---     0.376 */SLICE_395.M0 to *LICE_395.OFX0 instant1/i2170/SLICE_395
+ROUTE         1   e 1.234 *LICE_395.OFX0 to */SLICE_485.D0 instant1/n50_adj_308
+CTOF_DEL    ---     0.495 */SLICE_485.D0 to */SLICE_485.F0 instant1/SLICE_485
+ROUTE         1   e 1.234 */SLICE_485.F0 to */SLICE_407.D1 instant1/n4_adj_309
+CTOF_DEL    ---     0.495 */SLICE_407.D1 to */SLICE_407.F1 instant1/SLICE_407
+ROUTE        24   e 1.234 */SLICE_407.F1 to */SLICE_468.A0 instant1/n56
+CTOF_DEL    ---     0.495 */SLICE_468.A0 to */SLICE_468.F0 instant1/SLICE_468
+ROUTE         5   e 1.234 */SLICE_468.F0 to */SLICE_683.B0 instant1/n2719
+CTOF_DEL    ---     0.495 */SLICE_683.B0 to */SLICE_683.F0 instant1/SLICE_683
+ROUTE         1   e 1.234 */SLICE_683.F0 to */SLICE_469.A0 instant1/n11324
+CTOF_DEL    ---     0.495 */SLICE_469.A0 to */SLICE_469.F0 instant1/SLICE_469
+ROUTE         1   e 1.234 */SLICE_469.F0 to */SLICE_394.M0 instant1/n10409
+MTOOFX_DEL  ---     0.376 */SLICE_394.M0 to *LICE_394.OFX0 instant1/i2180/SLICE_394
+ROUTE         1   e 1.234 *LICE_394.OFX0 to */SLICE_496.D1 instant1/n48_adj_364
+CTOF_DEL    ---     0.495 */SLICE_496.D1 to */SLICE_496.F1 instant1/SLICE_496
+ROUTE         1   e 1.234 */SLICE_496.F1 to */SLICE_436.D0 instant1/n4_adj_365
+CTOF_DEL    ---     0.495 */SLICE_436.D0 to */SLICE_436.F0 instant1/SLICE_436
+ROUTE        26   e 1.234 */SLICE_436.F0 to */SLICE_470.A1 instant1/n54
+CTOF_DEL    ---     0.495 */SLICE_470.A1 to */SLICE_470.F1 instant1/SLICE_470
+ROUTE         5   e 1.234 */SLICE_470.F1 to   SLICE_673.B1 instant1/n2870
+CTOF_DEL    ---     0.495   SLICE_673.B1 to   SLICE_673.F1 SLICE_673
+ROUTE         1   e 1.234   SLICE_673.F1 to */SLICE_467.A0 instant1/n11317
+CTOF_DEL    ---     0.495 */SLICE_467.A0 to */SLICE_467.F0 instant1/SLICE_467
+ROUTE         1   e 1.234 */SLICE_467.F0 to */SLICE_393.M0 instant1/n10402
+MTOOFX_DEL  ---     0.376 */SLICE_393.M0 to *LICE_393.OFX0 instant1/i2192/SLICE_393
+ROUTE         1   e 1.234 *LICE_393.OFX0 to */SLICE_683.D1 instant1/n46_adj_514
+CTOF_DEL    ---     0.495 */SLICE_683.D1 to */SLICE_683.F1 instant1/SLICE_683
+ROUTE         1   e 1.234 */SLICE_683.F1 to */SLICE_435.D0 instant1/n4_adj_462
+CTOF_DEL    ---     0.495 */SLICE_435.D0 to */SLICE_435.F0 instant1/SLICE_435
+ROUTE        28   e 1.234 */SLICE_435.F0 to */SLICE_605.A1 instant1/n52_adj_406
+CTOF_DEL    ---     0.495 */SLICE_605.A1 to */SLICE_605.F1 instant1/SLICE_605
+ROUTE         5   e 1.234 */SLICE_605.F1 to */SLICE_619.B0 instant1/n3018
+CTOF_DEL    ---     0.495 */SLICE_619.B0 to */SLICE_619.F0 instant1/SLICE_619
+ROUTE         1   e 1.234 */SLICE_619.F0 to */SLICE_466.A0 instant1/n11311
+CTOF_DEL    ---     0.495 */SLICE_466.A0 to */SLICE_466.F0 instant1/SLICE_466
+ROUTE         1   e 1.234 */SLICE_466.F0 to */SLICE_392.M0 instant1/n10395
+MTOOFX_DEL  ---     0.376 */SLICE_392.M0 to *LICE_392.OFX0 instant1/i2206/SLICE_392
+ROUTE         1   e 1.234 *LICE_392.OFX0 to */SLICE_669.D0 instant1/n44_adj_503
+CTOF_DEL    ---     0.495 */SLICE_669.D0 to */SLICE_669.F0 instant1/SLICE_669
+ROUTE         1   e 1.234 */SLICE_669.F0 to */SLICE_434.D0 instant1/n4_adj_460
+CTOF_DEL    ---     0.495 */SLICE_434.D0 to */SLICE_434.F0 instant1/SLICE_434
+ROUTE        30   e 1.234 */SLICE_434.F0 to */SLICE_489.A1 instant1/n50_adj_405
+CTOF_DEL    ---     0.495 */SLICE_489.A1 to */SLICE_489.F1 instant1/SLICE_489
+ROUTE         5   e 1.234 */SLICE_489.F1 to */SLICE_596.B0 instant1/n3163
+CTOF_DEL    ---     0.495 */SLICE_596.B0 to */SLICE_596.F0 instant1/SLICE_596
+ROUTE         1   e 1.234 */SLICE_596.F0 to */SLICE_465.A0 instant1/n11304
+CTOF_DEL    ---     0.495 */SLICE_465.A0 to */SLICE_465.F0 instant1/SLICE_465
+ROUTE         1   e 1.234 */SLICE_465.F0 to */SLICE_391.M0 instant1/n10388
+MTOOFX_DEL  ---     0.376 */SLICE_391.M0 to *LICE_391.OFX0 instant1/i2222/SLICE_391
+ROUTE         1   e 1.234 *LICE_391.OFX0 to */SLICE_605.D0 instant1/n42_adj_472
+CTOF_DEL    ---     0.495 */SLICE_605.D0 to */SLICE_605.F0 instant1/SLICE_605
+ROUTE         1   e 1.234 */SLICE_605.F0 to */SLICE_416.D1 instant1/n4_adj_457
+CTOF_DEL    ---     0.495 */SLICE_416.D1 to */SLICE_416.F1 instant1/SLICE_416
+ROUTE        32   e 1.234 */SLICE_416.F1 to */SLICE_556.A0 instant1/n48_adj_316
+CTOF_DEL    ---     0.495 */SLICE_556.A0 to */SLICE_556.F0 instant1/SLICE_556
+ROUTE         3   e 1.234 */SLICE_556.F0 to */SLICE_463.B1 instant1/n3305
+CTOF_DEL    ---     0.495 */SLICE_463.B1 to */SLICE_463.F1 instant1/SLICE_463
+ROUTE         1   e 0.480 */SLICE_463.F1 to */SLICE_463.A0 instant1/n11298
+CTOF_DEL    ---     0.495 */SLICE_463.A0 to */SLICE_463.F0 instant1/SLICE_463
+ROUTE         1   e 1.234 */SLICE_463.F0 to */SLICE_390.M0 instant1/n10381
+MTOOFX_DEL  ---     0.376 */SLICE_390.M0 to *LICE_390.OFX0 instant1/i2243/SLICE_390
+ROUTE         1   e 1.234 *LICE_390.OFX0 to */SLICE_489.D0 instant1/n40_adj_312
+CTOF_DEL    ---     0.495 */SLICE_489.D0 to */SLICE_489.F0 instant1/SLICE_489
+ROUTE         1   e 1.234 */SLICE_489.F0 to */SLICE_432.D0 instant1/n4_adj_313
+CTOF_DEL    ---     0.495 */SLICE_432.D0 to */SLICE_432.F0 instant1/SLICE_432
+ROUTE        22   e 1.234 */SLICE_432.F0 to */SLICE_558.A1 instant1/n46_adj_413
+CTOF_DEL    ---     0.495 */SLICE_558.A1 to */SLICE_558.F1 instant1/SLICE_558
+ROUTE         3   e 1.234 */SLICE_558.F1 to */SLICE_622.B0 instant1/n3444
+CTOF_DEL    ---     0.495 */SLICE_622.B0 to */SLICE_622.F0 instant1/SLICE_622
+ROUTE         1   e 1.234 */SLICE_622.F0 to */SLICE_461.A0 instant1/n11293
+CTOF_DEL    ---     0.495 */SLICE_461.A0 to */SLICE_461.F0 instant1/SLICE_461
+ROUTE         1   e 1.234 */SLICE_461.F0 to */SLICE_389.M0 instant1/n10374
+MTOOFX_DEL  ---     0.376 */SLICE_389.M0 to *LICE_389.OFX0 instant1/i2266/SLICE_389
+ROUTE         1   e 1.234 *LICE_389.OFX0 to */SLICE_591.B1 instant1/n38_adj_508
+CTOF_DEL    ---     0.495 */SLICE_591.B1 to */SLICE_591.F1 instant1/SLICE_591
+ROUTE         2   e 0.480 */SLICE_591.F1 to */SLICE_591.A0 instant1/n42_adj_404
+CTOF_DEL    ---     0.495 */SLICE_591.A0 to */SLICE_591.F0 instant1/SLICE_591
+ROUTE        21   e 1.234 */SLICE_591.F0 to */SLICE_121.B0 instant1/n44_adj_400
+C0TOFCO_DE  ---     1.023 */SLICE_121.B0 to *SLICE_121.FCO instant1/SLICE_121
+ROUTE         1   e 0.001 *SLICE_121.FCO to *SLICE_119.FCI instant1/n8536
+FCITOFCO_D  ---     0.162 *SLICE_119.FCI to *SLICE_119.FCO instant1/SLICE_119
+ROUTE         1   e 0.001 *SLICE_119.FCO to *SLICE_118.FCI instant1/n8537
+FCITOF1_DE  ---     0.643 *SLICE_118.FCI to */SLICE_118.F1 instant1/SLICE_118
+ROUTE         3   e 1.234 */SLICE_118.F1 to */SLICE_682.B1 instant1/n3580
+CTOF_DEL    ---     0.495 */SLICE_682.B1 to */SLICE_682.F1 instant1/SLICE_682
+ROUTE         1   e 1.234 */SLICE_682.F1 to */SLICE_459.A0 instant1/n11289
+CTOF_DEL    ---     0.495 */SLICE_459.A0 to */SLICE_459.F0 instant1/SLICE_459
+ROUTE         1   e 1.234 */SLICE_459.F0 to */SLICE_388.M0 instant1/n10367
+MTOOFX_DEL  ---     0.376 */SLICE_388.M0 to *LICE_388.OFX0 instant1/i2291/SLICE_388
+ROUTE         1   e 1.234 *LICE_388.OFX0 to */SLICE_589.B1 instant1/n36_adj_449
+CTOF_DEL    ---     0.495 */SLICE_589.B1 to */SLICE_589.F1 instant1/SLICE_589
+ROUTE         2   e 0.480 */SLICE_589.F1 to */SLICE_589.A0 instant1/n40_adj_399
+CTOF_DEL    ---     0.495 */SLICE_589.A0 to */SLICE_589.F0 instant1/SLICE_589
+ROUTE        22   e 1.234 */SLICE_589.F0 to */SLICE_109.B0 instant1/n42_adj_398
+C0TOFCO_DE  ---     1.023 */SLICE_109.B0 to *SLICE_109.FCO instant1/SLICE_109
+ROUTE         1   e 0.001 *SLICE_109.FCO to *SLICE_108.FCI instant1/n8550
+FCITOFCO_D  ---     0.162 *SLICE_108.FCI to *SLICE_108.FCO instant1/SLICE_108
+ROUTE         1   e 0.001 *SLICE_108.FCO to *SLICE_107.FCI instant1/n8551
+FCITOF1_DE  ---     0.643 *SLICE_107.FCI to */SLICE_107.F1 instant1/SLICE_107
+ROUTE         3   e 1.234 */SLICE_107.F1 to */SLICE_686.B1 instant1/n3713
+CTOF_DEL    ---     0.495 */SLICE_686.B1 to */SLICE_686.F1 instant1/SLICE_686
+ROUTE         1   e 1.234 */SLICE_686.F1 to */SLICE_457.A0 instant1/n11287
+CTOF_DEL    ---     0.495 */SLICE_457.A0 to */SLICE_457.F0 instant1/SLICE_457
+ROUTE         1   e 1.234 */SLICE_457.F0 to */SLICE_387.M0 instant1/n10360
+MTOOFX_DEL  ---     0.376 */SLICE_387.M0 to *LICE_387.OFX0 instant1/i2318/SLICE_387
+ROUTE         1   e 1.234 *LICE_387.OFX0 to */SLICE_587.B1 instant1/n34_adj_446
+CTOF_DEL    ---     0.495 */SLICE_587.B1 to */SLICE_587.F1 instant1/SLICE_587
+ROUTE         2   e 0.480 */SLICE_587.F1 to */SLICE_587.A0 instant1/n38_adj_396
+CTOF_DEL    ---     0.495 */SLICE_587.A0 to */SLICE_587.F0 instant1/SLICE_587
+ROUTE        23   e 1.234 */SLICE_587.F0 to *1/SLICE_96.B0 instant1/n40_adj_395
+C0TOFCO_DE  ---     1.023 *1/SLICE_96.B0 to */SLICE_96.FCO instant1/SLICE_96
+ROUTE         1   e 0.001 */SLICE_96.FCO to */SLICE_95.FCI instant1/n8564
+FCITOFCO_D  ---     0.162 */SLICE_95.FCI to */SLICE_95.FCO instant1/SLICE_95
+ROUTE         1   e 0.001 */SLICE_95.FCO to */SLICE_94.FCI instant1/n8565
+FCITOF1_DE  ---     0.643 */SLICE_94.FCI to *1/SLICE_94.F1 instant1/SLICE_94
+ROUTE         3   e 1.234 *1/SLICE_94.F1 to */SLICE_689.B1 instant1/n3843
+CTOF_DEL    ---     0.495 */SLICE_689.B1 to */SLICE_689.F1 instant1/SLICE_689
+ROUTE         1   e 1.234 */SLICE_689.F1 to */SLICE_456.A0 instant1/n11285
+CTOF_DEL    ---     0.495 */SLICE_456.A0 to */SLICE_456.F0 instant1/SLICE_456
+ROUTE         1   e 1.234 */SLICE_456.F0 to */SLICE_386.M0 instant1/n10353
+MTOOFX_DEL  ---     0.376 */SLICE_386.M0 to *LICE_386.OFX0 instant1/i2347/SLICE_386
+ROUTE         1   e 1.234 *LICE_386.OFX0 to */SLICE_583.B1 instant1/n32_adj_443
+CTOF_DEL    ---     0.495 */SLICE_583.B1 to */SLICE_583.F1 instant1/SLICE_583
+ROUTE         2   e 0.480 */SLICE_583.F1 to */SLICE_583.A0 instant1/n36_adj_392
+CTOF_DEL    ---     0.495 */SLICE_583.A0 to */SLICE_583.F0 instant1/SLICE_583
+ROUTE        24   e 1.234 */SLICE_583.F0 to *1/SLICE_84.B0 instant1/n38_adj_387
+C0TOFCO_DE  ---     1.023 *1/SLICE_84.B0 to */SLICE_84.FCO instant1/SLICE_84
+ROUTE         1   e 0.001 */SLICE_84.FCO to */SLICE_83.FCI instant1/n8579
+FCITOFCO_D  ---     0.162 */SLICE_83.FCI to */SLICE_83.FCO instant1/SLICE_83
+ROUTE         1   e 0.001 */SLICE_83.FCO to */SLICE_82.FCI instant1/n8580
+FCITOF1_DE  ---     0.643 */SLICE_82.FCI to *1/SLICE_82.F1 instant1/SLICE_82
+ROUTE         3   e 1.234 *1/SLICE_82.F1 to */SLICE_690.B1 instant1/n3970
+CTOF_DEL    ---     0.495 */SLICE_690.B1 to */SLICE_690.F1 instant1/SLICE_690
+ROUTE         1   e 1.234 */SLICE_690.F1 to */SLICE_454.A0 instant1/n11283
+CTOF_DEL    ---     0.495 */SLICE_454.A0 to */SLICE_454.F0 instant1/SLICE_454
+ROUTE         1   e 1.234 */SLICE_454.F0 to */SLICE_385.M0 instant1/n10346
+MTOOFX_DEL  ---     0.376 */SLICE_385.M0 to *LICE_385.OFX0 instant1/i2378/SLICE_385
+ROUTE         1   e 1.234 *LICE_385.OFX0 to */SLICE_578.B1 instant1/n30_adj_439
+CTOF_DEL    ---     0.495 */SLICE_578.B1 to */SLICE_578.F1 instant1/SLICE_578
+ROUTE         2   e 0.480 */SLICE_578.F1 to */SLICE_578.A0 instant1/n34_adj_384
+CTOF_DEL    ---     0.495 */SLICE_578.A0 to */SLICE_578.F0 instant1/SLICE_578
+ROUTE        25   e 1.234 */SLICE_578.F0 to *1/SLICE_70.B0 instant1/n36_adj_383
+C0TOFCO_DE  ---     1.023 *1/SLICE_70.B0 to */SLICE_70.FCO instant1/SLICE_70
+ROUTE         1   e 0.001 */SLICE_70.FCO to */SLICE_69.FCI instant1/n8594
+FCITOFCO_D  ---     0.162 */SLICE_69.FCI to */SLICE_69.FCO instant1/SLICE_69
+ROUTE         1   e 0.001 */SLICE_69.FCO to */SLICE_68.FCI instant1/n8595
+FCITOF1_DE  ---     0.643 */SLICE_68.FCI to *1/SLICE_68.F1 instant1/SLICE_68
+ROUTE         3   e 1.234 *1/SLICE_68.F1 to */SLICE_691.B1 instant1/n4094
+CTOF_DEL    ---     0.495 */SLICE_691.B1 to */SLICE_691.F1 instant1/SLICE_691
+ROUTE         1   e 1.234 */SLICE_691.F1 to */SLICE_453.A0 instant1/n11281
+CTOF_DEL    ---     0.495 */SLICE_453.A0 to */SLICE_453.F0 instant1/SLICE_453
+ROUTE         1   e 1.234 */SLICE_453.F0 to */SLICE_384.M0 instant1/n10543
+MTOOFX_DEL  ---     0.376 */SLICE_384.M0 to *LICE_384.OFX0 instant1/i2411/SLICE_384
+ROUTE         1   e 1.234 *LICE_384.OFX0 to */SLICE_575.B1 instant1/n28_adj_432
+CTOF_DEL    ---     0.495 */SLICE_575.B1 to */SLICE_575.F1 instant1/SLICE_575
+ROUTE         2   e 0.480 */SLICE_575.F1 to */SLICE_575.A0 instant1/n32_adj_378
+CTOF_DEL    ---     0.495 */SLICE_575.A0 to */SLICE_575.F0 instant1/SLICE_575
+ROUTE        26   e 1.234 */SLICE_575.F0 to *1/SLICE_57.B0 instant1/n34_adj_375
+C0TOFCO_DE  ---     1.023 *1/SLICE_57.B0 to */SLICE_57.FCO instant1/SLICE_57
+ROUTE         1   e 0.001 */SLICE_57.FCO to */SLICE_55.FCI instant1/n8610
+FCITOFCO_D  ---     0.162 */SLICE_55.FCI to */SLICE_55.FCO instant1/SLICE_55
+ROUTE         1   e 0.001 */SLICE_55.FCO to */SLICE_54.FCI instant1/n8611
+FCITOF1_DE  ---     0.643 */SLICE_54.FCI to *1/SLICE_54.F1 instant1/SLICE_54
+ROUTE         3   e 1.234 *1/SLICE_54.F1 to */SLICE_354.B1 instant1/n4215
+CTOF_DEL    ---     0.495 */SLICE_354.B1 to */SLICE_354.F1 instant1/SLICE_354
+ROUTE         1   e 1.234 */SLICE_354.F1 to */SLICE_451.A0 instant1/n11279
+CTOF_DEL    ---     0.495 */SLICE_451.A0 to */SLICE_451.F0 instant1/SLICE_451
+ROUTE         1   e 1.234 */SLICE_451.F0 to */SLICE_383.M0 instant1/n10472
+MTOOFX_DEL  ---     0.376 */SLICE_383.M0 to *LICE_383.OFX0 instant1/i2446/SLICE_383
+ROUTE         1   e 1.234 *LICE_383.OFX0 to */SLICE_569.B1 instant1/n26_adj_427
+CTOF_DEL    ---     0.495 */SLICE_569.B1 to */SLICE_569.F1 instant1/SLICE_569
+ROUTE         2   e 0.480 */SLICE_569.F1 to */SLICE_569.A0 instant1/n30_adj_372
+CTOF_DEL    ---     0.495 */SLICE_569.A0 to */SLICE_569.F0 instant1/SLICE_569
+ROUTE        27   e 1.234 */SLICE_569.F0 to *1/SLICE_42.B0 instant1/n32_adj_368
+C0TOFCO_DE  ---     1.023 *1/SLICE_42.B0 to */SLICE_42.FCO instant1/SLICE_42
+ROUTE         1   e 0.001 */SLICE_42.FCO to */SLICE_41.FCI instant1/n8626
+FCITOFCO_D  ---     0.162 */SLICE_41.FCI to */SLICE_41.FCO instant1/SLICE_41
+ROUTE         1   e 0.001 */SLICE_41.FCO to */SLICE_40.FCI instant1/n8627
+FCITOF1_DE  ---     0.643 */SLICE_40.FCI to *1/SLICE_40.F1 instant1/SLICE_40
+ROUTE         3   e 1.234 *1/SLICE_40.F1 to */SLICE_691.B0 instant1/n4333
+CTOF_DEL    ---     0.495 */SLICE_691.B0 to */SLICE_691.F0 instant1/SLICE_691
+ROUTE         1   e 1.234 */SLICE_691.F0 to */SLICE_449.A0 instant1/n11277
+CTOF_DEL    ---     0.495 */SLICE_449.A0 to */SLICE_449.F0 instant1/SLICE_449
+ROUTE         1   e 1.234 */SLICE_449.F0 to */SLICE_382.M0 instant1/n10458
+MTOOFX_DEL  ---     0.376 */SLICE_382.M0 to *LICE_382.OFX0 instant1/i2483/SLICE_382
+ROUTE         1   e 1.234 *LICE_382.OFX0 to */SLICE_512.B1 instant1/n24_adj_337
+CTOF_DEL    ---     0.495 */SLICE_512.B1 to */SLICE_512.F1 instant1/SLICE_512
+ROUTE         2   e 0.480 */SLICE_512.F1 to */SLICE_512.A0 instant1/n28_adj_335
+CTOF_DEL    ---     0.495 */SLICE_512.A0 to */SLICE_512.F0 instant1/SLICE_512
+ROUTE        28   e 1.234 */SLICE_512.F0 to *1/SLICE_27.B0 instant1/n30
+C0TOFCO_DE  ---     1.023 *1/SLICE_27.B0 to */SLICE_27.FCO instant1/SLICE_27
+ROUTE         1   e 0.001 */SLICE_27.FCO to */SLICE_26.FCI instant1/n8643
+FCITOFCO_D  ---     0.162 */SLICE_26.FCI to */SLICE_26.FCO instant1/SLICE_26
+ROUTE         1   e 0.001 */SLICE_26.FCO to */SLICE_25.FCI instant1/n8644
+FCITOFCO_D  ---     0.162 */SLICE_25.FCI to */SLICE_25.FCO instant1/SLICE_25
+ROUTE         1   e 0.001 */SLICE_25.FCO to */SLICE_24.FCI instant1/n8645
+FCITOFCO_D  ---     0.162 */SLICE_24.FCI to */SLICE_24.FCO instant1/SLICE_24
+ROUTE         1   e 0.001 */SLICE_24.FCO to */SLICE_23.FCI instant1/n8646
+FCITOFCO_D  ---     0.162 */SLICE_23.FCI to */SLICE_23.FCO instant1/SLICE_23
+ROUTE         1   e 0.001 */SLICE_23.FCO to */SLICE_22.FCI instant1/n8647
+FCITOFCO_D  ---     0.162 */SLICE_22.FCI to */SLICE_22.FCO instant1/SLICE_22
+ROUTE         1   e 0.001 */SLICE_22.FCO to */SLICE_21.FCI instant1/n8648
+FCITOFCO_D  ---     0.162 */SLICE_21.FCI to */SLICE_21.FCO instant1/SLICE_21
+ROUTE         1   e 0.001 */SLICE_21.FCO to */SLICE_20.FCI instant1/n8649
+FCITOFCO_D  ---     0.162 */SLICE_20.FCI to */SLICE_20.FCO instant1/SLICE_20
+ROUTE         1   e 0.001 */SLICE_20.FCO to */SLICE_19.FCI instant1/n8650
+FCITOFCO_D  ---     0.162 */SLICE_19.FCI to */SLICE_19.FCO instant1/SLICE_19
+ROUTE         1   e 0.001 */SLICE_19.FCO to */SLICE_18.FCI instant1/n8651
+FCITOFCO_D  ---     0.162 */SLICE_18.FCI to */SLICE_18.FCO instant1/SLICE_18
+ROUTE         1   e 0.001 */SLICE_18.FCO to */SLICE_17.FCI instant1/n8652
+FCITOFCO_D  ---     0.162 */SLICE_17.FCI to */SLICE_17.FCO instant1/SLICE_17
+ROUTE         1   e 0.001 */SLICE_17.FCO to */SLICE_12.FCI instant1/n8653
+FCITOFCO_D  ---     0.162 */SLICE_12.FCI to */SLICE_12.FCO instant1/SLICE_12
+ROUTE         1   e 0.001 */SLICE_12.FCO to *SLICE_321.FCI instant1/n8654
+FCITOFCO_D  ---     0.162 *SLICE_321.FCI to *SLICE_321.FCO instant1/SLICE_321
+ROUTE         1   e 0.001 *SLICE_321.FCO to *SLICE_320.FCI instant1/n8655
+FCITOF0_DE  ---     0.585 *SLICE_320.FCI to */SLICE_320.F0 instant1/SLICE_320
+ROUTE         2   e 1.234 */SLICE_320.F0 to */SLICE_353.A1 instant1/n4427
+CTOF_DEL    ---     0.495 */SLICE_353.A1 to */SLICE_353.F1 instant1/SLICE_353
+ROUTE         1   e 1.234 */SLICE_353.F1 to */SLICE_559.A0 instant1/n15_adj_418
+CTOF_DEL    ---     0.495 */SLICE_559.A0 to */SLICE_559.F0 instant1/SLICE_559
+ROUTE         1   e 1.234 */SLICE_559.F0 to */SLICE_443.B0 instant1/n18
+CTOF_DEL    ---     0.495 */SLICE_443.B0 to */SLICE_443.F0 instant1/SLICE_443
+ROUTE        22   e 0.480 */SLICE_443.F0 to */SLICE_443.A1 instant1/n34
+CTOF_DEL    ---     0.495 */SLICE_443.A1 to */SLICE_443.F1 instant1/SLICE_443
+ROUTE         9   e 1.234 */SLICE_443.F1 to */SLICE_318.C1 instant1/n4289
+C1TOFCO_DE  ---     0.889 */SLICE_318.C1 to *SLICE_318.FCO instant1/SLICE_318
+ROUTE         1   e 0.001 *SLICE_318.FCO to *SLICE_317.FCI instant1/n8659
+FCITOFCO_D  ---     0.162 *SLICE_317.FCI to *SLICE_317.FCO instant1/SLICE_317
+ROUTE         1   e 0.001 *SLICE_317.FCO to *SLICE_316.FCI instant1/n8660
+FCITOFCO_D  ---     0.162 *SLICE_316.FCI to *SLICE_316.FCO instant1/SLICE_316
+ROUTE         1   e 0.001 *SLICE_316.FCO to *SLICE_315.FCI instant1/n8661
+FCITOFCO_D  ---     0.162 *SLICE_315.FCI to *SLICE_315.FCO instant1/SLICE_315
+ROUTE         1   e 0.001 *SLICE_315.FCO to *SLICE_314.FCI instant1/n8662
+FCITOFCO_D  ---     0.162 *SLICE_314.FCI to *SLICE_314.FCO instant1/SLICE_314
+ROUTE         1   e 0.001 *SLICE_314.FCO to *SLICE_313.FCI instant1/n8663
+FCITOFCO_D  ---     0.162 *SLICE_313.FCI to *SLICE_313.FCO instant1/SLICE_313
+ROUTE         1   e 0.001 *SLICE_313.FCO to *SLICE_312.FCI instant1/n8664
+FCITOFCO_D  ---     0.162 *SLICE_312.FCI to *SLICE_312.FCO instant1/SLICE_312
+ROUTE         1   e 0.001 *SLICE_312.FCO to *SLICE_311.FCI instant1/n8665
+FCITOFCO_D  ---     0.162 *SLICE_311.FCI to *SLICE_311.FCO instant1/SLICE_311
+ROUTE         1   e 0.001 *SLICE_311.FCO to *SLICE_310.FCI instant1/n8666
+FCITOFCO_D  ---     0.162 *SLICE_310.FCI to *SLICE_310.FCO instant1/SLICE_310
+ROUTE         1   e 0.001 *SLICE_310.FCO to *SLICE_309.FCI instant1/n8667
+FCITOFCO_D  ---     0.162 *SLICE_309.FCI to *SLICE_309.FCO instant1/SLICE_309
+ROUTE         1   e 0.001 *SLICE_309.FCO to *SLICE_308.FCI instant1/n8668
+FCITOFCO_D  ---     0.162 *SLICE_308.FCI to *SLICE_308.FCO instant1/SLICE_308
+ROUTE         1   e 0.001 *SLICE_308.FCO to *SLICE_307.FCI instant1/n8669
+FCITOFCO_D  ---     0.162 *SLICE_307.FCI to *SLICE_307.FCO instant1/SLICE_307
+ROUTE         1   e 0.001 *SLICE_307.FCO to *SLICE_306.FCI instant1/n8670
+FCITOF1_DE  ---     0.643 *SLICE_306.FCI to */SLICE_306.F1 instant1/SLICE_306
+ROUTE         2   e 1.234 */SLICE_306.F1 to */SLICE_349.A1 instant1/n4542
+CTOF_DEL    ---     0.495 */SLICE_349.A1 to */SLICE_349.F1 instant1/SLICE_349
+ROUTE         1   e 1.234 */SLICE_349.F1 to */SLICE_629.A0 instant1/n17_adj_517
+CTOF_DEL    ---     0.495 */SLICE_629.A0 to */SLICE_629.F0 instant1/SLICE_629
+ROUTE         1   e 1.234 */SLICE_629.F0 to */SLICE_628.B0 instant1/n20_adj_515
+CTOF_DEL    ---     0.495 */SLICE_628.B0 to */SLICE_628.F0 instant1/SLICE_628
+ROUTE        23   e 1.234 */SLICE_628.F0 to */SLICE_625.A0 instant1/n36_adj_490
+CTOF_DEL    ---     0.495 */SLICE_625.A0 to */SLICE_625.F0 instant1/SLICE_625
+ROUTE         9   e 1.234 */SLICE_625.F0 to */SLICE_303.C1 instant1/n4288
+C1TOFCO_DE  ---     0.889 */SLICE_303.C1 to *SLICE_303.FCO instant1/SLICE_303
+ROUTE         1   e 0.001 *SLICE_303.FCO to *SLICE_302.FCI instant1/n8677
+FCITOFCO_D  ---     0.162 *SLICE_302.FCI to *SLICE_302.FCO instant1/SLICE_302
+ROUTE         1   e 0.001 *SLICE_302.FCO to *SLICE_301.FCI instant1/n8678
+FCITOFCO_D  ---     0.162 *SLICE_301.FCI to *SLICE_301.FCO instant1/SLICE_301
+ROUTE         1   e 0.001 *SLICE_301.FCO to *SLICE_300.FCI instant1/n8679
+FCITOF1_DE  ---     0.643 *SLICE_300.FCI to */SLICE_300.F1 instant1/SLICE_300
+ROUTE         6   e 1.234 */SLICE_300.F1 to */SLICE_682.B0 instant1/n4669
+CTOF_DEL    ---     0.495 */SLICE_682.B0 to */SLICE_682.F0 instant1/SLICE_682
+ROUTE         1   e 1.234 */SLICE_682.F0 to */SLICE_444.A0 instant1/n11271
+CTOF_DEL    ---     0.495 */SLICE_444.A0 to */SLICE_444.F0 instant1/SLICE_444
+ROUTE         1   e 1.234 */SLICE_444.F0 to */SLICE_379.M0 instant1/n10437
+MTOOFX_DEL  ---     0.376 */SLICE_379.M0 to *LICE_379.OFX0 instant1/i2603/SLICE_379
+ROUTE         1   e 1.234 *LICE_379.OFX0 to */SLICE_365.A1 instant1/n18_adj_363
+CTOF_DEL    ---     0.495 */SLICE_365.A1 to */SLICE_365.F1 instant1/SLICE_365
+ROUTE         1   e 1.234 */SLICE_365.F1 to */SLICE_405.D1 instant1/n4_adj_362
+CTOF_DEL    ---     0.495 */SLICE_405.D1 to */SLICE_405.F1 instant1/SLICE_405
+ROUTE        56   e 1.234 */SLICE_405.F1 to */SLICE_448.A0 instant1/n24
+CTOF_DEL    ---     0.495 */SLICE_448.A0 to */SLICE_448.F0 instant1/SLICE_448
+ROUTE         3   e 1.234 */SLICE_448.F0 to */SLICE_482.B1 instant1/n4775
+CTOF_DEL    ---     0.495 */SLICE_482.B1 to */SLICE_482.F1 instant1/SLICE_482
+ROUTE         1   e 1.234 */SLICE_482.F1 to */SLICE_508.A1 instant1/n11263
+CTOF_DEL    ---     0.495 */SLICE_508.A1 to */SLICE_508.F1 instant1/SLICE_508
+ROUTE         1   e 1.234 */SLICE_508.F1 to */SLICE_378.M0 instant1/n10430
+MTOOFX_DEL  ---     0.376 */SLICE_378.M0 to *LICE_378.OFX0 instant1/i2645/SLICE_378
+ROUTE         1   e 1.234 *LICE_378.OFX0 to */SLICE_510.D0 instant1/n16_adj_332
+CTOF_DEL    ---     0.495 */SLICE_510.D0 to */SLICE_510.F0 instant1/SLICE_510
+ROUTE         1   e 1.234 */SLICE_510.F0 to */SLICE_414.D1 instant1/n4_adj_333
+CTOF_DEL    ---     0.495 */SLICE_414.D1 to */SLICE_414.F1 instant1/SLICE_414
+ROUTE        15   e 1.234 */SLICE_414.F1 to */SLICE_518.A1 instant1/n22_adj_343
+CTOF_DEL    ---     0.495 */SLICE_518.A1 to */SLICE_518.F1 instant1/SLICE_518
+ROUTE        11   e 1.234 */SLICE_518.F1 to */SLICE_417.D1 instant1/n11261
+CTOF_DEL    ---     0.495 */SLICE_417.D1 to */SLICE_417.F1 instant1/SLICE_417
+ROUTE         2   e 1.234 */SLICE_417.F1 to   SLICE_676.B1 instant1/n9
+CTOF_DEL    ---     0.495   SLICE_676.B1 to   SLICE_676.F1 SLICE_676
+ROUTE         1   e 1.234   SLICE_676.F1 to */SLICE_377.M0 instant1/n10423
+MTOOFX_DEL  ---     0.376 */SLICE_377.M0 to *LICE_377.OFX0 instant1/i2689/SLICE_377
+ROUTE         1   e 1.234 *LICE_377.OFX0 to */SLICE_477.A0 instant1/n14_adj_302
+CTOF_DEL    ---     0.495 */SLICE_477.A0 to */SLICE_477.F0 instant1/SLICE_477
+ROUTE         1   e 0.480 */SLICE_477.F0 to */SLICE_477.D1 instant1/n4_adj_303
+CTOF_DEL    ---     0.495 */SLICE_477.D1 to */SLICE_477.F1 instant1/SLICE_477
+ROUTE         1   e 1.234 */SLICE_477.F1 to *1/SLICE_16.A1 instant1/n20_adj_361
+C1TOFCO_DE  ---     0.889 *1/SLICE_16.A1 to */SLICE_16.FCO instant1/SLICE_16
+ROUTE         1   e 0.001 */SLICE_16.FCO to *SLICE_255.FCI instant1/n8410
+FCITOFCO_D  ---     0.162 *SLICE_255.FCI to *SLICE_255.FCO instant1/SLICE_255
+ROUTE         1   e 0.001 *SLICE_255.FCO to *SLICE_254.FCI instant1/n8411
+FCITOFCO_D  ---     0.162 *SLICE_254.FCI to *SLICE_254.FCO instant1/SLICE_254
+ROUTE         1   e 0.001 *SLICE_254.FCO to *SLICE_253.FCI instant1/n8412
+FCITOFCO_D  ---     0.162 *SLICE_253.FCI to *SLICE_253.FCO instant1/SLICE_253
+ROUTE         1   e 0.001 *SLICE_253.FCO to *SLICE_252.FCI instant1/n8413
+FCITOFCO_D  ---     0.162 *SLICE_252.FCI to *SLICE_252.FCO instant1/SLICE_252
+ROUTE         1   e 0.001 *SLICE_252.FCO to *SLICE_251.FCI instant1/n8414
+FCITOFCO_D  ---     0.162 *SLICE_251.FCI to *SLICE_251.FCO instant1/SLICE_251
+ROUTE         1   e 0.001 *SLICE_251.FCO to *SLICE_250.FCI instant1/n8415
+FCITOFCO_D  ---     0.162 *SLICE_250.FCI to *SLICE_250.FCO instant1/SLICE_250
+ROUTE         1   e 0.001 *SLICE_250.FCO to *SLICE_249.FCI instant1/n8416
+FCITOFCO_D  ---     0.162 *SLICE_249.FCI to *SLICE_249.FCO instant1/SLICE_249
+ROUTE         1   e 0.001 *SLICE_249.FCO to *SLICE_248.FCI instant1/n8417
+FCITOFCO_D  ---     0.162 *SLICE_248.FCI to *SLICE_248.FCO instant1/SLICE_248
+ROUTE         1   e 0.001 *SLICE_248.FCO to *SLICE_247.FCI instant1/n8418
+FCITOFCO_D  ---     0.162 *SLICE_247.FCI to *SLICE_247.FCO instant1/SLICE_247
+ROUTE         1   e 0.001 *SLICE_247.FCO to *SLICE_246.FCI instant1/n8419
+FCITOFCO_D  ---     0.162 *SLICE_246.FCI to *SLICE_246.FCO instant1/SLICE_246
+ROUTE         1   e 0.001 *SLICE_246.FCO to *SLICE_245.FCI instant1/n8420
+FCITOFCO_D  ---     0.162 *SLICE_245.FCI to *SLICE_245.FCO instant1/SLICE_245
+ROUTE         1   e 0.001 *SLICE_245.FCO to *SLICE_244.FCI instant1/n8421
+FCITOFCO_D  ---     0.162 *SLICE_244.FCI to *SLICE_244.FCO instant1/SLICE_244
+ROUTE         1   e 0.001 *SLICE_244.FCO to *SLICE_243.FCI instant1/n8422
+FCITOFCO_D  ---     0.162 *SLICE_243.FCI to *SLICE_243.FCO instant1/SLICE_243
+ROUTE         1   e 0.001 *SLICE_243.FCO to *SLICE_242.FCI instant1/n8423
+FCITOFCO_D  ---     0.162 *SLICE_242.FCI to *SLICE_242.FCO instant1/SLICE_242
+ROUTE         1   e 0.001 *SLICE_242.FCO to *SLICE_241.FCI instant1/n8424
+FCITOFCO_D  ---     0.162 *SLICE_241.FCI to *SLICE_241.FCO instant1/SLICE_241
+ROUTE         1   e 0.001 *SLICE_241.FCO to *SLICE_240.FCI instant1/n8425
+FCITOF1_DE  ---     0.643 *SLICE_240.FCI to */SLICE_240.F1 instant1/SLICE_240
+ROUTE        17   e 1.234 */SLICE_240.F1 to */SLICE_207.A0 instant1/count_flag_N_159
+C0TOFCO_DE  ---     1.023 */SLICE_207.A0 to *SLICE_207.FCO instant1/SLICE_207
+ROUTE         1   e 0.001 *SLICE_207.FCO to *SLICE_176.FCI instant1/n8403
+FCITOFCO_D  ---     0.162 *SLICE_176.FCI to *SLICE_176.FCO instant1/SLICE_176
+ROUTE         1   e 0.001 *SLICE_176.FCO to *SLICE_145.FCI instant1/n8404
+FCITOFCO_D  ---     0.162 *SLICE_145.FCI to *SLICE_145.FCO instant1/SLICE_145
+ROUTE         1   e 0.001 *SLICE_145.FCO to *SLICE_120.FCI instant1/n8405
+FCITOFCO_D  ---     0.162 *SLICE_120.FCI to *SLICE_120.FCO instant1/SLICE_120
+ROUTE         1   e 0.001 *SLICE_120.FCO to */SLICE_98.FCI instant1/n8406
+FCITOFCO_D  ---     0.162 */SLICE_98.FCI to */SLICE_98.FCO instant1/SLICE_98
+ROUTE         1   e 0.001 */SLICE_98.FCO to */SLICE_76.FCI instant1/n8407
+FCITOFCO_D  ---     0.162 */SLICE_76.FCI to */SLICE_76.FCO instant1/SLICE_76
+ROUTE         1   e 0.001 */SLICE_76.FCO to */SLICE_56.FCI instant1/n8408
+FCITOFCO_D  ---     0.162 */SLICE_56.FCI to */SLICE_56.FCO instant1/SLICE_56
+ROUTE         1   e 0.001 */SLICE_56.FCO to */SLICE_35.FCI instant1/n8409
+FCITOF0_DE  ---     0.585 */SLICE_35.FCI to *1/SLICE_35.F0 instant1/SLICE_35
+ROUTE         1   e 0.001 *1/SLICE_35.F0 to */SLICE_35.DI0 instant1/n281 (to clk_c)
+                  --------
+                  287.255   (34.4% logic, 65.6% route), 226 logic levels.
+
+Warning:   3.479MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "instant2/clk1" 175.593000 MHz ;
+            401 items scored, 349 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 5.774ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              instant2/row_i4  (from instant2/clk1 +)
+   Destination:    FF         Data in        instant2/key_code_i0_i0  (to instant2/clk1 +)
+
+   Delay:              11.187ns  (29.5% logic, 70.5% route), 7 logic levels.
+
+ Constraint Details:
+
+     11.187ns physical path delay SLICE_368 to instant2/SLICE_357 exceeds
+      5.695ns delay constraint less
+      0.282ns CE_SET requirement (totaling 5.413ns) by 5.774ns
+
+ Physical Path Details:
+
+      Data path SLICE_368 to instant2/SLICE_357:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452  SLICE_368.CLK to   SLICE_368.Q1 SLICE_368 (from instant2/clk1)
+ROUTE         9   e 1.234   SLICE_368.Q1 to */SLICE_441.A0 row_c_3
+CTOF_DEL    ---     0.495 */SLICE_441.A0 to */SLICE_441.F0 instant2/SLICE_441
+ROUTE         2   e 1.234 */SLICE_441.F0 to */SLICE_640.C1 instant2/n10996
+CTOF_DEL    ---     0.495 */SLICE_640.C1 to */SLICE_640.F1 instant2/SLICE_640
+ROUTE         2   e 1.234 */SLICE_640.F1 to */SLICE_402.M0 instant2/n11393
+MTOOFX_DEL  ---     0.376 */SLICE_402.M0 to *LICE_402.OFX0 instant2/i2947/SLICE_402
+ROUTE         1   e 1.234 *LICE_402.OFX0 to */SLICE_440.C1 instant2/n5539
+CTOF_DEL    ---     0.495 */SLICE_440.C1 to */SLICE_440.F1 instant2/SLICE_440
+ROUTE         1   e 0.480 */SLICE_440.F1 to */SLICE_440.B0 instant2/n8755
+CTOF_DEL    ---     0.495 */SLICE_440.B0 to */SLICE_440.F0 instant2/SLICE_440
+ROUTE         1   e 1.234 */SLICE_440.F0 to */SLICE_633.B0 instant2/n10653
+CTOF_DEL    ---     0.495 */SLICE_633.B0 to */SLICE_633.F0 instant2/SLICE_633
+ROUTE         4   e 1.234 */SLICE_633.F0 to */SLICE_357.CE instant2/clk1_enable_5 (to instant2/clk1)
+                  --------
+                   11.187   (29.5% logic, 70.5% route), 7 logic levels.
+
+Warning:  87.192MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_c" 5.871000 MHz ;    |    5.871 MHz|    3.479 MHz| 226 *
+                                        |             |             |
+FREQUENCY NET "instant2/clk1"           |             |             |
+175.593000 MHz ;                        |  175.593 MHz|   87.192 MHz|   7 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+2 preferences(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+instant1/n17_adj_517                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n20_adj_515                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n46_adj_514                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n38_adj_508                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n44_adj_503                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8655                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8660                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8661                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8662                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8663                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8664                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8665                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8666                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8667                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8668                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8669                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8670                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n4427                          |       2|    4096|     92.15%
+                                        |        |        |
+instant1/n8678                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8679                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n4542                          |       2|    4096|     92.15%
+                                        |        |        |
+instant1/n36_adj_490                    |      23|    4096|     92.15%
+                                        |        |        |
+instant1/n42_adj_472                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n4_adj_462                     |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n4_adj_460                     |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n4_adj_457                     |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n36_adj_449                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n34_adj_446                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n32_adj_443                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n30_adj_439                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n28_adj_432                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n26_adj_427                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n15_adj_418                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8411                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n4289                          |       9|    4096|     92.15%
+                                        |        |        |
+instant1/n4288                          |       9|    4096|     92.15%
+                                        |        |        |
+instant1/n8412                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8413                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8414                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8415                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8416                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n46_adj_413                    |      22|    4096|     92.15%
+                                        |        |        |
+instant1/n8417                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8418                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8419                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8420                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8421                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n60_adj_412                    |       3|    4096|     92.15%
+                                        |        |        |
+instant1/n8422                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8423                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8424                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8425                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n11378                         |       3|    4096|     92.15%
+                                        |        |        |
+instant1/n1258                          |      11|    4096|     92.15%
+                                        |        |        |
+instant1/n1406                          |       4|    4096|     92.15%
+                                        |        |        |
+instant1/n64_adj_411                    |       9|    4096|     92.15%
+                                        |        |        |
+instant1/n62_adj_410                    |       2|    4096|     92.15%
+                                        |        |        |
+instant1/n64_adj_409                    |      11|    4096|     92.15%
+                                        |        |        |
+instant1/n64                            |      12|    4096|     92.15%
+                                        |        |        |
+instant1/n8403                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8404                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n52_adj_406                    |      28|    4096|     92.15%
+                                        |        |        |
+instant1/n3018                          |       5|    4096|     92.15%
+                                        |        |        |
+instant1/n50_adj_405                    |      30|    4096|     92.15%
+                                        |        |        |
+instant1/n42_adj_404                    |       2|    4096|     92.15%
+                                        |        |        |
+instant1/n8405                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8536                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8537                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n3444                          |       3|    4096|     92.15%
+                                        |        |        |
+instant1/n44_adj_400                    |      21|    4096|     92.15%
+                                        |        |        |
+instant1/n40_adj_399                    |       2|    4096|     92.15%
+                                        |        |        |
+instant1/n8550                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8551                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n3580                          |       3|    4096|     92.15%
+                                        |        |        |
+instant1/n42_adj_398                    |      22|    4096|     92.15%
+                                        |        |        |
+instant1/n8406                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n38_adj_396                    |       2|    4096|     92.15%
+                                        |        |        |
+instant1/n8564                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8565                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n3713                          |       3|    4096|     92.15%
+                                        |        |        |
+instant1/n40_adj_395                    |      23|    4096|     92.15%
+                                        |        |        |
+instant1/n36_adj_392                    |       2|    4096|     92.15%
+                                        |        |        |
+instant1/n8579                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8580                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n3843                          |       3|    4096|     92.15%
+                                        |        |        |
+instant1/n62_adj_391                    |       5|    4096|     92.15%
+                                        |        |        |
+instant1/n58_adj_390                    |       2|    4096|     92.15%
+                                        |        |        |
+instant1/n4_adj_389                     |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n56_adj_388                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n1919                          |       4|    4096|     92.15%
+                                        |        |        |
+instant1/n8407                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n38_adj_387                    |      24|    4096|     92.15%
+                                        |        |        |
+instant1/n34_adj_384                    |       2|    4096|     92.15%
+                                        |        |        |
+instant1/n8594                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8595                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n3970                          |       3|    4096|     92.15%
+                                        |        |        |
+instant1/n36_adj_383                    |      25|    4096|     92.15%
+                                        |        |        |
+instant1/n32_adj_378                    |       2|    4096|     92.15%
+                                        |        |        |
+instant1/n11358                         |      18|    4096|     92.15%
+                                        |        |        |
+instant1/n8408                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8610                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8611                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n4094                          |       3|    4096|     92.15%
+                                        |        |        |
+instant1/n34_adj_375                    |      26|    4096|     92.15%
+                                        |        |        |
+instant1/n30_adj_372                    |       2|    4096|     92.15%
+                                        |        |        |
+instant1/n8626                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8627                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n4215                          |       3|    4096|     92.15%
+                                        |        |        |
+instant1/n10430                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8409                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/count_flag_N_159               |      17|    4096|     92.15%
+                                        |        |        |
+instant1/n32_adj_368                    |      27|    4096|     92.15%
+                                        |        |        |
+instant1/n8643                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8644                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8645                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n4333                          |       3|    4096|     92.15%
+                                        |        |        |
+instant1/n8646                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8647                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8648                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8649                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8650                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8651                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8652                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n4_adj_365                     |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n48_adj_364                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n18_adj_363                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n4_adj_362                     |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n10423                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8410                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n20_adj_361                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n62_adj_358                    |      18|    4096|     92.15%
+                                        |        |        |
+instant1/n9                             |       2|    4096|     92.15%
+                                        |        |        |
+instant1/n4_adj_352                     |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n54_adj_351                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n2085                          |       5|    4096|     92.15%
+                                        |        |        |
+instant1/n54                            |      26|    4096|     92.15%
+                                        |        |        |
+instant1/n22_adj_343                    |      15|    4096|     92.15%
+                                        |        |        |
+instant1/n11734                         |       9|    4096|     92.15%
+                                        |        |        |
+instant1/n62_adj_342                    |       4|    4096|     92.15%
+                                        |        |        |
+instant1/n11388                         |       6|    4096|     92.15%
+                                        |        |        |
+instant1/n24_adj_337                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n28_adj_335                    |       2|    4096|     92.15%
+                                        |        |        |
+instant1/n60_adj_334                    |      20|    4096|     92.15%
+                                        |        |        |
+instant1/n4_adj_333                     |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n16_adj_332                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n4_adj_328                     |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n52_adj_327                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n48_adj_316                    |      32|    4096|     92.15%
+                                        |        |        |
+instant1/n4_adj_313                     |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n40_adj_312                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n3163                          |       5|    4096|     92.15%
+                                        |        |        |
+instant1/n58_adj_311                    |      22|    4096|     92.15%
+                                        |        |        |
+instant1/n10550                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n10586                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n11367                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n4_adj_309                     |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n50_adj_308                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n10579                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n11360                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n10572                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n11351                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n4_adj_303                     |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n14_adj_302                    |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n10557                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n62                            |       3|    4096|     92.15%
+                                        |        |        |
+instant1/n10561                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n10465                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n10416                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n10409                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n11324                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n10402                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n11317                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n10395                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n11311                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n10388                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n11304                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n10381                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n4669                          |       6|    4096|     92.15%
+                                        |        |        |
+instant1/n11261                         |      11|    4096|     92.15%
+                                        |        |        |
+instant1/n10374                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n11293                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n10367                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n11289                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n281                           |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n10360                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n11287                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n10353                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n11285                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n60                            |       2|    4096|     92.15%
+                                        |        |        |
+instant1/n10565                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n10346                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n11283                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n10543                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n11281                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n10472                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n11279                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n10458                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n11277                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n56                            |      24|    4096|     92.15%
+                                        |        |        |
+instant1/n24                            |      56|    4096|     92.15%
+                                        |        |        |
+instant1/n8654                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8653                          |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n30                            |      28|    4096|     92.15%
+                                        |        |        |
+instant1/n10437                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n11271                         |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n34                            |      22|    4096|     92.15%
+                                        |        |        |
+instant1/n18                            |       1|    4096|     92.15%
+                                        |        |        |
+instant1/n8659                          |       1|    3584|     80.63%
+                                        |        |        |
+instant1/n8677                          |       1|    3584|     80.63%
+                                        |        |        |
+instant1/n11298                         |       1|    2812|     63.26%
+                                        |        |        |
+instant1/n11262                         |       1|    2560|     57.59%
+                                        |        |        |
+instant1/n11269                         |      11|    2560|     57.59%
+                                        |        |        |
+instant1/n1578                          |       4|    2234|     50.26%
+                                        |        |        |
+instant1/n1751                          |       4|    2234|     50.26%
+                                        |        |        |
+instant1/n11735                         |       5|    2234|     50.26%
+                                        |        |        |
+instant1/n11371                         |       1|    2234|     50.26%
+                                        |        |        |
+instant1/n2248                          |       5|    2228|     50.12%
+                                        |        |        |
+instant1/n2408                          |       5|    2228|     50.12%
+                                        |        |        |
+instant1/n11345                         |       1|    2228|     50.12%
+                                        |        |        |
+instant1/n11338                         |       1|    2228|     50.12%
+                                        |        |        |
+instant1/n11330                         |       1|    2228|     50.12%
+                                        |        |        |
+instant1/n2720                          |       4|    2228|     50.12%
+                                        |        |        |
+instant1/n2565                          |       5|    2228|     50.12%
+                                        |        |        |
+instant1/n2871                          |       4|    2226|     50.08%
+                                        |        |        |
+instant1/n2870                          |       5|    1870|     42.07%
+                                        |        |        |
+instant1/n11349                         |       9|    1868|     42.02%
+                                        |        |        |
+instant1/n11342                         |       9|    1868|     42.02%
+                                        |        |        |
+instant1/n11335                         |      10|    1868|     42.02%
+                                        |        |        |
+instant1/n11344                         |       1|    1868|     42.02%
+                                        |        |        |
+instant1/n11337                         |       1|    1868|     42.02%
+                                        |        |        |
+instant1/n11329                         |       1|    1868|     42.02%
+                                        |        |        |
+instant1/n2719                          |       5|    1868|     42.02%
+                                        |        |        |
+instant1/n11396                         |       3|    1862|     41.89%
+                                        |        |        |
+instant1/n11374                         |       8|    1862|     41.89%
+                                        |        |        |
+instant1/n1750                          |       4|    1862|     41.89%
+                                        |        |        |
+instant1/n11370                         |       1|    1862|     41.89%
+                                        |        |        |
+instant1/n11263                         |       1|    1536|     34.56%
+                                        |        |        |
+instant1/n4775                          |       3|    1536|     34.56%
+                                        |        |        |
+instant1/n3306                          |       3|    1528|     34.38%
+                                        |        |        |
+instant1/n3305                          |       3|    1284|     28.89%
+                                        |        |        |
+instant1/n11301                         |       8|    1284|     28.89%
+                                        |        |        |
+instant1/n11297                         |       1|    1284|     28.89%
+                                        |        |        |
+lumdivision_6                           |      94|    1222|     27.49%
+                                        |        |        |
+lumdivision_9                           |      56|    1012|     22.77%
+                                        |        |        |
+instant1/n11745                         |      11|    1004|     22.59%
+                                        |        |        |
+instant1/n11738                         |      14|     858|     19.30%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: instant2/clk1   Source: instant2/SLICE_322.Q0   Loads: 9
+   Covered under: FREQUENCY NET "instant2/clk1" 175.593000 MHz ;
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 60
+   Covered under: FREQUENCY NET "clk_c" 5.871000 MHz ;
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 4445  Score: 480628406
+Cumulative negative slack: 480628406
+
+Constraints cover 2147483647 paths, 5 nets, and 4962 connections (95.26% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.12.0.240.2
+Sat Dec 17 23:52:05 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2020 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o breathingLED_impl1.tw1 -gui -msgset D:/lscc/diamond/3.12/bin/nt64/lab22/promote.xml breathingLED_impl1_map.ncd breathingLED_impl1.prf 
+Design file:     breathingled_impl1_map.ncd
+Preference file: breathingled_impl1.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_c" 5.871000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.351ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              instant1/lumDN_2_93  (from clk_c +)
+   Destination:    FF         Data in        instant1/lumDN_3_94  (to clk_c +)
+
+   Delay:               0.332ns  (40.1% logic, 59.9% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.332ns physical path delay instant1/SLICE_524 to instant1/SLICE_524 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint requirement (totaling -0.019ns) by 0.351ns
+
+ Physical Path Details:
+
+      Data path instant1/SLICE_524 to instant1/SLICE_524:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 *SLICE_524.CLK to */SLICE_524.Q0 instant1/SLICE_524 (from clk_c)
+ROUTE         4   e 0.199 */SLICE_524.Q0 to */SLICE_524.M1 instant1/lumDN_2 (to clk_c)
+                  --------
+                    0.332   (40.1% logic, 59.9% route), 1 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY NET "instant2/clk1" 175.593000 MHz ;
+            401 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.447ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              instant2/key_state_i0  (from instant2/clk1 +)
+   Destination:    FF         Data in        instant2/key_state_i1  (to instant2/clk1 +)
+
+   Delay:               0.434ns  (53.9% logic, 46.1% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.434ns physical path delay instant2/SLICE_356 to instant2/SLICE_356 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.447ns
+
+ Physical Path Details:
+
+      Data path instant2/SLICE_356 to instant2/SLICE_356:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 *SLICE_356.CLK to */SLICE_356.Q0 instant2/SLICE_356 (from instant2/clk1)
+ROUTE         4   e 0.199 */SLICE_356.Q0 to */SLICE_356.A1 instant2/key_state_0
+CTOF_DEL    ---     0.101 */SLICE_356.A1 to */SLICE_356.F1 instant2/SLICE_356
+ROUTE         1   e 0.001 */SLICE_356.F1 to *SLICE_356.DI1 instant2/key_state_1_N_239_1 (to instant2/clk1)
+                  --------
+                    0.434   (53.9% logic, 46.1% route), 2 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_c" 5.871000 MHz ;    |     0.000 ns|     0.351 ns|   1  
+                                        |             |             |
+FREQUENCY NET "instant2/clk1"           |             |             |
+175.593000 MHz ;                        |     0.000 ns|     0.447 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 2 clocks:
+
+Clock Domain: instant2/clk1   Source: instant2/SLICE_322.Q0   Loads: 9
+   Covered under: FREQUENCY NET "instant2/clk1" 175.593000 MHz ;
+
+Clock Domain: clk_c   Source: clk.PAD   Loads: 60
+   Covered under: FREQUENCY NET "clk_c" 5.871000 MHz ;
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 2147483647 paths, 5 nets, and 5017 connections (96.31% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 4445 (setup), 0 (hold)
+Score: 480628406 (setup), 0 (hold)
+Cumulative negative slack: 480628406 (480628406+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

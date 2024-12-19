@@ -1,0 +1,1037 @@
+
+synthesis -f "EXP5_impl1_lattice.synproj"
+synthesis:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Wed Dec 11 18:19:54 2024
+
+
+Command Line:  synthesis -f EXP5_impl1_lattice.synproj -gui -msgset E:/DESKTOP/VHDL_EXP/EXP5/promote.xml 
+
+    <postMsg mid="35002000" type="Info"    dynamic="0" navigation="0"  />
+Synthesis options:
+The -a option is MachXO2.
+The -s option is 5.
+The -t option is CSBGA132.
+The -d option is LCMXO2-4000HC.
+Using package CSBGA132.
+Using performance grade 5.
+                                                          
+
+##########################################################
+
+### Lattice Family : MachXO2
+
+### Device  : LCMXO2-4000HC
+
+### Package : CSBGA132
+
+### Speed   : 5
+
+##########################################################
+
+                                                          
+
+    <postMsg mid="35001781" type="Info"    dynamic="0" navigation="0"  />
+Optimization goal = Balanced
+Top-level module name = piano.
+Target frequency = 200.000000 MHz.
+Maximum fanout = 1000.
+Timing path count = 3
+BRAM utilization = 100.000000 %
+DSP usage = true
+DSP utilization = 100.000000 %
+fsm_encoding_style = auto
+resolve_mixed_drivers = 0
+fix_gated_clocks = 1
+
+Mux style = Auto
+Use Carry Chain = true
+carry_chain_length = 0
+Loop Limit = 1950.
+Use IO Insertion = TRUE
+Use IO Reg = AUTO
+
+Resource Sharing = TRUE
+Propagate Constants = TRUE
+Remove Duplicate Registers = TRUE
+force_gsr = auto
+ROM style = auto
+RAM style = auto
+The -comp option is FALSE.
+The -syn option is FALSE.
+-p E:/softwaredownloads2/diamond/3.13/ispfpga/xo2c00/data (searchpath added)
+-p E:/DESKTOP/VHDL_EXP/EXP5/impl1 (searchpath added)
+-p E:/DESKTOP/VHDL_EXP/EXP5 (searchpath added)
+VHDL library = work
+VHDL design file = E:/DESKTOP/VHDL_EXP/EXP5/exp5.vhd
+VHDL design file = E:/DESKTOP/VHDL_EXP/EXP5/frequencydivider.vhd
+VHDL design file = E:/DESKTOP/VHDL_EXP/EXP5/songs.vhd
+NGD file = EXP5_impl1.ngd
+-sdc option: SDC file input not used.
+-lpf option: Output file option is ON.
+Hardtimer checking is enabled (default). The -dt option is not used.
+The -r option is OFF. [ Remove LOC Properties is OFF. ]
+Technology check ok...
+
+Analyzing Verilog file E:/softwaredownloads2/diamond/3.13/ispfpga/userware/NT/SYNTHESIS_HEADERS/machxo2.v. VERI-1482
+Compile design.
+Compile Design Begin
+    <postMsg mid="35921504" type="Info"    dynamic="2" navigation="0" arg0="" arg1="E:/DESKTOP/VHDL_EXP/EXP5/impl1"  />
+Analyzing VHDL file e:/desktop/vhdl_exp/exp5/exp5.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="e:/desktop/vhdl_exp/exp5/exp5.vhd(6): " arg1="piano" arg2="e:/desktop/vhdl_exp/exp5/exp5.vhd" arg3="6"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="e:/desktop/vhdl_exp/exp5/exp5.vhd(17): " arg1="piano_arch" arg2="e:/desktop/vhdl_exp/exp5/exp5.vhd" arg3="17"  />
+unit piano is not yet analyzed. VHDL-1485
+Analyzing VHDL file e:/desktop/vhdl_exp/exp5/frequencydivider.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="e:/desktop/vhdl_exp/exp5/frequencydivider.vhd(5): " arg1="freqdivider" arg2="e:/desktop/vhdl_exp/exp5/frequencydivider.vhd" arg3="5"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="e:/desktop/vhdl_exp/exp5/frequencydivider.vhd(14): " arg1="freqdivider_arch" arg2="e:/desktop/vhdl_exp/exp5/frequencydivider.vhd" arg3="14"  />
+unit piano is not yet analyzed. VHDL-1485
+Analyzing VHDL file e:/desktop/vhdl_exp/exp5/songs.vhd. VHDL-1481
+    <postMsg mid="35921012" type="Info"    dynamic="2" navigation="2" arg0="e:/desktop/vhdl_exp/exp5/songs.vhd(6): " arg1="song" arg2="e:/desktop/vhdl_exp/exp5/songs.vhd" arg3="6"  />
+    <postMsg mid="35921010" type="Info"    dynamic="2" navigation="2" arg0="e:/desktop/vhdl_exp/exp5/songs.vhd(14): " arg1="song_arch" arg2="e:/desktop/vhdl_exp/exp5/songs.vhd" arg3="14"  />
+unit piano is not yet analyzed. VHDL-1485
+unit piano is not yet analyzed. VHDL-1485
+e:/desktop/vhdl_exp/exp5/exp5.vhd(6): executing piano(piano_arch)
+
+    <postMsg mid="35921172" type="Info"    dynamic="1" navigation="2" arg0="e:/desktop/vhdl_exp/exp5/exp5.vhd(92): " arg1="e:/desktop/vhdl_exp/exp5/exp5.vhd" arg2="92"  />
+    <postMsg mid="35921205" type="Warning" dynamic="3" navigation="2" arg0="e:/desktop/vhdl_exp/exp5/exp5.vhd(15): " arg1="piano" arg2="piano_arch" arg3="e:/desktop/vhdl_exp/exp5/exp5.vhd" arg4="15"  />
+Top module name (VHDL): piano
+Last elaborated design is piano(piano_arch)
+Loading NGL library 'E:/softwaredownloads2/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'E:/softwaredownloads2/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/softwaredownloads2/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'E:/softwaredownloads2/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+Loading device for application map from file 'xo2c4000.nph' in environment: E:/softwaredownloads2/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Top-level module name = piano.
+    <postMsg mid="35001774" type="Info"    dynamic="2" navigation="0" arg0="music_num" arg1="gray"  />
+original encoding -> new encoding (gray encoding)
+
+ 00 -> 00
+
+ 01 -> 01
+
+ 10 -> 11
+
+
+
+
+GSR instance connected to net \U2/tone2_3__N_199.
+Applying 200.000000 MHz constraint to all clocks
+
+    <postMsg mid="35001611" type="Warning" dynamic="0" navigation="0"  />
+Results of NGD DRC are available in piano_drc.log.
+Loading NGL library 'E:/softwaredownloads2/diamond/3.13/ispfpga/xo2c00a/data/xo2alib.ngl'...
+Loading NGL library 'E:/softwaredownloads2/diamond/3.13/ispfpga/xo2c00/data/xo2clib.ngl'...
+Loading NGL library 'E:/softwaredownloads2/diamond/3.13/ispfpga/mg5g00/data/mg5glib.ngl'...
+Loading NGL library 'E:/softwaredownloads2/diamond/3.13/ispfpga/or5g00/data/orc5glib.ngl'...
+
+
+Running DRC...
+
+DRC complete with no errors or warnings
+
+Design Results:
+    328 blocks expanded
+completed the first expansion
+All blocks are expanded and NGD expansion is successful.
+Writing NGD file EXP5_impl1.ngd.
+
+################### Begin Area Report (piano)######################
+Number of register bits => 127 of 4635 (2 % )
+CCU2D => 66
+FD1P3AX => 1
+FD1P3IX => 28
+FD1S1A => 6
+FD1S1I => 1
+FD1S3AX => 6
+FD1S3IX => 85
+GSR => 1
+IB => 7
+INV => 2
+LUT4 => 100
+OB => 5
+PFUMX => 8
+ROM256X1A => 9
+################### End Area Report ##################
+
+################### Begin BlackBox Report ######################
+TSALL => 1
+################### End BlackBox Report ##################
+
+################### Begin Clock Report ######################
+Clock Nets
+Number of Clocks: 6
+  Net : clk_c, loads : 117
+  Net : U1/clk40hz, loads : 5
+  Net : U2/tone2_3__N_199, loads : 5
+  Net : U2/music_num_1_derived_2, loads : 2
+  Net : mode_c, loads : 1
+  Net : switch_c, loads : 1
+Clock Enable Nets
+Number of Clock Enables: 2
+Top 2 highest fanout Clock Enables:
+  Net : clk_c_enable_18, loads : 6
+  Net : clk_c_enable_29, loads : 1
+Highest fanout non-clock nets
+Top 10 highest fanout non-clock nets:
+  Net : U1/n655, loads : 35
+  Net : U1/n676, loads : 33
+  Net : clk_c_enable_29, loads : 26
+  Net : cnt_19__N_59, loads : 21
+  Net : tone_0, loads : 18
+  Net : tone_2, loads : 17
+  Net : tone_3, loads : 16
+  Net : n1457, loads : 12
+  Net : music_num_0, loads : 11
+  Net : music_num_1, loads : 10
+################### End Clock Report ##################
+
+Timing Report Summary
+--------------
+--------------------------------------------------------------------------------
+Constraint                              |   Constraint|       Actual|Levels
+--------------------------------------------------------------------------------
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk5 [get_nets switch_c]                |  200.000 MHz|  315.159 MHz|     2  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk4 [get_nets tone2_3__N_199]          |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk3 [get_nets                          |             |             |
+\U2/music_num[1]_derived_2]             |            -|            -|     0  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk2 [get_nets clk40hz]                 |  200.000 MHz|  346.741 MHz|     2  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk1 [get_nets mode_c]                  |  200.000 MHz|  317.662 MHz|     2  
+                                        |             |             |
+create_clock -period 5.000000 -name     |             |             |
+clk0 [get_nets clk_c]                   |  200.000 MHz|   79.828 MHz|     8 *
+                                        |             |             |
+--------------------------------------------------------------------------------
+
+
+1 constraints not met.
+
+
+Peak Memory Usage: 80.379  MB
+
+--------------------------------------------------------------
+Elapsed CPU time for LSE flow : 0.906  secs
+--------------------------------------------------------------
+
+map -a "MachXO2" -p LCMXO2-4000HC -t CSBGA132 -s 5 -oc Commercial   "EXP5_impl1.ngd" -o "EXP5_impl1_map.ncd" -pr "EXP5_impl1.prf" -mp "EXP5_impl1.mrp" -lpf "E:/DESKTOP/VHDL_EXP/EXP5/impl1/EXP5_impl1.lpf" -lpf "E:/DESKTOP/VHDL_EXP/EXP5/EXP5.lpf"  -c 0           
+map:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+   Process the file: EXP5_impl1.ngd
+   Picdevice="LCMXO2-4000HC"
+
+   Pictype="CSBGA132"
+
+   Picspeed=5
+
+   Remove unused logic
+
+   Do not produce over sized NCDs.
+
+Part used: LCMXO2-4000HCCSBGA132, Performance used: 5.
+
+Loading device for application map from file 'xo2c4000.nph' in environment: E:/softwaredownloads2/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+
+Running general design DRC...
+
+Removing unused logic...
+
+Optimizing...
+
+
+
+
+Design Summary:
+   Number of registers:    127 out of  4635 (3%)
+      PFU registers:          127 out of  4320 (3%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:       187 out of  2160 (9%)
+      SLICEs as Logic/ROM:    187 out of  2160 (9%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         66 out of  2160 (3%)
+   Number of LUT4s:        372 out of  4320 (9%)
+      Number used as logic LUTs:        240
+      Number used as distributed RAM:     0
+      Number used as ripple logic:      132
+      Number used as shift registers:     0
+   Number of PIO sites used: 12 + 4(JTAG) out of 105 (15%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:        1 out of 1 (100%)
+   EFB used :        No
+   JTAG used :       No
+   Readback used :   No
+   Oscillator used : No
+   Startup used :    No
+   POR :             On
+   Bandgap :         On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and ripple logic.
+   Number of clocks:  6
+     Net clk_c: 67 loads, 67 rising, 0 falling (Driver: PIO clk )
+     Net switch_c: 2 loads, 0 rising, 2 falling (Driver: PIO switch )
+     Net clk40hz: 1 loads, 1 rising, 0 falling (Driver: U1/clk40hz_28 )
+     Net mode_c: 1 loads, 0 rising, 1 falling (Driver: PIO mode )
+     Net U2/tone2_3__N_199: 4 loads, 4 rising, 0 falling (Driver: U2/mn_former_1__I_0_i4_1_lut_4_lut )
+     Net music_num[1]_derived_2: 1 loads, 1 rising, 0 falling (Driver: U2/mn_former_1__I_0_i3_4_lut_rep_22 )
+   Number of Clock Enables:  2
+     Net clk_c_enable_18: 3 loads, 3 LSLICEs
+     Net clk_c_enable_29: 15 loads, 15 LSLICEs
+   Number of LSRs:  10
+     Net music_num_1: 1 loads, 1 LSLICEs
+     Net n656: 1 loads, 1 LSLICEs
+     Net cnt_19__N_59: 11 loads, 11 LSLICEs
+     Net n655: 17 loads, 17 LSLICEs
+     Net n670: 5 loads, 5 LSLICEs
+     Net music_num_0: 1 loads, 1 LSLICEs
+     Net n791: 1 loads, 1 LSLICEs
+     Net n661: 5 loads, 5 LSLICEs
+     Net U2/n678: 5 loads, 5 LSLICEs
+     Net n676: 17 loads, 17 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net ptr1_3: 48 loads
+     Net ptr1_6: 48 loads
+     Net ptr1_2: 47 loads
+     Net ptr2_2: 47 loads
+     Net ptr2_6: 47 loads
+     Net ptr2_3: 46 loads
+     Net ptr2_1: 45 loads
+     Net ptr3_2: 45 loads
+     Net ptr3_3: 44 loads
+     Net ptr3_6: 44 loads
+ 
+
+   Number of warnings:  0
+   Number of errors:    0
+
+
+
+Total CPU Time: 0 secs  
+Total REAL Time: 0 secs  
+Peak Memory Usage: 52 MB
+
+Dumping design to file EXP5_impl1_map.ncd.
+
+ncd2vdb "EXP5_impl1_map.ncd" ".vdbs/EXP5_impl1_map.vdb"
+
+Loading device for application ncd2vdb from file 'xo2c4000.nph' in environment: E:/softwaredownloads2/diamond/3.13/ispfpga.
+
+trce -f "EXP5_impl1.mt" -o "EXP5_impl1.tw1" "EXP5_impl1_map.ncd" "EXP5_impl1.prf"
+trce:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file exp5_impl1_map.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Loading device for application trce from file 'xo2c4000.nph' in environment: E:/softwaredownloads2/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
+Wed Dec 11 18:19:56 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o EXP5_impl1.tw1 -gui -msgset E:/DESKTOP/VHDL_EXP/EXP5/promote.xml EXP5_impl1_map.ncd EXP5_impl1.prf 
+Design file:     exp5_impl1_map.ncd
+Preference file: exp5_impl1.prf
+Device,speed:    LCMXO2-4000HC,5
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+1 potential circuit loop found in timing analysis.
+1 potential circuit loop found in timing analysis.
+1 potential circuit loop found in timing analysis.
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 2502  Score: 6658100
+Cumulative negative slack: 6658100
+
+Constraints cover 4959 paths, 16 nets, and 735 connections (46.52% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
+Wed Dec 11 18:19:57 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o EXP5_impl1.tw1 -gui -msgset E:/DESKTOP/VHDL_EXP/EXP5/promote.xml EXP5_impl1_map.ncd EXP5_impl1.prf 
+Design file:     exp5_impl1_map.ncd
+Preference file: exp5_impl1.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+1 potential circuit loop found in timing analysis.
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 4959 paths, 16 nets, and 736 connections (46.58% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 2502 (setup), 0 (hold)
+Score: 6658100 (setup), 0 (hold)
+Cumulative negative slack: 6658100 (6658100+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 62 MB
+
+
+ldbanno "EXP5_impl1_map.ncd" -n Verilog -o "EXP5_impl1_mapvo.vo" -w -neg
+ldbanno: version Diamond (64-bit) 3.13.0.56.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a Verilog netlist using the orca library type based on the EXP5_impl1_map design file.
+
+
+Loading design for application ldbanno from file EXP5_impl1_map.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: E:/softwaredownloads2/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design EXP5_impl1_map.ncd into .ldb format.
+Writing Verilog netlist to file EXP5_impl1_mapvo.vo
+Writing SDF timing to file EXP5_impl1_mapvo.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 50 MB
+
+ldbanno "EXP5_impl1_map.ncd" -n VHDL -o "EXP5_impl1_mapvho.vho" -w -neg
+ldbanno: version Diamond (64-bit) 3.13.0.56.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Writing a VHDL netlist using the orca library type based on the EXP5_impl1_map design file.
+
+
+Loading design for application ldbanno from file EXP5_impl1_map.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Loading device for application ldbanno from file 'xo2c4000.nph' in environment: E:/softwaredownloads2/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Converting design EXP5_impl1_map.ncd into .ldb format.
+    <postMsg mid="35400209" type="Warning" dynamic="3" navigation="0" arg0="DEFAULT" arg1="-1" arg2="Keyword"  />
+    <postMsg mid="35400209" type="Warning" dynamic="3" navigation="0" arg0="ASSERT" arg1="-1" arg2="Keyword"  />
+Writing VHDL netlist to file EXP5_impl1_mapvho.vho
+Writing SDF timing to file EXP5_impl1_mapvho.sdf
+    <postMsg mid="35400250" type="Info"    dynamic="1" navigation="0" arg0="0"  />
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 50 MB
+
+mpartrce -p "EXP5_impl1.p2t" -f "EXP5_impl1.p3t" -tf "EXP5_impl1.pt" "EXP5_impl1_map.ncd" "EXP5_impl1.ncd"
+
+---- MParTrce Tool ----
+Removing old design directory at request of -rem command line option to this program.
+Running par. Please wait . . .
+
+Lattice Place and Route Report for Design "EXP5_impl1_map.ncd"
+Wed Dec 11 18:19:59 2024
+
+PAR: Place And Route Diamond (64-bit) 3.13.0.56.2.
+Command Line: par -w -l 5 -i 6 -t 1 -c 0 -e 0 -gui -msgset E:/DESKTOP/VHDL_EXP/EXP5/promote.xml -exp parUseNBR=1:parCDP=0:parCDR=0:parPathBased=OFF:parASE=1 EXP5_impl1_map.ncd EXP5_impl1.dir/5_1.ncd EXP5_impl1.prf
+Preference file: EXP5_impl1.prf.
+Placement level-cost: 5-1.
+Routing Iterations: 6
+
+Loading design for application par from file EXP5_impl1_map.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Loading device for application par from file 'xo2c4000.nph' in environment: E:/softwaredownloads2/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+License checked out.
+
+
+Ignore Preference Error(s):  True
+Device utilization summary:
+
+   PIO (prelim)   12+4(JTAG)/280     6% used
+                  12+4(JTAG)/105     15% bonded
+
+   SLICE            187/2160          8% used
+
+   GSR                1/1           100% used
+
+
+1 potential circuit loop found in timing analysis.
+Number of Signals: 530
+Number of Connections: 1580
+    <postMsg mid="61001101" type="Warning" dynamic="0" navigation="0"  />
+
+Pin Constraint Summary:
+   12 out of 12 pins locked (100% locked).
+
+The following 1 signal is selected to use the primary clock routing resources:
+    clk_c (driver: clk, clk load #: 67)
+
+    <postMsg mid="61061008" type="Warning" dynamic="5" navigation="0" arg0="clk_c" arg1="Primary" arg2="clk" arg3="C1" arg4="Primary"  />
+
+The following 4 signals are selected to use the secondary clock routing resources:
+    n655 (driver: SLICE_165, clk load #: 0, sr load #: 17, ce load #: 0)
+    n676 (driver: U1/SLICE_68, clk load #: 0, sr load #: 17, ce load #: 0)
+    clk_c_enable_29 (driver: SLICE_167, clk load #: 0, sr load #: 0, ce load #: 15)
+    cnt_19__N_59 (driver: SLICE_11, clk load #: 0, sr load #: 11, ce load #: 0)
+
+Signal U2/tone2_3__N_199 is selected as Global Set/Reset.
+Starting Placer Phase 0.
+............
+Finished Placer Phase 0.  REAL time: 0 secs 
+
+Starting Placer Phase 1.
+...............
+Placer score = 452622.
+Finished Placer Phase 1.  REAL time: 5 secs 
+
+Starting Placer Phase 2.
+.
+Placer score =  452250
+Finished Placer Phase 2.  REAL time: 5 secs 
+
+
+------------------ Clock Report ------------------
+
+Global Clock Resources:
+  CLK_PIN    : 0 out of 8 (0%)
+  General PIO: 1 out of 280 (0%)
+  PLL        : 0 out of 2 (0%)
+  DCM        : 0 out of 2 (0%)
+  DCC        : 0 out of 8 (0%)
+
+Global Clocks:
+  PRIMARY "clk_c" from comp "clk" on PIO site "C1 (PL4A)", clk load = 67
+  SECONDARY "n655" from F1 on comp "SLICE_165" on site "R12C15D", clk load = 0, ce load = 0, sr load = 17
+  SECONDARY "n676" from F1 on comp "U1/SLICE_68" on site "R20C21B", clk load = 0, ce load = 0, sr load = 17
+  SECONDARY "clk_c_enable_29" from F0 on comp "SLICE_167" on site "R12C15C", clk load = 0, ce load = 15, sr load = 0
+  SECONDARY "cnt_19__N_59" from F0 on comp "SLICE_11" on site "R12C15B", clk load = 0, ce load = 0, sr load = 11
+
+  PRIMARY  : 1 out of 8 (12%)
+  SECONDARY: 4 out of 8 (50%)
+
+Edge Clocks:
+  No edge clock selected.
+
+--------------- End of Clock Report ---------------
+
+
+I/O Usage Summary (final):
+   12 + 4(JTAG) out of 280 (5.7%) PIO sites used.
+   12 + 4(JTAG) out of 105 (15.2%) bonded PIO sites used.
+   Number of PIO comps: 12; differential: 0.
+   Number of Vref pins used: 0.
+
+I/O Bank Usage Summary:
++----------+---------------+------------+-----------+
+| I/O Bank | Usage         | Bank Vccio | Bank Vref |
++----------+---------------+------------+-----------+
+| 0        | 0 / 26 (  0%) | -          | -         |
+| 1        | 2 / 26 (  7%) | 3.3V       | -         |
+| 2        | 8 / 28 ( 28%) | 3.3V       | -         |
+| 3        | 1 / 7 ( 14%)  | 3.3V       | -         |
+| 4        | 0 / 8 (  0%)  | -          | -         |
+| 5        | 1 / 10 ( 10%) | 3.3V       | -         |
++----------+---------------+------------+-----------+
+
+Total placer CPU time: 4 secs 
+
+Dumping design to file EXP5_impl1.dir/5_1.ncd.
+
+1 potential circuit loop found in timing analysis.
+0 connections routed; 1580 unrouted.
+Starting router resource preassignment
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=switch_c loads=2 clock_loads=2&#xA;   Signal=clk40hz loads=5 clock_loads=1&#xA;   Signal=mode_c loads=1 clock_loads=1&#xA;   Signal=U2/tone2_3__N_199 loads=5 clock_loads=4&#xA;   Signal=music_num[1]_derived_2 loads=1 clock_loads=1"  />
+
+Completed router resource preassignment. Real time: 6 secs 
+
+Start NBR router at 18:20:05 12/11/24
+
+*****************************************************************
+Info: NBR allows conflicts(one node used by more than one signal)
+      in the earlier iterations. In each iteration, it tries to  
+      solve the conflicts while keeping the critical connections 
+      routed as short as possible. The routing process is said to
+      be completed when no conflicts exist and all connections   
+      are routed.                                                
+Note: NBR uses a different method to calculate timing slacks. The
+      worst slack and total negative slack may not be the same as
+      that in TRCE report. You should always run TRCE to verify  
+      your design.                                               
+*****************************************************************
+
+1 potential circuit loop found in timing analysis.
+Start NBR special constraint process at 18:20:05 12/11/24
+
+Start NBR section for initial routing at 18:20:05 12/11/24
+Level 1, iteration 1
+0(0.00%) conflict; 1118(70.76%) untouched conns; 4193868 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -146.962ns/-4193.868ns; real time: 6 secs 
+Level 2, iteration 1
+0(0.00%) conflict; 1118(70.76%) untouched conns; 4193868 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -146.962ns/-4193.868ns; real time: 6 secs 
+Level 3, iteration 1
+0(0.00%) conflict; 1118(70.76%) untouched conns; 4193868 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -146.962ns/-4193.868ns; real time: 6 secs 
+Level 4, iteration 1
+19(0.01%) conflicts; 0(0.00%) untouched conn; 4394386 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -147.664ns/-4394.387ns; real time: 6 secs 
+
+Info: Initial congestion level at 75% usage is 0
+Info: Initial congestion area  at 75% usage is 0 (0.00%)
+
+Start NBR section for normal routing at 18:20:05 12/11/24
+Level 4, iteration 1
+13(0.01%) conflicts; 0(0.00%) untouched conn; 3593471 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -147.664ns/-3593.471ns; real time: 6 secs 
+Level 4, iteration 2
+3(0.00%) conflicts; 0(0.00%) untouched conn; 3594018 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -147.664ns/-3594.018ns; real time: 6 secs 
+Level 4, iteration 3
+2(0.00%) conflicts; 0(0.00%) untouched conn; 3594018 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -147.664ns/-3594.018ns; real time: 6 secs 
+Level 4, iteration 4
+2(0.00%) conflicts; 0(0.00%) untouched conn; 3594018 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -147.664ns/-3594.018ns; real time: 6 secs 
+Level 4, iteration 5
+3(0.00%) conflicts; 0(0.00%) untouched conn; 3594018 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -147.664ns/-3594.018ns; real time: 6 secs 
+Level 4, iteration 6
+2(0.00%) conflicts; 0(0.00%) untouched conn; 3594018 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -147.664ns/-3594.018ns; real time: 6 secs 
+Level 4, iteration 7
+0(0.00%) conflict; 0(0.00%) untouched conn; 3594018 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -147.664ns/-3594.018ns; real time: 6 secs 
+
+Start NBR section for performance tuning (iteration 1) at 18:20:05 12/11/24
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 3594018 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -147.664ns/-3594.018ns; real time: 6 secs 
+
+Start NBR section for re-routing at 18:20:05 12/11/24
+Level 4, iteration 1
+0(0.00%) conflict; 0(0.00%) untouched conn; 3594018 (nbr) score; 
+Estimated worst slack/total negative slack<setup>: -147.664ns/-3594.018ns; real time: 6 secs 
+
+Start NBR section for post-routing at 18:20:05 12/11/24
+1 potential circuit loop found in timing analysis.
+
+End NBR router with 0 unrouted connection
+
+NBR Summary
+-----------
+  Number of unrouted connections : 0 (0.00%)
+  Number of connections with timing violations : 329 (20.82%)
+  Estimated worst slack<setup> : -147.664ns
+  Timing score<setup> : 9678414
+-----------
+Notes: The timing info is calculated for SETUP only and all PAR_ADJs are ignored.
+
+
+
+    <postMsg mid="66011008" type="Warning" dynamic="1" navigation="0" arg0="&#xA;   Signal=switch_c loads=2 clock_loads=2&#xA;   Signal=clk40hz loads=5 clock_loads=1&#xA;   Signal=mode_c loads=1 clock_loads=1&#xA;   Signal=U2/tone2_3__N_199 loads=5 clock_loads=4&#xA;   Signal=music_num[1]_derived_2 loads=1 clock_loads=1"  />
+
+1 potential circuit loop found in timing analysis.
+1 potential circuit loop found in timing analysis.
+1 potential circuit loop found in timing analysis.
+Total CPU time 6 secs 
+Total REAL time: 7 secs 
+Completely routed.
+End of route.  1580 routed (100.00%); 0 unrouted.
+
+Hold time timing score: 15, hold timing errors: 13
+
+Timing score: 9678414 
+
+Dumping design to file EXP5_impl1.dir/5_1.ncd.
+
+
+PAR_SUMMARY::Run status = Completed
+PAR_SUMMARY::Number of unrouted conns = 0
+PAR_SUMMARY::Worst  slack<setup/<ns>> = -147.665
+PAR_SUMMARY::Timing score<setup/<ns>> = 9678.414
+PAR_SUMMARY::Worst  slack<hold /<ns>> = -1.543
+PAR_SUMMARY::Timing score<hold /<ns>> = 15.670
+PAR_SUMMARY::Number of errors = 0
+
+Total CPU  time to completion: 6 secs 
+Total REAL time to completion: 7 secs 
+
+par done!
+
+Note: user must run 'Trace' for timing closure signoff.
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+Exiting par with exit code 0
+Exiting mpartrce with exit code 0
+
+trce -f "EXP5_impl1.pt" -o "EXP5_impl1.twr" "EXP5_impl1.ncd" "EXP5_impl1.prf"
+trce:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application trce from file exp5_impl1.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Loading device for application trce from file 'xo2c4000.nph' in environment: E:/softwaredownloads2/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.13.0.56.2
+Wed Dec 11 18:20:06 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o EXP5_impl1.twr -gui -msgset E:/DESKTOP/VHDL_EXP/EXP5/promote.xml EXP5_impl1.ncd EXP5_impl1.prf 
+Design file:     exp5_impl1.ncd
+Preference file: exp5_impl1.prf
+Device,speed:    LCMXO2-4000HC,5
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+1 potential circuit loop found in timing analysis.
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 3119  Score: 9678414
+Cumulative negative slack: 9678414
+
+Constraints cover 4959 paths, 16 nets, and 736 connections (46.58% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.13.0.56.2
+Wed Dec 11 18:20:06 2024
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 10 -gt -sethld -sp 5 -sphld m -o EXP5_impl1.twr -gui -msgset E:/DESKTOP/VHDL_EXP/EXP5/promote.xml EXP5_impl1.ncd EXP5_impl1.prf 
+Design file:     exp5_impl1.ncd
+Preference file: exp5_impl1.prf
+Device,speed:    LCMXO2-4000HC,m
+Report level:    verbose report, limited to 10 items per preference
+--------------------------------------------------------------------------------
+
+1 potential circuit loop found in timing analysis.
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 13  Score: 15670
+Cumulative negative slack: 15670
+
+Constraints cover 4959 paths, 16 nets, and 736 connections (46.58% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 3119 (setup), 13 (hold)
+Score: 9678414 (setup), 15670 (hold)
+Cumulative negative slack: 9694084 (9678414+15670)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+
+Total CPU Time: 0 secs 
+Total REAL Time: 0 secs 
+Peak Memory Usage: 59 MB
+
+
+iotiming  "EXP5_impl1.ncd" "EXP5_impl1.prf"
+I/O Timing Report:
+:  version Diamond (64-bit) 3.13.0.56.2
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+Loading design for application iotiming from file exp5_impl1.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Loading device for application iotiming from file 'xo2c4000.nph' in environment: E:/softwaredownloads2/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+1 potential circuit loop found in timing analysis.
+Running Performance Grade: 5
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+1 potential circuit loop found in timing analysis.
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file exp5_impl1.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+1 potential circuit loop found in timing analysis.
+Running Performance Grade: 6
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+1 potential circuit loop found in timing analysis.
+Computing Min Clock to Output Delay ...
+
+Loading design for application iotiming from file exp5_impl1.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+1 potential circuit loop found in timing analysis.
+Running Performance Grade: M
+Computing Setup Time ...
+Computing Max Clock to Output Delay ...
+Computing Hold Time ...
+1 potential circuit loop found in timing analysis.
+Computing Min Clock to Output Delay ...
+Done.
+
+tmcheck -par "EXP5_impl1.par" 
+
+bitgen -f "EXP5_impl1.t2b" -w "EXP5_impl1.ncd"  -jedec "EXP5_impl1.prf"
+
+
+BITGEN: Bitstream Generator Diamond (64-bit) 3.13.0.56.2
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2023 Lattice Semiconductor Corporation,  All rights reserved.
+
+
+Loading design for application Bitgen from file EXP5_impl1.ncd.
+Design name: piano
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Loading device for application Bitgen from file 'xo2c4000.nph' in environment: E:/softwaredownloads2/diamond/3.13/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+
+Running DRC.
+DRC detected 0 errors and 0 warnings.
+Reading Preference File from EXP5_impl1.prf.
+    <postMsg mid="1009992" type="Info"    dynamic="1" navigation="0" arg0=" SW_XO3D_SECURITY_ENCRYPTION *NOT* controlled by xo2c00.acd ###"  />
+    <postMsg mid="1009992" type="Info"    dynamic="1" navigation="0" arg0=" SW_XO3D_SECURITY_ENCRYPTION license_securityIP OK"  />
+
+Preference Summary:
++---------------------------------+---------------------------------+
+|  Preference                     |  Current Setting                |
++---------------------------------+---------------------------------+
+|                         RamCfg  |                        Reset**  |
++---------------------------------+---------------------------------+
+|                     MCCLK_FREQ  |                         2.08**  |
++---------------------------------+---------------------------------+
+|                  CONFIG_SECURE  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                          INBUF  |                           ON**  |
++---------------------------------+---------------------------------+
+|                      JTAG_PORT  |                       ENABLE**  |
++---------------------------------+---------------------------------+
+|                       SDM_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                 SLAVE_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                MASTER_SPI_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                       I2C_PORT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|        MUX_CONFIGURATION_PORTS  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  CONFIGURATION  |                          CFG**  |
++---------------------------------+---------------------------------+
+|                COMPRESS_CONFIG  |                           ON**  |
++---------------------------------+---------------------------------+
+|                        MY_ASSP  |                          OFF**  |
++---------------------------------+---------------------------------+
+|               ONE_TIME_PROGRAM  |                          OFF**  |
++---------------------------------+---------------------------------+
+|                 ENABLE_TRANSFR  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|                  SHAREDEBRINIT  |                      DISABLE**  |
++---------------------------------+---------------------------------+
+|            BACKGROUND_RECONFIG  |                          OFF**  |
++---------------------------------+---------------------------------+
+ *  Default setting.
+ ** The specified setting matches the default setting.
+
+
+Creating bit map...
+ 
+Bitstream Status: Final           Version 1.95.
+ 
+Saving bit stream in "EXP5_impl1.jed".
+ 
+===========
+UFM Summary.
+===========
+UFM Size:        767 Pages (128*767 Bits).
+UFM Utilization: General Purpose Flash Memory.
+ 
+Available General Purpose Flash Memory:  767 Pages (Page 0 to Page 766).
+Initialized UFM Pages:                     0 Page.
+ 
+=========
+Padding summary
+=========
+Padded 684160 bits for this design
+
+
+Total CPU Time: 2 secs 
+Total REAL Time: 2 secs 
+Peak Memory Usage: 273 MB

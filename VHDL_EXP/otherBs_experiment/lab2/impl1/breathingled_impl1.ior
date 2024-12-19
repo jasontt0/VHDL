@@ -1,0 +1,91 @@
+Loading design for application iotiming from file breathingled_impl1.ncd.
+Design name: PWM_LED_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 5
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file breathingled_impl1.ncd.
+Design name: PWM_LED_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 6
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Loading design for application iotiming from file breathingled_impl1.ncd.
+Design name: PWM_LED_top
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: M
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+// Design: PWM_LED_top
+// Package: CSBGA132
+// ncd File: breathingled_impl1.ncd
+// Version: Diamond (64-bit) 3.12.0.240.2
+// Written on Sat Dec 17 23:52:35 2022
+// M: Minimum Performance Grade
+// iotiming breathingLED_impl1.ncd breathingLED_impl1.prf -gui -msgset D:/lscc/diamond/3.12/bin/nt64/lab22/promote.xml
+
+I/O Timing Report (All units are in ns)
+
+Worst Case Results across Performance Grades (M, 6, 5, 4):
+
+// Input Setup and Hold Times
+
+Port  Clock Edge  Setup Performance_Grade  Hold Performance_Grade
+----------------------------------------------------------------------
+frqDN clk   R     2.600      4       0.454     6
+frqUP clk   R     1.244      4       0.792     4
+lumDN clk   R     3.239      4       0.791     4
+lumUP clk   R     2.697      4       0.454     6
+
+
+// Clock to Output Delay
+
+Port   Clock Edge  Max_Delay Performance_Grade  Min_Delay Performance_Grade
+------------------------------------------------------------------------
+led[0] clk   R    24.013         4        4.168          M
+led[1] clk   R    24.013         4        4.168          M
+led[2] clk   R    24.499         4        4.318          M
+led[3] clk   R    24.499         4        4.318          M
+led[4] clk   R    23.479         4        4.030          M
+led[5] clk   R    23.486         4        4.033          M
+led[6] clk   R    23.920         4        4.141          M
+led[7] clk   R    23.920         4        4.141          M
+
+
+// Internal_Clock to Input
+
+Port  Internal_Clock
+--------------------------------------------------------
+colum instant2/clk1 
+colum instant2/clk1 
+colum instant2/clk1 
+colum instant2/clk1 
+
+
+// Internal_Clock to Output
+
+Port   Internal_Clock
+--------------------------------------------------------
+led[0] instant2/clk1 
+led[1] instant2/clk1 
+led[2] instant2/clk1 
+led[3] instant2/clk1 
+led[4] instant2/clk1 
+led[5] instant2/clk1 
+led[6] instant2/clk1 
+led[7] instant2/clk1 
+row[0] instant2/clk1 
+row[1] instant2/clk1 
+row[2] instant2/clk1 
+row[3] instant2/clk1 
+WARNING: you must also run trce with hold speed: 4
+WARNING: you must also run trce with hold speed: 6

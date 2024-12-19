@@ -1,0 +1,51 @@
+----------------------------------------------------------------------
+Report for cell PWM_LED_top.TECH
+Register bits:  107 of 4635 (2.309%)
+I/O cells:      21
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D       331          100.0
+                            FD1P3AX        20          100.0
+                            FD1P3AY         2          100.0
+                            FD1S3AX        22          100.0
+                            FD1S3AY         5          100.0
+                            FD1S3IX        54          100.0
+                            FD1S3JX         4          100.0
+                                GSR         1          100.0
+                                 IB         9          100.0
+                            L6MUX21         1          100.0
+                               LUT4       745          100.0
+                                 OB        12          100.0
+                              PFUMX        37          100.0
+SUB MODULES
+                      KEY_BOARD_SUB         1
+                            PWM_LED         1
+                              TOTAL      1245
+----------------------------------------------------------------------
+Report for cell PWM_LED.v1
+Instance Path : instant1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D       310           93.7
+                            FD1P3AX        15           75.0
+                            FD1P3AY         2          100.0
+                            FD1S3AX        20           90.9
+                            FD1S3AY         5          100.0
+                            FD1S3IX        38           70.4
+                            L6MUX21         1          100.0
+                               LUT4       686           92.1
+                              PFUMX        33           89.2
+                              TOTAL      1110
+----------------------------------------------------------------------
+Report for cell KEY_BOARD_SUB.v1
+Instance Path : instant2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         9            2.7
+                            FD1P3AX         5           25.0
+                            FD1S3AX         2            9.1
+                            FD1S3IX        16           29.6
+                            FD1S3JX         4          100.0
+                               LUT4        49            6.6
+                              PFUMX         4           10.8
+                              TOTAL        89

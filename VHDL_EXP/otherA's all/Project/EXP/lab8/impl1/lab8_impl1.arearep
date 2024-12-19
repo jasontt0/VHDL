@@ -1,0 +1,112 @@
+----------------------------------------------------------------------
+Report for cell top.TECH
+Register bits:  311 of 4635 (6.710%)
+I/O cells:      21
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                 BB         1          100.0
+                              CCU2D        93          100.0
+                            FD1P3AX        98          100.0
+                            FD1P3AY         1          100.0
+                            FD1P3IX        96          100.0
+                            FD1P3JX         3          100.0
+                             FD1S1A         3          100.0
+                             FD1S1B         1          100.0
+                             FD1S1I         1          100.0
+                             FD1S1J         1          100.0
+                            FD1S3AX        15          100.0
+                            FD1S3AY         1          100.0
+                            FD1S3IX        89          100.0
+                            FD1S3JX         2          100.0
+                                GSR         1          100.0
+                                 IB         3          100.0
+                                INV         1          100.0
+                            L6MUX21        62          100.0
+                               LUT4      1564          100.0
+                                 OB        17          100.0
+                              PFUMX       232          100.0
+SUB MODULES
+                                ADC         1
+                        LCD_display         1
+                     btn_debouncing         1
+                       ctrlword_595         1
+                         mode_shift         1
+                          trans_BCD         1
+                              TOTAL      2291
+----------------------------------------------------------------------
+Report for cell mode_shift.v1
+Instance Path : mode_control
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         3           20.0
+                                INV         1          100.0
+                               LUT4        10            0.6
+                              TOTAL        14
+----------------------------------------------------------------------
+Report for cell ctrlword_595.v1
+Instance Path : datato595
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17           18.3
+                            FD1P3AX         1            1.0
+                            FD1P3AY         1          100.0
+                            FD1P3IX        17           17.7
+                            FD1S3AX         1            6.7
+                            FD1S3AY         1          100.0
+                            FD1S3IX        33           37.1
+                            L6MUX21         3            4.8
+                               LUT4        71            4.5
+                              PFUMX        18            7.8
+                              TOTAL       163
+----------------------------------------------------------------------
+Report for cell ADC.v1
+Instance Path : ADC_work
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         8            8.6
+                            FD1P3AX        30           30.6
+                            FD1P3IX        10           10.4
+                            FD1P3JX         1           33.3
+                            FD1S3IX        24           27.0
+                            FD1S3JX         2          100.0
+                               LUT4       151            9.7
+                              PFUMX        10            4.3
+                              TOTAL       236
+----------------------------------------------------------------------
+Report for cell btn_debouncing.v1
+Instance Path : btn_debounce
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        17           18.3
+                            FD1P3AX         3            3.1
+                            FD1S3AX         3           20.0
+                            FD1S3IX        32           36.0
+                               LUT4        15            1.0
+                              TOTAL        70
+----------------------------------------------------------------------
+Report for cell trans_BCD.v1
+Instance Path : BCD_transform
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         5            5.4
+                             FD1S1A         3          100.0
+                             FD1S1B         1          100.0
+                             FD1S1I         1          100.0
+                             FD1S1J         1          100.0
+                            L6MUX21         5            8.1
+                               LUT4       364           23.3
+                              PFUMX        22            9.5
+                              TOTAL       402
+----------------------------------------------------------------------
+Report for cell LCD_display.v1
+Instance Path : LCDdisplay
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        46           49.5
+                            FD1P3AX        64           65.3
+                            FD1P3IX        69           71.9
+                            FD1P3JX         2           66.7
+                            L6MUX21        54           87.1
+                               LUT4       934           59.7
+                              PFUMX       176           75.9
+                              TOTAL      1345

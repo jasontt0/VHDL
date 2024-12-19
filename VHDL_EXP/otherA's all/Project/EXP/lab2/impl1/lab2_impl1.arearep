@@ -1,0 +1,52 @@
+----------------------------------------------------------------------
+Report for cell PWM_LED_top.TECH
+Register bits:  123 of 4635 (2.654%)
+I/O cells:      21
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D       356          100.0
+                            FD1P3AX        20          100.0
+                            FD1P3AY         2          100.0
+                            FD1S3AX        22          100.0
+                            FD1S3AY         5          100.0
+                            FD1S3IX        70          100.0
+                            FD1S3JX         4          100.0
+                                GSR         1          100.0
+                                 IB         9          100.0
+                            L6MUX21         2          100.0
+                               LUT4       756          100.0
+                                 OB        12          100.0
+                              PFUMX        42          100.0
+SUB MODULES
+                      KEY_BOARD_SUB         1
+                            PWM_LED         1
+                              TOTAL      1303
+----------------------------------------------------------------------
+Report for cell KEY_BOARD_SUB.v1
+Instance Path : instant2
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        34            9.6
+                            FD1P3AX         5           25.0
+                            FD1S3AX         3           13.6
+                            FD1S3IX        32           45.7
+                            FD1S3JX         4          100.0
+                            L6MUX21         1           50.0
+                               LUT4        34            4.5
+                              PFUMX         6           14.3
+                              TOTAL       119
+----------------------------------------------------------------------
+Report for cell PWM_LED.v1
+Instance Path : instant1
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D       310           87.1
+                            FD1P3AX        15           75.0
+                            FD1P3AY         2          100.0
+                            FD1S3AX        19           86.4
+                            FD1S3AY         5          100.0
+                            FD1S3IX        38           54.3
+                            L6MUX21         1           50.0
+                               LUT4       699           92.5
+                              PFUMX        34           81.0
+                              TOTAL      1123

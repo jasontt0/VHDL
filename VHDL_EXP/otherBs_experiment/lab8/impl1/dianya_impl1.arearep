@@ -1,0 +1,113 @@
+----------------------------------------------------------------------
+Report for cell dianya.TECH
+Register bits:  276 of 4635 (5.955%)
+I/O cells:      21
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                                 BB         1          100.0
+                              CCU2D        70          100.0
+                            FD1P3AX        93          100.0
+                            FD1P3AY         1          100.0
+                            FD1P3IX       105          100.0
+                            FD1P3JX         2          100.0
+                             FD1S1A        10          100.0
+                             FD1S1B         1          100.0
+                             FD1S1I         1          100.0
+                             FD1S1J         1          100.0
+                            FD1S3AX        16          100.0
+                            FD1S3AY         1          100.0
+                            FD1S3IX        44          100.0
+                            FD1S3JX         1          100.0
+                                GSR         1          100.0
+                                 IB         3          100.0
+                                INV         1          100.0
+                            L6MUX21        60          100.0
+                               LUT4      1638          100.0
+                                 OB        17          100.0
+                              PFUMX       239          100.0
+SUB MODULES
+                                ADC         1
+                        LCD_display         1
+                     btn_debouncing         1
+                       ctrlword_595         1
+                         mode_shift         1
+                          trans_BCD         1
+                              TOTAL      2312
+----------------------------------------------------------------------
+Report for cell mode_shift.v1
+Instance Path : mode_control
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                            FD1S3AX         3           18.8
+                                INV         1          100.0
+                               LUT4        25            1.5
+                              PFUMX         1            0.4
+                              TOTAL        30
+----------------------------------------------------------------------
+Report for cell LCD_display.v1
+Instance Path : LCDdisplay
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D        46           65.7
+                            FD1P3AX        58           62.4
+                            FD1P3IX        78           74.3
+                            FD1P3JX         2          100.0
+                            L6MUX21        51           85.0
+                               LUT4       957           58.4
+                              PFUMX       182           76.2
+                              TOTAL      1374
+----------------------------------------------------------------------
+Report for cell btn_debouncing.v1
+Instance Path : btn_debounce
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         9           12.9
+                            FD1P3AX         3            3.2
+                            FD1S3AX         3           18.8
+                            FD1S3IX        17           38.6
+                               LUT4         9            0.5
+                              TOTAL        41
+----------------------------------------------------------------------
+Report for cell ctrlword_595.v1
+Instance Path : datato595
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         2            2.9
+                            FD1P3AX         1            1.1
+                            FD1P3AY         1          100.0
+                            FD1P3IX        17           16.2
+                            FD1S3AX         1            6.3
+                            FD1S3AY         1          100.0
+                            FD1S3IX         3            6.8
+                            L6MUX21         6           10.0
+                               LUT4        70            4.3
+                              PFUMX        23            9.6
+                              TOTAL       125
+----------------------------------------------------------------------
+Report for cell ADC.v1
+Instance Path : ADC_work
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         8           11.4
+                            FD1P3AX        31           33.3
+                            FD1P3IX        10            9.5
+                            FD1S3AX         1            6.3
+                            FD1S3IX        24           54.5
+                            FD1S3JX         1          100.0
+                               LUT4       192           11.7
+                              PFUMX        10            4.2
+                              TOTAL       277
+----------------------------------------------------------------------
+Report for cell trans_BCD.v1
+Instance Path : BCD_transform
+                                  Cell usage:
+                               cell     count   Res Usage(%)
+                              CCU2D         5            7.1
+                             FD1S1A        10          100.0
+                             FD1S1B         1          100.0
+                             FD1S1I         1          100.0
+                             FD1S1J         1          100.0
+                            L6MUX21         3            5.0
+                               LUT4       364           22.2
+                              PFUMX        20            8.4
+                              TOTAL       405

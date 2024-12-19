@@ -1,0 +1,6 @@
+#Start recording tcl command: 10/27/2023 16:21:19
+#Project Location: D:/Lattice Diamond/Project/gcd; Project name: gcd
+prj_project open "D:/Lattice Diamond/Project/gcd/gcd.ldf"
+prj_project save
+prj_project close
+#Stop recording: 10/27/2023 16:46:48

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BuildStatus>
+    <Strategy name="Strategy1">
+        <Milestone name="Export" build_result="0" build_time="0">
+            <Task name="IBIS" build_result="0" update_result="2" update_time="1670073033"/>
+            <Task name="TimingSimFileVlg" build_result="0" update_result="2" update_time="1670073036"/>
+            <Task name="TimingSimFileVHD" build_result="0" update_result="2" update_time="1670073038"/>
+            <Task name="Bitgen" build_result="0" update_result="2" update_time="1670073041"/>
+            <Task name="Jedecgen" build_result="0" update_result="2" update_time="1670073043"/>
+        </Milestone>
+        <Milestone name="Map" build_result="0" build_time="1670072982">
+            <Task name="Map" build_result="0" update_result="2" update_time="1670072982"/>
+            <Task name="MapTrace" build_result="0" update_result="2" update_time="1670072983"/>
+            <Task name="MapVerilogSimFile" build_result="0" update_result="2" update_time="1670072986"/>
+            <Task name="MapVHDLSimFile" build_result="0" update_result="2" update_time="1670072988"/>
+        </Milestone>
+        <Milestone name="PAR" build_result="0" build_time="1670073029">
+            <Task name="PAR" build_result="0" update_result="2" update_time="1670073029"/>
+            <Task name="PARTrace" build_result="0" update_result="2" update_time="1670073030"/>
+            <Task name="IOTiming" build_result="0" update_result="2" update_time="1670073033"/>
+        </Milestone>
+        <Milestone name="Synthesis" build_result="2" build_time="1670075898">
+            <Task name="Lattice_Synthesis" build_result="2" update_result="0" update_time="1670075898"/>
+            <Task name="LSE_Compile" build_result="2" update_result="0" update_time="1670075896"/>
+        </Milestone>
+        <Milestone name="TOOL_Report" build_result="0" build_time="0">
+            <Task name="HDLE" build_result="2" update_result="0" update_time="1670075882"/>
+            <Task name="SSO" build_result="0" update_result="2" update_time="1670072404"/>
+            <Task name="PIODRC" build_result="0" update_result="2" update_time="0"/>
+            <Task name="BKM" build_result="0" update_result="2" update_time="1669642763"/>
+            <Task name="DEC" build_result="0" update_result="2" update_time="0"/>
+        </Milestone>
+        <Report name=".vdbs/dianya_impl1_map.vdb" last_build_time="1670072982" last_build_size="336351"/>
+        <Report name="IBIS/dianya_impl1.ibs" last_build_time="1670073033" last_build_size="115249"/>
+        <Report name="dianya_impl1.bgn" last_build_time="1670073043" last_build_size="4230"/>
+        <Report name="dianya_impl1.bit" last_build_time="1670073041" last_build_size="35676"/>
+        <Report name="dianya_impl1.ior" last_build_time="1670073033" last_build_size="3393"/>
+        <Report name="dianya_impl1.jed" last_build_time="1670073043" last_build_size="849689"/>
+        <Report name="dianya_impl1.lsedata" last_build_time="1670075890" last_build_size="2671303"/>
+        <Report name="dianya_impl1.ncd" last_build_time="1670073029" last_build_size="1662739"/>
+        <Report name="dianya_impl1.ngd" last_build_time="1670075898" last_build_size="1233721"/>
+        <Report name="dianya_impl1.tw1" last_build_time="1670072983" last_build_size="41498"/>
+        <Report name="dianya_impl1.twr" last_build_time="1670073030" last_build_size="262543"/>
+        <Report name="dianya_impl1_map.ncd" last_build_time="1670072982" last_build_size="1097363"/>
+        <Report name="dianya_impl1_mapvho.sdf" last_build_time="1670072988" last_build_size="1223962"/>
+        <Report name="dianya_impl1_mapvho.vho" last_build_time="1670072988" last_build_size="7033638"/>
+        <Report name="dianya_impl1_mapvo.sdf" last_build_time="1670072985" last_build_size="1224683"/>
+        <Report name="dianya_impl1_mapvo.vo" last_build_time="1670072985" last_build_size="1209407"/>
+        <Report name="dianya_impl1_vho.sdf" last_build_time="1670073038" last_build_size="1409853"/>
+        <Report name="dianya_impl1_vho.vho" last_build_time="1670073038" last_build_size="7449362"/>
+        <Report name="dianya_impl1_vo.sdf" last_build_time="1670073036" last_build_size="1408932"/>
+        <Report name="dianya_impl1_vo.vo" last_build_time="1670073036" last_build_size="1312954"/>
+    </Strategy>
+</BuildStatus>

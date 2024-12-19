@@ -1,0 +1,17 @@
+if {![file exists "D:/Lattice Diamond/Project/vote5/vote5_sim/vote5_sim.mpf"]} { 
+	project new "D:/Lattice Diamond/Project/vote5/vote5_sim" vote5_sim
+	project addfile "D:/Lattice Diamond/Project/vote5/vote5_sim/vote5.vhd"
+	project addfile "D:/Lattice Diamond/Project/vote5/vote5_sim/tb.vhd"
+	vlib  work
+	vdel -lib work -all 
+	vlib work
+	vcom -work work "D:/Lattice Diamond/Project/vote5/vote5_sim/vote5.vhd"
+	vcom -work work "D:/Lattice Diamond/Project/vote5/vote5_sim/tb.vhd"
+} else {
+	project open "D:/Lattice Diamond/Project/vote5/vote5_sim/vote5_sim"
+	project compileoutofdate
+}
+vsim -L work -L pmi_work -L ovi_machxo2  tb
+view wave
+add wave /*
+run 1000ns

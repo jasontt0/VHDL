@@ -1,0 +1,739 @@
+
+Loading design for application trce from file dianya_impl1_map.ncd.
+Design name: dianya
+NCD version: 3.3
+Vendor:      LATTICE
+Device:      LCMXO2-4000HC
+Package:     CSBGA132
+Performance: 4
+Loading device for application trce from file 'xo2c4000.nph' in environment: C:/lscc/diamond/3.10_x64/ispfpga.
+Package Status:                     Final          Version 1.44.
+Performance Hardware Data Status:   Final          Version 34.4.
+Setup and Hold Report
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Setup, Version Diamond (64-bit) 3.10.0.111.2
+Sat Dec 03 21:09:43 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o dianya_impl1.tw1 -gui -msgset C:/Users/hankeyi35/Desktop/lab_8/lab8/promote.xml dianya_impl1_map.ncd dianya_impl1.prf 
+Design file:     dianya_impl1_map.ncd
+Preference file: dianya_impl1.prf
+Device,speed:    LCMXO2-4000HC,4
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+Report Type:     based on TRACE automatically generated preferences
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_in_c" 28.984000 MHz ;
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 61.476ns (weighted slack = -3203.995ns)
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ADC_work/ADC_level__i8  (from ADC_work/clk_divided +)
+   Destination:    FF         Data in        LCDdisplay/data_reg_i0_i0  (to clk_in_c +)
+
+   Delay:              61.972ns  (32.3% logic, 67.7% route), 39 logic levels.
+
+ Constraint Details:
+
+     61.972ns physical path delay ADC_work/SLICE_828 to LCDdisplay/SLICE_128 exceeds
+      (delay constraint based on source clock period of 8.460ns and destination clock period of 34.502ns)
+      0.662ns delay constraint less
+      0.166ns DIN_SET requirement (totaling 0.496ns) by 61.476ns
+
+ Physical Path Details:
+
+      Data path ADC_work/SLICE_828 to LCDdisplay/SLICE_128:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452 *SLICE_828.CLK to */SLICE_828.Q0 ADC_work/SLICE_828 (from ADC_work/clk_divided)
+ROUTE        17   e 1.234 */SLICE_828.Q0 to *m/SLICE_67.B0 ADC_level_7
+C0TOFCO_DE  ---     1.023 *m/SLICE_67.B0 to */SLICE_67.FCO BCD_transform/SLICE_67
+ROUTE         1   e 0.001 */SLICE_67.FCO to */SLICE_69.FCI BCD_transform/n32590
+FCITOFCO_D  ---     0.162 */SLICE_69.FCI to */SLICE_69.FCO BCD_transform/SLICE_69
+ROUTE         1   e 0.001 */SLICE_69.FCO to */SLICE_68.FCI BCD_transform/n32591
+FCITOFCO_D  ---     0.162 */SLICE_68.FCI to */SLICE_68.FCO BCD_transform/SLICE_68
+ROUTE         1   e 0.001 */SLICE_68.FCO to */SLICE_66.FCI BCD_transform/n32592
+FCITOFCO_D  ---     0.162 */SLICE_66.FCI to */SLICE_66.FCO BCD_transform/SLICE_66
+ROUTE         1   e 0.001 */SLICE_66.FCO to */SLICE_65.FCI BCD_transform/n32593
+FCITOF0_DE  ---     0.585 */SLICE_65.FCI to *m/SLICE_65.F0 BCD_transform/SLICE_65
+ROUTE         9   e 1.234 *m/SLICE_65.F0 to */SLICE_816.D0 voltage_code_15
+CTOF_DEL    ---     0.495 */SLICE_816.D0 to */SLICE_816.F0 BCD_transform/SLICE_816
+ROUTE         8   e 1.234 */SLICE_816.F0 to */SLICE_436.C0 BCD_transform/realv_1_1__N_297
+CTOF_DEL    ---     0.495 */SLICE_436.C0 to */SLICE_436.F0 BCD_transform/SLICE_436
+ROUTE         5   e 1.234 */SLICE_436.F0 to */SLICE_499.D1 BCD_transform/n39815
+CTOF_DEL    ---     0.495 */SLICE_499.D1 to */SLICE_499.F1 BCD_transform/SLICE_499
+ROUTE         9   e 1.234 */SLICE_499.F1 to */SLICE_815.C1 BCD_transform/realv_1_1__N_317
+CTOF_DEL    ---     0.495 */SLICE_815.C1 to */SLICE_815.F1 BCD_transform/SLICE_815
+ROUTE         3   e 1.234 */SLICE_815.F1 to */SLICE_813.D1 BCD_transform/n38243
+CTOF_DEL    ---     0.495 */SLICE_813.D1 to */SLICE_813.F1 BCD_transform/SLICE_813
+ROUTE         5   e 1.234 */SLICE_813.F1 to */SLICE_515.C0 BCD_transform/realv_1_1__N_335
+CTOF_DEL    ---     0.495 */SLICE_515.C0 to */SLICE_515.F0 BCD_transform/SLICE_515
+ROUTE         1   e 1.234 */SLICE_515.F0 to */SLICE_812.D1 BCD_transform/n38229
+CTOF_DEL    ---     0.495 */SLICE_812.D1 to */SLICE_812.F1 BCD_transform/SLICE_812
+ROUTE        10   e 1.234 */SLICE_812.F1 to */SLICE_514.C1 BCD_transform/realv_1_1__N_359
+CTOF_DEL    ---     0.495 */SLICE_514.C1 to */SLICE_514.F1 BCD_transform/SLICE_514
+ROUTE         2   e 1.234 */SLICE_514.F1 to   SLICE_901.C1 BCD_transform/n38224
+CTOF_DEL    ---     0.495   SLICE_901.C1 to   SLICE_901.F1 SLICE_901
+ROUTE         4   e 1.234   SLICE_901.F1 to */SLICE_513.D0 BCD_transform/n38217
+CTOF_DEL    ---     0.495 */SLICE_513.D0 to */SLICE_513.F0 BCD_transform/SLICE_513
+ROUTE         3   e 1.234 */SLICE_513.F0 to */SLICE_803.D1 BCD_transform/n38215
+CTOF_DEL    ---     0.495 */SLICE_803.D1 to */SLICE_803.F1 BCD_transform/SLICE_803
+ROUTE         4   e 1.234 */SLICE_803.F1 to */SLICE_509.D0 BCD_transform/n38208
+CTOF_DEL    ---     0.495 */SLICE_509.D0 to */SLICE_509.F0 BCD_transform/SLICE_509
+ROUTE         3   e 1.234 */SLICE_509.F0 to */SLICE_764.B0 BCD_transform/n38205
+CTOF_DEL    ---     0.495 */SLICE_764.B0 to */SLICE_764.F0 BCD_transform/SLICE_764
+ROUTE         4   e 1.234 */SLICE_764.F0 to */SLICE_765.D1 BCD_transform/n38198
+CTOF_DEL    ---     0.495 */SLICE_765.D1 to */SLICE_765.F1 BCD_transform/SLICE_765
+ROUTE         3   e 1.234 */SLICE_765.F1 to */SLICE_768.B0 BCD_transform/n38194
+CTOF_DEL    ---     0.495 */SLICE_768.B0 to */SLICE_768.F0 BCD_transform/SLICE_768
+ROUTE         4   e 1.234 */SLICE_768.F0 to */SLICE_516.D0 BCD_transform/n38184
+CTOF_DEL    ---     0.495 */SLICE_516.D0 to */SLICE_516.F0 BCD_transform/SLICE_516
+ROUTE         3   e 1.234 */SLICE_516.F0 to */SLICE_798.B1 BCD_transform/n38179
+CTOF_DEL    ---     0.495 */SLICE_798.B1 to */SLICE_798.F1 BCD_transform/SLICE_798
+ROUTE         4   e 1.234 */SLICE_798.F1 to */SLICE_505.D0 BCD_transform/n38167
+CTOF_DEL    ---     0.495 */SLICE_505.D0 to */SLICE_505.F0 BCD_transform/SLICE_505
+ROUTE         3   e 1.234 */SLICE_505.F0 to */SLICE_913.B0 BCD_transform/n38163
+CTOF_DEL    ---     0.495 */SLICE_913.B0 to */SLICE_913.F0 BCD_transform/SLICE_913
+ROUTE         3   e 1.234 */SLICE_913.F0 to */SLICE_790.D1 BCD_transform/n38149
+CTOF_DEL    ---     0.495 */SLICE_790.D1 to */SLICE_790.F1 BCD_transform/SLICE_790
+ROUTE         2   e 1.234 */SLICE_790.F1 to */SLICE_780.D1 BCD_transform/n38145
+CTOF_DEL    ---     0.495 */SLICE_780.D1 to */SLICE_780.F1 BCD_transform/SLICE_780
+ROUTE         8   e 1.234 */SLICE_780.F1 to   SLICE_476.C1 BCD_transform/realv_4_0__N_551
+CTOF_DEL    ---     0.495   SLICE_476.C1 to   SLICE_476.F1 SLICE_476
+ROUTE        24   e 1.234   SLICE_476.F1 to */SLICE_252.B1 n38135
+CTOOFX_DEL  ---     0.721 */SLICE_252.B1 to *LICE_252.OFX0 LCDdisplay/i32877/SLICE_252
+ROUTE         1   e 1.234 *LICE_252.OFX0 to   SLICE_639.D0 LCDdisplay/n36183
+CTOF_DEL    ---     0.495   SLICE_639.D0 to   SLICE_639.F0 SLICE_639
+ROUTE         1   e 1.234   SLICE_639.F0 to */SLICE_376.C1 LCDdisplay/n2673
+CTOOFX_DEL  ---     0.721 */SLICE_376.C1 to *LICE_376.OFX0 LCDdisplay/i32868/SLICE_376
+ROUTE         1   e 1.234 *LICE_376.OFX0 to */SLICE_352.A0 LCDdisplay/n36174
+CTOOFX_DEL  ---     0.721 */SLICE_352.A0 to *LICE_352.OFX0 LCDdisplay/i32874/SLICE_352
+ROUTE         1   e 1.234 *LICE_352.OFX0 to */SLICE_894.C0 LCDdisplay/n36180
+CTOF_DEL    ---     0.495 */SLICE_894.C0 to */SLICE_894.F0 LCDdisplay/SLICE_894
+ROUTE         1   e 1.234 */SLICE_894.F0 to */SLICE_589.C1 LCDdisplay/n13989
+CTOF_DEL    ---     0.495 */SLICE_589.C1 to */SLICE_589.F1 LCDdisplay/SLICE_589
+ROUTE         1   e 1.234 */SLICE_589.F1 to */SLICE_919.B0 LCDdisplay/n63
+CTOF_DEL    ---     0.495 */SLICE_919.B0 to */SLICE_919.F0 LCDdisplay/SLICE_919
+ROUTE         1   e 1.234 */SLICE_919.F0 to */SLICE_328.B1 LCDdisplay/n125
+CTOOFX_DEL  ---     0.721 */SLICE_328.B1 to *LICE_328.OFX0 LCDdisplay/Mux_349_i127/SLICE_328
+ROUTE         2   e 1.234 *LICE_328.OFX0 to */SLICE_919.A1 LCDdisplay/n127
+CTOF_DEL    ---     0.495 */SLICE_919.A1 to */SLICE_919.F1 LCDdisplay/SLICE_919
+ROUTE         2   e 1.234 */SLICE_919.F1 to */SLICE_562.A1 LCDdisplay/n2834
+CTOF_DEL    ---     0.495 */SLICE_562.A1 to */SLICE_562.F1 LCDdisplay/SLICE_562
+ROUTE         3   e 1.234 */SLICE_562.F1 to */SLICE_128.B1 LCDdisplay/n3727
+CTOOFX_DEL  ---     0.721 */SLICE_128.B1 to *LICE_128.OFX0 LCDdisplay/SLICE_128
+ROUTE         1   e 0.001 *LICE_128.OFX0 to *SLICE_128.DI0 LCDdisplay/n2_adj_1537 (to clk_in_c)
+                  --------
+                   61.972   (32.3% logic, 67.7% route), 39 logic levels.
+
+Warning:   0.309MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "ctrlword_595_3_13" 20.485000 MHz ;
+            4096 items scored, 4096 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 42.288ns (weighted slack = -1246.577ns)
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ADC_work/ADC_level__i8  (from ADC_work/clk_divided +)
+   Destination:    FF         Data in        BCD_transform/ctrlword_595_3_15__N_622_7__I_0_i4  (to ctrlword_595_3_13 -)
+
+   Delay:              43.778ns  (32.3% logic, 67.7% route), 29 logic levels.
+
+ Constraint Details:
+
+     43.778ns physical path delay ADC_work/SLICE_828 to SLICE_172 exceeds
+      (delay constraint based on source clock period of 8.460ns and destination clock period of 48.816ns)
+      1.656ns delay constraint less
+      0.166ns DIN_SET requirement (totaling 1.490ns) by 42.288ns
+
+ Physical Path Details:
+
+      Data path ADC_work/SLICE_828 to SLICE_172:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452 *SLICE_828.CLK to */SLICE_828.Q0 ADC_work/SLICE_828 (from ADC_work/clk_divided)
+ROUTE        17   e 1.234 */SLICE_828.Q0 to *m/SLICE_67.B0 ADC_level_7
+C0TOFCO_DE  ---     1.023 *m/SLICE_67.B0 to */SLICE_67.FCO BCD_transform/SLICE_67
+ROUTE         1   e 0.001 */SLICE_67.FCO to */SLICE_69.FCI BCD_transform/n32590
+FCITOFCO_D  ---     0.162 */SLICE_69.FCI to */SLICE_69.FCO BCD_transform/SLICE_69
+ROUTE         1   e 0.001 */SLICE_69.FCO to */SLICE_68.FCI BCD_transform/n32591
+FCITOFCO_D  ---     0.162 */SLICE_68.FCI to */SLICE_68.FCO BCD_transform/SLICE_68
+ROUTE         1   e 0.001 */SLICE_68.FCO to */SLICE_66.FCI BCD_transform/n32592
+FCITOFCO_D  ---     0.162 */SLICE_66.FCI to */SLICE_66.FCO BCD_transform/SLICE_66
+ROUTE         1   e 0.001 */SLICE_66.FCO to */SLICE_65.FCI BCD_transform/n32593
+FCITOF0_DE  ---     0.585 */SLICE_65.FCI to *m/SLICE_65.F0 BCD_transform/SLICE_65
+ROUTE         9   e 1.234 *m/SLICE_65.F0 to */SLICE_816.D0 voltage_code_15
+CTOF_DEL    ---     0.495 */SLICE_816.D0 to */SLICE_816.F0 BCD_transform/SLICE_816
+ROUTE         8   e 1.234 */SLICE_816.F0 to */SLICE_436.C0 BCD_transform/realv_1_1__N_297
+CTOF_DEL    ---     0.495 */SLICE_436.C0 to */SLICE_436.F0 BCD_transform/SLICE_436
+ROUTE         5   e 1.234 */SLICE_436.F0 to */SLICE_499.D1 BCD_transform/n39815
+CTOF_DEL    ---     0.495 */SLICE_499.D1 to */SLICE_499.F1 BCD_transform/SLICE_499
+ROUTE         9   e 1.234 */SLICE_499.F1 to */SLICE_815.C1 BCD_transform/realv_1_1__N_317
+CTOF_DEL    ---     0.495 */SLICE_815.C1 to */SLICE_815.F1 BCD_transform/SLICE_815
+ROUTE         3   e 1.234 */SLICE_815.F1 to */SLICE_813.D1 BCD_transform/n38243
+CTOF_DEL    ---     0.495 */SLICE_813.D1 to */SLICE_813.F1 BCD_transform/SLICE_813
+ROUTE         5   e 1.234 */SLICE_813.F1 to */SLICE_515.C0 BCD_transform/realv_1_1__N_335
+CTOF_DEL    ---     0.495 */SLICE_515.C0 to */SLICE_515.F0 BCD_transform/SLICE_515
+ROUTE         1   e 1.234 */SLICE_515.F0 to */SLICE_812.D1 BCD_transform/n38229
+CTOF_DEL    ---     0.495 */SLICE_812.D1 to */SLICE_812.F1 BCD_transform/SLICE_812
+ROUTE        10   e 1.234 */SLICE_812.F1 to */SLICE_514.C1 BCD_transform/realv_1_1__N_359
+CTOF_DEL    ---     0.495 */SLICE_514.C1 to */SLICE_514.F1 BCD_transform/SLICE_514
+ROUTE         2   e 1.234 */SLICE_514.F1 to   SLICE_901.C1 BCD_transform/n38224
+CTOF_DEL    ---     0.495   SLICE_901.C1 to   SLICE_901.F1 SLICE_901
+ROUTE         4   e 1.234   SLICE_901.F1 to */SLICE_513.D0 BCD_transform/n38217
+CTOF_DEL    ---     0.495 */SLICE_513.D0 to */SLICE_513.F0 BCD_transform/SLICE_513
+ROUTE         3   e 1.234 */SLICE_513.F0 to */SLICE_803.D1 BCD_transform/n38215
+CTOF_DEL    ---     0.495 */SLICE_803.D1 to */SLICE_803.F1 BCD_transform/SLICE_803
+ROUTE         4   e 1.234 */SLICE_803.F1 to */SLICE_509.D0 BCD_transform/n38208
+CTOF_DEL    ---     0.495 */SLICE_509.D0 to */SLICE_509.F0 BCD_transform/SLICE_509
+ROUTE         3   e 1.234 */SLICE_509.F0 to */SLICE_764.B0 BCD_transform/n38205
+CTOF_DEL    ---     0.495 */SLICE_764.B0 to */SLICE_764.F0 BCD_transform/SLICE_764
+ROUTE         4   e 1.234 */SLICE_764.F0 to */SLICE_765.D1 BCD_transform/n38198
+CTOF_DEL    ---     0.495 */SLICE_765.D1 to */SLICE_765.F1 BCD_transform/SLICE_765
+ROUTE         3   e 1.234 */SLICE_765.F1 to */SLICE_768.B0 BCD_transform/n38194
+CTOF_DEL    ---     0.495 */SLICE_768.B0 to */SLICE_768.F0 BCD_transform/SLICE_768
+ROUTE         4   e 1.234 */SLICE_768.F0 to */SLICE_791.D1 BCD_transform/n38184
+CTOF_DEL    ---     0.495 */SLICE_791.D1 to */SLICE_791.F1 BCD_transform/SLICE_791
+ROUTE         5   e 1.234 */SLICE_791.F1 to */SLICE_797.C0 BCD_transform/realv_1_0__N_486
+CTOF_DEL    ---     0.495 */SLICE_797.C0 to */SLICE_797.F0 BCD_transform/SLICE_797
+ROUTE         4   e 1.234 */SLICE_797.F0 to */SLICE_503.D0 BCD_transform/n38153
+CTOF_DEL    ---     0.495 */SLICE_503.D0 to */SLICE_503.F0 BCD_transform/SLICE_503
+ROUTE         6   e 1.234 */SLICE_503.F0 to */SLICE_782.C1 BCD_transform/realv_1_0__N_477
+CTOF_DEL    ---     0.495 */SLICE_782.C1 to */SLICE_782.F1 BCD_transform/SLICE_782
+ROUTE         5   e 1.234 */SLICE_782.F1 to */SLICE_497.D0 BCD_transform/n38130
+CTOF_DEL    ---     0.495 */SLICE_497.D0 to */SLICE_497.F0 BCD_transform/SLICE_497
+ROUTE         4   e 1.234 */SLICE_497.F0 to */SLICE_784.D1 BCD_transform/n38126
+CTOF_DEL    ---     0.495 */SLICE_784.D1 to */SLICE_784.F1 BCD_transform/SLICE_784
+ROUTE        10   e 1.234 */SLICE_784.F1 to   SLICE_569.C1 BCD_transform/realv_2_0__N_502
+CTOF_DEL    ---     0.495   SLICE_569.C1 to   SLICE_569.F1 SLICE_569
+ROUTE        52   e 1.234   SLICE_569.F1 to   SLICE_172.B1 n38085
+CTOOFX_DEL  ---     0.721   SLICE_172.B1 to SLICE_172.OFX0 SLICE_172
+ROUTE         1   e 0.001 SLICE_172.OFX0 to  SLICE_172.DI0 ctrlword_595_3_15_N_622_3 (to ctrlword_595_3_13)
+                  --------
+                   43.778   (32.3% logic, 67.7% route), 29 logic levels.
+
+Warning:   0.772MHz is the maximum frequency for this preference.
+
+
+================================================================================
+Preference: FREQUENCY NET "ADC_work/clk_divided" 118.203000 MHz ;
+            2417 items scored, 1202 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Error: The following path exceeds requirements by 6.807ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ADC_work/cnt__i1  (from ADC_work/clk_divided +)
+   Destination:    FF         Data in        ADC_work/scl_out_r_154  (to ADC_work/clk_divided +)
+
+   Delay:              14.985ns  (32.7% logic, 67.3% route), 10 logic levels.
+
+ Constraint Details:
+
+     14.985ns physical path delay ADC_work/SLICE_80 to SLICE_199 exceeds
+      8.460ns delay constraint less
+      0.282ns CE_SET requirement (totaling 8.178ns) by 6.807ns
+
+ Physical Path Details:
+
+      Data path ADC_work/SLICE_80 to SLICE_199:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.452 */SLICE_80.CLK to *k/SLICE_80.Q1 ADC_work/SLICE_80 (from ADC_work/clk_divided)
+ROUTE         9   e 1.234 *k/SLICE_80.Q1 to */SLICE_731.A0 ADC_work/cnt_1
+CTOF_DEL    ---     0.495 */SLICE_731.A0 to */SLICE_731.F0 ADC_work/SLICE_731
+ROUTE         7   e 1.234 */SLICE_731.F0 to */SLICE_429.B1 ADC_work/n38396
+CTOF_DEL    ---     0.495 */SLICE_429.B1 to */SLICE_429.F1 ADC_work/SLICE_429
+ROUTE        33   e 1.234 */SLICE_429.F1 to */SLICE_743.C1 n39799
+CTOF_DEL    ---     0.495 */SLICE_743.C1 to */SLICE_743.F1 ADC_work/SLICE_743
+ROUTE         4   e 1.234 */SLICE_743.F1 to */SLICE_486.B1 n38329
+CTOF_DEL    ---     0.495 */SLICE_486.B1 to */SLICE_486.F1 ADC_work/SLICE_486
+ROUTE         2   e 0.480 */SLICE_486.F1 to */SLICE_486.C0 ADC_work/n22
+CTOF_DEL    ---     0.495 */SLICE_486.C0 to */SLICE_486.F0 ADC_work/SLICE_486
+ROUTE         2   e 1.234 */SLICE_486.F0 to */SLICE_762.A0 ADC_work/n29
+CTOF_DEL    ---     0.495 */SLICE_762.A0 to */SLICE_762.F0 ADC_work/SLICE_762
+ROUTE         1   e 0.480 */SLICE_762.F0 to */SLICE_762.B1 ADC_work/n37420
+CTOF_DEL    ---     0.495 */SLICE_762.B1 to */SLICE_762.F1 ADC_work/SLICE_762
+ROUTE         1   e 1.234 */SLICE_762.F1 to */SLICE_735.A0 ADC_work/n37424
+CTOF_DEL    ---     0.495 */SLICE_735.A0 to */SLICE_735.F0 ADC_work/SLICE_735
+ROUTE         1   e 0.480 */SLICE_735.F0 to */SLICE_735.C1 ADC_work/n37425
+CTOF_DEL    ---     0.495 */SLICE_735.C1 to */SLICE_735.F1 ADC_work/SLICE_735
+ROUTE         1   e 1.234 */SLICE_735.F1 to   SLICE_199.CE ADC_work/clk_divided_enable_22 (to ADC_work/clk_divided)
+                  --------
+                   14.985   (32.7% logic, 67.3% route), 10 logic levels.
+
+Warning:  65.501MHz is the maximum frequency for this preference.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference                              |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_in_c" 28.984000 MHz  |             |             |
+;                                       |   28.984 MHz|    0.309 MHz|  39 *
+                                        |             |             |
+FREQUENCY NET "ctrlword_595_3_13"       |             |             |
+20.485000 MHz ;                         |   20.485 MHz|    0.772 MHz|  29 *
+                                        |             |             |
+FREQUENCY NET "ADC_work/clk_divided"    |             |             |
+118.203000 MHz ;                        |  118.203 MHz|   65.501 MHz|  10 *
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+3 preferences(marked by "*" above) not met.
+
+----------------------------------------------------------------------------
+Critical Nets                           |   Loads|  Errors| % of total
+----------------------------------------------------------------------------
+BCD_transform/n38243                    |       3|    8192|     87.20%
+                                        |        |        |
+BCD_transform/n38229                    |       1|    8192|     87.20%
+                                        |        |        |
+BCD_transform/realv_1_1__N_335          |       5|    8192|     87.20%
+                                        |        |        |
+BCD_transform/n38224                    |       2|    8192|     87.20%
+                                        |        |        |
+BCD_transform/n38217                    |       4|    8192|     87.20%
+                                        |        |        |
+BCD_transform/n38215                    |       3|    8192|     87.20%
+                                        |        |        |
+BCD_transform/n39815                    |       5|    8192|     87.20%
+                                        |        |        |
+BCD_transform/realv_1_1__N_359          |      10|    8192|     87.20%
+                                        |        |        |
+BCD_transform/n32591                    |       1|    8012|     85.29%
+                                        |        |        |
+BCD_transform/n32592                    |       1|    7832|     83.37%
+                                        |        |        |
+BCD_transform/n38205                    |       3|    7322|     77.94%
+                                        |        |        |
+BCD_transform/n32590                    |       1|    7292|     77.62%
+                                        |        |        |
+BCD_transform/n38184                    |       4|    5692|     60.59%
+                                        |        |        |
+BCD_transform/n38194                    |       3|    5692|     60.59%
+                                        |        |        |
+BCD_transform/n32593                    |       1|    5616|     59.78%
+                                        |        |        |
+voltage_code_15                         |       9|    5616|     59.78%
+                                        |        |        |
+BCD_transform/realv_1_1__N_423          |       9|    4648|     49.48%
+                                        |        |        |
+BCD_transform/n38163                    |       3|    4096|     43.60%
+                                        |        |        |
+BCD_transform/n38145                    |       2|    4096|     43.60%
+                                        |        |        |
+BCD_transform/realv_4_0__N_551          |       8|    4096|     43.60%
+                                        |        |        |
+BCD_transform/n38130                    |       5|    4096|     43.60%
+                                        |        |        |
+BCD_transform/n38126                    |       4|    4096|     43.60%
+                                        |        |        |
+BCD_transform/realv_1_0__N_477          |       6|    4096|     43.60%
+                                        |        |        |
+BCD_transform/realv_2_0__N_502          |      10|    4096|     43.60%
+                                        |        |        |
+BCD_transform/n38179                    |       3|    4096|     43.60%
+                                        |        |        |
+n38135                                  |      24|    4096|     43.60%
+                                        |        |        |
+LCDdisplay/n2834                        |       2|    4096|     43.60%
+                                        |        |        |
+LCDdisplay/n125                         |       1|    4096|     43.60%
+                                        |        |        |
+LCDdisplay/n63                          |       1|    4096|     43.60%
+                                        |        |        |
+LCDdisplay/n13989                       |       1|    4096|     43.60%
+                                        |        |        |
+LCDdisplay/n36180                       |       1|    4096|     43.60%
+                                        |        |        |
+LCDdisplay/n36174                       |       1|    4096|     43.60%
+                                        |        |        |
+LCDdisplay/n127                         |       2|    4096|     43.60%
+                                        |        |        |
+n38085                                  |      52|    4096|     43.60%
+                                        |        |        |
+BCD_transform/realv_1_1__N_456          |       9|    3794|     40.39%
+                                        |        |        |
+BCD_transform/n38208                    |       4|    3544|     37.73%
+                                        |        |        |
+BCD_transform/n38198                    |       4|    3528|     37.56%
+                                        |        |        |
+ADC_level_7                             |      17|    3437|     36.59%
+                                        |        |        |
+realv_5_0                               |      74|    3315|     35.29%
+                                        |        |        |
+BCD_transform/n38268                    |       3|    2944|     31.34%
+                                        |        |        |
+LCDdisplay/n2673                        |       1|    2944|     31.34%
+                                        |        |        |
+LCDdisplay/n36183                       |       1|    2944|     31.34%
+                                        |        |        |
+LCDdisplay/n3727                        |       3|    2907|     30.95%
+                                        |        |        |
+BCD_transform/n38260                    |       4|    2902|     30.89%
+                                        |        |        |
+ctrlword_595_3_15_N_622_3               |       1|    2880|     30.66%
+                                        |        |        |
+BCD_transform/n38251                    |       5|    2666|     28.38%
+                                        |        |        |
+BCD_transform/realv_1_1__N_297          |       8|    2624|     27.93%
+                                        |        |        |
+BCD_transform/realv_1_1__N_317          |       9|    2624|     27.93%
+                                        |        |        |
+realv_1_1__N_293                        |       4|    2624|     27.93%
+                                        |        |        |
+BCD_transform/n38164                    |       3|    2500|     26.61%
+                                        |        |        |
+BCD_transform/realv_1_0__N_482          |       9|    2500|     26.61%
+                                        |        |        |
+BCD_transform/realv_3_0__N_540          |       4|    2161|     23.00%
+                                        |        |        |
+BCD_transform/realv_2_0__N_520          |       8|    2161|     23.00%
+                                        |        |        |
+BCD_transform/n38172                    |       5|    2044|     21.76%
+                                        |        |        |
+BCD_transform/n38167                    |       4|    1935|     20.60%
+                                        |        |        |
+BCD_transform/n38149                    |       3|    1935|     20.60%
+                                        |        |        |
+BCD_transform/realv_1_1__N_451          |       5|    1630|     17.35%
+                                        |        |        |
+BCD_transform/n38153                    |       4|    1596|     16.99%
+                                        |        |        |
+BCD_transform/realv_1_0__N_486          |       5|    1596|     16.99%
+                                        |        |        |
+voltage_code_14                         |       9|    1496|     15.93%
+                                        |        |        |
+LCDdisplay/n38071                       |       1|    1189|     12.66%
+                                        |        |        |
+LCDdisplay/n37033                       |       1|    1189|     12.66%
+                                        |        |        |
+LCDdisplay/n2674                        |       1|    1152|     12.26%
+                                        |        |        |
+LCDdisplay/n7_adj_1429                  |       1|    1152|     12.26%
+                                        |        |        |
+LCDdisplay/n3_adj_1428                  |       2|    1152|     12.26%
+                                        |        |        |
+LCDdisplay/n2_adj_1390                  |       1|    1041|     11.08%
+                                        |        |        |
+----------------------------------------------------------------------------
+
+
+Clock Domains Analysis
+------------------------
+
+Found 3 clocks:
+
+Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0   Loads: 40
+   No transfer within this clock domain is found
+
+   Data transfers from:
+Clock Domain: ctrlword_595_3_13   Source: SLICE_425.Q0   Loads: 39
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "ctrlword_595_3_13" 20.485000 MHz ;   Transfers: 2
+
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "ctrlword_595_3_13" 20.485000 MHz ;   Transfers: 2
+
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "ctrlword_595_3_13" 20.485000 MHz ;   Transfers: 2
+
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "ctrlword_595_3_13" 20.485000 MHz ;   Transfers: 1
+
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "ctrlword_595_3_13" 20.485000 MHz ;   Transfers: 1
+
+Clock Domain: clk_in_c   Source: clk_in.PAD   Loads: 133
+   Covered under: FREQUENCY NET "clk_in_c" 28.984000 MHz ;
+
+   Data transfers from:
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "clk_in_c" 28.984000 MHz ;   Transfers: 1
+
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "clk_in_c" 28.984000 MHz ;   Transfers: 1
+
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "clk_in_c" 28.984000 MHz ;   Transfers: 2
+
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "clk_in_c" 28.984000 MHz ;   Transfers: 2
+
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "clk_in_c" 28.984000 MHz ;   Transfers: 2
+
+   Clock Domain: ctrlword_595_3_13   Source: SLICE_425.Q0
+      Covered under: FREQUENCY NET "clk_in_c" 28.984000 MHz ;   Transfers: 12
+
+
+Timing summary (Setup):
+---------------
+
+Timing errors: 9394  Score: 4294967295
+Cumulative negative slack: 4294967295
+
+Constraints cover 2147483647 paths, 90 nets, and 6992 connections (96.71% coverage)
+
+--------------------------------------------------------------------------------
+Lattice TRACE Report - Hold, Version Diamond (64-bit) 3.10.0.111.2
+Sat Dec 03 21:09:43 2022
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+Copyright (c) 1995 AT&T Corp.   All rights reserved.
+Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+Copyright (c) 2001 Agere Systems   All rights reserved.
+Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights reserved.
+
+Report Information
+------------------
+Command line:    trce -v 1 -gt -mapchkpnt 0 -sethld -o dianya_impl1.tw1 -gui -msgset C:/Users/hankeyi35/Desktop/lab_8/lab8/promote.xml dianya_impl1_map.ncd dianya_impl1.prf 
+Design file:     dianya_impl1_map.ncd
+Preference file: dianya_impl1.prf
+Device,speed:    LCMXO2-4000HC,M
+Report level:    verbose report, limited to 1 item per preference
+--------------------------------------------------------------------------------
+
+BLOCK ASYNCPATHS
+BLOCK RESETPATHS
+--------------------------------------------------------------------------------
+
+
+
+================================================================================
+Preference: FREQUENCY NET "clk_in_c" 28.984000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.351ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              datato595/shift_cnt_FSM__i11  (from clk_in_c +)
+   Destination:    FF         Data in        datato595/shift_cnt_FSM__i12  (to clk_in_c +)
+
+   Delay:               0.332ns  (40.1% logic, 59.9% route), 1 logic levels.
+
+ Constraint Details:
+
+      0.332ns physical path delay SLICE_526 to SLICE_526 meets
+     -0.019ns M_HLD and
+      0.000ns delay constraint requirement (totaling -0.019ns) by 0.351ns
+
+ Physical Path Details:
+
+      Data path SLICE_526 to SLICE_526:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133  SLICE_526.CLK to   SLICE_526.Q0 SLICE_526 (from clk_in_c)
+ROUTE         4   e 0.199   SLICE_526.Q0 to   SLICE_526.M1 datato595/n424 (to clk_in_c)
+                  --------
+                    0.332   (40.1% logic, 59.9% route), 1 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY NET "ctrlword_595_3_13" 20.485000 MHz ;
+            4096 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 4.499ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ADC_work/ADC_level__i8  (from ADC_work/clk_divided +)
+   Destination:    FF         Data in        BCD_transform/ctrlword_595_2_15__N_614_7__I_0_i2  (to ctrlword_595_3_13 -)
+
+   Delay:               3.514ns  (21.0% logic, 79.0% route), 7 logic levels.
+
+ Constraint Details:
+
+      3.514ns physical path delay ADC_work/SLICE_828 to BCD_transform/SLICE_166 meets
+      (delay constraint based on source clock period of 8.460ns and destination clock period of 48.816ns)
+     -0.013ns DIN_HLD and
+     -0.972ns delay constraint requirement (totaling -0.985ns) by 4.499ns
+
+ Physical Path Details:
+
+      Data path ADC_work/SLICE_828 to BCD_transform/SLICE_166:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133 *SLICE_828.CLK to */SLICE_828.Q0 ADC_work/SLICE_828 (from ADC_work/clk_divided)
+ROUTE        17   e 0.515 */SLICE_828.Q0 to */SLICE_803.B1 ADC_level_7
+CTOF_DEL    ---     0.101 */SLICE_803.B1 to */SLICE_803.F1 BCD_transform/SLICE_803
+ROUTE         4   e 0.199 */SLICE_803.F1 to */SLICE_803.D0 BCD_transform/n38208
+CTOF_DEL    ---     0.101 */SLICE_803.D0 to */SLICE_803.F0 BCD_transform/SLICE_803
+ROUTE         5   e 0.515 */SLICE_803.F0 to */SLICE_800.A1 BCD_transform/realv_1_1__N_418
+CTOF_DEL    ---     0.101 */SLICE_800.A1 to */SLICE_800.F1 BCD_transform/SLICE_800
+ROUTE         5   e 0.515 */SLICE_800.F1 to */SLICE_794.A1 BCD_transform/n38172
+CTOF_DEL    ---     0.101 */SLICE_794.A1 to */SLICE_794.F1 BCD_transform/SLICE_794
+ROUTE         4   e 0.515 */SLICE_794.F1 to */SLICE_502.D0 BCD_transform/n38151
+CTOF_DEL    ---     0.101 */SLICE_502.D0 to */SLICE_502.F0 BCD_transform/SLICE_502
+ROUTE         5   e 0.515 */SLICE_502.F0 to */SLICE_166.B0 BCD_transform/n38133
+CTOF_DEL    ---     0.101 */SLICE_166.B0 to */SLICE_166.F0 BCD_transform/SLICE_166
+ROUTE        19   e 0.001 */SLICE_166.F0 to *SLICE_166.DI0 n38103 (to ctrlword_595_3_13)
+                  --------
+                    3.514   (21.0% logic, 79.0% route), 7 logic levels.
+
+
+================================================================================
+Preference: FREQUENCY NET "ADC_work/clk_divided" 118.203000 MHz ;
+            2417 items scored, 0 timing errors detected.
+--------------------------------------------------------------------------------
+
+
+Passed: The following path meets requirements by 0.441ns
+
+ Logical Details:  Cell type  Pin type       Cell/ASIC name  (clock net +/-)
+
+   Source:         FF         Q              ADC_work/cnt_stop__i1  (from ADC_work/clk_divided +)
+   Destination:    FF         Data in        ADC_work/cnt_stop__i1  (to ADC_work/clk_divided +)
+
+   Delay:               0.428ns  (53.3% logic, 46.7% route), 2 logic levels.
+
+ Constraint Details:
+
+      0.428ns physical path delay SLICE_160 to SLICE_160 meets
+     -0.013ns DIN_HLD and
+      0.000ns delay constraint requirement (totaling -0.013ns) by 0.441ns
+
+ Physical Path Details:
+
+      Data path SLICE_160 to SLICE_160:
+
+   Name    Fanout   Delay (ns)          Site               Resource
+REG_DEL     ---     0.133  SLICE_160.CLK to   SLICE_160.Q0 SLICE_160 (from ADC_work/clk_divided)
+ROUTE         8   e 0.199   SLICE_160.Q0 to   SLICE_160.M0 cnt_stop_1
+MTOOFX_DEL  ---     0.095   SLICE_160.M0 to SLICE_160.OFX0 SLICE_160
+ROUTE         1   e 0.001 SLICE_160.OFX0 to  SLICE_160.DI0 n38570 (to ADC_work/clk_divided)
+                  --------
+                    0.428   (53.3% logic, 46.7% route), 2 logic levels.
+
+Report Summary
+--------------
+----------------------------------------------------------------------------
+Preference(MIN Delays)                  |   Constraint|       Actual|Levels
+----------------------------------------------------------------------------
+                                        |             |             |
+FREQUENCY NET "clk_in_c" 28.984000 MHz  |             |             |
+;                                       |     0.000 ns|     0.351 ns|   1  
+                                        |             |             |
+FREQUENCY NET "ctrlword_595_3_13"       |             |             |
+20.485000 MHz ;                         |     0.000 ns|     4.499 ns|   7  
+                                        |             |             |
+FREQUENCY NET "ADC_work/clk_divided"    |             |             |
+118.203000 MHz ;                        |     0.000 ns|     0.441 ns|   2  
+                                        |             |             |
+----------------------------------------------------------------------------
+
+
+All preferences were met.
+
+
+Clock Domains Analysis
+------------------------
+
+Found 4 clocks:
+
+Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0   Loads: 40
+   No transfer within this clock domain is found
+
+Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0   Loads: 40
+   No transfer within this clock domain is found
+
+   Data transfers from:
+Clock Domain: ctrlword_595_3_13   Source: SLICE_425.Q0   Loads: 39
+   No transfer within this clock domain is found
+
+   Data transfers from:
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "ctrlword_595_3_13" 20.485000 MHz ;   Transfers: 2
+
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "ctrlword_595_3_13" 20.485000 MHz ;   Transfers: 2
+
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "ctrlword_595_3_13" 20.485000 MHz ;   Transfers: 2
+
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "ctrlword_595_3_13" 20.485000 MHz ;   Transfers: 1
+
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "ctrlword_595_3_13" 20.485000 MHz ;   Transfers: 1
+
+Clock Domain: clk_in_c   Source: clk_in.PAD   Loads: 133
+   Covered under: FREQUENCY NET "clk_in_c" 28.984000 MHz ;
+
+   Data transfers from:
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "clk_in_c" 28.984000 MHz ;   Transfers: 1
+
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "clk_in_c" 28.984000 MHz ;   Transfers: 1
+
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "clk_in_c" 28.984000 MHz ;   Transfers: 2
+
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "clk_in_c" 28.984000 MHz ;   Transfers: 2
+
+   Clock Domain: ADC_work/clk_divided   Source: ADC_work/SLICE_79.Q0
+      Covered under: FREQUENCY NET "clk_in_c" 28.984000 MHz ;   Transfers: 2
+
+   Clock Domain: ctrlword_595_3_13   Source: SLICE_425.Q0
+      Covered under: FREQUENCY NET "clk_in_c" 28.984000 MHz ;   Transfers: 12
+
+
+Timing summary (Hold):
+---------------
+
+Timing errors: 0  Score: 0
+Cumulative negative slack: 0
+
+Constraints cover 2147483647 paths, 90 nets, and 7120 connections (98.48% coverage)
+
+
+
+Timing summary (Setup and Hold):
+---------------
+
+Timing errors: 9394 (setup), 0 (hold)
+Score: 4294967295 (setup), 0 (hold)
+Cumulative negative slack: 4294967295 (4294967295+0)
+--------------------------------------------------------------------------------
+
+--------------------------------------------------------------------------------
+

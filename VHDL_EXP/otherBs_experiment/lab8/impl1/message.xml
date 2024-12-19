@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BaliMessageLog>
+    <Task name="MapVerilogSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="MapVHDLSimFile">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="IBIS">
+        <Message>
+            <ID>1191010</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>lvc330s080gfaaaaaaio</Dynamic>
+            <Dynamic>sda_out</Dynamic>
+        </Message>
+        <Message>
+            <ID>1191031</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>1191005</ID>
+            <Severity>Info</Severity>
+        </Message>
+    </Task>
+    <Task name="Map">
+        <Message>
+            <ID>52101259</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>BCD_transform/mode_N_613_I_0_i2</Dynamic>
+        </Message>
+    </Task>
+    <Task name="Lattice_Synthesis">
+        <Message>
+            <ID>35002000</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35001781</ID>
+            <Severity>Info</Severity>
+        </Message>
+        <Message>
+            <ID>35921504</ID>
+            <Severity>Info</Severity>
+            <Dynamic></Dynamic>
+            <Dynamic>C:/Users/hankeyi35/Desktop/lab_8/lab8/impl1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/hankeyi35/desktop/lab_8/lab8/top.vhd(6): </Dynamic>
+            <Dynamic>dianya</Dynamic>
+            <Navigation>c:/users/hankeyi35/desktop/lab_8/lab8/top.vhd</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/hankeyi35/desktop/lab_8/lab8/top.vhd(24): </Dynamic>
+            <Dynamic>behavior</Dynamic>
+            <Navigation>c:/users/hankeyi35/desktop/lab_8/lab8/top.vhd</Navigation>
+            <Navigation>24</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/hankeyi35/desktop/lab_8/lab8/adc.vhd(8): </Dynamic>
+            <Dynamic>adc</Dynamic>
+            <Navigation>c:/users/hankeyi35/desktop/lab_8/lab8/adc.vhd</Navigation>
+            <Navigation>8</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/hankeyi35/desktop/lab_8/lab8/adc.vhd(18): </Dynamic>
+            <Dynamic>behavior</Dynamic>
+            <Navigation>c:/users/hankeyi35/desktop/lab_8/lab8/adc.vhd</Navigation>
+            <Navigation>18</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/hankeyi35/desktop/lab_8/lab8/lcd_display.vhd(3): </Dynamic>
+            <Dynamic>lcd_display</Dynamic>
+            <Navigation>c:/users/hankeyi35/desktop/lab_8/lab8/lcd_display.vhd</Navigation>
+            <Navigation>3</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/hankeyi35/desktop/lab_8/lab8/lcd_display.vhd(19): </Dynamic>
+            <Dynamic>behavioral</Dynamic>
+            <Navigation>c:/users/hankeyi35/desktop/lab_8/lab8/lcd_display.vhd</Navigation>
+            <Navigation>19</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/hankeyi35/desktop/lab_8/lab8/mode_shift.vhd(5): </Dynamic>
+            <Dynamic>mode_shift</Dynamic>
+            <Navigation>c:/users/hankeyi35/desktop/lab_8/lab8/mode_shift.vhd</Navigation>
+            <Navigation>5</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/hankeyi35/desktop/lab_8/lab8/mode_shift.vhd(14): </Dynamic>
+            <Dynamic>modeshift</Dynamic>
+            <Navigation>c:/users/hankeyi35/desktop/lab_8/lab8/mode_shift.vhd</Navigation>
+            <Navigation>14</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/hankeyi35/desktop/lab_8/lab8/btn_debouncing.vhd(7): </Dynamic>
+            <Dynamic>btn_debouncing</Dynamic>
+            <Navigation>c:/users/hankeyi35/desktop/lab_8/lab8/btn_debouncing.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/hankeyi35/desktop/lab_8/lab8/btn_debouncing.vhd(16): </Dynamic>
+            <Dynamic>cyclesample</Dynamic>
+            <Navigation>c:/users/hankeyi35/desktop/lab_8/lab8/btn_debouncing.vhd</Navigation>
+            <Navigation>16</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/hankeyi35/desktop/lab_8/lab8/ctrlword_595.vhd(6): </Dynamic>
+            <Dynamic>ctrlword_595</Dynamic>
+            <Navigation>c:/users/hankeyi35/desktop/lab_8/lab8/ctrlword_595.vhd</Navigation>
+            <Navigation>6</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/hankeyi35/desktop/lab_8/lab8/ctrlword_595.vhd(24): </Dynamic>
+            <Dynamic>parallelout</Dynamic>
+            <Navigation>c:/users/hankeyi35/desktop/lab_8/lab8/ctrlword_595.vhd</Navigation>
+            <Navigation>24</Navigation>
+        </Message>
+        <Message>
+            <ID>35921012</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/hankeyi35/desktop/lab_8/lab8/trans_bcd.vhd(7): </Dynamic>
+            <Dynamic>trans_bcd</Dynamic>
+            <Navigation>c:/users/hankeyi35/desktop/lab_8/lab8/trans_bcd.vhd</Navigation>
+            <Navigation>7</Navigation>
+        </Message>
+        <Message>
+            <ID>35921010</ID>
+            <Severity>Info</Severity>
+            <Dynamic>c:/users/hankeyi35/desktop/lab_8/lab8/trans_bcd.vhd(33): </Dynamic>
+            <Dynamic>bcdencoder</Dynamic>
+            <Navigation>c:/users/hankeyi35/desktop/lab_8/lab8/trans_bcd.vhd</Navigation>
+            <Navigation>33</Navigation>
+        </Message>
+        <Message>
+            <ID>35921205</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/hankeyi35/desktop/lab_8/lab8/top.vhd(21): </Dynamic>
+            <Dynamic>dianya</Dynamic>
+            <Dynamic>behavior</Dynamic>
+            <Navigation>c:/users/hankeyi35/desktop/lab_8/lab8/top.vhd</Navigation>
+            <Navigation>21</Navigation>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\datato595/shift_cnt</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001774</ID>
+            <Severity>Info</Severity>
+            <Dynamic>\ADC_work/state</Dynamic>
+            <Dynamic>one-hot</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>0</Dynamic>
+            <Dynamic>\ADC_work/state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001747</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>1</Dynamic>
+            <Dynamic>\ADC_work/state_FSM</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/hankeyi35/desktop/lab_8/lab8/trans_bcd.vhd(169): Latch \BCD_transform/ctrlword_595_3_15__N_622_7__I_0_i1 input is stuck at Zero
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/hankeyi35/desktop/lab_8/lab8/trans_bcd.vhd(169): Latch \BCD_transform/ctrlword_595_2_15__N_614_7__I_0_i1 input is stuck at One
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>1009991</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/hankeyi35/desktop/lab_8/lab8/trans_bcd.vhd(169): Latch \BCD_transform/ctrlword_595_2_15__N_614_7__I_0_i7 input is stuck at One
+</Dynamic>
+        </Message>
+        <Message>
+            <ID>35935013</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>c:/users/hankeyi35/desktop/lab_8/lab8/adc.vhd(191): </Dynamic>
+            <Dynamic>\ADC_work/data_write__i1</Dynamic>
+            <Navigation>c:/users/hankeyi35/desktop/lab_8/lab8/adc.vhd</Navigation>
+            <Navigation>191</Navigation>
+        </Message>
+        <Message>
+            <ID>35001752</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>\BCD_transform/mode_N_613_I_0_i1</Dynamic>
+        </Message>
+        <Message>
+            <ID>35001611</ID>
+            <Severity>Warning</Severity>
+        </Message>
+    </Task>
+    <Task name="PAR">
+        <Message>
+            <ID>61001101</ID>
+            <Severity>Warning</Severity>
+        </Message>
+        <Message>
+            <ID>61061008</ID>
+            <Severity>Warning</Severity>
+            <Dynamic>clk_in_c</Dynamic>
+            <Dynamic>Primary</Dynamic>
+            <Dynamic>clk_in</Dynamic>
+            <Dynamic>C1</Dynamic>
+            <Dynamic>Primary</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVHD">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+    <Task name="TimingSimFileVlg">
+        <Message>
+            <ID>35400250</ID>
+            <Severity>Info</Severity>
+            <Dynamic>0</Dynamic>
+        </Message>
+    </Task>
+</BaliMessageLog>

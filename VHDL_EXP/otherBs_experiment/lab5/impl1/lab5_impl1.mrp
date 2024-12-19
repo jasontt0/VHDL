@@ -1,0 +1,402 @@
+
+            Lattice Mapping Report File for Design Module 'piano'
+
+
+Design Information
+------------------
+
+Command line:   map -a MachXO2 -p LCMXO2-4000HC -t CSBGA132 -s 4 -oc Commercial
+     lab5_impl1.ngd -o lab5_impl1_map.ncd -pr lab5_impl1.prf -mp lab5_impl1.mrp
+     -lpf E:/sjtu/learning/VHDL/final/lab5/impl1/lab5_impl1.lpf -lpf
+     E:/sjtu/learning/VHDL/final/lab5/lab5.lpf -c 0 -gui -msgset
+     E:/sjtu/learning/VHDL/final/lab5/promote.xml 
+Target Vendor:  LATTICE
+Target Device:  LCMXO2-4000HCCSBGA132
+Target Performance:   4
+Mapper:  xo2c00,  version:  Diamond (64-bit) 3.10.0.111.2
+Mapped on:  12/19/22  21:11:10
+
+Design Summary
+--------------
+
+   Number of registers:     90 out of  4635 (2%)
+      PFU registers:           90 out of  4320 (2%)
+      PIO registers:            0 out of   315 (0%)
+   Number of SLICEs:       135 out of  2160 (6%)
+      SLICEs as Logic/ROM:    135 out of  2160 (6%)
+      SLICEs as RAM:            0 out of  1620 (0%)
+      SLICEs as Carry:         48 out of  2160 (2%)
+   Number of LUT4s:        270 out of  4320 (6%)
+      Number used as logic LUTs:        174
+      Number used as distributed RAM:     0
+      Number used as ripple logic:       96
+      Number used as shift registers:     0
+   Number of PIO sites used: 12 + 4(JTAG) out of 105 (15%)
+   Number of block RAMs:  0 out of 10 (0%)
+   Number of GSRs:  1 out of 1 (100%)
+   EFB used :       No
+   JTAG used :      No
+   Readback used :  No
+   Oscillator used :  No
+   Startup used :   No
+   POR :            On
+   Bandgap :        On
+   Number of Power Controller:  0 out of 1 (0%)
+   Number of Dynamic Bank Controller (BCINRD):  0 out of 6 (0%)
+   Number of Dynamic Bank Controller (BCLVDSO):  0 out of 1 (0%)
+   Number of DCCA:  0 out of 8 (0%)
+   Number of DCMA:  0 out of 2 (0%)
+   Number of PLLs:  0 out of 2 (0%)
+   Number of DQSDLLs:  0 out of 2 (0%)
+   Number of CLKDIVC:  0 out of 4 (0%)
+   Number of ECLKSYNCA:  0 out of 4 (0%)
+   Number of ECLKBRIDGECS:  0 out of 2 (0%)
+   Notes:-
+      1. Total number of LUT4s = (Number of logic LUT4s) + 2*(Number of
+     distributed RAMs) + 2*(Number of ripple logic)
+      2. Number of logic LUT4s does not include count of distributed RAM and
+     ripple logic.
+   Number of clocks:  6
+     Net clk40hz: 1 loads, 1 rising, 0 falling (Driver: U1/clk40hz_28 )
+     Net clk_c: 49 loads, 49 rising, 0 falling (Driver: PIO clk )
+     Net mode_c: 1 loads, 0 rising, 1 falling (Driver: PIO mode )
+
+                                    Page 1
+
+
+
+
+Design:  piano                                         Date:  12/19/22  21:11:10
+
+Design Summary (cont)
+---------------------
+     Net switch_c: 1 loads, 0 rising, 1 falling (Driver: PIO switch )
+     Net U2/tone2_3__N_199: 3 loads, 3 rising, 0 falling (Driver:
+     U2/tone2_3__I_2_1_lut_2_lut )
+     Net U2/mn_former_derived_1: 1 loads, 1 rising, 0 falling (Driver:
+     U2/mn_former_I_3_2_lut_rep_18 )
+   Number of Clock Enables:  2
+     Net clk_c_enable_20: 10 loads, 10 LSLICEs
+     Net clk_c_enable_15: 3 loads, 3 LSLICEs
+   Number of LSRs:  8
+     Net cnt_19__N_55: 11 loads, 11 LSLICEs
+     Net n569: 11 loads, 11 LSLICEs
+     Net n568: 1 loads, 1 LSLICEs
+     Net n566: 1 loads, 1 LSLICEs
+     Net n1283: 10 loads, 10 LSLICEs
+     Net n575: 5 loads, 5 LSLICEs
+     Net U2/n572: 5 loads, 5 LSLICEs
+     Net U2/n511: 1 loads, 1 LSLICEs
+   Number of nets driven by tri-state buffers:  0
+   Top 10 highest fanout non-clock nets:
+     Net ptr1_3: 48 loads
+     Net ptr1_6: 48 loads
+     Net ptr1_2: 47 loads
+     Net ptr2_2: 47 loads
+     Net ptr2_6: 47 loads
+     Net ptr2_3: 46 loads
+     Net ptr2_1: 45 loads
+     Net ptr1_1: 42 loads
+     Net ptr2_7: 27 loads
+     Net ptr1_7: 26 loads
+
+
+
+
+   Number of warnings:  0
+   Number of errors:    0
+     
+
+Design Errors/Warnings
+----------------------
+
+   No errors or warnings present.
+
+IO (PIO) Attributes
+-------------------
+
++---------------------+-----------+-----------+------------+
+| IO Name             | Direction | Levelmode | IO         |
+|                     |           |  IO_TYPE  | Register   |
++---------------------+-----------+-----------+------------+
+| beep                | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| col[2]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| col[3]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| clk                 | INPUT     | LVCMOS33  |            |
+
+                                    Page 2
+
+
+
+
+Design:  piano                                         Date:  12/19/22  21:11:10
+
+IO (PIO) Attributes (cont)
+--------------------------
++---------------------+-----------+-----------+------------+
+| mode                | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| switch              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| row[0]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| row[1]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| row[2]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| row[3]              | OUTPUT    | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| col[0]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+| col[1]              | INPUT     | LVCMOS33  |            |
++---------------------+-----------+-----------+------------+
+
+Removed logic
+-------------
+
+Signal switch_N_60 was merged into signal switch_c
+Signal mode_N_30 was merged into signal mode_c
+Signal GND_net undriven or does not drive anything - clipped.
+Signal U2/ptr1_240_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal U2/ptr1_240_add_4_1/CI undriven or does not drive anything - clipped.
+Signal U2/ptr2_241_add_4_9/S1 undriven or does not drive anything - clipped.
+Signal U2/ptr2_241_add_4_9/CO undriven or does not drive anything - clipped.
+Signal U2/ptr1_240_add_4_9/S1 undriven or does not drive anything - clipped.
+Signal U2/ptr1_240_add_4_9/CO undriven or does not drive anything - clipped.
+Signal U2/ptr2_241_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal U2/ptr2_241_add_4_1/CI undriven or does not drive anything - clipped.
+Signal U1/cnt40_238_239_add_4_19/S1 undriven or does not drive anything -
+     clipped.
+Signal U1/cnt40_238_239_add_4_19/CO undriven or does not drive anything -
+     clipped.
+Signal U1/cnt8_236_237_add_4_21/S1 undriven or does not drive anything -
+     clipped.
+Signal U1/cnt8_236_237_add_4_21/CO undriven or does not drive anything -
+     clipped.
+Signal U1/cnt8_236_237_add_4_1/S0 undriven or does not drive anything - clipped.
+     
+Signal U1/cnt8_236_237_add_4_1/CI undriven or does not drive anything - clipped.
+     
+Signal U1/cnt40_238_239_add_4_1/S0 undriven or does not drive anything -
+     clipped.
+Signal U1/cnt40_238_239_add_4_1/CI undriven or does not drive anything -
+     clipped.
+Signal equal_74_20_758/S1 undriven or does not drive anything - clipped.
+Signal equal_74_20_758/S0 undriven or does not drive anything - clipped.
+Signal equal_74_14/S1 undriven or does not drive anything - clipped.
+Signal equal_74_14/S0 undriven or does not drive anything - clipped.
+Signal equal_74_20/S1 undriven or does not drive anything - clipped.
+Signal equal_74_20/CO undriven or does not drive anything - clipped.
+Signal equal_74_16/S1 undriven or does not drive anything - clipped.
+Signal equal_74_16/S0 undriven or does not drive anything - clipped.
+
+                                    Page 3
+
+
+
+
+Design:  piano                                         Date:  12/19/22  21:11:10
+
+Removed logic (cont)
+--------------------
+Signal cnt_235_add_4_21/S1 undriven or does not drive anything - clipped.
+Signal cnt_235_add_4_21/CO undriven or does not drive anything - clipped.
+Signal equal_74_18/S1 undriven or does not drive anything - clipped.
+Signal equal_74_18/S0 undriven or does not drive anything - clipped.
+Signal equal_74_0/S1 undriven or does not drive anything - clipped.
+Signal equal_74_0/S0 undriven or does not drive anything - clipped.
+Signal equal_74_0/CI undriven or does not drive anything - clipped.
+Signal cnt_235_add_4_1/S0 undriven or does not drive anything - clipped.
+Signal cnt_235_add_4_1/CI undriven or does not drive anything - clipped.
+Block i1041 was optimized away.
+Block i1042 was optimized away.
+Block i1 was optimized away.
+
+Memory Usage
+------------
+
+
+     
+
+GSR Usage
+---------
+
+GSR Component:
+   The Global Set Reset (GSR) resource has been used to implement a global reset
+        of the design. The reset signal used for GSR control is
+        'U2/tone2_3__N_199'.
+        
+
+     GSR Property:
+   The design components with GSR property set to ENABLED will respond to global
+        set reset while the components with GSR property set to DISABLED will
+        not.
+        
+
+     Components with disabled GSR Property
+-------------------------------------
+
+     These components have the GSR property set to DISABLED. The components will
+     not respond to the reset signal 'U2/tone2_3__N_199' via the GSR component.
+
+     Type and number of components of the type: 
+   Register = 74 
+
+     Type and instance name of component: 
+   Register : tmp_I_0_72
+   Register : clk_music_67
+   Register : beep_68
+   Register : mode_num_62
+   Register : cnt_235__i0
+   Register : tone1_i0_i1
+   Register : tone1_i0_i3
+   Register : tone1_i0_i2
+   Register : tone1_i0_i0
+   Register : cnt_235__i19
+   Register : cnt_235__i18
+   Register : cnt_235__i17
+
+                                    Page 4
+
+
+
+
+Design:  piano                                         Date:  12/19/22  21:11:10
+
+GSR Usage (cont)
+----------------
+   Register : cnt_235__i16
+   Register : cnt_235__i15
+   Register : cnt_235__i14
+   Register : cnt_235__i13
+   Register : cnt_235__i12
+   Register : cnt_235__i11
+   Register : cnt_235__i10
+   Register : cnt_235__i9
+   Register : cnt_235__i8
+   Register : cnt_235__i7
+   Register : cnt_235__i6
+   Register : cnt_235__i5
+   Register : cnt_235__i4
+   Register : cnt_235__i3
+   Register : cnt_235__i2
+   Register : music_num_63
+   Register : cnt_235__i1
+   Register : U1/clk40hz_28
+   Register : U1/clk8hz_26
+   Register : U1/cnt8_236_237__i20
+   Register : U1/cnt8_236_237__i19
+   Register : U1/cnt8_236_237__i18
+   Register : U1/cnt8_236_237__i17
+   Register : U1/cnt8_236_237__i16
+   Register : U1/cnt8_236_237__i15
+   Register : U1/cnt8_236_237__i14
+   Register : U1/cnt8_236_237__i13
+   Register : U1/cnt8_236_237__i12
+   Register : U1/cnt8_236_237__i11
+   Register : U1/cnt8_236_237__i10
+   Register : U1/cnt8_236_237__i9
+   Register : U1/cnt8_236_237__i8
+   Register : U1/cnt8_236_237__i7
+   Register : U1/cnt8_236_237__i6
+   Register : U1/cnt8_236_237__i5
+   Register : U1/cnt8_236_237__i4
+   Register : U1/cnt8_236_237__i3
+   Register : U1/cnt8_236_237__i2
+   Register : U1/cnt8_236_237__i1
+   Register : U1/cnt40_238_239__i18
+   Register : U1/cnt40_238_239__i17
+   Register : U1/cnt40_238_239__i16
+   Register : U1/cnt40_238_239__i15
+   Register : U1/cnt40_238_239__i14
+   Register : U1/cnt40_238_239__i13
+   Register : U1/cnt40_238_239__i12
+   Register : U1/cnt40_238_239__i11
+   Register : U1/cnt40_238_239__i10
+   Register : U1/cnt40_238_239__i9
+   Register : U1/cnt40_238_239__i8
+   Register : U1/cnt40_238_239__i7
+   Register : U1/cnt40_238_239__i6
+   Register : U1/cnt40_238_239__i5
+   Register : U1/cnt40_238_239__i4
+   Register : U1/cnt40_238_239__i3
+   Register : U1/cnt40_238_239__i2
+
+                                    Page 5
+
+
+
+
+Design:  piano                                         Date:  12/19/22  21:11:10
+
+GSR Usage (cont)
+----------------
+   Register : U1/cnt40_238_239__i1
+   Register : U2/tone2_3__I_0_i1
+   Register : U2/music_num_I_0
+   Register : U2/tone2_3__I_0_i2
+   Register : U2/tone2_3__I_0_i3
+   Register : U2/tone2_3__I_0_i4
+
+     Components with synchronous local reset also reset by asynchronous GSR
+----------------------------------------------------------------------
+
+     These components have the GSR property set to ENABLED and the local reset
+     is synchronous. The components will respond to the synchronous local reset
+     and to the unrelated asynchronous reset signal 'U2/tone2_3__N_199' via the
+     GSR component.
+
+     Type and number of components of the type: 
+   Register = 16 
+
+     Type and instance name of component: 
+   Register : U2/ptr1_240__i6
+   Register : U2/ptr1_240__i0
+   Register : U2/ptr1_240__i7
+   Register : U2/ptr2_241__i1
+   Register : U2/ptr2_241__i2
+   Register : U2/ptr2_241__i3
+   Register : U2/ptr2_241__i4
+   Register : U2/ptr2_241__i5
+   Register : U2/ptr2_241__i6
+   Register : U2/ptr2_241__i7
+   Register : U2/ptr2_241__i0
+   Register : U2/ptr1_240__i1
+   Register : U2/ptr1_240__i2
+   Register : U2/ptr1_240__i3
+   Register : U2/ptr1_240__i4
+   Register : U2/ptr1_240__i5
+
+Run Time and Memory Usage
+-------------------------
+
+   Total CPU Time: 0 secs  
+   Total REAL Time: 0 secs  
+   Peak Memory Usage: 50 MB
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                    Page 6
+
+
+Copyright (c) 1991-1994 by NeoCAD Inc. All rights reserved.
+     Copyright (c) 1995 AT&T Corp.   All rights reserved.
+     Copyright (c) 1995-2001 Lucent Technologies Inc.  All rights reserved.
+     Copyright (c) 2001 Agere Systems   All rights reserved.
+     Copyright (c) 2002-2017 Lattice Semiconductor Corporation,  All rights
+     reserved.

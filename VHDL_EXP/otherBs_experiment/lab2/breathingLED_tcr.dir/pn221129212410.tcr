@@ -1,0 +1,5 @@
+#Start recording tcl command: 11/29/2022 21:04:51
+#Project Location: D:/lscc/diamond/3.12/bin/nt64/lab22; Project name: breathingLED
+prj_project open "D:/lscc/diamond/3.12/bin/nt64/lab22/breathingLED.ldf"
+prj_src add "D:/lscc/diamond/3.12/bin/nt64/lab22/lab222/lab222.spf"
+#Stop recording: 11/29/2022 21:24:10

@@ -1,0 +1,6 @@
+#Start recording tcl command: 12/1/2022 01:10:41
+#Project Location: E:/sjtu/learning/VHDL/lab/lab5; Project name: lab5
+prj_project open "E:/sjtu/learning/VHDL/lab/lab5/lab5.ldf"
+prj_src remove "E:/sjtu/learning/VHDL/lab/lab5/two_songs.vhd"
+prj_run Synthesis -impl impl1
+#Stop recording: 12/1/2022 01:15:24

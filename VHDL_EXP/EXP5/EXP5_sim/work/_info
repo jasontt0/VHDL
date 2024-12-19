@@ -1,0 +1,115 @@
+m255
+K4
+z2
+!s11e vcom 2023.3 2023.07, Jul 18 2023
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dE:/DESKTOP/VHDL_EXP/EXP5/EXP5_sim
+Efreqdivider
+Z1 w1733476478
+Z2 DPx3 std 6 textio 0 22 LS[?81n5ZHWBI9JkBZTV<2
+Z3 DPx4 ieee 14 std_logic_1164 0 22 6<US`=mgl_dFdCEFF7J=m1
+!i122 4
+R0
+Z4 8E:/DESKTOP/VHDL_EXP/EXP5/frequencydivider.vhd
+Z5 FE:/DESKTOP/VHDL_EXP/EXP5/frequencydivider.vhd
+l0
+L4 1
+V6@bA2no3lX5@z_lGVKOSK3
+!s100 @M0Z4B8C[hG1[YZ8N[En53
+Z6 OT;C;2023.3;77
+32
+Z7 !s110 1733477131
+!i10b 1
+Z8 !s108 1733477131.000000
+Z9 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/DESKTOP/VHDL_EXP/EXP5/frequencydivider.vhd|
+Z10 !s107 E:/DESKTOP/VHDL_EXP/EXP5/frequencydivider.vhd|
+!i113 1
+Z11 o-work work -2002 -explicit -O0
+Z12 tExplicit 1 CvgOpt 0
+Afreqdivider_arch
+R2
+R3
+DEx4 work 11 freqdivider 0 22 6@bA2no3lX5@z_lGVKOSK3
+!i122 4
+l14
+L13 31
+Vk:nE:73O`XDW9jIBRMDC01
+!s100 VfCAB855bUOR_nE8@;EKD2
+R6
+32
+R7
+!i10b 1
+R8
+R9
+R10
+!i113 1
+R11
+R12
+Epiano
+w1733476490
+R2
+R3
+!i122 5
+R0
+8E:/DESKTOP/VHDL_EXP/EXP5/exp5.vhd
+FE:/DESKTOP/VHDL_EXP/EXP5/exp5.vhd
+l0
+L4 1
+VFOETe_iMbL13dn[Ik@i6N2
+!s100 R<f5MSEI]AoY^]TzdJ@;b0
+R6
+32
+R7
+!i10b 1
+R8
+!s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/DESKTOP/VHDL_EXP/EXP5/exp5.vhd|
+!s107 E:/DESKTOP/VHDL_EXP/EXP5/exp5.vhd|
+!i113 1
+R11
+R12
+Esong
+Z13 w1733476499
+R2
+R3
+!i122 3
+R0
+Z14 8E:/DESKTOP/VHDL_EXP/EXP5/songs.vhd
+Z15 FE:/DESKTOP/VHDL_EXP/EXP5/songs.vhd
+l0
+L4 1
+VA?^l08fKOe7kLRYLQhVAD1
+!s100 ZIT8`D2`zI9TAIDbNJ]ao0
+R6
+32
+R7
+!i10b 1
+R8
+Z16 !s90 -reportprogress|300|-work|work|-2002|-explicit|-stats=none|E:/DESKTOP/VHDL_EXP/EXP5/songs.vhd|
+Z17 !s107 E:/DESKTOP/VHDL_EXP/EXP5/songs.vhd|
+!i113 1
+R11
+R12
+Asong_arch
+R2
+R3
+DEx4 work 4 song 0 22 A?^l08fKOe7kLRYLQhVAD1
+!i122 3
+l30
+L13 42
+VggcLeG3O:k:VhB7H]GCGR2
+!s100 35?>AYZRh`T3gEKA3An[?3
+R6
+32
+R7
+!i10b 1
+R8
+R16
+R17
+!i113 1
+R11
+R12

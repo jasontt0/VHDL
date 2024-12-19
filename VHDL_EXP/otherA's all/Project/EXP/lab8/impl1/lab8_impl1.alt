@@ -1,0 +1,29 @@
+NOTE Copyright (C), 1992-2010, Lattice Semiconductor Corporation *
+NOTE All Rights Reserved *
+NOTE DATE CREATED: Wed Dec 13 18:30:54 2023 *
+NOTE DESIGN NAME: dianya *
+NOTE DEVICE NAME: LCMXO2-4000HC-4CSBGA132 *
+NOTE PIN ASSIGNMENTS *
+NOTE PINS adcdisplay[6] : N9 : out *
+NOTE PINS adcdisplay[7] : P9 : out *
+NOTE PINS sda_out : B8 : inout *
+NOTE PINS adcdisplay[5] : N10 : out *
+NOTE PINS adcdisplay[4] : P11 : out *
+NOTE PINS adcdisplay[3] : M11 : out *
+NOTE PINS adcdisplay[2] : P12 : out *
+NOTE PINS adcdisplay[1] : M12 : out *
+NOTE PINS adcdisplay[0] : N13 : out *
+NOTE PINS scl_out : C8 : out *
+NOTE PINS din : G3 : out *
+NOTE PINS sck : J2 : out *
+NOTE PINS rck : H3 : out *
+NOTE PINS DA_LCD : K14 : out *
+NOTE PINS CLK_LCD : K13 : out *
+NOTE PINS RST_LCD : K12 : out *
+NOTE PINS DC_LCD : J14 : out *
+NOTE PINS BL_LCD : J13 : out *
+NOTE PINS clk_in : C1 : in *
+NOTE PINS rst_n_in : L14 : in *
+NOTE PINS mode_btn_in : N14 : in *
+NOTE CONFIGURATION MODE: NONE *
+NOTE COMPRESSION: on *

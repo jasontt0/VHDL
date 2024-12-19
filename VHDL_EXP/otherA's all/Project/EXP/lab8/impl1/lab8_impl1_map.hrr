@@ -1,0 +1,71 @@
+---------------------------------------------------
+Report for cell dianya
+   Instance path: dianya
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     891.00        100.0
+                                  LUT4	    1590.00        100.0
+                                 IOBUF	         21        100.0
+                                PFUREG	        312        100.0
+                                RIPPLE	         93        100.0
+SUB MODULES
+                                  cell	      count    SLC Usage(%)
+                             trans_BCD	          1        19.6
+                            mode_shift	          1         1.4
+                          ctrlword_595	          1         6.7
+                        btn_debouncing	          1         2.7
+                           LCD_display	          1        58.1
+                                   ADC	          1        10.5
+---------------------------------------------------
+Report for cell ctrlword_595
+   Instance path: dianya/datato595
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      59.48         6.7
+                                  LUT4	      77.33         4.9
+                                PFUREG	         54        17.3
+                                RIPPLE	         17        18.3
+---------------------------------------------------
+Report for cell mode_shift
+   Instance path: dianya/mode_control
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      12.08         1.4
+                                  LUT4	      25.00         1.6
+                                PFUREG	          3         1.0
+---------------------------------------------------
+Report for cell LCD_display
+   Instance path: dianya/LCDdisplay
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     517.25        58.1
+                                  LUT4	     941.33        59.2
+                                PFUREG	        136        43.6
+                                RIPPLE	         46        49.5
+---------------------------------------------------
+Report for cell btn_debouncing
+   Instance path: dianya/btn_debounce
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      24.00         2.7
+                                  LUT4	      15.00         0.9
+                                PFUREG	         38        12.2
+                                RIPPLE	         17        18.3
+---------------------------------------------------
+Report for cell ADC
+   Instance path: dianya/ADC_work
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	      93.17        10.5
+                                  LUT4	     163.00        10.3
+                                PFUREG	         67        21.5
+                                RIPPLE	          8         8.6
+---------------------------------------------------
+Report for cell trans_BCD
+   Instance path: dianya/BCD_transform
+                     Cell usage:
+                                  cell	      count    Res Usage(%)
+                                  SLIC	     174.57        19.6
+                                  LUT4	     344.50        21.7
+                                PFUREG	          6         1.9
+                                RIPPLE	          5         5.4

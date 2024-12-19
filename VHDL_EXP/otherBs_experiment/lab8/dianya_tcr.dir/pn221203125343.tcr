@@ -1,0 +1,11 @@
+#Start recording tcl command: 12/3/2022 11:47:47
+#Project Location: C:/Users/hankeyi35/Desktop/LAB8; Project name: dianya
+prj_project open "C:/Users/hankeyi35/Desktop/LAB8/dianya.ldf"
+prj_src remove "C:/Users/hankeyi35/Desktop/LAB8/remove_jitter.vhd"
+prj_src add "C:/Users/hankeyi35/Desktop/lab8/btn_debouncing.vhd"
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1
+prj_run Synthesis -impl impl1 -task Lattice_Synthesis
+prj_run Synthesis -impl impl1
+#Stop recording: 12/3/2022 12:53:43
